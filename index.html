@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>aRvweb</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body class="home">
+
+	<!-- top start -->
+	<div class="top">
+		<div class="top-container">
+			<div class="top-content">
+				<!-- logo start -->
+				<div class="logo">
+					<span>iTweb</span> <em>Frontend developer</em>
+				</div>
+				<!-- logo stop -->
+				<!-- navigations start -->
+				<a class="nav-toggle"><span></span></a>
+				<div class="navigations">
+					<nav>
+						<ul>
+							<li>
+								<a class="navLink" href="solutions.html" title="">About Us</a>
+							</li>
+							<li>
+								<a class="navLink" href="docs.html" title="">Portfolio</a>
+								<div class="dropdown">
+									<div class="dropdown-col-1">
+										<h3>Portfolio</h3>
+										<p>
+											Предоставляю на рассмотрение несколько вариантов сайтов и размичных компонентов, реализованых через HTML CSS и JS
+										</p>
+									</div>
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="#" title="">
+													</span>
+													<span class="text">Слайдеры/карусели</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" title="">
+													<span class="text">Видео</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" title="">
+													<span class="text">Навигация</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navLink" href="contact.html" title="">Contact</a>	
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- navigations stop -->
+			</div>
+		</div>
+	</div>
+	<!-- top stop -->
+
+	
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$('.sliderhn').slick({
+			infinite: true,
+			arrows: true,
+			dots: false,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 600,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+      variableWidth: true,
+		});
+	</script>
+
+</body>
+
+</html>
