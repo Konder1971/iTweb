@@ -654,5 +654,17 @@ body {
 		border-radius: 20px;
 	}
 }
+@media (max-width: 440px) {
+	.logo {
+		font-size: 26px;
+		font-weight: 600;
+	}
+	.logo em {
+		font-weight: 500;
+		font-style: normal;
+		font-size: 16px;
+		padding-left: 0px;
+	}
+}
 /* top stop
 --------------------------------------------------- */
