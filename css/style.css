@@ -166,6 +166,10 @@ body {
 	font-size: 45px;
 	font-weight: 600;
 }
+.logo span {
+	color: #00B465;
+	font-weight: 800;
+}
 .logo em {
 	font-weight: 400;
 	font-style: normal;
