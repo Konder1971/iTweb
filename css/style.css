@@ -644,7 +644,7 @@ body {
 @media (max-width: 767.98px) {	
 	.bct {
 		padding: 0 28px;
-		margin: 74px 0 70px;
+		margin: 22px 0 35px;
 	}
 	.bct-up {
 		font-size: 14px;
@@ -786,11 +786,11 @@ body {
 }
 @media (max-width: 767.98px) {
 	.dawop {
-		margin: 75px 0 74px;
-		padding: 53px 28px 23px;
+		margin: 22px 0 74px;
+		padding: 45px 28px 45px;
 	}
 	.dawop-header {
-		margin: 0 auto 45px;
+		margin: 0 auto 40px;
 	}
 	.dawop-up {
 		font-size: 14px;
@@ -801,7 +801,7 @@ body {
 	.dawop-header h2 {
 		font-size: 29px;
 		line-height: 40px;
-		margin: 0 auto 30px;
+		margin: 0 auto;
 	}
 	.dawop-cols {
 		margin: 0 auto;
@@ -809,6 +809,9 @@ body {
 	}
 	.dawop-col {
 		margin-bottom: 45px;
+	}
+	.dawop-col:last-child {
+		margin-bottom: 0;
 	}
 	.dawop-separator {
 		width: 76px;
