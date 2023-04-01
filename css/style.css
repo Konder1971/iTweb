@@ -605,6 +605,7 @@ body {
 .bct-up {
 	color: #00B465;
 	text-align: center;
+	text-transform: uppercase;
 }
 .bct h2 {
 	text-align: center;
@@ -638,7 +639,7 @@ body {
 
 @media (max-width: 767.98px) {	
 	.bct {
-		padding: 0 16px;
+		padding: 0 28px;
 		margin: 74px 0 70px;
 	}
 	.bct-up {
@@ -660,3 +661,367 @@ body {
 }
 /* block center text stop
 --------------------------------------------------- */
+
+/* dawop start
+--------------------------------------------------- */
+.dawop {
+	background-color: #000;
+	color: #fff;
+}
+.dawop-header {
+	text-align: center;
+}
+.dawop-up {
+	color: #FFF115;
+	text-transform: uppercase;
+}
+.dawop-header {
+	margin: 0 auto;
+}
+.dawop-col {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	cursor: default;
+}
+.dawop-col h3 {
+	font-weight: 600;
+}
+.dawop-col:nth-child(1) h3 {
+	color: #00B465;
+}
+.dawop-col:nth-child(2) h3 {
+	color: #FFF154;
+}
+.dawop-col:nth-child(3) h3 {
+	color: #65C9FD;
+}
+.dawop-col ul,
+.dawop-col li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 400;
+}
+.dawop-col p {
+	font-weight: 400;
+}
+@media (min-width: 768px) {
+	.dawop {
+		padding: 75px 0 0px;
+	}
+	.dawop-header {
+		margin: 0 auto 60px;
+		max-width: 1049px;
+	}
+	.dawop-up {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.dawop-header h2 {
+		font-size: 42px;
+		line-height: 54px;
+		margin: 0 auto;
+		max-width: 950px;
+	}
+	.dawop-cols {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.dawop-col {
+		margin: 0 0 80px;
+		width: calc(33.33333% - 50px);
+		max-width: 343px;
+	}
+	.dawop-col:nth-child(2) {
+		margin: 0 60px 60px;
+	}
+	.dawop-separator {
+		width: 76px;
+		height: 4px;
+		margin-bottom: 14px;
+	}
+	.dawop-col:hover .dawop-separator {
+		-webkit-transition: 500ms ease-out;
+		-moz-transition: 500ms ease-out;
+		transition: 500ms ease-out;
+		width: 100%;
+	}	
+	.dawop-col:nth-child(1) .dawop-separator {
+		background-color: #00B465;
+	}
+	.dawop-col:nth-child(2) .dawop-separator {
+		background-color: #FFF154;
+	}
+	.dawop-col:nth-child(3) .dawop-separator {
+		background-color: #65C9FD;
+	}
+	.dawop-col h3 {
+		font-size: 26px;
+		line-height: 39px;
+		margin-bottom: 7px;
+	}
+	.dawop-col ul {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.dawop-col li {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+	.dawop-col li:last-child {
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 767.98px) {
+	.dawop {
+		margin: 75px 0 74px;
+		padding: 53px 28px 23px;
+	}
+	.dawop-header {
+		margin: 0 auto 45px;
+	}
+	.dawop-up {
+		font-size: 14px;
+		line-height: 25px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	.dawop-header h2 {
+		font-size: 29px;
+		line-height: 40px;
+		margin: 0 auto 30px;
+	}
+	.dawop-cols {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.dawop-col {
+		margin-bottom: 45px;
+	}
+	.dawop-separator {
+		width: 76px;
+		height: 4px;
+		margin: 0 auto 16px;
+	}	
+	.dawop-col:nth-child(1) .dawop-separator {
+		background-color: #00B465;
+	}
+	.dawop-col:nth-child(2) .dawop-separator {
+		background-color: #FFF154;
+	}
+	.dawop-col:nth-child(3) .dawop-separator {
+		background-color: #65C9FD;
+	}
+	.dawop-col:focus .dawop-separator {
+		-webkit-transition: 500ms ease-out;
+		-moz-transition: 500ms ease-out;
+		transition: 500ms ease-out;
+		width: 100%;
+	}
+	.dawop-col h3 {
+		font-size: 19px;
+		line-height: 26px;
+		font-weight: 600;
+		margin-bottom: 13px;
+	}
+	.dawop-col li {
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 15px;
+	}
+	.dawop-col li:last-child {
+		margin-bottom: 0;
+	}
+}
+/* dawop stop
+--------------------------------------------------- */
+
+
+
+
+
+/* See what’s happening at AdeptID start
+--------------------------------------------------- */
+.swh {
+	position: relative;
+}
+.swh-up {
+  color: #00B465;
+}
+.swh-link a {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #000;
+	color: #000;
+	font-weight: 700;
+	line-height: 1;
+}
+@media (min-width: 1025px) {
+	.swh {
+		margin: 163px 0 135px;
+	}
+	.swh-container {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		-moz-transform:translate(-50%, 0);
+		-ms-transform:translate(-50%, 0);
+		-webkit-transform:translate(-50%, 0);
+		-o-transform:translate(-50%, 0);
+		transform:translate(-50%, 0);
+		width: 100%; 
+		max-width: 1290px;
+		padding: 0 60px;
+	}
+	.swh-col-1 {
+		width: 340px;
+		min-height: 304px;
+	}
+	.swh-link a {
+		width: 204px;
+		height: 53px;
+		border-radius: 27px;
+		font-size: 16px;
+		margin-top: 30px;
+	}
+	.swh-link a:hover {
+		background-color: #00B465;
+		border: 2px solid #00B465;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.swh {
+		margin: 126px 0 179px;
+	}
+	.swh-col-1 {
+		margin-bottom: 86px;
+		text-align: center;
+	}
+	.swh-up {
+		margin: 0 auto 20px;
+	}
+	.swh h2 {
+		margin: 0 auto 30px;
+		padding: 0 30px;
+	}
+	.swh-link a {
+		width: 204px;
+		height: 53px;
+		border-radius: 27px;
+		font-size: 16px;
+		margin: 30px auto 0;
+	}
+	.swh-link a:focus {
+		background-color: #00B465;
+		border: 2px solid #00B465;
+	}
+}
+@media (max-width: 767.98px) {
+	.swh {
+		margin: 73px 0 153px;
+	}
+	.swh-col-1 {
+		margin-bottom: 75px;
+		text-align: center;
+	}
+	.swh h2 {
+		margin: 0 auto 25px;
+		max-width: 323px;
+	}
+	.swh-link a {
+		width: 163px;
+		height: 42px;
+		border-radius: 21px;
+		font-size: 10px;
+		margin: 30px auto 0;
+	}
+	.swh-link a:focus {
+		background-color: #00B465;
+		border: 2px solid #00B465;
+	}
+}
+/* See what’s happening at AdeptID
+--------------------------------------------------- */
+@media (min-width: 1025px) {
+	.swh {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+	.sliderHn-box {
+		width: calc(50% + 150px);
+		overflow: hidden;
+		padding: 6px 5px;
+	}
+	.sliderhn .slick-slide {
+		width: 369px!important;
+		margin-right: 31px;
+		border: 3px solid #000;
+		border-radius: 45px;
+		overflow: hidden;
+	}
+	.sliderhn .slick-list {
+		overflow: inherit;
+		-webkit-transition: 300ms ease-out;
+		-moz-transition: 300ms ease-out;
+		transition: 300ms ease-out;
+	}
+	.sliderhn .slick-slide:hover {
+		-webkit-transition: 300ms ease-out;
+		-moz-transition: 300ms ease-out;
+		transition: 300ms ease-out;
+		-webkit-transform: scale(1.02);
+		transform: scale(1.02);
+	}
+	.sliderhn {
+		padding-top: 42px;
+	}
+	.sliderhn-block {
+		padding-bottom: 180px;
+	}
+	.hn-top {
+		font-size: 16px;
+		min-height: 61px;
+		margin-bottom: 38px;
+	}
+	.hn-data {
+		margin: 0 48px 20px;
+		font-size: 20px;
+		line-height: 1;
+	}
+	.hn-text {
+		font-size: 26px;
+		line-height: 39px;
+		margin: 0 48px;
+	}
+	.hn-link {
+		bottom: 36px;
+		right: 36px;
+	}
+	.hn-link svg,
+	.hn-link img {
+		width: 50px;
+		height: auto;
+	}
+	.sliderhn .slick-prev {
+		left: 659px;
+	}
+	.sliderhn .slick-next {
+		left: 702px;
+	}
+}
