@@ -66,13 +66,13 @@
 			}
 		};
 	});
-	
+
 
 
 	document.addEventListener('DOMContentLoaded', () => {
 		let toTopBtn = document.querySelector('.to-up');
 		window.onscroll = function () {
-			if (window.pageYOffset > 300) {
+			if (window.pageYOffset > 400) {
 				toTopBtn.style.display = 'block'
 			} else {
 				toTopBtn.style.display = 'none'
