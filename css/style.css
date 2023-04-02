@@ -961,6 +961,7 @@ body {
 	min-height: 61px;
 	margin-bottom: 38px;
   font-weight: 700;
+	text-transform: uppercase;
 }
 .blue .hn-top {
 	background-color: #65C9FD;
@@ -972,7 +973,7 @@ body {
 	background-color: #00B465;
 }
 .hn-text {
-  font-weight: 700;
+  font-weight: 600;
 }
 .hn-link {
   display: flex;
@@ -1037,7 +1038,8 @@ body {
 		width: 204px;
 		height: 53px;
 		border-radius: 27px;
-		font-size: 16px;
+		font-size: 20px;
+		font-weight: 600;
 		margin-top: 30px;
 	}
 	.swh-link a:hover {
@@ -1129,7 +1131,8 @@ body {
 		width: 204px;
 		height: 53px;
 		border-radius: 27px;
-		font-size: 16px;
+		font-size: 20px;
+		font-weight: 600;
 		margin: 30px auto 0;
 	}
 	.swh-link a:focus {
