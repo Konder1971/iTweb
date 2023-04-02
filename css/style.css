@@ -1083,7 +1083,6 @@ body {
 	}
 	.hn-top {
 		font-size: 16px;
-		min-height: 61px;
 		margin-bottom: 38px;
 	}
 	.hn-data {
@@ -1235,7 +1234,7 @@ body {
 		padding-bottom: 80px;
 	}
 	.hn-top {
-		font-size: 10px;
+		font-size: 13px;
 		min-height: 42px;
 		margin-bottom: 25px;
 	}
