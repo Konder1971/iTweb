@@ -975,6 +975,12 @@ body {
 .hn-text {
   font-weight: 600;
 }
+.hn-text ul,
+.hn-text li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 .hn-link {
   display: flex;
   flex-direction: column;
