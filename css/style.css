@@ -973,13 +973,16 @@ body {
 	background-color: #00B465;
 }
 .hn-text {
-  font-weight: 600;
+  font-weight: 400;
 }
 .hn-text ul,
 .hn-text li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+.hn-text li {
+	margin-bottom: 13px;
 }
 .hn-link {
   display: flex;
