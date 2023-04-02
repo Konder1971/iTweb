@@ -786,7 +786,7 @@ body {
 }
 @media (max-width: 767.98px) {
 	.dawop {
-		margin: 22px 0 74px;
+		margin: 22px 0 40px;
 		padding: 45px 28px 45px;
 	}
 	.dawop-header {
@@ -863,6 +863,15 @@ body {
 }
 .swh-up {
   color: #00B465;
+	font-size: 20px;
+	line-height: 35px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.swh h2 {
+  font-size: 42px;
+  line-height: 54px;
+  margin-bottom: 30px;
 }
 .swh-link a {
 	display: flex;
@@ -877,6 +886,18 @@ body {
 	font-weight: 700;
 	line-height: 1;
 }
+
+.sliderhn .slick-slide:hover .hn-link svg circle, 
+.sliderhn-block:hover .hn-link svg circle {
+	fill: #000;
+	stroke: #000;
+}
+.sliderhn .slick-slide:hover .hn-link svg path, 
+.sliderhn-block:hover .hn-link svg path {
+	stroke: #fff;
+    fill: #fff;	
+}
+
 .sliderhn .slick-arrow {
   text-indent: -9999px;
   background: none;
@@ -918,6 +939,79 @@ body {
   flex-direction: column!important;
   height: 100%!important;
 }
+
+.sliderhn .slick-slide {
+	margin-right: 31px;
+	border: 3px solid #000;
+	border-radius: 45px;
+	overflow: hidden;
+}
+.sliderhn-block {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+.hn-top {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+	font-size: 16px;
+	min-height: 61px;
+	margin-bottom: 38px;
+  font-weight: 700;
+}
+.blue .hn-top {
+	background-color: #65C9FD;
+}
+.yellow .hn-top {
+	background-color: #FFF115;
+}
+.green .hn-top {
+	background-color: #00B465;
+}
+.hn-text {
+  font-weight: 700;
+}
+.hn-link {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 2;
+  width: auto;
+}
+.hn-link {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	z-index: 2;
+	width: auto;
+}
+.hn-link svg {
+	stroke: #000;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.hn-link svg path {
+	fill: #000;
+}
+.sliderhn .slick-slide:hover .hn-link svg {
+	background-color: #000;
+}
+.sliderhn .slick-slide:hover .hn-link svg path {
+	fill: #fff;
+	stroke: #fff;
+}
+
+
+
 @media (min-width: 1025px) {
 	.swh {
 		margin: 163px 0 135px;
@@ -950,61 +1044,7 @@ body {
 		background-color: #00B465;
 		border: 2px solid #00B465;
 	}
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-	.swh {
-		margin: 126px 0 179px;
-	}
-	.swh-col-1 {
-		margin-bottom: 86px;
-		text-align: center;
-	}
-	.swh-up {
-		margin: 0 auto 20px;
-	}
-	.swh h2 {
-		margin: 0 auto 30px;
-		padding: 0 30px;
-	}
-	.swh-link a {
-		width: 204px;
-		height: 53px;
-		border-radius: 27px;
-		font-size: 16px;
-		margin: 30px auto 0;
-	}
-	.swh-link a:focus {
-		background-color: #00B465;
-		border: 2px solid #00B465;
-	}
-}
-@media (max-width: 767.98px) {
-	.swh {
-		margin: 73px 0 153px;
-	}
-	.swh-col-1 {
-		margin-bottom: 75px;
-		text-align: center;
-	}
-	.swh h2 {
-		margin: 0 auto 25px;
-		max-width: 323px;
-	}
-	.swh-link a {
-		width: 163px;
-		height: 42px;
-		border-radius: 21px;
-		font-size: 10px;
-		margin: 30px auto 0;
-	}
-	.swh-link a:focus {
-		background-color: #00B465;
-		border: 2px solid #00B465;
-	}
-}
-/* See what’s happening at AdeptID
---------------------------------------------------- */
-@media (min-width: 1025px) {
+
 	.swh {
 		display: flex;
 		flex-direction: column;
@@ -1019,10 +1059,6 @@ body {
 	}
 	.sliderhn .slick-slide {
 		width: 369px!important;
-		margin-right: 31px;
-		border: 3px solid #000;
-		border-radius: 45px;
-		overflow: hidden;
 	}
 	.sliderhn .slick-list {
 		overflow: inherit;
@@ -1068,9 +1104,168 @@ body {
 		height: auto;
 	}
 	.sliderhn .slick-prev {
-		left: 659px;
+		left: 0;
 	}
 	.sliderhn .slick-next {
-		left: 702px;
+		left: 50px;
 	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.swh {
+		margin: 126px 0 179px;
+	}
+	.swh-col-1 {
+		margin-bottom: 86px;
+		text-align: center;
+	}
+	.swh-up {
+		margin: 0 auto 20px;
+	}
+	.swh h2 {
+		margin: 0 auto 30px;
+		padding: 0 30px;
+	}
+	.swh-link a {
+		width: 204px;
+		height: 53px;
+		border-radius: 27px;
+		font-size: 16px;
+		margin: 30px auto 0;
+	}
+	.swh-link a:focus {
+		background-color: #00B465;
+		border: 2px solid #00B465;
+	}
+
+	.sliderHn-box {
+		width: 100%;
+		padding-left: 60px;
+	}
+	.sliderhn {
+		padding-top: 42px;
+	}
+	.sliderhn .slick-slide {
+		width: 369px!important;
+	}
+	.sliderhn-block {
+		padding-bottom: 180px;
+	}
+	.hn-top {
+		font-size: 16px;
+		min-height: 61px;
+		margin-bottom: 38px;
+	}
+	.hn-data {
+		margin: 0 48px 20px;
+		font-size: 20px;
+		line-height: 1;
+	}
+	.hn-text {
+		font-size: 26px;
+		line-height: 39px;
+		margin: 0 48px;
+	}
+	.hn-link {
+		bottom: 36px;
+		right: 36px;
+	}
+	.hn-link svg,
+	.hn-link img {
+		width: 50px;
+		height: auto;
+	}
+	.sliderhn .slick-prev {
+		left: 0;
+	}
+	.sliderhn .slick-next {
+		left: 50px;
+	}
+}
+@media (max-width: 767.98px) {
+	.swh {
+		margin: 40px 0 50px;
+	}
+	.swh-col-1 {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.swh-up {
+		font-size: 14px;
+		line-height: 25px;
+		font-weight: 800;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	.swh h2 {
+		font-size: 29px;
+		line-height: 33px;
+		font-weight: 600;
+		margin: 0 auto 25px;
+	}
+	.swh-link a {
+		width: 163px;
+		height: 42px;
+		border-radius: 21px;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin: 25px auto 0;
+	}
+	.swh-link a:focus {
+		background-color: #00B465;
+		border: 2px solid #00B465;
+	}
+
+	.sliderHn-box {
+		width: 100%;
+		padding-left: 28px;
+	}
+	.sliderhn {
+		padding-top: 42px;
+	}
+	.sliderhn .slick-slide {
+		width: 246px!important;
+		margin-right: 18px;
+		border: 2px solid #000;
+		border-radius: 30px;
+	}
+	.sliderhn-block {
+		padding-bottom: 80px;
+	}
+	.hn-top {
+		font-size: 10px;
+		min-height: 42px;
+		margin-bottom: 25px;
+	}
+	.hn-data {
+		margin: 0 27px 5px;
+		font-size: 17px;
+		line-height: 1;
+	}
+	.hn-text {
+		font-size: 19px;
+		line-height: 26px;
+		margin: 0 25px;
+	}
+	.hn-link {
+		bottom: 22px;
+		right: 25px;
+	}
+	.hn-link svg,
+	.hn-link img {
+		width: 37px;
+		height: auto;
+	}
+	.slick-list:after {
+		width: 74px;
+	}
+	.sliderhn .slick-prev {
+		left: 0;
+	}
+	.sliderhn .slick-next {
+		left: 50px;
+	}
+}
+/* See what’s happening at AdeptID
+--------------------------------------------------- */
+@media (min-width: 1025px) {
 }
