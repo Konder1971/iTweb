@@ -1245,7 +1245,7 @@ body {
 	.hn-top {
 		font-size: 13px;
 		min-height: 42px;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 	.hn-data {
 		margin: 0 27px 5px;
@@ -1255,7 +1255,7 @@ body {
 	.hn-text {
 		font-size: 19px;
 		line-height: 26px;
-		margin: 0 25px;
+		margin: 0 20px;
 	}
 	.hn-link {
 		bottom: 22px;
