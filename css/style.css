@@ -922,9 +922,9 @@ body {
   z-index: 2;
   top: 0;
 }
-.sliderhn .slick-arrow:hover {
+/* .sliderhn .slick-arrow:hover {
   opacity: .4;
-}
+} */
 .sliderhn .slick-prev {
 	background-image: url(../images/arrow-prev.svg);
 }
