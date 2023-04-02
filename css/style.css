@@ -858,10 +858,6 @@ body {
 /* dawop stop
 --------------------------------------------------- */
 
-
-
-
-
 /* See what’s happening at AdeptID start
 --------------------------------------------------- */
 .swh {
@@ -1031,8 +1027,6 @@ body {
 	fill: #fff;
 	stroke: #fff;
 }
-
-
 
 @media (min-width: 1025px) {
 	.swh {
@@ -1289,5 +1283,24 @@ body {
 }
 /* See what’s happening at AdeptID
 --------------------------------------------------- */
-@media (min-width: 1025px) {
+
+
+.to-up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 101;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+	background-color: #33a06f;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	display: none;
+}
+.to-up:hover {
+	opacity: .8;
 }
