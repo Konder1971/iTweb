@@ -129,7 +129,7 @@ select {
 	}
 }
 body {
-	background-color: #fff;
+	background-color: #f6f8fa;
 	font-family: 'Public Sans', sans-serif;
 	color: #000;
 	font-weight: 400;
@@ -887,6 +887,7 @@ body {
 	color: #000;
 	font-weight: 700;
 	line-height: 1;
+	background-color: #fff;
 }
 
 .sliderhn .slick-slide:hover .hn-link svg circle, 
@@ -952,6 +953,7 @@ body {
   position: relative;
   color: #000;
   text-decoration: none;
+	background-color: #fff;
 }
 .hn-top {
   display: flex;
