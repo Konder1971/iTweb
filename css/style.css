@@ -175,6 +175,7 @@ body {
 	font-style: normal;
 	font-size: 22px;
 	padding-left: 4px;
+	color: #65C9FD;
 }
 
 .logo a {
@@ -655,7 +656,7 @@ body {
 	.bct h2 {
 		font-size: 29px;
 		line-height: 33px;
-		margin: 0 auto 20px;
+		margin: 0 auto 15px;
 	}
 	.bct p {
 		font-size: 18px;
@@ -676,7 +677,7 @@ body {
 	text-align: center;
 }
 .dawop-up {
-	color: #FFF115;
+	color: #f00;
 	text-transform: uppercase;
 }
 .dawop-header {
@@ -963,6 +964,9 @@ body {
   font-weight: 700;
 	text-transform: uppercase;
 }
+.red .hn-top {
+	background-color: #f00;
+}
 .blue .hn-top {
 	background-color: #65C9FD;
 }
@@ -1240,7 +1244,7 @@ body {
 		border-radius: 30px;
 	}
 	.sliderhn-block {
-		padding-bottom: 80px;
+		padding-bottom: 60px;
 	}
 	.hn-top {
 		font-size: 13px;
@@ -1258,8 +1262,8 @@ body {
 		margin: 0 20px;
 	}
 	.hn-link {
-		bottom: 22px;
-		right: 25px;
+		bottom: 15px;
+		right: 20px;
 	}
 	.hn-link svg,
 	.hn-link img {
