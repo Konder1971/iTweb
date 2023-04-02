@@ -591,7 +591,7 @@ body {
 }
 @media (max-width: 440px) {
 	.logo {
-		font-size: 26px;
+		font-size: 29px;
 		font-weight: 600;
 	}
 	.logo em {
@@ -795,7 +795,7 @@ body {
 	.dawop-up {
 		font-size: 14px;
 		line-height: 25px;
-		font-weight: 700;
+		font-weight: 800;
 		margin-bottom: 10px;
 	}
 	.dawop-header h2 {
@@ -834,14 +834,14 @@ body {
 		width: 100%;
 	}
 	.dawop-col h3 {
-		font-size: 19px;
+		font-size: 24px;
 		line-height: 26px;
 		font-weight: 600;
-		margin-bottom: 13px;
+		margin-bottom: 15px;
 	}
 	.dawop-col li {
-		font-size: 18px;
-		line-height: 25px;
+		font-size: 20px;
+		line-height: 28px;
 		margin-bottom: 15px;
 	}
 	.dawop-col li:last-child {
