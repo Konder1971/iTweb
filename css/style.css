@@ -1304,3 +1304,11 @@ body {
 .to-up:hover {
 	opacity: .8;
 }
+@media (max-width: 767.98px) {
+	.to-up {
+		width: 40px;
+		height: 40px;
+		font-size: 34px;
+		line-height: 28px;
+	}
+}
