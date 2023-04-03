@@ -151,6 +151,25 @@ body {
 	}
 }
 
+.to-up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 98;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #33a06f;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	display: none;
+}
+.to-up:hover {
+	opacity: .8;
+}
+
 /* top start
 --------------------------------------------------- */
 .top {
@@ -170,12 +189,20 @@ body {
 	color: #00B465;
 	font-weight: 800;
 }
+.logo a {
+	text-decoration: none;
+}
+.logo a:hover span,
+.logo a:focus span {
+	color:#65C9FD;
+}
 .logo em {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 22px;
 	padding-left: 4px;
 	color: #65C9FD;
+	cursor: default;
 }
 .logo a {
 	text-decoration: none;
@@ -381,7 +408,7 @@ body {
 		margin-left: 35px;
 	}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024.98px) {
 	.top {
 		height: 93px;
 	}
@@ -607,10 +634,9 @@ body {
 --------------------------------------------------- */
 .bct-up {
 	color: #00B465;
-	text-align: center;
 	text-transform: uppercase;
 }
-.bct h2 {
+.bct {
 	text-align: center;
 }
 @media (min-width: 768px) {
@@ -639,7 +665,6 @@ body {
 		margin-bottom: 20px;
 	}
 }
-
 @media (max-width: 767.98px) {	
 	.bct {
 		padding: 0 28px;
@@ -851,7 +876,7 @@ body {
 /* dawop stop
 --------------------------------------------------- */
 
-/* See what’s happening at AdeptID start
+/* swh start
 --------------------------------------------------- */
 .swh {
 	position: relative;
@@ -915,9 +940,6 @@ body {
   z-index: 2;
   top: 0;
 }
-/* .sliderhn .slick-arrow:hover {
-  opacity: .4;
-} */
 .sliderhn .slick-prev {
 	background-image: url(../images/arrow-prev.svg);
 }
@@ -1274,25 +1296,35 @@ body {
 		left: 50px;
 	}
 }
-/* See what’s happening at AdeptID
+/* swh stop
 --------------------------------------------------- */
 
 
-.to-up {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 98;
-	width: 40px;
-	height: 40px;
+
+.headerh2 {
+	color: #00B465;
 	text-align: center;
-	line-height: 40px;
-	background-color: #33a06f;
-	color: #fff;
-	cursor: pointer;
-	border-radius: 4px;
-	display: none;
 }
-.to-up:hover {
-	opacity: .8;
+@media (min-width: 768px) {
+	.vaContainer {
+		max-width: 1290px;
+		margin: 0 auto;
+		padding: 0 60px;
+	}
+	.headerh2 {
+		font-size: 26px;
+		line-height: 35px;
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 767.98px) {
+	.vaContainer {
+		padding: 0 28px;
+	}
+	.headerh2 {
+		font-size: 24px;
+		line-height: 26px;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
 }
