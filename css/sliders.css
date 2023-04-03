@@ -173,6 +173,7 @@
 
 	.slider3c .slick-dots {
 		margin-top: 15px;
+		padding-left: 0;
 	}
 	.slider3c .slick-dots li {
 		margin: 0 5px;
@@ -228,6 +229,7 @@
 
 	.slider3c .slick-dots {
 		margin-top: 15px;
+		padding-left: 0;
 	}
 	.slider3c .slick-dots li {
 		height: 20px;
