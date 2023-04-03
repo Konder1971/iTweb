@@ -70,6 +70,7 @@
 	font-weight: 900;
 	position: relative;
 	z-index: 3;
+	text-transform: uppercase;
 }
 .slide3c-content p {
 	color: #fff;
