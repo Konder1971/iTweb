@@ -368,8 +368,12 @@ body {
 		font-size: 20px;
 		font-weight: 500;
 	}
-	.navigations .dropdown ul li:hover a {
+	.navigations .dropdown ul li:hover a,
+	.navigations .dropdown ul li.active a {
 		color: #fff;
+	}
+	.navigations .dropdown ul li.active a {
+		cursor: default;
 	}
 }
 @media (min-width: 1025px) and (max-width: 1100px) {
@@ -523,11 +527,21 @@ body {
 	.navigations .dropdown ul {
 		margin: 30px 0;
 	}
+
+	.navigations .dropdown ul li {
+		margin-bottom: 25px;
+		margin-left: 10px;
+	}
 	.navigations .dropdown ul li a {
 		margin-bottom: 20px;
 	}
 	.navigations .dropdown ul li a {
-		font-size: 16px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.navigations .dropdown ul li.active a {
+		color: #00B465;
+		cursor: default;
 	}
 }
 @media (max-width: 767.98px) {
@@ -562,7 +576,7 @@ body {
 	}	
 	.navigations {
 		height: calc(100vh - 81px);
-		padding: 49px 28px 40px;
+		padding: 30px 28px;
 	}
 	.navigations.active {
 		top: 81px;
