@@ -205,6 +205,9 @@
 }
 
 @media (max-width: 767.98px) {
+	.slider3c {
+		margin-bottom: 40px;
+	}
 	.slide3c-content {
 		padding: 10px 10px 10px;
 	}
