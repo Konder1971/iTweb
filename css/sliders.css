@@ -227,17 +227,17 @@
 	}
 
 	.slider3c .slick-dots {
-		margin-top: 24px;
+		margin-top: 15px;
 	}
 	.slider3c .slick-dots li {
-		height: 13px;
-		margin: 0 4px;
+		height: 20px;
+		margin: 0 6px;
 	}
 	.slick-dots button {
-		-webkit-border-radius: 5px;
-		border-radius: 5px;
-		width: 11px;
-		height: 11px;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
 	}
 	
 	.slider3c .slick-prev, 
