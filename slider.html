@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>iTvweb video</title>
+	<title>iTvweb slider</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
@@ -11,13 +11,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<style type="text/css">
-		@media (min-width: 768px) {
-		}
-		@media (max-width: 767.98px) {
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/sliders.css">
 
 </head>
 
@@ -106,7 +100,7 @@
 								</div>
 							</li>
 							<li>
-								<a class="navLink" href="contact.html" title="">Contact</a>	
+								<a class="navLink" href="contact.html" title="">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -128,7 +122,7 @@
 					</h2>
 					<p>
 						Адаптивные слайдеры и карусели различного вида и конфигурации.<br />
-						Оживляют браузерную картинку сайта и повсеместно используются дизайнерами в макетах web-страниц 
+						Оживляют браузерную картинку сайта и повсеместно используются дизайнерами в макетах web-страниц
 					</p>
 				</div>
 			</div>
@@ -138,18 +132,103 @@
 
 
 	<div class="vaContainer">
-		<div class="vaContent">			
+		<div class="slider3c-box">
+			<div class="slider3c">
+
+				<div class="slide3c">
+					<div class="slide3c-container">
+						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
+							<div class="slide3c-content">
+								<div class="sub">VIDEO</div>
+								<p>What Does Financial Independence Mean to You?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide3c">
+					<div class="slide3c-container">
+						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
+							<div class="myvideo">
+								<iframe src="https://www.youtube.com/embed/kPYBn8VcdXk" title="YouTube video player"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+							</div>
+							<div class="slide3c-content">
+								<div class="sub">VIDEO</div>
+								<p>What Does Financial Independence Mean to You?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide3c">
+					<div class="slide3c-container">
+						<div class="slide3c-block" style="background-image: url('images/p33.jpg')">
+							<div class="slide3c-content">
+								<div class="sub">TAXES</div>
+								<p>Let’s Talk About Tax-Loss Harvesting</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide3c">
+					<div class="slide3c-container">
+						<div class="slide3c-block" style="background-image: url('images/p22.jpg')">
+							<div class="slide3c-content">
+								<div class="sub">TAXES</div>
+								<p>Let’s Talk About Tax-Loss Harvesting</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
-	
+
 
 
 	<div class="to-up">&uarr;</div>
-	
 
 	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+		$(".slider3c").slick({
+		centerMode: true,
+		centerPadding: '12%',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		arrows: true,
+		dots: true,
+		// autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					centerMode: false,
+					slidesToShow: 1
+				}
+			}
+		]
+		});
+		$('.slide3c').css('height', '');
+		$('.slide3c').css({
+			height: $('.slide3c').width()/1.777 + 'px'
+		});
+    $(window).resize(function(){
+      $('.slide3c').css('height', '');
+			$('.slide3c').css({
+				height: $('.slide3c').width()/1.777 + 'px'
+			});
+    });
+	</script>
 
 </body>
 </html>
