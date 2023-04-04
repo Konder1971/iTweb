@@ -21,6 +21,7 @@
 				padding: 0 28px;
 			}
 		}
+
 		#myBtnContainer {
 			display: flex;
 			flex-direction: row;
@@ -68,11 +69,126 @@
 			display: flex;
 		}
 		.filterContainer {
+			margin-bottom: 22px;
 			margin-top: 14px;
 			margin-left: -3px;
 			overflow: hidden;
 		}
-	</style>
+
+
+	.nav ul li {
+    display: inline-block;
+    padding: 10px 40px 10px 0;
+    cursor: pointer;
+  }
+  .hide {
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes a1 {
+    to {
+      opacity: 0;
+      min-height: 0;
+      min-width: 0;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      height: 0;
+      width: 0;
+    }
+  }
+	.projectblock {
+		text-decoration: none;
+		margin-bottom: 30px;
+	}
+	.projectblock em {
+		display: block;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 11px;
+	}
+	.projectblock em i {
+		opacity: 0;
+		font-style: normal;
+		display: -webkit-flex;
+		-webkit-fflex-direction: column;
+		-webkit-fflex-wrap: nowrap;
+		-webkit-fjustify-content: center;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		font-size: 25px;
+		font-weight: 300;
+		color: #fff;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.6);
+		-webkit-transition: 300ms ease-out;
+		-moz-transition: 300ms ease-out;
+		transition: 300ms ease-out;
+	}
+	.projectblock:hover em i {
+		opacity: 1;
+		-webkit-transition: 300ms ease-out;
+		-moz-transition: 300ms ease-out;
+		transition: 300ms ease-out;
+	}
+	.projectblock h3 {
+			color: #666;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 300;
+			margin-bottom: 4px;
+	}
+	.projectblock ul,
+	.projectblock ul li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.projectblock ul li {
+		display: inline-block;
+		line-height: 20px;
+		font-size: 13px;
+		color:#777;
+		font-weight: 300;
+	}
+	.projectblock ul li:after {
+		content: '.';
+		display: inline-block;
+		font-size: 13px;
+		line-height: 20px;
+		line-height: inherit;
+		font-weight: 600;
+		position: relative;
+		top: -2px;
+		margin-left: 5px;
+	}
+	.projectblock ul li:last-child:after {
+		display: none;
+	}
+	.projectblock:hover h3,
+	.projectblock:hover li {
+		color: #c60;
+	}
+
+	@media (min-width: 768px) {
+		.section-col {
+			padding: 0 10px;
+		}
+		.projectblock {
+			width: 25%;
+			float: left;
+			display: block;
+		}
+	}
+</style>
 
 </head>
 <body>
@@ -224,6 +340,59 @@
 		</div>
 	</div>
 
+	<div class="vaContainer">
+		<div class="vaContent">
+			<hr />
+				<h2>Filter variant 2</h2>
+				<div class="nav">
+					<ul>
+						<li data-f="all">ALL</li>
+						<li data-f="wordpress" class="text-wordpress">Wordpress</li>
+						<li data-f="javascript" class="text-javascript">Javascript</li>
+						<li data-f="html5css3" class="text-html5css3">Html5/CSS3</li>
+						<li data-f="android" class="text-android">Android</li>
+					</ul>
+				</div>
+				<div class="projectsblocks">
+					<div class="section">
+						<div class="box wordpress section-col projectblock" to="">
+							<em class="pepic" style="background-image: url(images/p.jpg)"><i>view project</i></em>
+							<h3>Wordpress</h3>
+							<ul>
+								<li>Wordpress</li>
+								<li>Websites</li>
+							</ul>
+						</div>
+						<div class="box javascript section-col projectblock" to="">
+							<em class="pepic" style="background-image: url(images/p22.jpg)"><i>view project</i></em>
+							<h3>javascript</h3>
+							<ul>
+								<li>javascript</li>
+								<li>Websites</li>
+							</ul>
+						</div>
+						<div class="box html5css3 section-col projectblock" to="">
+							<em class="pepic" style="background-image: url(images/p33.jpg)"><i>view project</i></em>
+							<h3>html5css3</h3>
+							<ul>
+								<li>html5css3</li>
+								<li>Websites</li>
+							</ul>
+						</div>
+						<div class="box android section-col projectblock" to="">
+							<em class="pepic" style="background-image: url(images/p.jpg)"><i>view project</i></em>
+							<h3>android</h3>
+							<ul>
+								<li>android</li>
+								<li>Websites</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>
+
 	<div class="to-up">&uarr;</div>
 	
 	<script src="js/jquery.min.js"></script>
@@ -269,7 +438,37 @@
 				this.className += " active";
 			});
 		}
-		</script>
+
+
+
+		let filterBox;
+		filterBox = document.querySelectorAll(".box");
+		document.querySelector(".nav").addEventListener("click", (event) => {
+			if (event.target.tagName !== "LI") return false;
+			let filterClass = event.target.dataset["f"];
+
+			filterBox.forEach((elem) => {
+				elem.classList.remove("hide");
+				if (!elem.classList.contains(filterClass) && filterClass !== "all") {
+					elem.classList.add("hide");
+				}
+			});
+		});
+		let hhpe = document.querySelector(".pepic").offsetWidth;
+		let hpeheight;
+		hpeheight = document.querySelectorAll(".pepic");
+		for (i = 0; i < hpeheight.length; i++) {
+			hpeheight[i].style.height = hhpe + "px";
+		};
+		window.onresize = function(event) {
+			let hhpe = document.querySelector(".pepic").offsetWidth;
+			hpeheight = document.querySelectorAll(".pepic");
+			for (i = 0; i < hpeheight.length; i++) {
+				hpeheight[i].style.height = hhpe + "px";
+			}
+		}
+
+	</script>
 
 </body>
 </html>
