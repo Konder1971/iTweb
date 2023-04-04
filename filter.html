@@ -11,72 +11,78 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<style type="text/css">
-		.vaContent h2 {
-			color: #00B465;
-			margin-bottom: 15px;
+<style type="text/css">
+	.vaContent h2 {
+		color: #00B465;
+		margin-bottom: 15px;
+	}
+	hr {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 767.98px) {
+		.vaContainer {
+			padding: 0 28px;
 		}
-		hr {
-			margin-bottom: 30px;
-		}
-		@media (max-width: 767.98px) {
-			.vaContainer {
-				padding: 0 28px;
-			}
-		}
+	}
 
-		#myBtnContainer {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: flex-start;
-		}
-		.btn {
-			display: block;
-			border: none;
-			border-radius: 0;
-			outline: none;
-			padding: 12px 16px;
-			margin: 0 6px 6px 0;
-			background-color: #65C9FD;
-			cursor: pointer;
-			font-size: 17px;
-		}
-		.btn:hover {
-			background-color: #2196F3;
-		}
-		.btn.active {
-			background-color: #2196F3;
-			color: white;
-		}
-		.filterContainer {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: flex-start;
-		}
+	#myBtnContainer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.btn {
+		display: block;
+		border: none;
+		border-radius: 0;
+		outline: none;
+		padding: 12px 16px;
+		margin: 0 6px 6px 0;
+		background-color: #65C9FD;
+		cursor: pointer;
+		font-size: 17px;
+	}
+	.btn:hover {
+		background-color: #2196F3;
+	}
+	.btn.active {
+		background-color: #2196F3;
+		color: white;
+	}
+	.filterContainer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.filterDiv {
+		background-color: #2196F3;
+		color: #fff;
+		width: 100px;
+		height: 100px;
+		margin: 3px;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		text-align: center;
+		font-size: 18px;
+		display: none;
+	}
+	.show {
+		display: flex;
+	}
+	.filterContainer {
+		margin-bottom: 22px;
+		margin-top: 14px;
+		margin-left: -3px;
+		overflow: hidden;
+	}
+	@media (max-width: 767.98px) {
 		.filterDiv {
-			background-color: #2196F3;
-			color: #fff;
 			width: 90px;
 			height: 90px;
-			margin: 3px;
-			flex-direction: column;
-			flex-wrap: nowrap;
-			justify-content: center;
-			text-align: center;
-			font-size: 18px;
-			display: none;
 		}
-		.show {
-			display: flex;
-		}
-		.filterContainer {
-			margin-bottom: 22px;
-			margin-top: 14px;
-			margin-left: -3px;
-			overflow: hidden;
-		}
+	}
 
 		
 	.nav ul {
@@ -334,31 +340,17 @@
 			<h2>Filter Elements</h2>
 			<div id="myBtnContainer">
 				<button class="btn active" onclick="filterSelection('all')">Show all</button>
-				<button class="btn" onclick="filterSelection('korob')">Korob</button>
 				<button class="btn" onclick="filterSelection('cars')">Cars</button>
 				<button class="btn" onclick="filterSelection('animals')">Animals</button>
-				<button class="btn" onclick="filterSelection('fruits')">Fruits</button>
 				<button class="btn" onclick="filterSelection('colors')">Colors</button>
 			</div>
 			<div class="filterContainer">
 				<div class="filterDiv cars">BMW</div>
-				<div class="filterDiv korob">kr-1</div>
-				<div class="filterDiv colors fruits">Orange</div>
 				<div class="filterDiv cars">Volvo</div>
 				<div class="filterDiv colors">Red</div>
-				<div class="filterDiv korob">kr-2</div>
-				<div class="filterDiv cars animals">Mustang</div>
+				<div class="filterDiv cars">Mustang</div>
 				<div class="filterDiv colors">Blue</div>
 				<div class="filterDiv animals">Cat</div>
-				<div class="filterDiv korob">kr-3</div>
-				<div class="filterDiv korob">kr-4</div>
-				<div class="filterDiv animals">Dog</div>
-				<div class="filterDiv fruits">Melon</div>
-				<div class="filterDiv fruits animals">Kiwi</div>
-				<div class="filterDiv fruits">Banana</div>
-				<div class="filterDiv fruits">Lemon</div>
-				<div class="filterDiv korob">kr-5</div>
-				<div class="filterDiv animals">Cow</div>
 			</div>
 		</div>
 	</div>
