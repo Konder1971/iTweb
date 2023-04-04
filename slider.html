@@ -246,16 +246,29 @@
 				jQuery(this).attr('src', src);
 			});
 		});
+
 		$('.slide3c').css('height', '');
-		$('.slide3c').css({
-			height: $('.slide3c').width()/1.777 + 'px'
-		});
-    $(window).resize(function(){
-      $('.slide3c').css('height', '');
+		if ($(window).width() > 599) {
 			$('.slide3c').css({
 				height: $('.slide3c').width()/1.777 + 'px'
 			});
-    });
+    } {
+			$('.slide3c').css({
+				height: $('.slide3c').width() + 'px'
+			});
+		};
+    $(window).resize(function () {
+			$('.slide3c').css('height', '');
+			if ($(window).width() > 599) {
+				$('.slide3c').css({
+					height: $('.slide3c').width()/1.777 + 'px'
+				});
+			} else {
+				$('.slide3c').css({
+					height: $('.slide3c').width() + 'px'
+				});
+			};
+		});
 	</script>
 
 </body>

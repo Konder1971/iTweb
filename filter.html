@@ -17,7 +17,7 @@
 			margin-bottom: 15px;
 		}
 		hr {
-			margin-bottom: 25px;
+			margin-bottom: 30px;
 		}
 		@media (max-width: 767.98px) {
 			.vaContainer {
@@ -118,6 +118,7 @@
 		margin-bottom: 11px;
 	}
 	.projectblock em i {
+		display: none;
 		opacity: 0;
 		font-style: normal;
 		display: -webkit-flex;
@@ -185,6 +186,19 @@
 	}
 
 	@media (min-width: 768px) {
+		.nav li {
+			cursor: pointer;
+			font-size: 20px;
+			color:#2196F3;
+		}
+		.nav li:hover,
+		.nav li.active {
+			color:#000;
+		}
+		.nav li.active {
+			cursor: default;
+		}
+
 		.projectsblocks {
 			margin-left: -10px;
 		}
@@ -355,7 +369,7 @@
 				<h2>Filter variant 2</h2>
 				<div class="nav">
 					<ul>
-						<li data-f="all">ALL</li>
+						<li data-f="all" class="active">ALL</li>
 						<li data-f="wordpress" class="text-wordpress">Wordpress</li>
 						<li data-f="javascript" class="text-javascript">Javascript</li>
 						<li data-f="html5css3" class="text-html5css3">Html5/CSS3</li>
@@ -484,21 +498,21 @@
 
 		
 
-		window.onload = function() {
-		var hhpe = document.querySelector(".pepic").offsetWidth;
-		var hpeheight;
-		hpeheight = document.querySelectorAll(".pepic");
-		for (i = 0; i < hpeheight.length; i++) {
-			hpeheight[i].style.height = hhpe + "px";
-		};
-		window.onresize = function(event) {
-			var hhpe = document.querySelector(".pepic").offsetWidth;
-			hpeheight = document.querySelectorAll(".pepic");
-			for (i = 0; i < hpeheight.length; i++) {
-				hpeheight[i].style.height = hhpe + "px";
-			}
-		}
-	}
+		// window.onload = function() {
+		// 	var hhpe = document.querySelector(".pepic").offsetWidth;
+		// 	var hpeheight;
+		// 	hpeheight = document.querySelectorAll(".pepic");
+		// 	for (i = 0; i < hpeheight.length; i++) {
+		// 		hpeheight[i].style.height = hhpe + "px";
+		// 	};
+		// 	window.onresize = function(event) {
+		// 		var hhpe = document.querySelector(".pepic").offsetWidth;
+		// 		hpeheight = document.querySelectorAll(".pepic");
+		// 		for (i = 0; i < hpeheight.length; i++) {
+		// 			hpeheight[i].style.height = hhpe + "px";
+		// 		}
+		// 	}
+		// }
 		let filterBox;
 		filterBox = document.querySelectorAll(".box");
 		document.querySelector(".nav").addEventListener("click", (event) => {
