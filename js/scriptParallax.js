@@ -1,12 +1,3 @@
-/**
- * Parallax Scrolling Tutorial
- * For NetTuts+
- *  
- * Author: Mohiuddin Parekh
- *	http://www.mohi.me
- * 	@mohiuddinparekh   
- */
-
 
 $(document).ready(function(){
 	// Кешируем объект окна
