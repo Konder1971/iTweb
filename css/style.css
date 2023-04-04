@@ -994,7 +994,9 @@ a:hover {
 	border-radius: 45px;
 	overflow: hidden;
 }
-.sliderhn-block {
+.sliderhn-block,
+.sliderhn-block:hover,
+.sliderhn-block:focus {
   position: relative;
   color: #000;
   text-decoration: none;
