@@ -17,8 +17,8 @@ body{
 }
 
 section {
-	max-width: 1200px;
-	margin: 0 auto;
+	/* max-width: 1200px;
+	margin: 0 auto; */
 }
 
 #home { 
@@ -78,6 +78,24 @@ section {
 	position: absolute;
 	top: 291px; 
 	width: 100%; 
+}
+
+
+.pText,
+.pText2 {
+	padding: 100px; position: 
+	relative; z-index: 2;
+}
+.pText {
+	background-color: #00B465;
+}
+.pText2 {
+	background-color: #65C9FD;
+}
+@media (max-width: 767.98px) {
+.vaContainer {
+	padding: 0 28px;
+}
 }
 
 
