@@ -147,7 +147,7 @@
 					</div>
 				</div>
 
-				<div class="slide3c">
+				<!-- <div class="slide3c">
 					<div class="slide3c-container">
 						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
 							<div class="myvideo">
@@ -161,7 +161,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="slide3c">
 					<div class="slide3c-container">
@@ -191,10 +191,12 @@
 
 	<div class="to-up">&uarr;</div>
 
+	
+	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
-	
+
 	<script type="text/javascript">
 		$(".slider3c").slick({
 		centerMode: true,
@@ -215,6 +217,12 @@
 				}
 			}
 		]
+		});
+		jQuery(".slider3c").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+				jQuery('iframe').each(function(){ 
+				var src = jQuery(this).attr('src');
+				jQuery(this).attr('src', src);
+			});
 		});
 		$('.slide3c').css('height', '');
 		$('.slide3c').css({

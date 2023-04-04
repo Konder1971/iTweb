@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>iTvweb filter</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+		.vaContent h2 {
+			color: #00B465;
+			margin-bottom: 15px;
+		}
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+			}
+		}
+		#myBtnContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		.btn {
+			display: block;
+			border: none;
+			border-radius: 0;
+			outline: none;
+			padding: 12px 16px;
+			margin: 0 6px 6px 0;
+			background-color: #65C9FD;
+			cursor: pointer;
+			font-size: 17px;
+		}
+		.btn:hover {
+			background-color: #2196F3;
+		}
+		.btn.active {
+			background-color: #2196F3;
+			color: white;
+		}
+		.filterContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		.filterDiv {
+			background-color: #2196F3;
+			color: #fff;
+			width: 100px;
+			height: 100px;
+			margin: 3px;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			text-align: center;
+			font-size: 18px;
+			display: none;
+		}
+		.show {
+			display: flex;
+		}
+		.filterContainer {
+			margin-top: 14px;
+			margin-left: -3px;
+			overflow: hidden;
+		}
+	</style>
+
+</head>
+<body>
+
+	<!-- top start -->
+	<div class="top">
+		<div class="top-container">
+			<div class="top-content">
+				<!-- logo start -->
+				<div class="logo">
+					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
+				</div>
+				<!-- logo stop -->
+				<!-- navigations start -->
+				<a class="nav-toggle"><span></span></a>
+				<div class="navigations">
+					<nav>
+						<ul>
+							<li>
+								<a class="navLink" href="about.html" title="">About</a>
+							</li>
+							<li>
+								<a class="navLink" href="portfolio.html" title="">Portfolio</a>
+								<div class="dropdown">
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="slider.html" title="">
+													</span>
+													<span class="text">Слайдеры/карусели</span>
+												</a>
+											</li>
+											<li>
+												<a href="video.html" title="">
+													<span class="text">Видео</span>
+												</a>
+											</li>
+											<li>
+												<a href="parallax.html" title="">
+													<span class="text">Параллакс еффект</span>
+												</a>
+											</li>
+											<li>
+												<a href="navigation.html" title="">
+													<span class="text">Навигация</span>
+												</a>
+											</li>
+											<li>
+												<a href="contactform.html" title="">
+													<span class="text">Контактная форма</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navLink" href="js.html" title="">JS разработка</a>
+								<div class="dropdown">
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="menu.html" title="">
+													</span>
+													<span class="text">Mеню</span>
+												</a>
+											</li>
+											<li>
+												<a href="popup.html" title="">
+													<span class="text">Модальное окно popup</span>
+												</a>
+											</li>
+											<li class="active">
+												<a href="filter.html" title="">
+													<span class="text">Фильтры</span>
+												</a>
+											</li>
+											<li>
+												<a href="textanima.html" title="">
+													<span class="text">Текстовые анимации</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navLink" href="contact.html" title="">Contact</a>	
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- navigations stop -->
+			</div>
+		</div>
+	</div>
+	<!-- top stop -->
+
+	<!-- block center text start -->
+	<div class="bct">
+		<div class="bct-container">
+			<div class="bct-contasnt">
+				<div class="bct-col">
+					<div class="bct-up">Filters</div>
+					<h2>
+						Фильтры и сортировка
+					</h2>
+					<p>
+						Фильтры удобный механизм выбора и сортировки нужного пользователю сайта контентаb или продукции в интернет магазине, фильтрации объявлений и новостей,и многое другое						
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- block center text stop -->
+
+
+	<div class="vaContainer">
+		<div class="vaContent">
+			<h2>Filter Elements</h2>
+			<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')">Show all</button>
+				<button class="btn" onclick="filterSelection('korob')">Korob</button>
+				<button class="btn" onclick="filterSelection('cars')">Cars</button>
+				<button class="btn" onclick="filterSelection('animals')">Animals</button>
+				<button class="btn" onclick="filterSelection('fruits')">Fruits</button>
+				<button class="btn" onclick="filterSelection('colors')">Colors</button>
+			</div>
+			<div class="filterContainer">
+				<div class="filterDiv cars">BMW</div>
+				<div class="filterDiv korob">kr-1</div>
+				<div class="filterDiv colors fruits">Orange</div>
+				<div class="filterDiv cars">Volvo</div>
+				<div class="filterDiv colors">Red</div>
+				<div class="filterDiv korob">kr-2</div>
+				<div class="filterDiv cars animals">Mustang</div>
+				<div class="filterDiv colors">Blue</div>
+				<div class="filterDiv animals">Cat</div>
+				<div class="filterDiv korob">kr-3</div>
+				<div class="filterDiv korob">kr-4</div>
+				<div class="filterDiv animals">Dog</div>
+				<div class="filterDiv fruits">Melon</div>
+				<div class="filterDiv fruits animals">Kiwi</div>
+				<div class="filterDiv fruits">Banana</div>
+				<div class="filterDiv fruits">Lemon</div>
+				<div class="filterDiv korob">kr-5</div>
+				<div class="filterDiv animals">Cow</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="to-up">&uarr;</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		filterSelection("all")
+		function filterSelection(c) {
+			var x, i;
+			x = document.getElementsByClassName("filterDiv");
+			if (c == "all") c = "";
+			for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			}
+		}
+		function w3AddClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+			}
+		}
+		function w3RemoveClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				$('.btn.active').removeClass('active');
+				this.className += " active";
+			});
+		}
+		</script>
+
+</body>
+</html>
