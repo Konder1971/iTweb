@@ -1365,8 +1365,6 @@ body {
 /* swh stop
 --------------------------------------------------- */
 
-
-
 .headerh2 {
 	color: #00B465;
 	text-align: center;
@@ -1391,3 +1389,387 @@ body {
 		margin: 0 20px 15px;
 	}
 }
+
+
+
+
+
+/* Contact page start
+--------------------------------------------------- */
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;} 
+input:-moz-placeholder      {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;} 
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #000;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #000;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #000;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #000;}
+
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+/* select start
+-------------------------------------------------------------------------- */
+.ui-selectmenu-menu {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.ui-selectmenu-open {
+  display: block;
+  z-index: 3;
+}
+.select-block {
+  display: block;
+  height: 55px;
+  position: relative;
+  z-index: 2;
+}
+.ui-selectmenu-button {
+  background-color: #fff;
+  border: 2px solid #000;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 61px 0 16px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.ui-selectmenu-icon {
+	position: absolute;
+  top: 0;
+  right: 0;
+	width: 51px!important;
+	height: 51px;
+	background-image: url(../images/sd.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	background-size: auto;
+}
+.ui-selectmenu-button {
+  display: block;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+}
+.ui-selectmenu-text {
+  display: block;
+  width: 100%!important;
+  height: 51px;
+	line-height: 51px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui-selectmenu-menu ul,
+.ui-selectmenu-menu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+.ui-selectmenu-menu .ui-menu {
+  background-color: #fff;
+  border: 2px solid #000;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+.ui-menu-item-wrapper {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.ui-menu-item:last-child .ui-menu-item-wrapper {
+  border-bottom: none;
+}
+.ui-menu-item-wrapper:hover,
+.ui-menu-item-wrapper.ui-state-active {
+  color: #00B465;
+}
+/* select stop
+-------------------------------------------------------------------------- */
+
+/* solutionsBanner start
+--------------------------------------------------- */
+.contactBanner .up {
+	color: #00B465;
+}
+.contactBanner .headerBanner-col-1 a {
+	color: #fff;
+	text-decoration: none;
+}
+.contactBanner .headerBanner-col-2  {
+}
+.contactBanner .headerBanner-col-1 a:hover {
+	color: #00B465;
+}
+.meetingBooking {
+	font-size: 16px;
+	text-align: center;
+}
+@media (min-width: 1025px) {
+	.contactBanner {
+		height: 100vh;
+	}
+	.contactBanner .headerBanner-col {
+    justify-content: flex-start;
+	}
+	.contactBanner .headerBanner-col-1 {
+		background-image: url(../images/bg-contactBanner.png);
+		background-repeat: no-repeat;
+		background-position: right 20px bottom;
+		max-width: 474px;
+		padding-right: 38px;
+		padding-top: 82px;
+	}
+	.contactBanner .up {
+		margin-bottom: 10px;
+	}
+	.contactBanner .headerBanner-col-2 {
+		width: 653px;
+		padding-top: 36px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.contactBanner .headerBanner-col-1 {
+		margin-bottom: 60px;
+	}
+	.contactBanner .headerBanner-col-2 {
+		text-align: center;
+	}
+}
+@media (max-width: 767.98px) {	
+	.contactBanner .headerBanner-col-1 {
+		margin-bottom: 40px;
+	}
+	.contactBanner .headerBanner-col-2 {
+		text-align: center;
+	}
+}
+/* contactBanner stop
+--------------------------------------------------- */
+
+.socialBox h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.socialBox ul,
+.socialBox li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.socialBox ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+.socialBox ul li {
+	margin-right: 28px;
+}
+.socialBox ul li:last-child {
+	margin-right: 0;
+}
+.socialBox li a {
+	display: block;
+	font-weight: 400;
+}
+.socialBox a svg path {
+	fill: #000;
+}
+.socialBox a:hover svg path {
+	fill: #FFF115;
+}
+@media (min-width: 1025px) {
+	.contacBox {
+		margin: 60px 0 80px;
+		padding: 0;
+	}
+	.contacBox .container {
+		margin: 0 auto;
+		max-width: 1170px;
+	}
+	.contacBox .content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.contacBox .col-1 {
+		max-width: 421px;
+		margin-right: 60px;
+	}
+	.contacBox .col-1 h2 {
+		max-width: 289px;
+	}
+	.contacBox .col-2 {
+		width: 670px;
+		min-width: 670px;
+	}
+	.socialBox h3 {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.contacBox {
+		margin: -20px 0 80px;
+	}
+	.socialBox h3 {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 767.98px) {
+	.contacBox {
+		margin: -20px 0 60px;
+		padding: 0 28px;
+	}
+	.contacBox .col-1 h2 {
+		margin-bottom: 15px;
+	}
+	.socialBox h3 {
+		font-size: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+
+.form-field {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 32px;
+}
+.form-field span:only-of-type {
+	width: 100%!important;
+} 
+
+.contactForm h3 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.contactForm input[type="text"], .contactForm input[type="email"], .contactForm input[type="submit"]{
+	background-color: #fff;
+	border: 2px solid #000;
+	color: #000;
+	line-height: 1;
+	height: 53px;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 15px;
+	width: 100%;
+}
+.contactForm input[type="submit"] {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 222px;
+	border-radius: 27px;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0;
+	cursor: pointer;
+}
+.radioBox-block {
+	font-size: 16px;
+}
+.contactForm input[type="radio"] {
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+.contactForm input[type="submit"]:hover {
+	background-color: #65C9FD;
+	border: 2px solid #65C9FD;
+}
+@media (min-width: 1025px) {
+	.form-field span:first-child {
+		width: 370px;
+	}
+	.form-field span:last-child {
+		width: 270px;
+	}
+	.radioBox {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
+	.radioBlock {
+		width: calc(33.33333% - 10px);
+		margin: 0 0 30px;
+		padding: 0 20px 0 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.contacBox .col-1 {
+		margin-bottom: 50px;
+	}
+	.form-field span:first-child {
+		width: 60%;
+	}
+	.form-field span:last-child {
+		width: 35%;
+	}
+	.radioBox {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+	.radioBlock {
+		width: calc(33.33333% - 10px);
+		margin: 0 0 30px;
+	}
+}
+@media (max-width: 767.98px) {
+	.contacBox .col-1 {
+		margin-bottom: 40px;
+	}
+	.form-field span:first-child {
+		width: 60%;
+	}
+	.form-field span:last-child {
+		width: 35%;
+	}
+	.radioBox {
+		margin-bottom: 40px;
+		margin-top: 30px;
+	}
+	.radioBlock {
+		margin: 0 0 15px;
+	}
+}
+/* Contact page stop
+--------------------------------------------------- */
