@@ -12,36 +12,19 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-		.containerBlock {
-			min-height: calc(100vh - 100px);
-			display: grid;
-			grid-template-areas:
-				"topBlock topBlock topBlock"
-				"headerBlock headerBlock headerBlock"
-				"navBlock mainBlock asideBlock"
-				"navBlock mainBlock asideBlock"
-				"footerBlock footerBlock asideBlock"
-				"subfooterBlock subfooterBlock asideBlock"
-			;
-			grid-template-rows: auto 140px 1fr auto 80px 60px;
-			grid-template-columns: 25% 1fr 25%;
-			grid-auto-rows: 60px;
-			grid-gap: 10px;
-
-			/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-
-			margin: 30px auto;
-			max-width: 920px;
-			border: 1px solid #000;
-			padding: 10px;
-		}
 		.containerBlock > * {
-			padding: 10px 15px;
+			padding: 15px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
-
+		.containerBlock {
+				display: grid;
+				grid-template-columns: 25% 1fr 25%;
+				grid-gap: 10px;
+				border: 1px solid #000;
+				padding: 10px;
+			}
 		.topBlock {
 			background-color: cornflowerblue;
 			grid-area: topBlock;
@@ -49,7 +32,6 @@
 		.navBlock {
 			background-color: darkgray;
 			grid-area: navBlock;
-			
 		}
 		.headerBlock {
 			background-color: cadetblue;
@@ -72,7 +54,45 @@
 			grid-area: subfooterBlock;
 		}
 
-		@media (max-width: 600px) {
+		@media (min-width: 1201px) {
+			.containerBlock {
+				grid-template-areas:
+					"topBlock topBlock topBlock"
+					"headerBlock headerBlock headerBlock"
+					"navBlock mainBlock asideBlock"
+					"navBlock mainBlock asideBlock"
+					"footerBlock footerBlock asideBlock"
+					"subfooterBlock subfooterBlock asideBlock"
+				;
+				grid-template-rows: auto 100px 1fr auto 80px 60px;
+				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+				font-size: 20px;
+				line-height: 30px;
+				margin-bottom: 80px;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 1200.98px) {
+			.containerBlock {
+				grid-template-areas:
+					"headerBlock headerBlock headerBlock"
+					"topBlock topBlock topBlock"
+					"asideBlock navBlock mainBlock"
+					"asideBlock navBlock mainBlock"
+					"asideBlock footerBlock footerBlock"
+					"subfooterBlock subfooterBlock subfooterBlock"
+				;
+				grid-template-rows: auto 100px 1fr auto 60px 60px;
+				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+				font-size: 20px;
+				line-height: 30px;
+				margin-bottom: 80px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+				margin-bottom: 40px;
+			}
 			.containerBlock {
 				grid-template-areas:
 					"asideBlock subfooterBlock subfooterBlock"
@@ -83,19 +103,10 @@
 				;
 				grid-template-rows: auto 80px auto 1fr auto;
 				grid-template-columns: 25% 1fr 25%;
-
 				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-
-				min-height: calc(100vh - 42px);
-				margin: 10px;
-
-			}
-		}
-
-		@media (max-width: 767.98px) {
-			.vaContainer {
-				padding: 0 28px;
-				margin-bottom: 40px;
+				font-size: 18px;
+				line-height: 23px;
+				margin-bottom: 80px;
 			}
 		}
 	</style>
@@ -127,6 +138,11 @@
 									<div class="dropdown-col-2">
 										<ul>
 											<li>
+												<a class="active" href="grid.html" title="">
+													CSS Grid Layout
+												</a>
+											</li>
+											<li>
 												<a href="slider.html" title="">
 													</span>
 													<span class="text">Слайдеры/карусели</span>
@@ -145,16 +161,6 @@
 													<li><a href="p1.html" title="">Обычный параллах</a></li>
 													<li><a href="p2.html" title="">Параллах Шторка</a></li>
 												</ul>
-											</li>
-											<li>
-												<a class="active" href="grid.html" title="">
-													CSS Grid Layout
-												</a>
-											</li>
-											<li>
-												<a href="navigation.html" title="">
-													<span class="text">Навигация</span>
-												</a>
 											</li>
 											<li>
 												<a href="navigation.html" title="">
@@ -222,7 +228,10 @@
 						CSS Grid Layout
 					</h2>
 					<p>
-						
+						Блоки меняются мкстами на следующих разрешениях экрана:<br />
+						@media (min-width: 1201px)<br />
+						@media (min-width: 768px) and (max-width: 1200.98px)<br />
+						@media (max-width: 767.98px)
 					</p>
 				</div>
 			</div>
