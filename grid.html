@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>iTvweb parallax</title>
+	<title>iTvweb CSS Grid Layout</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
@@ -12,12 +12,92 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-	@media (max-width: 767.98px) {
-		.vaContainer {
-			padding: 0 28px;
-			margin-bottom: 40px;
+		.containerBlock {
+			min-height: calc(100vh - 100px);
+			display: grid;
+			grid-template-areas:
+				"topBlock topBlock topBlock"
+				"headerBlock headerBlock headerBlock"
+				"navBlock mainBlock asideBlock"
+				"navBlock mainBlock asideBlock"
+				"footerBlock footerBlock asideBlock"
+				"subfooterBlock subfooterBlock asideBlock"
+			;
+			grid-template-rows: auto 140px 1fr auto 80px 60px;
+			grid-template-columns: 25% 1fr 25%;
+			grid-auto-rows: 60px;
+			grid-gap: 10px;
+
+			/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+
+			margin: 30px auto;
+			max-width: 920px;
+			border: 1px solid #000;
+			padding: 10px;
 		}
-	}
+		.containerBlock > * {
+			padding: 10px 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.topBlock {
+			background-color: cornflowerblue;
+			grid-area: topBlock;
+		}
+		.navBlock {
+			background-color: darkgray;
+			grid-area: navBlock;
+			
+		}
+		.headerBlock {
+			background-color: cadetblue;
+			grid-area: headerBlock;
+		}
+		.asideBlock {
+			background-color: blueviolet;
+			grid-area: asideBlock;
+		}
+		.mainBlock {
+			background-color: burlywood;
+			grid-area: mainBlock;
+		}
+		.footerBlock {
+			background-color: chocolate;
+			grid-area: footerBlock;
+		}
+		.subfooterBlock {
+			background-color: brown;
+			grid-area: subfooterBlock;
+		}
+
+		@media (max-width: 600px) {
+			.containerBlock {
+				grid-template-areas:
+					"asideBlock subfooterBlock subfooterBlock"
+					"asideBlock headerBlock headerBlock"
+					"asideBlock navBlock footerBlock"
+					"mainBlock mainBlock footerBlock"
+					"topBlock topBlock topBlock"
+				;
+				grid-template-rows: auto 80px auto 1fr auto;
+				grid-template-columns: 25% 1fr 25%;
+
+				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+
+				min-height: calc(100vh - 42px);
+				margin: 10px;
+
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+				margin-bottom: 40px;
+			}
+		}
 	</style>
 
 </head>
@@ -58,7 +138,7 @@
 												</a>
 											</li>
 											<li>
-												<a class="active" href="parallax.html" title="">
+												<a href="parallax.html" title="">
 													<span class="text">Параллакс еффект</span>
 												</a>
 												<ul class="subNuv">
@@ -67,8 +147,13 @@
 												</ul>
 											</li>
 											<li>
-												<a href="grid.html" title="">
+												<a class="active" href="grid.html" title="">
 													CSS Grid Layout
+												</a>
+											</li>
+											<li>
+												<a href="navigation.html" title="">
+													<span class="text">Навигация</span>
 												</a>
 											</li>
 											<li>
@@ -132,12 +217,12 @@
 		<div class="bct-container">
 			<div class="bct-contasnt">
 				<div class="bct-col">
-					<div class="bct-up">Parallax</div>
+					<div class="bct-up">CSS Grid</div>
 					<h2>
-						Параллакс эффект
+						CSS Grid Layout
 					</h2>
 					<p>
-						О прокрутке параллакс заговорили более 10 лет назад, и он сразу получил широкое распространение и стал популярен. С развитием HTML и CSS стало гораздо проще создавать более интересные и запоминающиеся элементы для оформления интернет-страниц, в том числе и лендингов.
+						
 					</p>
 				</div>
 			</div>
@@ -147,9 +232,15 @@
 
 	<div class="vaContainer">
 		<div class="vaContent">
-			<p>Приведу два примера параллах эфекта, обычный(типичный) параллах эффект, а также паралакс эффект типа вертикальная Шторка</p>
-			<p><a href="p1.html" title="">Обычный параллах</a></p>
-			<p><a href="p2.html" title="">Параллах вертикальная Шторка</a></p>
+			<div class="containerBlock">
+				<div class="topBlock">Top Block</div>
+				<div class="headerBlock">Header Block</div>
+				<div class="navBlock">Nav Block</div>
+				<div class="mainBlock">Main Block</div>
+				<div class="asideBlock">Aside Block</div>
+				<div class="footerBlock">Footer Block</div>
+				<div class="subfooterBlock">Subfooter Block</div>
+			</div>
 		</div>
 	</div>
 
