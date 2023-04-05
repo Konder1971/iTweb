@@ -178,7 +178,7 @@ body {
 }
 
 a {
-	color: #00B465;
+	color: #009B85;
 	text-decoration: none;
 }
 a:hover {
@@ -424,12 +424,16 @@ a:hover {
 		font-size: 20px;
 		font-weight: 500;
 	}
-	.navigations .dropdown ul li:hover a,
-	.navigations .dropdown ul li.active a {
+	.navigations .dropdown ul li a:hover,
+	.navigations .dropdown ul li a.active {
 		color: #fff;
 	}
-	.navigations .dropdown ul li.active a {
+	.navigations .dropdown ul li a.active {
 		cursor: default;
+	}
+
+	.navigations .dropdown ul li ul.subNuv li {
+		margin: 25px 0 0 15px;
 	}
 }
 @media (min-width: 1025px) and (max-width: 1100px) {
@@ -668,6 +672,13 @@ a:hover {
 .bct {
 	text-align: center;
 }
+.bct p a svg {
+	fill: #009B85;
+}
+.bct p a:hover svg,
+.bct p a:focus svg {
+	fill: #f00;
+}
 @media (min-width: 768px) {
 	.bct {
 		padding: 0 60px;
@@ -693,6 +704,13 @@ a:hover {
 		line-height: 34px;
 		margin-bottom: 20px;
 	}
+	.bct p a svg {
+		width: 11px;
+		height: auto;
+		position: relative;
+		top: 1px;
+		margin-left: 1px;
+	}
 }
 @media (max-width: 767.98px) {	
 	.bct {
@@ -714,6 +732,13 @@ a:hover {
 		font-size: 18px;
 		line-height: 28px;
 		margin: 0 auto 20px;
+	}
+	.bct p a svg {
+		width: 11px;
+		height: auto;
+		position: relative;
+		top: 1px;
+		margin-left: 1px;
 	}
 }
 /* block center text stop
