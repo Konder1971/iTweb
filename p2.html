@@ -18,7 +18,6 @@
 		html,
 		body {
 			height: 100%;
-			margin: 0;
 		}
 
 		h1 {
@@ -188,9 +187,7 @@
 					<h2>
 						Параллах вертикальная Шторка
 					</h2>
-					<p>
-						
-					</p>
+					<p><a href="p1.html" title="">Обычный параллах</a></p>
 				</div>
 			</div>
 		</div>
@@ -198,38 +195,53 @@
 	<!-- block center text stop -->
 
 
-
-			<section id="one">
-				<div class=“inner”>
-					<h1>ScrollMagic Tutorial</h1>
-					<p>Learn how to <strong>pin elements</strong>.</p>
-				</div>
-			</section>
-			<section id="two">
-				<div class=“inner”>
-					<h1>ScrollMagic Tutorial</h1>
-					<p>Learn how to create a <strong>ScrollMagic scene</strong>.</p>
-				</div>
-			</section>
-			<section id="three">
-				<div class=“inner”>
-					<h1>ScrollMagic Tutorial</h1>
-					<p>Learn how to customize debug <strong>indicators</strong>.</p>
-				</div>
-			</section>
-			<section id="four">
-				<div class=“inner”>
-					<h1>ScrollMagic Tutorial</h1>
-					<p>Learn how to toggle classes using <strong>setClassToggle</strong>.</p>
-				</div>
-			</section>
+	<section id="one">
+		<div class=“inner”>
+			<h1>ScrollMagic Tutorial</h1>
+			<p>Learn how to <strong>pin elements</strong>.</p>
+		</div>
+	</section>
+	<section id="two">
+		<div class=“inner”>
+			<h1>ScrollMagic Tutorial</h1>
+			<p>Learn how to create a <strong>ScrollMagic scene</strong>.</p>
+		</div>
+	</section>
+	<section id="three">
+		<div class=“inner”>
+			<h1>ScrollMagic Tutorial</h1>
+			<p>Learn how to customize debug <strong>indicators</strong>.</p>
+		</div>
+	</section>
+	<section id="four">
+		<div class=“inner”>
+			<h1>ScrollMagic Tutorial</h1>
+			<p>Learn how to toggle classes using <strong>setClassToggle</strong>.</p>
+		</div>
+	</section>
 
 
 	<div class="to-up">&uarr;</div>
 
 	<script src="js/jquery-3.6.1.js"></script>
   <script src="js/ScrollMagic.js"></script>
-  <script src="js/p2.js"></script>
+  <!-- <script src="js/p2.js"></script> -->
+	<script>
+		(function($) {
+			const ctrl = new ScrollMagic.Controller({
+				globalSceneOptions: {
+					triggerHook: 'onLeave'
+				}
+			})
+			$('section').each(function() {
+				new ScrollMagic.Scene({
+					triggerElement: this
+				})
+					.setPin(this)
+					.addTo(ctrl)
+			})
+		})(jQuery)
+	</script>
 
 </body>
 </html>
