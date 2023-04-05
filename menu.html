@@ -19,8 +19,14 @@
 		}
     .vm {
       margin: -10px auto 60px;
-      max-width: 300px;
+      max-width: 318px;
     }
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+				margin-bottom: 40px;
+			}
+		}
     .subUl {
       display: none;
     }
@@ -186,7 +192,8 @@
 						Вертикальная раскрывающаяся навигация при клике
 					</h2>
 					<p>
-						 через 5 секунд после загрузки вон страницм автоматически изменится
+						На чистом JavaScript<br />
+						 Через 5 секунд после загрузки вон страницм автоматически изменится
 					</p>
 				</div>
 			</div>
@@ -197,7 +204,6 @@
 
 	<div class="vaContainer">
 		<div class="vaContent">
-			
 			<div class="vm">
 				<ul class="vmUl">
 					<li class="parent">
@@ -227,7 +233,6 @@
 					</li>
 				</ul>
 			</div>		
-
 		</div>
 	</div>
 
@@ -237,10 +242,8 @@
 	<script src="js/main.js"></script>
 
 	<script>
-
     let parent = document.querySelectorAll('.parent')
     let linkdown = document.querySelectorAll('.parent > a')
-
     for(let i=0; i < linkdown.length; i++) {
       linkdown[i].onclick = function(e) {
       e.preventDefault()
@@ -254,10 +257,8 @@
         }
       }
     }
-
     document.body.style.backgroundColor = "burlywood";
     setTimeout(() => document.body.style.backgroundColor = "cadetblue", 5000);
-
   </script>
 
 </body>
