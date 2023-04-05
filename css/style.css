@@ -177,11 +177,12 @@ body {
 	opacity: .8;
 }
 
-a {
+.bct a {
 	color: #009B85;
 	text-decoration: none;
 }
-a:hover {
+.bct a:hover,
+.bct a:hover:focus {
 	color: #f00;
 }
 @media (min-width: 768px) {
@@ -599,7 +600,7 @@ a:hover {
 		font-size: 20px;
 		font-weight: 600;
 	}
-	.navigations .dropdown ul li.active a {
+	.navigations .dropdown ul li a.active {
 		color: #00B465;
 		cursor: default;
 	}
