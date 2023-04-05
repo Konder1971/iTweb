@@ -9,7 +9,7 @@
 		if ($('.nav-toggle').hasClass('active')) {
 			$('.nav-toggle.active').removeClass('active');
 			$('.navigations.active').removeClass('active');
-			$('.navLink.active').removeClass('active');
+			$('.navlink.active').removeClass('active');
 		}
 		else {
 			$('.nav-toggle').addClass('active');
@@ -18,12 +18,12 @@
 	});
 
 
-	let parent = document.querySelectorAll('.navLink')
+	let parent = document.querySelectorAll('.navlink')
 	//let linkdown = document.querySelectorAll('.dropdown')
-	if($(window).width() < 1024) {
+	if($(window).width() < 1025) {
 		for(let i=0; i < parent.length; i++) {
 		  parent[i].onclick = function(e) {
-		  e.preventDefault()
+		  // e.preventDefault()
 		  if( parent[i].classList.contains('active') ) {
 			parent[i].classList.remove('active')
 		  } else {
@@ -43,10 +43,10 @@
 		}
 	};
 	$(window).resize(function() {
-		if($(window).width() < 1024) {
+		if($(window).width() < 1025) {
 			for(let i=0; i < parent.length; i++) {
 				parent[i].onclick = function(e) {
-				e.preventDefault()
+				// e.preventDefault()
 				if( parent[i].classList.contains('active') ) {
 					parent[i].classList.remove('active')
 				} else {

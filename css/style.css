@@ -275,6 +275,10 @@ body {
 .navigations .dropdown ul li a:focus svg  {
 	fill: #00B465;
 }
+.navlink.activeNav {
+	color: #00B465;
+	cursor: default;
+}
 @media (min-width: 1025px) {
 	.nav-toggle {
 		display: none;
@@ -313,14 +317,14 @@ body {
 		display: flex;
 		align-items: center;
 	}
-	.navLink {
+	.navlink {
 		color: #fff;
 		font-size: 18px;
 		line-height: 1;
 		text-transform: uppercase;
 		display: block;
 	}
-	.navLink:hover {
+	.navlink:hover {
 		color: #00B465;
 	}
 
@@ -479,7 +483,7 @@ body {
 	.navigations.active {
 		top: 93px;
 	}
-	.navLink {
+	.navlink {
 		font-size: 26px;
 		line-height: 39px;
 		margin-bottom: 20px;
@@ -548,14 +552,14 @@ body {
 	.dropdown-col-1 {
 		display: none;
 	}
-	.navLink {
+	.navlink {
 		display: block;
 		font-weight: 600;
 		color: #000;
 		position: relative;
 		padding-right: 40px;
 	}
-	.navLink:before {
+	.navlink:before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -573,16 +577,16 @@ body {
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
-	.navLink:last-child:before{
+	.navlink:last-child:before{
 		display:none;
 	}
-	.navLink.active:before {
+	.navlink.active:before {
 		background-image: url(../images/up.svg);
 	}
 	.navigations .dropdown {
 		display: none;
 	}
-	.navigations .navLink.active + .dropdown {
+	.navigations .navlink.active + .dropdown {
 		display: block;
 	}
 	.navigations .dropdown ul {
@@ -603,6 +607,10 @@ body {
 	.navigations .dropdown ul li a.active {
 		color: #00B465;
 		cursor: default;
+	}
+
+	.navlink {
+		cursor: pointer;
 	}
 }
 @media (max-width: 767.98px) {
@@ -642,7 +650,7 @@ body {
 	.navigations.active {
 		top: 81px;
 	}
-	.navLink {
+	.navlink {
 		font-size: 29px;
 		line-height: 33px;
 		margin-bottom: 20px;
