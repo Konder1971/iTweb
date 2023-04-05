@@ -13,10 +13,72 @@
 
 	<style type="text/css">
 	@media (max-width: 767.98px) {
-		.vaContainer {
-			padding: 0 28px;
-		}
 	}
+		/* Сделаем элемент body во всю высоту окна */
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+		}
+
+		h1 {
+			padding: 20% 0 0 0;
+			margin: 0;
+			text-align: center;
+			font-size: 40px;
+		}
+
+		p {
+			text-align: center;
+			color: #fff;
+		}
+
+		/* Сделаем высоту каждой секции равной высоте окна */
+		section {
+			height: 100%;
+			color: white;
+			position: relative;
+			text-align: center;
+		}
+
+		/* Разместим контент по центру секций */
+		section .inner {
+			margin: 0 auto;
+			max-width: 85%;
+		}
+
+		/* Фоновые цвета для каждой секции */
+		section#one {
+			background-color: #0089cd;
+			background-image: url(images/p.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		section#two {
+			background-color: #ccc;
+			background-image: url(images/p22.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		section#three {
+			background-color: #c00;
+			background-image: url(images/p36.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		section#four {
+			background-color: #222;
+			background-image: url(images/4.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
 	</style>
 
 </head>
@@ -135,13 +197,39 @@
 	</div>
 	<!-- block center text stop -->
 
-	<div class="vaContainer">
-		<div class="vaContent">
 
-		</div>
-	</div>
+
+			<section id="one">
+				<div class=“inner”>
+					<h1>ScrollMagic Tutorial</h1>
+					<p>Learn how to <strong>pin elements</strong>.</p>
+				</div>
+			</section>
+			<section id="two">
+				<div class=“inner”>
+					<h1>ScrollMagic Tutorial</h1>
+					<p>Learn how to create a <strong>ScrollMagic scene</strong>.</p>
+				</div>
+			</section>
+			<section id="three">
+				<div class=“inner”>
+					<h1>ScrollMagic Tutorial</h1>
+					<p>Learn how to customize debug <strong>indicators</strong>.</p>
+				</div>
+			</section>
+			<section id="four">
+				<div class=“inner”>
+					<h1>ScrollMagic Tutorial</h1>
+					<p>Learn how to toggle classes using <strong>setClassToggle</strong>.</p>
+				</div>
+			</section>
+
 
 	<div class="to-up">&uarr;</div>
+
+	<script src="js/jquery-3.6.1.js"></script>
+  <script src="js/ScrollMagic.js"></script>
+  <script src="js/p2.js"></script>
 
 </body>
 </html>
