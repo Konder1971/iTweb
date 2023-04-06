@@ -12,41 +12,27 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-	@media (max-width: 767.98px) {
-	}
-		/* Сделаем элемент body во всю высоту окна */
 		html,
 		body {
 			height: 100%;
 		}
-
-		h1 {
+		h2 {
 			padding: 20% 0 0 0;
 			margin: 0;
 			text-align: center;
 			font-size: 40px;
 		}
-
 		section p {
 			text-align: center;
 			color: #fff;
 		}
-
-		/* Сделаем высоту каждой секции равной высоте окна */
 		section {
 			height: 100%;
-			color: white;
+			color: #fff;
 			position: relative;
 			text-align: center;
 		}
 
-		/* Разместим контент по центру секций */
-		section .inner {
-			margin: 0 auto;
-			max-width: 85%;
-		}
-
-		/* Фоновые цвета для каждой секции */
 		section#one {
 			background-color: #0089cd;
 			background-image: url(images/p.jpg);
@@ -54,7 +40,6 @@
 			background-size: cover;
 			background-position: center;
 		}
-
 		section#two {
 			background-color: #ccc;
 			background-image: url(images/p22.jpg);
@@ -62,7 +47,6 @@
 			background-size: cover;
 			background-position: center;
 		}
-
 		section#three {
 			background-color: #c00;
 			background-image: url(images/p36.jpg);
@@ -70,13 +54,27 @@
 			background-size: cover;
 			background-position: center;
 		}
-
 		section#four {
 			background-color: #222;
 			background-image: url(images/4.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
+		}
+
+		@media (min-width: 768px) {
+			.inner {
+				margin: 0 auto;
+				max-width: 700px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			section {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: center;
+			}
 		}
 	</style>
 
@@ -208,27 +206,27 @@
 
 
 	<section id="one">
-		<div class=“inner”>
-			<h1>ScrollMagic Tutorial</h1>
-			<p>Learn how to <strong>pin elements</strong>.</p>
+		<div class="inner">
+			<h2>Section 1</h2>
+			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
 		</div>
 	</section>
 	<section id="two">
-		<div class=“inner”>
-			<h1>ScrollMagic Tutorial</h1>
-			<p>Learn how to create a <strong>ScrollMagic scene</strong>.</p>
+		<div class="inner">
+			<h2>Section 2</h2>
+			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
 		</div>
 	</section>
 	<section id="three">
-		<div class=“inner”>
-			<h1>ScrollMagic Tutorial</h1>
-			<p>Learn how to customize debug <strong>indicators</strong>.</p>
+		<div class="inner">
+			<h2>ScrollMagic Tutorial</h2>
+			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
 		</div>
 	</section>
 	<section id="four">
-		<div class=“inner”>
-			<h1>ScrollMagic Tutorial</h1>
-			<p>Learn how to toggle classes using <strong>setClassToggle</strong>.</p>
+		<div class="inner">
+			<h2>Section 3</h2>
+			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
 		</div>
 	</section>
 
