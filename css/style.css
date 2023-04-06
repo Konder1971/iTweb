@@ -1773,10 +1773,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		margin-bottom: 40px;
 	}
 	.form-field span:first-child {
-		width: 60%;
+		width: 46%;
 	}
 	.form-field span:last-child {
-		width: 35%;
+		width: 46%;
 	}
 	.radioBox {
 		margin-bottom: 40px;
