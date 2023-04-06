@@ -1473,6 +1473,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+	font-size: 18px;
 }
 .ui-selectmenu-menu ul,
 .ui-selectmenu-menu li {
@@ -1488,9 +1489,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	-moz-border-radius: 5px;
   border-radius: 5px;
   padding: 10px 0;
+	font-size: 18px;
 }
 .ui-menu-item-wrapper {
-  padding: 0 10px;
+  padding:0 10px 10px;
+	font-size: 18px;
   cursor: pointer;
 }
 .ui-menu-item:last-child .ui-menu-item-wrapper {
@@ -1690,7 +1693,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	line-height: 1;
 	height: 53px;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 18px;
 	padding: 0 15px;
 	width: 100%;
 }
