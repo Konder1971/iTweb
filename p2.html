@@ -25,6 +25,10 @@
 			color: #fff;
 		}
 		section {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
 			height: 100%;
 			color: #fff;
 			position: relative;
@@ -47,32 +51,27 @@
 		}
 		section#three {
 			background-color: #c00;
-			background-image: url(images/p36.jpg);
+			background-image: url(images/p5.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
 		section#four {
 			background-color: #222;
-			background-image: url(images/4.jpg);
+			background-image: url(images/p21.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
-
 		@media (min-width: 768px) {
 			.inner {
 				margin: 0 auto;
 				max-width: 700px;
 			}
 		}
+		@media (min-width: 768px) and (max-width: 1024px) {
+		}
 		@media (max-width: 767.98px) {
-			section {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: nowrap;
-				justify-content: center;
-			}
 		}
 	</style>
 
