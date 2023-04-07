@@ -17,11 +17,9 @@
 			height: 100%;
 		}
 		h2 {
-			text-align: center;
 			font-size: 40px;
 		}
 		section p {
-			text-align: center;
 			color: #fff;
 		}
 		section {
@@ -29,49 +27,61 @@
 			flex-direction: column;
 			flex-wrap: nowrap;
 			justify-content: center;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 			height: 100%;
-			color: #fff;
 			position: relative;
 			text-align: center;
 		}
-
 		section#one {
 			background-color: #0089cd;
 			background-image: url(images/p.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
 		}
 		section#two {
 			background-color: #ccc;
 			background-image: url(images/p22.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
 		}
 		section#three {
 			background-color: #c00;
 			background-image: url(images/p36.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
 		}
 		section#four {
 			background-color: #222;
 			background-image: url(images/p21.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
+		}
+		.inner {
+			background-color: rgba(0,0,0,.6);
+			color: #fff;
+			text-align: center;
+		}
+		.inner p {
+			margin-bottom: 0;
 		}
 		@media (min-width: 768px) {
+			section#four {
+				background-position: center top;
+			}
 			.inner {
 				margin: 0 auto;
+				padding: 30px 20px;
 				max-width: 700px;
 			}
 		}
 		@media (min-width: 768px) and (max-width: 1024px) {
 		}
 		@media (max-width: 767.98px) {
+			section {
+				background-position: center center;
+			}
+			.inner {
+				margin: 0 auto;
+				padding: 30px 20px;
+				margin: 0 28px;
+			}
 		}
 	</style>
 
