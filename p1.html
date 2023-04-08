@@ -264,8 +264,8 @@
 
 	<!-- Раздел #1 -->
 	<section id="home" data-speed="10" data-type="background">
-		<article class="article-1">
-			<h2 data-type="position">Section 1</h2>
+		<article data-type="position" data-speed="-10">
+			<h2>Section 1</h2>
 			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
 		</article>
 	</section>
@@ -282,7 +282,7 @@
 	<!-- Раздел #2 -->
 	<section id="about" data-speed="-10" data-type="background">
 		<article>
-			<h2 data-type="position">Section 2</h2>
+			<h2>Section 2</h2>
 			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
 		</article>
 	</section>
@@ -361,18 +361,31 @@
 			});	
 		});
 
-		// $(document).ready(function () {
-		// 	$('article h2[data-type="position"]').each(function () {
-		// 		let $bgobj2 = $(this);
-		// 		$(window).scroll(function () {
-		// 			let yPos2 = ($window.scrollTop() / $bgobj2.data('speed'));
-		// 			$bgobj2.css({
-		// 				position: 'relative',
-		// 				top: `${yPos2}` + 'px'
-		// 			});
-		// 		});
-		// 	});
-		// });
+		$(document).ready(function () {
+			$('article[data-type="position"]').each(function () {
+				var $bgobj2 = $(this);
+				$(window).scroll(function () {
+					var yPos2 = ($window.scrollTop() * 6 / $bgobj2.data('speed'));
+					$bgobj2.css({
+						position: 'relative',
+						top: `${yPos2}` + 'px'
+					});
+				});
+			});
+		});
+
+		$(document).ready(function () {
+			$('article h2[data-type="positionh"]').each(function () {
+				var $bgobj3 = $(this);
+				$(window).scroll(function () {
+					var yPos3 = ($window.scrollTop() * 6 / $bgobj3.data('speed'));
+					$bgobj3.css({
+						position: 'relative',
+						top: `${yPos3}` + 'px'
+					});
+				});
+			});
+		});
 		
 	</script>
 	<script src="js/main.js"></script>
