@@ -36,13 +36,12 @@
 			margin: 0 auto; 
 			width: 100%;
 			max-width: 100vw;
-			display:table;
 			position: relative;
-			/* display: flex;
+			display: flex;
 			flex-direction: column;
 			flex-wrap: nowrap;
 			justify-content: center;
-			align-items: center; */
+			align-items: center;
 		}
 		#home { 
 			background-image: url(images/p33.jpg);
@@ -263,7 +262,7 @@
 	</div>
 
 	<!-- Раздел #2 -->
-	<section id="about" data-speed="10" data-type="background">
+	<section id="about">
 		<article data-type="position">
 			<h2 data-type="position">Section 2</h2>
 			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
@@ -293,7 +292,7 @@
 
 	<script src="js/jquery-3.6.1.min.js"></script>
 	<script src="js/SmoothScroll.min.js"></script>
-	<script src="js/scriptParallax.js"></script>
+	<!-- <script src="js/scriptParallax.js"></script> -->
 	<script>
 
 		/* вариант для скролла */
@@ -332,6 +331,37 @@
 			// Поддержка тачпада
 			touchpadSupport: true,
 		})
+
+		$(document).ready(function(){
+	// Кешируем объект окна
+	$window = $(window);
+                
+   $('section[data-type="background"]').each(function(){
+     var $bgobj = $(this); // Назначаем объект
+                    
+      $(window).scroll(function() {
+                    
+		// Прокручиваем фон со скоростью var.
+		// Значение yPos отрицательное, так как прокручивание осуществляется вверх!
+		var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+		
+		// Размещаем все вместе в конечной точке
+		var coords = '50% '+ yPos + 'px';
+
+		// Смещаем фон
+		$bgobj.css({ backgroundPosition: coords });
+		
+	}); 
+
+ });	
+
+}); 
+/* 
+ * Создаем элементы HTML5 для IE
+ */
+
+document.createElement("article");
+document.createElement("section");
 
 		$(document).ready(function () {
 			$('article h2[data-type="position"]').each(function () {
