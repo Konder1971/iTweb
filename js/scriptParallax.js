@@ -26,6 +26,5 @@ $(document).ready(function(){
 /* 
  * Создаем элементы HTML5 для IE
  */
-
 document.createElement("article");
 document.createElement("section");
