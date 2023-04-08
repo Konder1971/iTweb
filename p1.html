@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>iTvweb parallax</title>
@@ -8,235 +12,254 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
-
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/mainparallax.css">
-	<script src="js/vendor/modernizr-2.7.1.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<script src="js/jquery-3.6.1.min.js"></script>
 
 	<style type="text/css">
-		.back-link a {
-			color: #4ca340;
-			text-decoration: none; 
-			border-bottom: 1px #4ca340 solid;
-		}
-		.back-link a:hover,
-		.back-link a:focus {
-			color: #408536; 
-			text-decoration: none;
-			border-bottom: 1px #408536 solid;
-		}
-		h1 {
-			height: 100%;
-			/* The html and body elements cannot have any padding or margin. */
+		body {
 			margin: 0;
-			font-size: 14px;
-			font-family: 'Open Sans', sans-serif;
-			color: #1c1d1e;
-			font-size: 32px;
-			margin-bottom: 3px;
-		}
-		h2 {
-			color: #1c1d1e;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: normal;
+			padding: 0;
+			width: 100%;
 		}
 
-		@media (min-width: 768px) {
+		h1 {
+			font-family: "Arvo";
+			font-weight: normal;
+			font-size: 55px;
+			text-align: center;
+			color: #fff;
+			margin: 0;
+			padding: 0;
 		}
-		@media (max-width: 767.98px) {
+
+		h2 {
+			font-family: "Arvo";
+			font-weight: normal;
+			font-size: 40px;
+			text-align: center;
+			color: #fff;
+			margin: 0;
+			padding: 0;
 		}
+
+		h3 {
+			font-family: Oswald;
+			font-weight: normal;
+			font-size: 16px;
+			text-align: center;
+			margin: 5px 0;
+			padding: 0;
+			z-index: 1;
+			position: relative;
+		}
+
+		.center {
+			margin: 0 auto;
+		}
+
+		.content {
+			margin: 0 auto;
+			width: 100%;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		.quotes {
+			font-family: 'Goudy Bookletter 1911', serif;
+			font-weight: normal;
+			font-size: 30px;
+			text-align: left;
+			margin: 50px auto;
+		}
+
+		.author_name_white {
+			font-family: "Wellfleet";
+			margin: 70px 0 0 75px;
+			color: #fff;
+			font-size: 20px;
+		}
+
+		.author_name_gray {
+			font-family: "Wellfleet";
+			margin: 70px 0 0 75px;
+			color: #94a4a4;
+			font-size: 20px;
+		}
+
+		.quotes_container {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		#christmas_tree {
+			background: url(images/p21.jpg) no-repeat;
+			width: 48px;
+			height: 77px;
+			margin: 0 auto;
+			position: relative;
+			bottom: -35px;
+		}
+
+		#divider {
+			background: url(images/p22.jpg) no-repeat;
+			width: 100%;
+			height: 35px;
+			margin: 0px auto 27px auto;
+		}
+
+		#ribbon {
+			background: url(images/p.jpg) no-repeat;
+			width: 251px;
+			height: 48px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+			top: -38px;
+		}
+
+		#snowflakes1 {
+			background: url(images/p15.png) no-repeat;
+			width: 24px;
+			height: 21px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+			bottom: -54px;
+			left: -102px;
+		}
+
+		#snowflakes2 {
+			background: url(images/p33.jpg) no-repeat;
+			width: 24px;
+			height: 21px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+			bottom: -33px;
+			right: -100px;
+		}
+
+		#slide1,
+		#slide2 {
+			width: 100%;
+		}
+
+		#slide1 {
+			background: url(images/p.jpg) 50% 0 no-repeat fixed;
+			color: #fff;
+			height: 600px;
+			margin: 0;
+			padding: 200px 0 260px 0;
+			background-size: cover;
+		}
+
+		#slide2 {
+			background-color: #fff;
+			color: #333333;
+			height: 300px;
+			margin: 0 auto;
+			overflow: hidden;
+			padding: 200px 0;
+		}
+
+		#slide3 {
+			background: url(images/p33.jpg) 50% 0 no-repeat fixed;
+			color: #fff;
+			height: 600px;
+			padding: 170px 0 0 0;
+			background-size: cover;
+		}
+
+		#slide4 {
+			background-color: #fff;
+			color: #333333;
+			height: 300px;
+			padding: 200px 0;
+		}
+
+		#slide5 {
+			background: url(images/p22.jpg) 50% 0 no-repeat fixed;
+			height: 200px;
+			margin: 0 auto;
+			padding: 250px 0;
+			color: #fff;
+			background-size: cover;
+		}
+
+		@media (min-width: 768px) {}
+
+		@media (max-width: 767.98px) {}
 	</style>
 
+	<script>
+$('html, body').animate({scrollTop: targetOffset}, 1000);
+
+	</script>
+
 </head>
-<body class="loading">
-	<!--[if lt IE 7]>
-			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-	<![endif]-->
 
-	<!-- top start -->
-	<div class="top">
-		<div class="top-container">
-			<div class="top-content">
-				<!-- logo start -->
-				<div class="logo">
-					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
-				</div>
-				<!-- logo stop -->
-				<!-- navigations start -->
-				<a class="nav-toggle"><span></span></a>
-				<div class="navigations">
-					<nav>
-						<ul>
-							<li>
-								<a class="navlink" href="about.html" title="">About</a>
-							</li>
-							<li>
-								<a class="navlink">Portfolio</a>
-								<div class="dropdown">
-									<div class="dropdown-col-2">
-										<ul>
-											<li>
-												<a href="grid.html" title="">
-													CSS Grid Layout
-												</a>
-											</li>
-											<li>
-												<a href="slider.html" title="">
-													</span>
-													<span class="text">Слайдеры/карусели</span>
-												</a>
-											</li>
-											<li>
-												<a href="video.html" title="">
-													<span class="text">Видео</span>
-												</a>
-											</li>
-											<li>
-												<a href="parallax.html" title="">
-													<span class="text">Параллакс эффект</span>
-												</a>
-												<ul class="subNuv">
-													<li><a class="active" href="p1.html" title="">Обычный параллах</a></li>
-													<li><a href="p2.html" title="">Параллах Шторка</a></li>
-												</ul>
-											</li>
-											<li>
-												<a href="contactform.html" title="">
-													<span class="text">Контактная форма</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a class="navlink">JS разработка</a>
-								<div class="dropdown">
-									<div class="dropdown-col-2">
-										<ul>
-											<li>
-												<a href="menu.html" title="">
-													</span>
-													<span class="text">Навигация</span>
-												</a>
-											</li>
-											<li>
-												<a href="popup.html" title="">
-													<span class="text">Модальное окно popup</span>
-												</a>
-											</li>
-											<li>
-												<a href="filter.html" title="">
-													<span class="text">Фильтры</span>
-												</a>
-											</li>
-											<li>
-												<a href="textanima.html" title="">
-													<span class="text">Текстовые анимации</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a class="navlink" href="contact.html" title="">Contact</a>	
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<!-- navigations stop -->
+<body>
+
+	<!----- НАЧАЛО СЛАЙДОВ --->
+	<div id="slide1">
+		<div class="content">
+			<div id="christmas_tree"> </div>
+			<div id="snowflakes1"></div>
+			<div id="snowflakes2"></div>
+			<h2>MERRY</h2>
+			<h1>CHRISTMAS</h1>
+			<div id="divider"> </div>
+			<h3>HAPPY NEW YEAR </h3>
+			<div id="ribbon"></div>
+			<div id="new_year"> </div>
+		</div>
+	</div>
+	<div id="slide2">
+		<div class="content">
+			<div class="quotes_container">
+				<h3 class="quotes">“Then the Grinch thought of something he hadn't before! What if Christmas, he thought,
+					doesn't come from a store. What if Christmas...perhaps...means a little bit more!”</h3>
+				<img src="img/dr-seuss.png" />
+				<h4 class="author_name_gray">Dr. Seuss </h4>
 			</div>
 		</div>
 	</div>
-	<!-- top stop -->
-	 
-	 <main>
-		
-		<section id="slide-1" class="homeSlide">
-			<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
-				<div class="hsContainer">
-				<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
-					<h2>Fade out elements before<br />they leave viewport</h2>
-					<p>This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.</p>
-				</div>
-				</div>
-			</div>
-	</section>
-	
-	<section id="slide-2">
-		<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
-			<div class="hsContainer">
-				<div class="hsContent">
-					<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Fade me in and out</h2>
-					<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Here we are changing the background color from blue to black. Text is fading in at 206 pixels from the bottom and fading out 106 pixels from the top.</p>
-				</div>
-				</div>
-		</div>
-	</section>
-
-	<section id="slide-3" class="homeSlide">
-	<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
-	<div class="hsContainer">
-		<div class="hsContent">
-			<div class="plaxEl" data-106-top="opacity: 0" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3">
-				<h2>Fixed element fading in and out</h2>
-				<p><span class="bgBlack">Text is fixed 206 pixels from the top, while the background is moving 40 pixels to the left.</span></p>
-				<p><span class="bgBlack">Or did you think that the scooter is driving off?</span></p>
+	<div id="slide3">
+		<div class="content">
+			<div class="quotes_container">
+				<h3 class="quotes">“I truly believe that if we keep telling the Christmas story, singing the Christmas songs,
+					and living the Christmas spirit, we can bring joy and happiness and peace to this world.” </h3>
+				<img src="img/norman.png" />
+				<h4 class="author_name_white">Norman Vincent Peale </h4>
 			</div>
 		</div>
 	</div>
-
-</div>
-</section>
-	
-<section id="slide-4" class="homeSlide homeSlideTall">
-<div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
-	<div class="curtainContainer">
-
-		<div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
-		<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
-			<h2>Curtain effect while you scroll</h2>
+	<div id="slide4">
+		<div class="content">
+			<div class="quotes_container">
+				<h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....”
+				</h3>
+				<img src="img/dr-seuss.png" />
+				<h4 class="author_name_gray">Dr. Seuss </h4>
+			</div>
 		</div>
-		
 	</div>
-</div>
-</section>
-	
-	<section id="slide-5" class="homeSlide homeSlideTall2">
-		<div class="bcg">
-			&nbsp;
-		</div>
-		<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
-			<div class="hsContainer">
-				<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
-					<h2>Fixed element fading in and out</h2>
-					<p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
-				</div>
+	<div id="slide5">
+		<div class="content">
+			<div class="quotes_container">
+				<h3 class="quotes">“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come
+					to think of it, why do we have to wait for Christmas to do that?” </h3>
+				<img src="img/bob.png" />
+				<h4 class="author_name_white">Bob Hope </h4>
 			</div>
-		</div>
-		<div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
-			<div class="hsContainer">
-				<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
-					<h2>The End</h2>
-					<p>Not enough parallax goodness? Let me know in the comments or hit me up at <a href="https://www.twitter.com/ihatetomatoes" target="_blank">@ihatetomatoes</a>.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-</main>
+	</div>
+	<!----- КОНЕЦ СЛАЙДОВ --->
 
-	<div class="to-up">&uarr;</div>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/imagesloaded.js"></script>
-	<script src="js/skrollr.js"></script>
-	<script src="js/_mainparallax.js"></script>
-
-	<script src="js/main.js"></script>
+	// <script src="js/jquery-3.6.1.min.js"></script>
+	// <script src="js/main.js"></script>
 </body>
+
 </html>

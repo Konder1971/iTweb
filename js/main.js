@@ -66,8 +66,7 @@
 			}
 		};
 	});
-
-
+	
 
 	document.addEventListener('DOMContentLoaded', () => {
 		let toTopBtn = document.querySelector('.to-up');
@@ -103,51 +102,51 @@
 	});
 */
 	// popup .ourteam.photo
-	$('.ourteam .photo').css('height', '');
-	$('.ourteam .photo').css({
-		height: $('.ourteam .photo').width() + 'px'
-	});
-	$(window).resize(function () {
-		$('.ourteam .photo').css('height', '');
-		$('.ourteam .photo').css({
-			height: $('.ourteam .photo').width() + 'px'
-		});
-	});
+	// $('.ourteam .photo').css('height', '');
+	// $('.ourteam .photo').css({
+	// 	height: $('.ourteam .photo').width() + 'px'
+	// });
+	// $(window).resize(function () {
+	// 	$('.ourteam .photo').css('height', '');
+	// 	$('.ourteam .photo').css({
+	// 		height: $('.ourteam .photo').width() + 'px'
+	// 	});
+	// });
 
-	$('.ourteamPopap .photo').css('height', '');
-	$('.ourteamPopap .photo').css({
-		height: $('.ourteamPopap .photo').width() + 'px'
-	});
-	$(window).resize(function () {
-		$('.ourteamPopap .photo').css('height', '');
-		$('.ourteamPopap .photo').css({
-			height: $('.ourteamPopap .photo').width() + 'px'
-		});
-	});
+	// $('.ourteamPopap .photo').css('height', '');
+	// $('.ourteamPopap .photo').css({
+	// 	height: $('.ourteamPopap .photo').width() + 'px'
+	// });
+	// $(window).resize(function () {
+	// 	$('.ourteamPopap .photo').css('height', '');
+	// 	$('.ourteamPopap .photo').css({
+	// 		height: $('.ourteamPopap .photo').width() + 'px'
+	// 	});
+	// });
 
 
-	$('.personDetails').click(function () {
-		//document.body.style.cssText += `overflow:hidden`;
-		var id = $(this).data('id');
-		if ($(this).find('.photo').hasClass('boardAdvisors-photo')) {
-			$('.ourteamPopap .photo').addClass('boardAdvisors-photo');
-		} else {
-			$('.ourteamPopap .photo.boardAdvisors-photo').removeClass('boardAdvisors-photo');
-		}
-		$('.fonPopap').addClass('active');
-		$('.popup'+id).addClass('active');
-		return false;
-	});
-	$('.ourteamPopap .close').click(function () {
-		//document.body.style.cssText = `overflow: auto;`;
-		$('.fonPopap.active').removeClass('active');
-		$('.ourteamPopap.active').removeClass('active');
-		return false;
-	});
+	// $('.personDetails').click(function () {
+	// 	//document.body.style.cssText += `overflow:hidden`;
+	// 	var id = $(this).data('id');
+	// 	if ($(this).find('.photo').hasClass('boardAdvisors-photo')) {
+	// 		$('.ourteamPopap .photo').addClass('boardAdvisors-photo');
+	// 	} else {
+	// 		$('.ourteamPopap .photo.boardAdvisors-photo').removeClass('boardAdvisors-photo');
+	// 	}
+	// 	$('.fonPopap').addClass('active');
+	// 	$('.popup'+id).addClass('active');
+	// 	return false;
+	// });
+	// $('.ourteamPopap .close').click(function () {
+	// 	//document.body.style.cssText = `overflow: auto;`;
+	// 	$('.fonPopap.active').removeClass('active');
+	// 	$('.ourteamPopap.active').removeClass('active');
+	// 	return false;
+	// });
 
-    if($(".select").length > 0){
-		$(".select").selectmenu();
-	}
+  //   if($(".select").length > 0){
+	// 	$(".select").selectmenu();
+	// }
 
 	/*
 	$(window).scroll(function () {

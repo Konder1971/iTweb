@@ -40,6 +40,11 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 }
+ul,
+ol {
+    list-style: none;
+    list-style-image: none;
+}
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -85,6 +90,7 @@ img {
 	height: auto;
 	vertical-align: middle;
 	border: 0;
+	-ms-interpolation-mode: bicubic;
 }
 .clearfix:before,
 .clearfix:after {
@@ -93,12 +99,32 @@ img {
   content: "";
 }
 .clearfix:after { clear: both; }
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
 button, 
 input[type="submit"],
 input[type="checkbox"],
 input[type="radio"] { 
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
 }
 input[type="search"] {
   -webkit-appearance: textfield;
@@ -125,6 +151,9 @@ select {
   content: "";
 }
 .clearfix:after { clear: both; }
+[hidden] {
+	display: none;
+}
 @media (min-width: 768px) {
   .forMobile {
     display: none!important;
@@ -683,8 +712,7 @@ body {
 .bct p a svg {
 	fill: #009B85;
 }
-.bct p a:hover svg,
-.bct p a:focus svg {
+.bct p a:hover svg {
 	fill: #f00;
 }
 @media (min-width: 768px) {
@@ -1389,10 +1417,6 @@ body {
 	}
 }
 
-
-
-
-
 /* Contact page start
 --------------------------------------------------- */
 input[placeholder]          {text-overflow:ellipsis;}
@@ -1513,8 +1537,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .contactBanner .headerBanner-col-1 a {
 	color: #fff;
 	text-decoration: none;
-}
-.contactBanner .headerBanner-col-2  {
 }
 .contactBanner .headerBanner-col-1 a:hover {
 	color: #00B465;
