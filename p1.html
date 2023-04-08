@@ -12,135 +12,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-	<script src="js/jquery-3.6.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			width: 100%;
-		}
-
-		h1 {
-			font-family: "Arvo";
-			font-weight: normal;
-			font-size: 55px;
-			text-align: center;
-			color: #fff;
-			margin: 0;
-			padding: 0;
-		}
-
-		h2 {
-			font-family: "Arvo";
-			font-weight: normal;
-			font-size: 40px;
-			text-align: center;
-			color: #fff;
-			margin: 0;
-			padding: 0;
-		}
-
-		h3 {
-			font-family: Oswald;
-			font-weight: normal;
-			font-size: 16px;
-			text-align: center;
-			margin: 5px 0;
-			padding: 0;
-			z-index: 1;
-			position: relative;
-		}
-
-		.center {
-			margin: 0 auto;
-		}
-
-		.content {
+		/* .content {
 			margin: 0 auto;
 			width: 100%;
 		}
-
-		.clear {
-			clear: both;
-		}
-
-		.quotes {
-			font-family: 'Goudy Bookletter 1911', serif;
-			font-weight: normal;
-			font-size: 30px;
-			text-align: left;
-			margin: 50px auto;
-		}
-
-		.author_name_white {
-			font-family: "Wellfleet";
-			margin: 70px 0 0 75px;
-			color: #fff;
-			font-size: 20px;
-		}
-
-		.author_name_gray {
-			font-family: "Wellfleet";
-			margin: 70px 0 0 75px;
-			color: #94a4a4;
-			font-size: 20px;
-		}
-
-		.quotes_container {
-			width: 100%;
-			margin: 0 auto;
-		}
-
-		#christmas_tree {
-			background: url(images/p21.jpg) no-repeat;
-			width: 48px;
-			height: 77px;
-			margin: 0 auto;
-			position: relative;
-			bottom: -35px;
-		}
-
-		#divider {
-			background: url(images/p22.jpg) no-repeat;
-			width: 100%;
-			height: 35px;
-			margin: 0px auto 27px auto;
-		}
-
-		#ribbon {
-			background: url(images/p.jpg) no-repeat;
-			width: 251px;
-			height: 48px;
-			margin: 0 auto;
-			display: block;
-			position: relative;
-			top: -38px;
-		}
-
-		#snowflakes1 {
-			background: url(images/p15.png) no-repeat;
-			width: 24px;
-			height: 21px;
-			margin: 0 auto;
-			display: block;
-			position: relative;
-			bottom: -54px;
-			left: -102px;
-		}
-
-		#snowflakes2 {
-			background: url(images/p33.jpg) no-repeat;
-			width: 24px;
-			height: 21px;
-			margin: 0 auto;
-			display: block;
-			position: relative;
-			bottom: -33px;
-			right: -100px;
-		}
-
 		#slide1,
 		#slide2 {
 			width: 100%;
@@ -186,80 +64,277 @@
 			padding: 250px 0;
 			color: #fff;
 			background-size: cover;
-		}
+		} */
 
 		@media (min-width: 768px) {}
 
 		@media (max-width: 767.98px) {}
 	</style>
 
-	<script>
-$('html, body').animate({scrollTop: targetOffset}, 1000);
 
-	</script>
+<style>
+.p {
+	position: relative;
+}
+.bg {
+background: url('images/p15.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position: absolute;
+width: 100%;
+min-height: 100vh;
+top:0;
+left:0;
+z-index: -1;
+}
+.bg2 {
+background: url('images/p21.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position: absolute;
+width: 100%;
+min-height: 100vh;
+top:0;
+left:0;
+z-index: -1;
+}
+.bg3 {
+background: url('images/p.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+position: absolute;
+width: 100%;
+min-height: 100vh;
+top:0;
+left:0;
+z-index: -1;
+}
+.bg3 {
+background-color: black;
+position: absolute;
+width: 100%;
+min-height: 100vh;
+top:0;
+left:0;
+z-index: -1;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+color: #fff;
+font-family: arial;
+margin: auto;
+line-height: 20px;
+font-size: 16px;
+/* min-height: 100vh; */
+width: 600px;
+min-height: 100vh;
+}
+</style>
 
 </head>
 
 <body>
 
+	<!-- top start -->
+	<div class="top">
+		<div class="top-container">
+			<div class="top-content">
+				<!-- logo start -->
+				<div class="logo">
+					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
+				</div>
+				<!-- logo stop -->
+				<!-- navigations start -->
+				<a class="nav-toggle"><span></span></a>
+				<div class="navigations">
+					<nav>
+						<ul>
+							<li>
+								<a class="navlink" href="about.html" title="">About</a>
+							</li>
+							<li>
+								<a class="navlink">Portfolio</a>
+								<div class="dropdown">
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="grid.html" title="">
+													CSS Grid Layout
+												</a>
+											</li>
+											<li>
+												<a href="slider.html" title="">
+													</span>
+													<span class="text">Слайдеры/карусели</span>
+												</a>
+											</li>
+											<li>
+												<a href="video.html" title="">
+													<span class="text">Видео</span>
+												</a>
+											</li>
+											<li>
+												<a href="parallax.html" title="">
+													<span class="text">Параллакс эффект</span>
+												</a>
+												<ul class="subNuv">
+													<li><a class="active" href="p1.html" title="">Параллах анимация</a></li>
+													<li><a href="p2.html" title="">Параллах Шторка</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="contactform.html" title="">
+													<span class="text">Контактная форма</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navlink">JS разработка</a>
+								<div class="dropdown">
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="menu.html" title="">
+													</span>
+													<span class="text">Навигация</span>
+												</a>
+											</li>
+											<li>
+												<a href="popup.html" title="">
+													<span class="text">Модальное окно popup</span>
+												</a>
+											</li>
+											<li>
+												<a href="filter.html" title="">
+													<span class="text">Фильтры</span>
+												</a>
+											</li>
+											<li>
+												<a href="textanima.html" title="">
+													<span class="text">Текстовые анимации</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navlink" href="contact.html" title="">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- navigations stop -->
+			</div>
+		</div>
+	</div>
+	<!-- top stop -->
+
+	<div class="p">
+		<div class="bg"></div>
+		<section>
+			<h1>Home page</h1>
+			<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+			<p>We offer the following services:</p>
+		</section>
+	</div>
+	<div class="p">
+		<div class="bg2"></div>
+		<section>
+			<h1>Home page</h1>
+			<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+			<p>We offer the following services:</p>
+		</section>
+	</div>	
+	<div class="p">
+		<div class="bg3"></div>
+		<section>
+			<h1>Home page</h1>
+			<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
+			<p>We offer the following services:</p>
+		</section>
+	</div>
+
+
 	<!----- НАЧАЛО СЛАЙДОВ --->
-	<div id="slide1">
+	<!-- <div id="slide1">
 		<div class="content">
-			<div id="christmas_tree"> </div>
-			<div id="snowflakes1"></div>
-			<div id="snowflakes2"></div>
-			<h2>MERRY</h2>
-			<h1>CHRISTMAS</h1>
-			<div id="divider"> </div>
-			<h3>HAPPY NEW YEAR </h3>
-			<div id="ribbon"></div>
-			<div id="new_year"> </div>
+			<h2>Section Title</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
+			</p>
 		</div>
 	</div>
 	<div id="slide2">
 		<div class="content">
-			<div class="quotes_container">
-				<h3 class="quotes">“Then the Grinch thought of something he hadn't before! What if Christmas, he thought,
-					doesn't come from a store. What if Christmas...perhaps...means a little bit more!”</h3>
-				<img src="img/dr-seuss.png" />
-				<h4 class="author_name_gray">Dr. Seuss </h4>
-			</div>
+			<h2>Section Title</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
+			</p>
 		</div>
 	</div>
 	<div id="slide3">
 		<div class="content">
-			<div class="quotes_container">
-				<h3 class="quotes">“I truly believe that if we keep telling the Christmas story, singing the Christmas songs,
-					and living the Christmas spirit, we can bring joy and happiness and peace to this world.” </h3>
-				<img src="img/norman.png" />
-				<h4 class="author_name_white">Norman Vincent Peale </h4>
-			</div>
+			<h2>Section Title</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
+			</p>
 		</div>
 	</div>
 	<div id="slide4">
 		<div class="content">
-			<div class="quotes_container">
-				<h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....”
-				</h3>
-				<img src="img/dr-seuss.png" />
-				<h4 class="author_name_gray">Dr. Seuss </h4>
-			</div>
+			<h2>Section Title</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
+			</p>
 		</div>
 	</div>
 	<div id="slide5">
 		<div class="content">
-			<div class="quotes_container">
-				<h3 class="quotes">“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come
-					to think of it, why do we have to wait for Christmas to do that?” </h3>
-				<img src="img/bob.png" />
-				<h4 class="author_name_white">Bob Hope </h4>
-			</div>
-	</div>
-	<!----- КОНЕЦ СЛАЙДОВ --->
+			<h2>Section Title</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
+			</p>
+		</div>
+	</div> -->
+		<!----- КОНЕЦ СЛАЙДОВ --->
 
 
-	// <script src="js/jquery-3.6.1.min.js"></script>
-	// <script src="js/main.js"></script>
+		<script src="js/jquery-3.6.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			$(window).scroll(function(e){
+				parallax();
+			});
+			function parallax(){
+				var scrolled = $(window).scrollTop();
+				$('.bg').css('top',(scrolled*0.8)+'px');
+				// $('.bg2').css('top',(scrolled*0.8)+'px');
+				// $('.bg3').css('top',-(scrolled*0.8)+'px');
+			}
+		</script>
+		<script>
+
+		</script>
+
 </body>
 
 </html>
