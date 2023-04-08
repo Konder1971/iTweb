@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-		/* .content {
+		.content {
 			margin: 0 auto;
 			width: 100%;
 		}
@@ -25,7 +25,7 @@
 		}
 
 		#slide1 {
-			background: url(images/p.jpg) 50% 0 no-repeat fixed;
+			background: url(images/p3.jpg) 50% 0 no-repeat fixed;
 			color: #fff;
 			height: 600px;
 			margin: 0;
@@ -43,7 +43,7 @@
 		}
 
 		#slide3 {
-			background: url(images/p33.jpg) 50% 0 no-repeat fixed;
+			background: url(images/p4.jpg) 50% 0 no-repeat fixed;
 			color: #fff;
 			height: 600px;
 			padding: 170px 0 0 0;
@@ -58,13 +58,13 @@
 		}
 
 		#slide5 {
-			background: url(images/p22.jpg) 50% 0 no-repeat fixed;
+			background: url(images/p5.jpg) 50% 0 no-repeat fixed;
 			height: 200px;
 			margin: 0 auto;
 			padding: 250px 0;
 			color: #fff;
 			background-size: cover;
-		} */
+		}
 
 		@media (min-width: 768px) {}
 
@@ -261,6 +261,16 @@ z-index: 2;
 			<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p>
 			<p>We offer the following services:</p>
 		</section>
+	</div>
+	<div class="p">
+	<div id="slide5">
+		<div class="content">
+			<h2>Section Title</h2>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
+			</p>
+		</div>
+	</div>
 	</div>	
 	<div class="p">
 		<div class="bg3"></div>
@@ -273,7 +283,7 @@ z-index: 2;
 
 
 	<!----- НАЧАЛО СЛАЙДОВ --->
-	<!-- <div id="slide1">
+	<div id="slide1">
 		<div class="content">
 			<h2>Section Title</h2>
 			<p>
@@ -305,15 +315,10 @@ z-index: 2;
 			</p>
 		</div>
 	</div>
-	<div id="slide5">
-		<div class="content">
-			<h2>Section Title</h2>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
-			</p>
-		</div>
-	</div> -->
 		<!----- КОНЕЦ СЛАЙДОВ --->
+
+
+	<div class="to-up">&uarr;</div>
 
 
 		<script src="js/jquery-3.6.1.min.js"></script>
@@ -324,8 +329,8 @@ z-index: 2;
 			});
 			function parallax(){
 				var scrolled = $(window).scrollTop();
-				$('.bg').css('top',(scrolled*0.8)+'px');
-				// $('.bg2').css('top',(scrolled*0.8)+'px');
+				$('.bg').css('top',(scrolled*0.4)+'px');
+				$('.bg2').css('top',(scrolled*0.2)+'px');
 				// $('.bg3').css('top',(scrolled*0.8)+'px');
 			}
 		</script>

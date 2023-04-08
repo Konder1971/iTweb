@@ -649,7 +649,7 @@ body {
 		padding: 0 28px 0;
 	}
 	.nav-toggle {
-		width: 22px;
+		width: 26px;
 		height: 24px;
 	}
 	.nav-toggle span { 
@@ -659,7 +659,7 @@ body {
 	.nav-toggle span, 
 	.nav-toggle span:before,
 	.nav-toggle span:after {
-		width: 22px;
+		width: 26px;
 	}
 	.nav-toggle span:before {
 		top: -8px;
