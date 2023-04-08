@@ -32,7 +32,8 @@
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
-			height: 100vh;  
+			height: 100vh;
+			min-height: 100vh;   
 			margin: 0 auto; 
 			width: 100%;
 			max-width: 100vw;
@@ -304,69 +305,51 @@
 				scrollTop: nt
 			}, 900, 'easeInOutCubic');
 		})
-		
-
 		SmoothScroll({
 			// Время скролла 400 = 0.4 секунды
 			animationTime: 800,
 			// Размер шага в пикселях 
 			stepSize: 75,
-
 			// Ускорение 
 			accelerationDelta: 30,
 			// Максимальное ускорение
 			accelerationMax: 2,
-
 			// Поддержка клавиатуры
 			keyboardSupport: true,
 			// Шаг скролла стрелками на клавиатуре в пикселях
 			arrowScroll: 50,
-
 			// Pulse (less tweakable)
 			// ratio of "tail" to "acceleration"
 			pulseAlgorithm: true,
 			pulseScale: 4,
 			pulseNormalize: 1,
-
 			// Поддержка тачпада
 			touchpadSupport: true,
 		})
 
 		$(document).ready(function(){
-		// Кешируем объект окна
-		$window = $(window);
-									
-		$('section[data-type="background"]').each(function(){
-			var $bgobj = $(this); // Назначаем объект
-											
-				$(window).scroll(function() {
-											
-			// Прокручиваем фон со скоростью var.
-			// Значение yPos отрицательное, так как прокручивание осуществляется вверх!
-			var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-			
-			// Размещаем все вместе в конечной точке
-			var coords = '50% '+ yPos + 'px';
 
-			// Смещаем фон
-			$bgobj.css({ backgroundPosition: coords });
-			
-		}); 
-
-	});	
-
-	}); 
-	/* 
-	* Создаем элементы HTML5 для IE
-	*/
-	document.createElement("article");
-	document.createElement("section");
+			// Кешируем объект окна
+			$window = $(window);						
+			$('section[data-type="background"]').each(function(){
+				let $bgobj = $(this); // Назначаем объект					
+					$(window).scroll(function() {							
+					// Прокручиваем фон со скоростью var.
+					// Значение yPos отрицательное, так как прокручивание осуществляется вверх!
+					let yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+					// Размещаем все вместе в конечной точке
+					let coords = '50% '+ yPos + 'px';
+					// Смещаем фон
+					$bgobj.css({ backgroundPosition: coords });
+				}); 
+			});	
+		});
 
 		$(document).ready(function () {
 			$('article h2[data-type="position"]').each(function () {
 				var $bgobj2 = $(this);
 				$(window).scroll(function () {
-					var yPos2 = ($window.scrollTop()*6 / $bgobj2.data('speed'));
+					var yPos2 = ($window.scrollTop() / $bgobj2.data('speed'));
 					$bgobj2.css({
 						position: 'relative',
 						top: `${yPos2}` + 'px'
