@@ -86,10 +86,10 @@ background-position: center center;
 background-size: cover;
 position: absolute;
 width: 100%;
-min-height: 100vh;
+height: 100vh;
 top:0;
 left:0;
-z-index: -1;
+z-index: 1;
 }
 .bg2 {
 background: url('images/p21.jpg');
@@ -101,10 +101,10 @@ background-position: center center;
 background-size: cover;
 position: absolute;
 width: 100%;
-min-height: 100vh;
+height: 100vh;
 top:0;
 left:0;
-z-index: -1;
+z-index: 1;
 }
 .bg3 {
 background: url('images/p.jpg');
@@ -116,25 +116,16 @@ background-position: center center;
 background-size: cover;
 position: absolute;
 width: 100%;
-min-height: 100vh;
+height: 100vh;
 top:0;
 left:0;
-z-index: -1;
-}
-.bg3 {
-background-color: black;
-position: absolute;
-width: 100%;
-min-height: 100vh;
-top:0;
-left:0;
-z-index: -1;
+z-index: 1;
 }
 section {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
 color: #fff;
 font-family: arial;
 margin: auto;
@@ -142,12 +133,19 @@ line-height: 20px;
 font-size: 16px;
 /* min-height: 100vh; */
 max-width: 600px;
-min-height: 100vh;
+height: 100vh;
+position: relative;
+z-index: 2;
 }
 </style>
 
-</head>
 
+
+<style type="text/css">
+</style>
+
+
+</head>
 <body>
 
 	<!-- top start -->
@@ -328,7 +326,7 @@ min-height: 100vh;
 				var scrolled = $(window).scrollTop();
 				$('.bg').css('top',(scrolled*0.8)+'px');
 				// $('.bg2').css('top',(scrolled*0.8)+'px');
-				// $('.bg3').css('top',-(scrolled*0.8)+'px');
+				// $('.bg3').css('top',(scrolled*0.8)+'px');
 			}
 		</script>
 		<script>
