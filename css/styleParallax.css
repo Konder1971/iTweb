@@ -5,22 +5,18 @@ html,
 body{
 	height: 100%;
 }
-
 .SmoothScroll {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .container {
   width: 100vw;
 }
-
 section {
 	/* max-width: 1200px;
 	margin: 0 auto; */
 }
-
 #home { 
 	background: url(../images/p.jpg) 0 0 no-repeat fixed; 
 	-webkit-background-size: cover;
@@ -58,8 +54,6 @@ section {
 	display:table; 
   position: relative;
 }
-
-
 #home article { 
 	height: 100vh; 
 	color: antiquewhite;
@@ -71,7 +65,6 @@ section {
 	justify-content: center;
 	align-items: center;
 }
-
 #about article { 
 	background: url("../images/parallax.png") no-repeat scroll center top transparent; 
 	height: 458px; 
@@ -79,8 +72,6 @@ section {
 	top: 291px; 
 	width: 100%; 
 }
-
-
 .pText,
 .pText2 {
 	padding: 100px; position: 
@@ -93,11 +84,7 @@ section {
 	background-color: #65C9FD;
 }
 @media (max-width: 767.98px) {
-.vaContainer {
-	padding: 0 28px;
+	.vaContainer {
+		padding: 0 28px;
+	}
 }
-}
-
-
-
-

@@ -10,10 +10,99 @@
 	<meta name="format-detection" content="telephone=no" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/styleParallax.css">
+
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		html,
+		body{
+			height: 100%;
+		}
+		.SmoothScroll {
+			position: fixed;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.container {
+			width: 100vw;
+		}
+		section {
+			/* max-width: 1200px;
+			margin: 0 auto; */
+		}
+		#home { 
+			background: url(../images/p.jpg) 0 0 no-repeat fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			height: 100%;  
+			margin: 0 auto; 
+			width: 100%;
+			display:table;
+			position: relative;
+		}
+		#about { 
+			background: url(../images/p22.jpg) 0 0 no-repeat fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-color: #5c9900; 
+			height: 100%;
+			margin: 0 auto; 
+			width: 100%;
+			display:table; 
+			position: relative;
+		}
+		#ddd { 
+			background: url(../images/p21.jpg) 0 0 no-repeat fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover; 
+			height: 100%;
+			margin: 0 auto; 
+			width: 100%;
+			display:table; 
+			position: relative;
+		}
+		#home article { 
+			height: 100vh; 
+			color: antiquewhite;
+			font-size: 32px;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+		}
+		#about article { 
+			background: url("../images/parallax.png") no-repeat scroll center top transparent; 
+			height: 458px; 
+			position: absolute;
+			top: 291px; 
+			width: 100%; 
+		}
+		.pText {
+			background-color: #00B465;
+			padding: 100px; 
+			position: relative; 
+			z-index: 2;
+		}
+		.pText2 {
+			background-color: #65C9FD;
+		}
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+			}
+		}
+	</style>
 
 </head>
-
 <body>
 
 	<!-- top start -->
@@ -148,18 +237,6 @@
 			<article class="article-1">
 				<h2 data-type="position" data-speed="10">
 					Абсолютное позиционирование<br />
-					<!-- https://habr.com/ru/post/161875/ <br />
-					https://www.cssscript.com/smooth-momentum-scrolling/ <br />
-					https://tildoshnaya.com/modification/softscroll <br /><br />
-	
-					https://www.cssscript.com/demo/background-parallax-ukiyo/ <br />
-					https://atuin.ru/blog/parallaks-biblioteka-ukiyo/ <br /><br />
-	
-					https://locomotivemtl.github.io/locomotive-scroll/ <br />
-					https://www.cssscript.com/animate-scroll-parallax-locomotive/ <br />
-					https://webdesign.tutsplus.com/tutorials/scrolling-website-with-locomotive-scroll-tailwind-css--cms-36943 <br /><br />
-	
-					http://wordsmall.ru/jquery-javascript/parallaks-effekt-js-podborka-plaginov.html -->
 				</h2>
 			</article>
 		</section>
@@ -174,7 +251,7 @@
 			<article data-type="position">Простой эффект параллакса</article>
 		</section>
 	
-		<div  class="pText2">
+		<div class="pText" style="background-color: #65C9FD;">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum repudiandae et? Unde, eaque? Laborum esse
 			perspiciatis facere officia earum ipsa.
 		</div>
