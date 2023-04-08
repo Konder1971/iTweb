@@ -13,25 +13,25 @@
 
 	<style>
 		html {
-			/* scroll-behavior: smooth; */
+			scroll-behavior: smooth;
 		}
 		html,
 		body{
 			min-height: 100%;
 		}
 		.SmoothScroll {
-			/* position: fixed;
+			position: fixed;
 			left: 50%;
-			transform: translateX(-50%); */
+			transform: translateX(-50%);
 		}
 		section {
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-position: center center; 
-			-webkit-background-size: cover;
+			/* -webkit-background-size: cover;
 			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+			-o-background-size: cover; */
+			background-size: contain;
 			height: 100vh;
 			min-height: 100vh;   
 			margin: 0 auto; 
@@ -296,9 +296,40 @@
 	<div class="to-up">&uarr;</div>
 
 	<script src="js/jquery-3.6.1.min.js"></script>
-
+	<script src="js/SmoothScroll.min.js"></script>
 	<!-- <script src="js/scriptParallax.js"></script> -->
 	<script>
+
+		/* вариант для скролла */
+		$(document).bind('mousewheel', function (e) {
+			var nt = $(document.body).scrollTop() - (e.deltaY * e.deltaFactor * 100);
+			e.preventDefault();
+			e.stopPropagation();
+			$(document.body).stop().animate({
+				scrollTop: nt
+			}, 900, 'easeInOutCubic');
+		})
+		SmoothScroll({
+			// Время скролла 400 = 0.4 секунды
+			animationTime: 800,
+			// Размер шага в пикселях 
+			stepSize: 75,
+			// Ускорение 
+			accelerationDelta: 30,
+			// Максимальное ускорение
+			accelerationMax: 6,
+			// Поддержка клавиатуры
+			keyboardSupport: true,
+			// Шаг скролла стрелками на клавиатуре в пикселях
+			arrowScroll: 50,
+			// Pulse (less tweakable)
+			// ratio of "tail" to "acceleration"
+			pulseAlgorithm: true,
+			pulseScale: 4,
+			pulseNormalize: 1,
+			// Поддержка тачпада
+			touchpadSupport: true,
+		})
 
 		$(document).ready(function(){
 			// Кешируем объект окна
