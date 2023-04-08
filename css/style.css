@@ -181,8 +181,7 @@ body {
 	color: #009B85;
 	text-decoration: none;
 }
-.bct a:hover,
-.bct a:hover:focus {
+.bct a:hover {
 	color: #f00;
 }
 @media (min-width: 768px) {
