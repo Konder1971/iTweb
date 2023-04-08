@@ -20,9 +20,9 @@
 			height: 100%;
 		}
 		.SmoothScroll {
-			/* position: fixed;
+			position: fixed;
 			left: 50%;
-			transform: translateX(-50%); */
+			transform: translateX(-50%);
 		}
 		section {
 			background-attachment: fixed;
@@ -43,6 +43,9 @@
 			flex-wrap: nowrap;
 			justify-content: center;
 			align-items: center;
+			-webkit-transition: opacity 500ms ease-out;
+			-moz-transition: opacity 500ms ease-out;
+			transition: opacity 500ms ease-out;
 		}
 		#home {
 			background-color: #0f131c; 
