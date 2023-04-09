@@ -144,9 +144,9 @@
 	// 	return false;
 	// });
 
-  //   if($(".select").length > 0){
-	// 	$(".select").selectmenu();
-	// }
+    if($(".select").length > 0){
+		$(".select").selectmenu();
+	}
 
 	/*
 	$(window).scroll(function () {
