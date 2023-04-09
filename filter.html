@@ -9,6 +9,7 @@
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
 
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
@@ -124,6 +125,7 @@
 		.projectblock {
 			text-decoration: none;
 			margin-bottom: 30px;
+			cursor: pointer;
 		}
 		.projectblock em {
 			display: block;
@@ -409,71 +411,71 @@
 				</div>
 				<div class="projectsblocks">
 
-					<div class="box wordpress section-col projectblock" to="">
+					<a href="images/p.jpg" data-lightbox="example-1" class="box wordpress section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p.jpg)"><i>viewing</i></em>
 						<h3>Wordpress</h3>
 						<ul>
 							<li>Wordpress</li>
 							<li>Websites</li>
 						</ul>
-					</div>
-					<div class="box javascript section-col projectblock" to="">
+					</a>
+					<a href="images/p22.jpg" data-lightbox="example-1" class="box javascript section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p22.jpg)"><i>viewing</i></em>
 						<h3>javascript</h3>
 						<ul>
 							<li>javascript</li>
 							<li>Websites</li>
 						</ul>
-					</div>
-					<div class="box html5css3 section-col projectblock" to="">
+					</a>
+					<a href="images/p33.jpg" data-lightbox="example-1" class="box html5css3 section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p33.jpg)"><i>viewing</i></em>
 						<h3>html5css3</h3>
 						<ul>
 							<li>html5css3</li>
 							<li>Websites</li>
 						</ul>
-					</div>
-					<div class="box parallax section-col projectblock" to="">
+					</a>
+					<a href="images/p21.jpg" data-lightbox="example-1" class="box parallax section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p21.jpg)"><i>viewing</i></em>
 						<h3>parallax</h3>
 						<ul>
 							<li>parallax</li>
 							<li>Websites</li>
 						</ul>
-					</div>
+					</a>
 	
-					<div class="box wordpress section-col projectblock" to="">
+					<a href="images/p15.jpg" data-lightbox="example-1" class="box wordpress section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p15.jpg)"><i>viewing</i></em>
 						<h3>Wordpress</h3>
 						<ul>
 							<li>Wordpress</li>
 							<li>Websites</li>
 						</ul>
-					</div>
-					<div class="box javascript section-col projectblock" to="">
+					</a>
+					<a href="images/p36.jpg" data-lightbox="example-1" class="box javascript section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p36.jpg)"><i>viewing</i></em>
 						<h3>javascript</h3>
 						<ul>
 							<li>javascript</li>
 							<li>Websites</li>
 						</ul>
-					</div>
-					<div class="box html5css3 section-col projectblock" to="">
+					</a>
+					<a href="images/p5.jpg" data-lightbox="example-1" class="box html5css3 section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p5.jpg)"><i>viewing</i></em>
 						<h3>html5css3</h3>
 						<ul>
 							<li>html5css3</li>
 							<li>Websites</li>
 						</ul>
-					</div>
-					<div class="box parallax section-col projectblock" to="">
+					</a>
+					<a href="images/p3.jpg" data-lightbox="example-1" class="box parallax section-col projectblock example-image-link" to="">
 						<em class="pepic" style="background-image: url(images/p3.jpg)"><i>viewing</i></em>
 						<h3>parallax</h3>
 						<ul>
 							<li>parallax</li>
 							<li>Websites</li>
 						</ul>
-					</div>
+					</a>
 
 				</div>
 
@@ -484,6 +486,7 @@
 	<div class="to-up">&uarr;</div>
 	
 	<script src="js/jquery.min.js"></script>
+	<script src="js/lightbox-plus-jquery.min.js"></script>
 	<script src="js/main.js"></script>
 
 	<script>
@@ -526,9 +529,6 @@
 				this.className += " active";
 			});
 		}
-
-
-		
 
 		// window.onload = function() {
 		// 	let hhpe = document.querySelector(".pepic").offsetWidth;
