@@ -130,9 +130,6 @@
 			}
 		}
 
-		.p {
-			position: relative;
-		}
 		#slide5 {
 			background: url(images/p5.jpg) 50% 0 no-repeat fixed;
 				background-position: center center; 
@@ -142,6 +139,8 @@
 				background-size: cover;
 			margin: 0 auto;
 			padding: 200px 0;
+			height: auto;
+			min-height: auto;
 			color: #fff;
 			background-size: cover;
 		}
@@ -298,16 +297,16 @@
 		</p>
 	</div>
 
-	<div class="p">
-		<div id="slide5">
+	
+		<section id="slide5" data-speed="10" data-type="background">
 			<div class="content">
 				<h2>Section Title</h2>
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
 				</p>
 			</div>
-		</div>
-		</div>
+		</section>
+
 
 	<!-- Раздел #2 -->
 	<section id="about" data-speed="-10" data-type="background">
