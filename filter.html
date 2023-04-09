@@ -378,10 +378,10 @@
 				<div class="nav">
 					<ul>
 						<li data-f="all" class="active">ALL</li>
-						<li data-f="wordpress" class="text-wordpress">Wordpress</li>
 						<li data-f="javascript" class="text-javascript">Javascript</li>
 						<li data-f="html5css3" class="text-html5css3">Html5/CSS3</li>
-						<li data-f="android" class="text-android">Android</li>
+						<li data-f="wordpress" class="text-wordpress">Wordpress</li>
+						<li data-f="parallax" class="text-android">Parallax</li>
 					</ul>
 				</div>
 				<div class="projectsblocks">
@@ -410,7 +410,7 @@
 							<li>Websites</li>
 						</ul>
 					</div>
-					<div class="box android section-col projectblock" to="">
+					<div class="box parallax section-col projectblock" to="">
 						<em class="pepic" style="background-image: url(images/p21.jpg)"><i>view project</i></em>
 						<h3>android</h3>
 						<ul>
@@ -443,7 +443,7 @@
 							<li>Websites</li>
 						</ul>
 					</div>
-					<div class="box android section-col projectblock" to="">
+					<div class="box parallax section-col projectblock" to="">
 						<em class="pepic" style="background-image: url(images/p3.jpg)"><i>view project</i></em>
 						<h3>android</h3>
 						<ul>
@@ -548,6 +548,14 @@
 				hpeheight[i].style.height = hhpe + "px";
 			}
 		}
+
+		$(window).scroll(function () {
+			let hhpe = document.querySelector(".pepic").offsetWidth;
+			hpeheight = document.querySelectorAll(".pepic");
+			for (i = 0; i < hpeheight.length; i++) {
+				hpeheight[i].style.height = hhpe + "px";
+			}
+		});
 
 	</script>
 
