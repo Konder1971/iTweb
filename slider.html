@@ -13,18 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sliders.css">
 
-
 	<link rel="stylesheet" href="adslider/adslider.css">
-	<script defer src="adslider/adslider.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			var slider = new SimpleAdaptiveSlider('.slider', {
-				loop: true,
-				autoplay: false,
-				swipe: true
-			});
-		});
-	</script>
+
 	<style>
 		.slider {
 			margin-bottom: 60px;
@@ -299,13 +289,13 @@
 						<div class="slider__item-content" style="background-color: #3f51b5; background-image: url(images/p15.jpg);"></div>
 					</div>
 					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #607d8b; background-image: url(images/p15.jpg);"></div>
+						<div class="slider__item-content" style="background-color: #607d8b; background-image: url(images/p22.jpg);"></div>
 					</div>
 					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #f44336; background-image: url(images/p15.jpg);"></div>
+						<div class="slider__item-content" style="background-color: #f44336; background-image: url(images/p33.jpg);"></div>
 					</div>
 					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #4caf50; background-image: url(images/p15.jpg);"></div>
+						<div class="slider__item-content" style="background-color: #4caf50; background-image: url(images/p.jpg);"></div>
 					</div>
 				</div>
 			</div>
@@ -322,6 +312,7 @@
 	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script defer src="adslider/adslider.js"></script>
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
@@ -394,15 +385,35 @@
 		});
 
 
-		$('.slider__item-content').css('height', '');
-		$('.slider__item-content').css({
-			height: $('.slider__item-content').width() / 1.4 + 'px'
+		document.addEventListener('DOMContentLoaded', function () {
+			let slider = new SimpleAdaptiveSlider('.slider', {
+				loop: true,
+				autoplay: true,
+				interval: 3000,
+				swipe: true,
+			});
 		});
+		$('.slider__item-content').css('height', '');
+		if ($(window).width() > 599) {
+			$('.slider__item-content').css({
+				height: $('.slider__item-content').width() / 2 + 'px'
+			});
+		} else {
+			$('.slider__item-content').css({
+				height: $('.slider__item-content').width() + 'px'
+			});
+		};
 		$(window).resize(function () {
 			$('.slider__item-content').css('height', '');
-			$('.slider__item-content').css({
-				height: $('.slider__item-content').width() / 1.4  + 'px'
-			});
+			if ($(window).width() > 599) {
+				$('.slider__item-content').css({
+					height: $('.slider__item-content').width() / 2 + 'px'
+				});
+			} else {
+				$('.slider__item-content').css({
+					height: $('.slider__item-content').width() + 'px'
+				});
+			};;
 		});
 	</script>
 

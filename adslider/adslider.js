@@ -49,7 +49,7 @@ function SimpleAdaptiveSlider(selector, config) {
   this._config = {
     loop: true,
     autoplay: false,
-    interval: 5000,
+    interval: 3000,
     swipe: true,
   };
   // изменяем конфигурацию слайдера в соответствии с переданными настройками
