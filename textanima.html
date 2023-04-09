@@ -57,6 +57,9 @@
 		.imp h2 {
 			text-align: center;
 		}
+		.imp p {
+			margin-bottom: 0;
+		}
 		@media (min-width: 768px) {
 			.imp {
 				margin-bottom: 60px;
@@ -137,13 +140,56 @@
 				height: 42px;
 				border-radius: 21px;
 				font-size: 20px;
-				font-weight: 600;
 				margin: 20px auto 0;
 				font-size: 14px;
 				line-height: 1;
 				font-weight: 800;
 			}
 		}
+
+			.btn-button {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				text-decoration: none;
+				border: none;
+				color: #000;
+				line-height: 1;
+				background-color: #00B465;
+				cursor: pointer;
+				margin: 0 auto;
+				padding: 0 30px;
+			}
+			.button-anima input[type="button"]:hover {
+				background-color: #65C9FD;
+			}
+			@media (min-width: 768px) {
+				.btn-button {
+					height: 53px;
+					border-radius: 27px;
+					font-size: 20px;
+					font-weight: 600;
+					margin-top: 20px;
+				}
+				.imp .btn-button {
+					margin-top: 10px;
+				}
+			}
+			@media (max-width: 767.98px) {
+				.btn-button {
+					height: 42px;
+					border-radius: 21px;
+					font-size: 20px;
+					margin: 20px auto 0;
+					font-size: 14px;
+					line-height: 1;
+					font-weight: 800;
+					margin-top: 20px;
+				}
+			}
 
 	</style>
 
@@ -270,15 +316,17 @@
 	<div class="vaContainer anima__text-1">
 		<div class="wrapper">
 			<p class="text-1">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi, tenetur velit sunt hic non rem mollitia doloribus ex nulla.
+				Lorem ipsum dolor <!--sit amet consectetur adipisicing elit. Minus, commodi, tenetur velit sunt hic non rem mollitia doloribus ex nulla.-->
 			</p>
 		</div>
+		<button class="btn-button restart">Перезапустить</button>
 	</div>
 
 
 	<div class="vaContainer imp">
 		<h2>Техт имитация печатной машинки</h2>
 		<p class="out"></p>
+		<button class="btn-button restarta">Перезапустить</button>
 	</div>
 
 	<div class="vaContainer button-anima">
@@ -315,9 +363,9 @@
 
 
 		const t = [
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi.\n',
-			'Tenetur velit sunt hic non rem mollitia doloribus ex nulla.\n',
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit.\n',
+			'Lorem ipsum dolor.\n',
+			// 'Tenetur velit sunt hic non rem mollitia doloribus ex nulla.\n',
+			// 'Lorem ipsum dolor sit amet consectetur adipisicing elit.\n',
 		];
 		function typeText() {
 			let line = 0;
@@ -347,6 +395,11 @@
 			return Math.floor(Math.random() * Math.floor(max));
 		};
 		typeText();
+
+		const restarta = document.querySelector('.restarta')
+		restarta.addEventListener('click', function() {
+			typeText();
+		})
 
 
 
