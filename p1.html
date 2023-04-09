@@ -56,7 +56,7 @@
 			flex-wrap: nowrap;
 			justify-content: center;
 			align-items: center;		
-			background-color: rgba(0,0,0,.6);
+			background-color: rgba(0,0,0,.5);
 			color: #fff;
 			text-align: center;
 			margin: 0 auto;
@@ -70,14 +70,14 @@
 		}
 		@media (min-width: 768px) {
 			section {
-			background-position: center center; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			height: 100vh;
-			min-height: 100vh;
-		}
+				background-position: center center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				height: 100vh;
+				min-height: 100vh;
+			}
 			article {			
 				padding: 30px;
 			}
@@ -130,21 +130,22 @@
 			}
 		}
 
-		#slide5 {
-			background: url(images/p5.jpg) 50% 0 no-repeat fixed;
-				background-position: center center; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+		#sst {
+			background-color: #8b8786;
+			background-image: url(images/p33.jpg);
+				background-attachment: fixed;
+			background-position: center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: auto 100%;
 			margin: 0 auto;
 			padding: 200px 0;
 			height: auto;
 			min-height: auto;
 			color: #fff;
-			background-size: cover;
 		}
-		#slide5 p {
+		#sst p {
 			margin-bottom: 0;
 		}
 	</style>
@@ -261,7 +262,7 @@
 						Простой эффект параллакса
 					</h2>
 					<p>
-						Параллакс-скроллинг (также Параллаксная прокрутка) — техника, когда фоновые изображения перемещаются относительно медленнее, чем изображения переднего плана.
+						Параллакс скроллинг — техника, когда фоновые изображения перемещаются относительно медленнее, чем изображения переднего плана.
 					</p>
 					<p>
 						Вариант 2: 
@@ -298,13 +299,13 @@
 	</div>
 
 	
-		<section id="slide5" data-speed="10" data-type="background">
-			<div class="content">
-				<h2>Section Title</h2>
+		<section id="sst" data-speed="10" data-type="background">
+			<article>
+				<h2>Sub Section Title</h2>
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, cupiditate.
 				</p>
-			</div>
+			</article>
 		</section>
 
 
