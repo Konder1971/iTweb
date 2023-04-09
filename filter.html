@@ -11,227 +11,228 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<style type="text/css">
-	.vaContent h2 {
-		color: #00B465;
-		margin-bottom: 15px;
-	}
-	hr {
-		margin-bottom: 30px;
-	}
-	@media (max-width: 767.98px) {
-		.vaContainer {
-			padding: 0 28px;
+	<style type="text/css">
+		.vaContent h2 {
+			color: #00B465;
+			margin-bottom: 15px;
 		}
-	}
-
-	#myBtnContainer {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-	}
-	.btn {
-		display: block;
-		border: none;
-		border-radius: 0;
-		outline: none;
-		padding: 12px 16px;
-		margin: 0 6px 6px 0;
-		background-color: #65C9FD;
-		cursor: pointer;
-		font-size: 17px;
-		font-weight: 500;
-	}
-	.btn:hover {
-		background-color: #2196F3;
-	}
-	.btn:last-child {
-		margin-right: 0;
-	}
-	.btn.active {
-		background-color: #2196F3;
-		color: white;
-	}
-	.filterContainer {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-	}
-	.filterDiv {
-		background-color: #2196F3;
-		color: #fff;
-		width: 100px;
-		height: 100px;
-		margin: 3px;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: center;
-		text-align: center;
-		font-size: 18px;
-		font-weight: 500;
-		display: none;
-	}
-	.show {
-		display: flex;
-	}
-	.filterContainer {
-		margin-bottom: 22px;
-		margin-top: 14px;
-		margin-left: -3px;
-		overflow: hidden;
-	}
-	@media (max-width: 767.98px) {
-		.filterDiv {
-			width: 90px;
-			height: 90px;
+		hr {
+			margin-top: 40px;
+			margin-bottom: 30px;
 		}
-	}
-
-		
-	.nav ul {
-		padding-left: 0;
-	}
-	.nav ul li {
-    display: inline-block;
-    padding: 10px 40px 10px 0;
-    cursor: pointer;
-  }
-	.nav ul li:last-child {
-		padding-right: 0;
-	}
-  .hide {
-    opacity: 1;
-    animation-name: a1;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes a1 {
-    to {
-      opacity: 0;
-      min-height: 0;
-      min-width: 0;
-      padding: 0;
-      margin: 0;
-      border: 0;
-      height: 0;
-      width: 0;
-    }
-  }
-
-	.projectblock {
-		text-decoration: none;
-		margin-bottom: 30px;
-	}
-	.projectblock em {
-		display: block;
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		margin-bottom: 11px;
-	}
-	.projectblock em i {
-		display: none;
-		opacity: 0;
-		font-style: normal;
-		display: -webkit-flex;
-		-webkit-fflex-direction: column;
-		-webkit-fflex-wrap: nowrap;
-		-webkit-fjustify-content: center;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-		font-size: 25px;
-		font-weight: 300;
-		color: #fff;
-		text-align: center;
-		background-color: rgba(0, 0, 0, 0.6);
-		-webkit-transition: 300ms ease-out;
-		-moz-transition: 300ms ease-out;
-		transition: 300ms ease-out;
-	}
-	.projectblock:hover em i {
-		opacity: 1;
-		-webkit-transition: 300ms ease-out;
-		-moz-transition: 300ms ease-out;
-		transition: 300ms ease-out;
-	}
-	.projectblock h3 {
-			color: #666;
-			font-size: 18px;
-			line-height: 26px;
-			font-weight: 300;
-			margin-bottom: 4px;
-	}
-	.projectblock ul,
-	.projectblock ul li {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-	.projectblock ul li {
-		display: inline-block;
-		line-height: 20px;
-		font-size: 13px;
-		color:#777;
-		font-weight: 300;
-	}
-	.projectblock ul li:after {
-		content: '.';
-		display: inline-block;
-		font-size: 13px;
-		line-height: 20px;
-		line-height: inherit;
-		font-weight: 600;
-		position: relative;
-		top: -2px;
-		margin-left: 5px;
-	}
-	.projectblock ul li:last-child:after {
-		display: none;
-	}
-	.projectblock:hover h3,
-	.projectblock:hover li {
-		color: #c60;
-	}
-
-	@media (min-width: 768px) {
-		.nav li {
-			cursor: pointer;
-			font-size: 20px;
-			color:#2196F3;
-		}
-		.nav li:hover,
-		.nav li.active {
-			color:#000;
-		}
-		.nav li.active {
-			cursor: default;
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+			}
 		}
 
-		.projectsblocks {
-			margin-left: -10px;
+		#myBtnContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
 		}
-		.section-col {
-			padding: 0 10px;
-		}
-		.projectblock {
-			width: 25%;
-			float: left;
+		.btn {
 			display: block;
+			border: none;
+			border-radius: 0;
+			outline: none;
+			padding: 12px 16px;
+			margin: 0 6px 6px 0;
+			background-color: #65C9FD;
+			cursor: pointer;
+			font-size: 17px;
+			font-weight: 500;
 		}
-	}
-	@media (max-width: 767.98px) {
+		.btn:hover {
+			background-color: #2196F3;
+		}
+		.btn:last-child {
+			margin-right: 0;
+		}
+		.btn.active {
+			background-color: #2196F3;
+			color: white;
+		}
+		.filterContainer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		.filterDiv {
+			background-color: #2196F3;
+			color: #fff;
+			width: 100px;
+			height: 100px;
+			margin: 3px;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 500;
+			display: none;
+		}
+		.show {
+			display: flex;
+		}
+		.filterContainer {
+			margin-bottom: 22px;
+			margin-top: 14px;
+			margin-left: -3px;
+			overflow: hidden;
+		}
+		@media (max-width: 767.98px) {
+			.filterDiv {
+				width: 90px;
+				height: 90px;
+			}
+		}
+
+			
+		.nav ul {
+			padding-left: 0;
+		}
 		.nav ul li {
-			padding-right: 20px;
+			display: inline-block;
+			padding: 10px 40px 10px 0;
+			cursor: pointer;
 		}
-	}
-</style>
+		.nav ul li:last-child {
+			padding-right: 0;
+		}
+		.hide {
+			opacity: 1;
+			animation-name: a1;
+			animation-duration: 2s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes a1 {
+			to {
+				opacity: 0;
+				min-height: 0;
+				min-width: 0;
+				padding: 0;
+				margin: 0;
+				border: 0;
+				height: 0;
+				width: 0;
+			}
+		}
+
+		.projectblock {
+			text-decoration: none;
+			margin-bottom: 30px;
+		}
+		.projectblock em {
+			display: block;
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin-bottom: 11px;
+		}
+		.projectblock em i {
+			display: none;
+			opacity: 0;
+			font-style: normal;
+			display: -webkit-flex;
+			-webkit-fflex-direction: column;
+			-webkit-fflex-wrap: nowrap;
+			-webkit-fjustify-content: center;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			font-size: 25px;
+			font-weight: 300;
+			color: #fff;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0.6);
+			-webkit-transition: 300ms ease-out;
+			-moz-transition: 300ms ease-out;
+			transition: 300ms ease-out;
+		}
+		.projectblock:hover em i {
+			opacity: 1;
+			-webkit-transition: 300ms ease-out;
+			-moz-transition: 300ms ease-out;
+			transition: 300ms ease-out;
+		}
+		.projectblock h3 {
+				color: #666;
+				font-size: 18px;
+				line-height: 26px;
+				font-weight: 300;
+				margin-bottom: 4px;
+		}
+		.projectblock ul,
+		.projectblock ul li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.projectblock ul li {
+			display: inline-block;
+			line-height: 20px;
+			font-size: 13px;
+			color:#777;
+			font-weight: 300;
+		}
+		.projectblock ul li:after {
+			content: '.';
+			display: inline-block;
+			font-size: 13px;
+			line-height: 20px;
+			line-height: inherit;
+			font-weight: 600;
+			position: relative;
+			top: -2px;
+			margin-left: 5px;
+		}
+		.projectblock ul li:last-child:after {
+			display: none;
+		}
+		.projectblock:hover h3,
+		.projectblock:hover li {
+			color: #c60;
+		}
+
+		@media (min-width: 768px) {
+			.nav li {
+				cursor: pointer;
+				font-size: 20px;
+				color:#2196F3;
+			}
+			.nav li:hover,
+			.nav li.active {
+				color:#000;
+			}
+			.nav li.active {
+				cursor: default;
+			}
+
+			.projectsblocks {
+				margin-left: -10px;
+			}
+			.section-col {
+				padding: 0 10px;
+			}
+			.projectblock {
+				width: 25%;
+				float: left;
+				display: block;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.nav ul li {
+				padding-right: 20px;
+			}
+		}
+	</style>
 
 </head>
 <body>
