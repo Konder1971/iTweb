@@ -46,6 +46,9 @@
 	.btn:hover {
 		background-color: #2196F3;
 	}
+	.btn:last-child {
+		margin-right: 0;
+	}
 	.btn.active {
 		background-color: #2196F3;
 		color: white;
@@ -95,6 +98,9 @@
     padding: 10px 40px 10px 0;
     cursor: pointer;
   }
+	.nav ul li:last-child {
+		padding-right: 0;
+	}
   .hide {
     opacity: 1;
     animation-name: a1;
@@ -218,6 +224,11 @@
 			width: 25%;
 			float: left;
 			display: block;
+		}
+	}
+	@media (max-width: 767.98px) {
+		.nav ul li {
+			padding-right: 20px;
 		}
 	}
 </style>
@@ -507,21 +518,21 @@
 
 		
 
-		// window.onload = function() {
-		// 	let hhpe = document.querySelector(".pepic").offsetWidth;
-		// 	let hpeheight;
-		// 	hpeheight = document.querySelectorAll(".pepic");
-		// 	for (i = 0; i < hpeheight.length; i++) {
-		// 		hpeheight[i].style.height = hhpe + "px";
-		// 	};
-		// 	window.onresize = function(event) {
-		// 		let hhpe = document.querySelector(".pepic").offsetWidth;
-		// 		hpeheight = document.querySelectorAll(".pepic");
-		// 		for (i = 0; i < hpeheight.length; i++) {
-		// 			hpeheight[i].style.height = hhpe + "px";
-		// 		}
-		// 	}
-		// }
+		window.onload = function() {
+			let hhpe = document.querySelector(".pepic").offsetWidth;
+			let hpeheight;
+			hpeheight = document.querySelectorAll(".pepic");
+			for (i = 0; i < hpeheight.length; i++) {
+				hpeheight[i].style.height = hhpe + "px";
+			};
+			window.onresize = function(event) {
+				let hhpe = document.querySelector(".pepic").offsetWidth;
+				hpeheight = document.querySelectorAll(".pepic");
+				for (i = 0; i < hpeheight.length; i++) {
+					hpeheight[i].style.height = hhpe + "px";
+				}
+			}
+		}
 		let filterBox;
 		filterBox = document.querySelectorAll(".box");
 		document.querySelector(".nav").addEventListener("click", (event) => {
@@ -548,16 +559,6 @@
 				hpeheight[i].style.height = hhpe + "px";
 			}
 		}
-
-		$(document).ready(function () {
-			$(window).scroll(function () {
-				let hhpe = document.querySelector(".pepic").offsetWidth;
-				hpeheight = document.querySelectorAll(".pepic");
-				for (i = 0; i < hpeheight.length; i++) {
-					hpeheight[i].style.height = hhpe + "px";
-				}
-			});
-		});
 
 	</script>
 
