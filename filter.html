@@ -563,6 +563,17 @@
 			}
 		}
 
+			$('.pepic').css('height', '');
+			$('.pepic').css({
+				height: $('.pepic').width() + 'px'
+			});
+			$(window).resize(function () {
+				$('.pepic').css('height', '');
+				$('.pepic').css({
+					height: $('.pepic').width() + 'px'
+				});
+			});
+
 		// активный линк для фильтра
 		let nl = document.querySelectorAll(".nav li");
 		for (var i = 0; i < nl.length; i++) {
