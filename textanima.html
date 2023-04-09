@@ -42,7 +42,7 @@
 				margin: 0 28px;
 			}
 			.anima__text-1 {
-				margin-bottom: 30px;
+				margin-bottom: 40px;
 			}
 			.anima__text-1 .wrapper {
 				letter-spacing: 1px;
@@ -321,7 +321,7 @@
 				Lorem ipsum dolor <!--sit amet consectetur adipisicing elit. Minus, commodi, tenetur velit sunt hic non rem mollitia doloribus ex nulla.-->
 			</p>
 		</div>
-		<button class="btn-button restart">Перезапустить</button>
+		<!-- <button class="btn-button restart">Перезапустить</button> -->
 	</div>
 
 
@@ -360,7 +360,11 @@
 					wrapper.appendChild(span);
 				}, 75 * i);
 			}(i));
-		}
+		};
+		// const restart = document.querySelector('.restart')
+		// restarta.addEventListener('click', function() {
+
+		// })
 
 
 
@@ -397,7 +401,6 @@
 			return Math.floor(Math.random() * Math.floor(max));
 		};
 		typeText();
-
 		const restarta = document.querySelector('.restarta')
 		restarta.addEventListener('click', function() {
 			typeText();
