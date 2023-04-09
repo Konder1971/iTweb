@@ -549,12 +549,14 @@
 			}
 		}
 
-		$(window).scroll(function () {
-			let hhpe = document.querySelector(".pepic").offsetWidth;
-			hpeheight = document.querySelectorAll(".pepic");
-			for (i = 0; i < hpeheight.length; i++) {
-				hpeheight[i].style.height = hhpe + "px";
-			}
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				let hhpe = document.querySelector(".pepic").offsetWidth;
+				hpeheight = document.querySelectorAll(".pepic");
+				for (i = 0; i < hpeheight.length; i++) {
+					hpeheight[i].style.height = hhpe + "px";
+				}
+			});
 		});
 
 	</script>
