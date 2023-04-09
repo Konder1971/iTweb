@@ -145,8 +145,8 @@
 	// });
 
     if($(".select").length > 0){
-		$(".select").selectmenu();
-	}
+			$(".select").selectmenu();
+		}
 
 	/*
 	$(window).scroll(function () {

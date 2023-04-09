@@ -211,7 +211,7 @@ body {
 	text-decoration: none;
 }
 .bct a:hover {
-	color: #f00;
+	color: #00B465;
 }
 @media (min-width: 768px) {
 	p {
@@ -713,7 +713,7 @@ body {
 	fill: #009B85;
 }
 .bct p a:hover svg {
-	fill: #f00;
+	fill: #00B465;
 }
 @media (min-width: 768px) {
 	.bct {
