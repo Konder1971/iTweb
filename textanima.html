@@ -11,9 +11,144 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-</head>
+	<style type="text/css">
+		.anima__text-1 .wrapper {
+			background: #000;
+			color: #fff;
+		}
+		.wave {
+			color: #999999;
+			animation: 0.5s color infinite;
+		}
+		@keyframes color {
+			50% {
+				color: #8fc8ae;
+			}
+		}
+		@media (min-width: 768px) {
+			.anima__text-1 {
+				margin-bottom: 60px;
+			}
+			.anima__text-1 .wrapper {
+				letter-spacing: 2px;
+				font-size: 30px;
+				line-height: 46px;
+				font-weight: 600;
+				padding: 40px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				margin: 0 28px;
+			}
+			.anima__text-1 {
+				margin-bottom: 30px;
+			}
+			.anima__text-1 .wrapper {
+				letter-spacing: 1px;
+				font-size: 18px;
+				line-height: 30px;
+				font-weight: 700;
+				padding: 20px 25px;
+			}
+		}
 
-<body>
+
+		.imp h2 {
+			text-align: center;
+		}
+		@media (min-width: 768px) {
+			.imp {
+				margin-bottom: 60px;
+			}
+			.imp h2 {
+				font-size: 30px;
+				line-height: 40px;
+				margin-bottom: 5px;
+			}
+			.imp p {
+				font-size: 30px;
+				line-height: 46px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.imp {
+				margin-bottom: 60px;
+			}
+			.imp h2 {
+				font-size: 24px;
+				line-height: 33px;
+				margin: 0 auto 10px;
+			}
+			.imp p {
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+
+
+		.button-anima {
+			margin-bottom: 80px;
+		}
+		.button-anima h2 {
+			text-align: center;
+		}
+		.button-anima input[type="button"] {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			text-decoration: none;
+			border: 2px solid #000;
+			color: #000;
+			line-height: 1;
+			background-color: #fff;
+			cursor: pointer;
+			margin: 0 auto;
+			padding: 0 30px;
+		}
+		.button-anima input[type="button"]:hover {
+			background-color: #00B465;
+			border: 2px solid #00B465;
+		}
+		@media (min-width: 768px) {
+			.button-anima h2 {
+				font-size: 30px;
+				line-height: 40px;
+				margin-bottom: 5px;
+			}
+			.button-anima input[type="button"] {
+				height: 53px;
+				border-radius: 27px;
+				font-size: 20px;
+				font-weight: 600;
+				margin-top: 20px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.button-anima h2 {
+				font-size: 24px;
+				line-height: 33px;
+				margin: 0 auto 10px;
+			}
+			.button-anima input[type="button"] {
+				height: 42px;
+				border-radius: 21px;
+				font-size: 20px;
+				font-weight: 600;
+				margin: 20px auto 0;
+				font-size: 14px;
+				line-height: 1;
+				font-weight: 800;
+			}
+		}
+
+	</style>
+
+</head>
+<body onload="startShow()">
 
 	<!-- top start -->
 	<div class="top">
@@ -39,13 +174,17 @@
 										<ul>
 											<li>
 												<a href="grid.html" title="">
-													CSS Grid Layout
+													<span class="text">CSS Grid Layout</span>
 												</a>
 											</li>
 											<li>
 												<a href="slider.html" title="">
-													</span>
-													<span class="text">Слайдеры/карусели</span>
+													<span class="text">Слайдеры</span>
+												</a>
+											</li>
+											<li>
+												<a href="carousels.html" title="">
+													<span class="text">Карусели</span>
 												</a>
 											</li>
 											<li>
@@ -78,7 +217,6 @@
 										<ul>
 											<li>
 												<a href="menu.html" title="">
-													</span>
 													<span class="text">Навигация</span>
 												</a>
 											</li>
@@ -102,7 +240,7 @@
 								</div>
 							</li>
 							<li>
-								<a class="navlink" href="contact.html" title="">Contact</a>	
+								<a class="navlink" href="contact.html" title="">Contact</a>
 							</li>
 						</ul>
 					</nav>
@@ -122,9 +260,6 @@
 					<h2>
 						Текстовые анимации
 					</h2>
-					<p>
-						
-					</p>
 				</div>
 			</div>
 		</div>
@@ -132,15 +267,123 @@
 	<!-- block center text stop -->
 
 
-	<div class="vaContainer">
-		<div class="vaContent">			
+	<div class="vaContainer anima__text-1">
+		<div class="wrapper">
+			<p class="text-1">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi, tenetur velit sunt hic non rem mollitia doloribus ex nulla.
+			</p>
 		</div>
 	</div>
 
+
+	<div class="vaContainer imp">
+		<h2>Техт имитация печатной машинки</h2>
+		<p class="out"></p>
+	</div>
+
+	<div class="vaContainer button-anima">
+		<h2>Кнопка с анимированным текстом</h2>
+		<form name="animationbutton">
+			<input type="button" name="but" onClick="gotoURL()">
+		</form>
+	</div>
+
+
+
 	<div class="to-up">&uarr;</div>
-	
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 
+	<script>
+		let wrapper = document.querySelector(".wrapper");
+		let text = document.querySelector(".text-1");
+		let textCont = text.textContent;
+		text.style.display = "none";
+		for (var i = 0; i < textCont.length; i++) {
+			(function (i) {
+				setTimeout(function () {
+					let texts = document.createTextNode(textCont[i])
+					let span = document.createElement('span');
+					span.appendChild(texts);
+					span.classList.add("wave");
+					wrapper.appendChild(span);
+				}, 75 * i);
+			}(i));
+		}
+
+
+
+		const t = [
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi.\n',
+			'Tenetur velit sunt hic non rem mollitia doloribus ex nulla.\n',
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit.\n',
+		];
+		function typeText() {
+			let line = 0;
+			let count = 0;
+			let out = '';
+			let htmlOut = document.querySelector('.out');
+			function typeLine() {
+				let interval = setTimeout(function () {
+					out += t[line][count];
+					htmlOut.innerHTML = out + '|';
+					count++;
+					if (count >= t[line].length) {
+						count = 0;
+						line++;
+						if (line == t.length) {
+							clearTimeout(interval);
+							htmlOut.innerHTML = out;
+							return true;
+						}
+					};
+					typeLine();
+				}, getRandomInt(getRandomInt(350 * 3.0)));
+			}
+			typeLine();
+		};
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		};
+		typeText();
+
+
+
+		let timerID = 0;
+    let timerRunning = false;
+    let charNo = 0;
+    let charMax = 0;
+    let textLine = "itweb - Goto Web Site"; //Текст на кнопке
+    let urlLine = "https://itweb.vercel.app/"; //Адрес перехода после нажатия
+    function startShow() {
+      stopShow();
+      showLine();
+      timerRunning = true;
+    }
+    function stopShow() {
+      if (timerRunning) {
+        clearTimeout(timerID);
+        timerRunning = false;
+      }
+    }
+    function showLine() {
+      charMax = textLine.length;
+      if (charNo <= charMax) {
+        document.animationbutton.but.value = textLine.substring(0, charNo);
+        // document.animationbutton.but.style.color = "red";
+        charNo++;
+        timerID = setTimeout("showLine()", 100);
+      } else {
+        charNo = 0;
+        timerID = setTimeout("showLine()", 3000);
+      }
+    }
+    function gotoURL() {
+      location.href = urlLine;
+    }
+	</script>
+
 </body>
+
 </html>
