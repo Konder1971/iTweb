@@ -29,7 +29,7 @@
 
 .slider__control {
   position: absolute;
-  top: 50%;
+  top: 105px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +37,7 @@
   color: #fff;
   text-align: center;
   height: 50px;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .slider__control_hide {
@@ -53,12 +52,11 @@
   right: 0;
 }
 
-.slider__control:hover,
-.slider__control:focus {
+.slider__control:hover {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .slider__control::before {
