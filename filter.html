@@ -163,11 +163,11 @@
 			transition: 300ms ease-out;
 		}
 		.projectblock h3 {
-				color: #666;
-				font-size: 18px;
-				line-height: 26px;
-				font-weight: 300;
-				margin-bottom: 4px;
+			color: #666;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 300;
+			margin-bottom: 4px;
 		}
 		.projectblock ul,
 		.projectblock ul li {
@@ -201,20 +201,22 @@
 			color: #c60;
 		}
 
+		.nav ul li {
+			cursor: pointer;
+			font-size: 20px;
+			color:#2196F3;
+		}
+		.nav li:hover,
+		.nav li.active {
+			color:#000;
+		}
+		.nav li.active {
+			cursor: default;
+		}
 		@media (min-width: 768px) {
-			.nav li {
-				cursor: pointer;
+			.nav ul li {
 				font-size: 20px;
-				color:#2196F3;
 			}
-			.nav li:hover,
-			.nav li.active {
-				color:#000;
-			}
-			.nav li.active {
-				cursor: default;
-			}
-
 			.projectsblocks {
 				margin-left: -10px;
 			}
@@ -478,7 +480,7 @@
 	<script>
 		filterSelection("all")
 		function filterSelection(c) {
-			var x, i;
+			let x, i;
 			x = document.getElementsByClassName("filterDiv");
 			if (c == "all") c = "";
 			for (i = 0; i < x.length; i++) {
@@ -487,7 +489,7 @@
 			}
 		}
 		function w3AddClass(element, name) {
-			var i, arr1, arr2;
+			let i, arr1, arr2;
 			arr1 = element.className.split(" ");
 			arr2 = name.split(" ");
 			for (i = 0; i < arr2.length; i++) {
@@ -495,7 +497,7 @@
 			}
 		}
 		function w3RemoveClass(element, name) {
-			var i, arr1, arr2;
+			let i, arr1, arr2;
 			arr1 = element.className.split(" ");
 			arr2 = name.split(" ");
 			for (i = 0; i < arr2.length; i++) {
@@ -505,8 +507,8 @@
 			}
 			element.className = arr1.join(" ");
 		}
-		var btnContainer = document.getElementById("myBtnContainer");
-		var btns = btnContainer.getElementsByClassName("btn");
+		let btnContainer = document.getElementById("myBtnContainer");
+		let btns = btnContainer.getElementsByClassName("btn");
 		for (var i = 0; i < btns.length; i++) {
 			btns[i].addEventListener("click", function(){
 				var current = document.getElementsByClassName("active");
@@ -560,6 +562,17 @@
 				hpeheight[i].style.height = hhpe + "px";
 			}
 		}
+
+		// активный линк для фильтра
+		let nl = document.querySelectorAll(".nav li");
+		for (var i = 0; i < nl.length; i++) {
+			nl[i].addEventListener("click", function(){
+				let current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				$('.nav li.active').removeClass('active');
+				this.className += " active";
+			});
+		}	
 
 	</script>
 
