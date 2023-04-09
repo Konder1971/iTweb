@@ -472,9 +472,12 @@ body {
 		margin: 25px 0 0 15px;
 	}
 }
+.navigations nav ul > li:first-child {
+	margin-left: 0;
+}
 @media (min-width: 1025px) and (max-width: 1100px) {
 	.navigations nav ul > li {
-		margin-left: 35px;
+		margin-left: 22px;
 	}
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
