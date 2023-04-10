@@ -79,6 +79,11 @@
 			margin-left: -3px;
 			overflow: hidden;
 		}
+		@media (min-width: 768px) {
+			.projectsblocks {
+				margin-bottom: 40px;
+			}
+		}
 		@media (max-width: 767.98px) {
 			.vaContainer {
 				padding: 0 28px;
@@ -221,15 +226,13 @@
 				font-size: 20px;
 			}
 			.projectsblocks {
-				margin-left: -10px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
 			}
 			.section-col {
-				padding: 0 10px;
-			}
-			.projectblock {
-				width: 25%;
-				float: left;
-				display: block;
+				width: calc(25% - 10px);
 			}
 		}
 		@media (max-width: 767.98px) {
