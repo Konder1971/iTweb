@@ -260,10 +260,36 @@
 				<div class="bct-container">
 					<div class="bct-contasnt">
 						<div class="bct-col">
-							<div class="bct-up">HTML Video</div>
+							<div class="bct-up">HTML5 Video</div>
 							<h2>
 								
 							</h2>
+
+              <div class="videoBox">
+                <div class="video-content">
+                  <video loop playsinline poster="images/poster.png" id="myVideo-1" class="videoblock"><!-- controls autoplay -->
+                    <source src="https://htv-streaming-otfp.hearst.io/9d4b3ba3-bef8-40d9-a8ba-b0f9f4494455/video_rover_16x9_480p_sd_1648826773_81847/master.m3u8?subtitles=en" type="application/x-mpegURL">
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
+                  <script>
+                    var video1 = document.getElementById("myVideo-1");
+                    var btn1 = document.getElementById("myBtn-1");
+                    
+                    function myFunction1() {
+                      if (video1.paused) {
+                        video1.play();
+                        btn1.innerHTML = "<span></span>";
+                      } else {
+                        video1.pause();
+                        btn1.innerHTML = "<em></em>";
+                      }
+                    }
+                    </script>
+                </div>
+                <div class="video-text">Video: WMOR Custom Native Video</div>
+              </div>
+
 						</div>
 					</div>
 				</div>
@@ -275,6 +301,22 @@
 	<div class="to-up">&uarr;</div>
 	
 	<script src="js/jquery.min.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/videojs-contrib-hls.js"></script>
+  <script>
+    const player = videojs('myVideo-1');
+    //player.play();
+  </script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script>
+    (function($){
+			$(window).on("load",function(){	
+				$(".modal").mCustomScrollbar({
+          theme:"dark-thin"
+				});	
+			});
+    })(jQuery);
+  </script>
 	<script src="js/main.js"></script>
 
 </body>
