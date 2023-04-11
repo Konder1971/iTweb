@@ -25,6 +25,14 @@
 			-o-background-size: cover;
 			background-size: cover;
 		}
+		.videoBlock-1 .myvideo img {
+			background-repeat: no-repeat;
+			background-position: center center;	
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
 		.videoBlock-1 .myvideo iframe,
 		.videoBlock-1 .myvideo object,
 		.videoBlock-1 .myvideo embed {
@@ -270,7 +278,8 @@
 		<div class="vaContent">
 			<div class="videoBlock videoBlock-1">
 				<h2 class="headerh2">YouTube адаптивное видео, простое</h2>
-				<div class="myvideo" style="background-image: url(images/ya.jpg);">
+				<div class="myvideo">
+					<img src="images/ya.jpg" style="background-image: url(images/ya.jpg);">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/kPYBn8VcdXk" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="myvideoContent">
@@ -282,6 +291,24 @@
 				</div>
 			</div>			
 		</div>
+		<script>
+			$(function() { 
+				var videos  = $(".myvideo");
+						videos.on("click", function(){
+								var elm = $(this),
+										conts   = elm.contents(),
+										le      = conts.length,
+										ifr     = null;
+
+								for(var i = 0; i<le; i++){
+									if(conts[i].nodeType == 8) ifr = conts[i].textContent;
+								}
+
+								elm.addClass("player").html(ifr);
+								elm.off("click");
+						});
+			});
+		</script>
 	</div>
 	<!-- videoBlock-1 stop -->
 
