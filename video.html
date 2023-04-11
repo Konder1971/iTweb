@@ -18,6 +18,12 @@
 			padding: 0 0 56.25%; /* for 16:9 (if 4:3 — 75%) */
 			height: 0;
 			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: center center;	
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 		}
 		.videoBlock-1 .myvideo iframe,
 		.videoBlock-1 .myvideo object,
@@ -261,7 +267,7 @@
 		<div class="vaContent">
 			<div class="videoBlock videoBlock-1">
 				<h2 class="headerh2">YouTube адаптивное видео, простое</h2>
-				<div class="myvideo">
+				<div class="myvideo" style="background-image: url(images/ya.jpg);">
 					<iframe poster="https://itweb.vercel.app/images/ya.jpg" width="560" height="315" src="https://www.youtube.com/embed/kPYBn8VcdXk" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="myvideoContent">
