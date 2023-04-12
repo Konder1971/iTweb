@@ -1941,7 +1941,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   top: 0;
 }
 .sliderSs .slick-arrow:hover {
-  opacity: .4;
+  /* opacity: .4; */
 }
 .sliderSs .slick-prev {
 	background-image: url(../images/arrow-prev.svg);
