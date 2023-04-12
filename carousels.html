@@ -518,12 +518,65 @@
 		</div>
 	</div>
 
+	<!-- CASE STUDY BOX start -->
+	<div class="csBox">
+		<div class="cs-container">
+			<div class="cs-content">
+				<div class="cs-col cs-col-1">
+					<div class="cs-text">
+						<div class="cs-up up ">News carousel</div>
+						<h2>Карусель новостей</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider CASE STUDY start -->
+		<div class="sliderSs-box">
+			<div class="sliderSs">
+				<!-- sliderSs-block repeat start -->
+				<a href="#" class="sliderSs-block green"><!-- add class green -->
+					<div class="separator"></div>
+					<h3>The Challenge</h3>
+					<p>
+						Our Customer needed to provide end-users with insights 
+						that went beyond their local operating geography.
+					</p>
+				</a>
+				<!-- sliderSs-block repeat stop -->
+				<!-- sliderSs-block repeat start -->
+				<a href="#" class="sliderSs-block blue"><!-- add class blue -->
+					<div class="separator"></div>
+					<h3>The Solution</h3>
+					<p>
+						The Customer integrated AdeptID data on local supply and demand, 
+						wage levels, and recommended pools of talent provide some insights 
+						to US users outside of their target regions.
+					</p>
+				</a>
+				<!-- sliderSs-block repeat stop -->
+				<!-- sliderSs-block repeat start -->
+				<a href="#" class="sliderSs-block yellow"><!-- add class yellow -->
+					<div class="separator"></div>
+					<h3>The Result</h3>
+					<p>
+						The Customer was able to improve and increase end-customer engagement.
+					</p>
+				</a>
+				<!-- sliderSs-block repeat stop -->
+			</div>
+		</div>
+		<!-- slider CASE STUDY stop -->
+	</div>
+	<!-- CASE STUDY BOX stop -->
+
 
 	<div class="to-up">&uarr;</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 
+
+	<script src="js/slick.js"></script>
 	<script src="chiefslider/chiefslider.js"></script>
 	<script type="text/javascript">
 		const $slider = document.querySelector('[data-slider="chiefslider"]');
@@ -534,6 +587,20 @@
       refresh: true,
       swipe: true
     });
+	</script>
+
+	<script>
+		$('.sliderSs').slick({
+			infinite: true,
+			arrows: true,
+			dots: false,
+			autoplay: false,
+			//autoplaySpeed: 3000,
+			//speed: 600,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+      variableWidth: true,
+		});
 	</script>
 
 </body>
