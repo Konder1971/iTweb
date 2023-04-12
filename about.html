@@ -241,22 +241,13 @@
 	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function () {
-
-		$('.title').click(function (event) {
-			if($('.block').hasClass('accodion')) {
-				$('.title').not($(this)).removeClass('active');
-				$('.text').not($(this).next()).slideUp(500);
-			};
-			$(this).toggleClass('active').next().slideToggle(500);
-		});
-
-		$('.spoler-title').click(function () {
-			$(this).next().slideToggle(500);
-			$('.spoler-text').click(function () {
-				$(this).slideUp(500);
+			$('.title').click(function (event) {
+				if($('.block').hasClass('accodion')) {
+					$('.title').not($(this)).removeClass('active');
+					$('.text').not($(this).next()).slideUp(500);
+				};
+				$(this).toggleClass('active').next().slideToggle(500);
 			});
-		})
-
 		});
 	</script>
 </body>
