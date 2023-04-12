@@ -91,9 +91,11 @@
 		}
 		/* videoBlock-1 stop */
 
+
 		/* htmlVideo star */
 		video {
 			display: block;
+			max-width: 100%;
 		}
 		.htmlVideo .bct-container {
 			max-width: 1170px;
@@ -283,106 +285,6 @@
 	<!-- block center text stop -->
 
 
-
-
-
-
-  <!-- <link rel="stylesheet" href="css/video-js.css" rel="stylesheet">
-	<style type="text/css">
-		.video-content {
-			position: relative;
-		}
-		.btn-video {
-			position: absolute;
-			z-index: 2;
-			top: 50%;
-			left: 50%;
-			-moz-transform:translate(-50%, -50%);
-			-ms-transform:translate(-50%, -50%);
-			-webkit-transform:translate(-50%, -50%);
-			-o-transform:translate(-50%, -50%);
-			transform:translate(-50%, -50%);
-		}
-		.btn-video {
-			width: 100%;
-			height: 100%;
-			cursor: pointer;
-		}
-		.btn-video span,
-		.btn-video em {
-			display: block;
-			width: 40px;
-			height: 40px;
-			position: relative;
-			top: 50%;
-			left: 50%;
-			margin: -20px 0 0 -20px;
-		}
-		.btn-video em { 
-			background: url(images/play-circle.svg) no-repeat 50% 50%;
-			background-size: 35px 35px;
-		}
-		.btn-video span {
-			background: url(images/awesome-pause.svg) no-repeat 50% 50%;
-			background-size: 30px 30px;
-			opacity: 0;
-		}
-		.videoblock:hover + .btn-video span,
-		.videoblock + .btn-video:hover span {
-			opacity: 1;
-		}
-		.video-text {
-			font-size: 16px;
-		}
-
-		.videoBox {
-			width: 470px;
-			text-align: left;
-			float: right;
-		}
-		.video-content {
-			width: 470px;
-			height: 265px;
-			margin: 0 0 20px;
-		}
-		.video-content video {
-			width: 470px;
-			height: 265px;
-		}
-		
-		@media (min-width: 768px) {
-		}
-		@media (max-width: 767.98px) {
-		}
-	</style>
-	<div class="videoBox-1">
-		<div class="video-content-1">
-			<video loop playsinline poster="images/poster.png" id="myVideo-1" class="videoblock">
-				<source src="https://htv-streaming-otfp.hearst.io/9d4b3ba3-bef8-40d9-a8ba-b0f9f4494455/video_rover_16x9_480p_sd_1648826773_81847/master.m3u8?subtitles=en" type="application/x-mpegURL">
-				Your browser does not support HTML5 video.
-			</video>
-			<div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
-			<script>
-				var video1 = document.getElementById("myVideo-1");
-				var btn1 = document.getElementById("myBtn-1");
-				
-				function myFunction1() {
-					if (video1.paused) {
-						video1.play();
-						btn1.innerHTML = "<span></span>";
-					} else {
-						video1.pause();
-						btn1.innerHTML = "<em></em>";
-					}
-				}
-				</script>
-		</div>
-		<div class="video-text">Video: WMOR Custom Native Video</div>
-	</div> -->
-
-
-
-
 	<!-- htmlVideo start -->
 	<div class="htmlVideo">
 		<div class="bct">
@@ -390,11 +292,109 @@
 				<h2>HTML5 Video, adaptive</h2>
 				<div class="htmlVideo-box">
 					<div class="htmlVideo-col">
-						<video width="100%" height="auto" controls poster="images/fm2.jpg">
-						<!-- <source src="video/chacha4.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
-						<source src="video/fm2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						<!-- <source src="video/chacha4.webm" type='video/webm; codecs="vp8, vorbis"'> -->
-						</video>
+						<!-- <link rel="stylesheet" href="css/video-js.css" rel="stylesheet"> -->
+						<style type="text/css">
+							.videoBox-1 {
+								position: relative;
+							}
+							.video-content-1 {
+								margin: 0 auto;
+								display: flex;
+								justify-content: center;
+								max-width: 100%;
+							}
+							.video-content {
+								position: relative;
+							}
+							.btn-video {
+								position: absolute;
+								z-index: 2;
+								top: 50%;
+								left: 50%;
+								-moz-transform:translate(-50%, -50%);
+								-ms-transform:translate(-50%, -50%);
+								-webkit-transform:translate(-50%, -50%);
+								-o-transform:translate(-50%, -50%);
+								transform:translate(-50%, -50%);
+							}
+							.btn-video {
+								width: 100%;
+								height: 100%;
+								cursor: pointer;
+							}
+							.btn-video span,
+							.btn-video em {
+								display: block;
+								width: 80px;
+								height: 80px;
+								position: relative;
+								top: 50%;
+								left: 50%;
+								margin: -40px 0 0 -40px;
+							}
+							.btn-video em { 
+								background: url(images/play-circle.svg) no-repeat 50% 50%;
+								background-size: 80px 80px;
+							}
+							.btn-video span {
+								background: url(images/awesome-pause.svg) no-repeat 50% 50%;
+								background-size: 80px 80px;
+								opacity: 0;
+							}
+							.videoblock:hover + .btn-video span,
+							.videoblock + .btn-video:hover span {
+								opacity: 1;
+							}
+					
+							.videoBox {
+								/* width: 470px; */
+								text-align: left;
+								float: right;
+							}
+							.video-content {
+								/* width: 470px;
+								height: 265px; */
+								/* margin: 0 0 20px; */
+							}
+							.video-content video {
+								/* width: 470px;
+								height: 265px; */
+							}
+							
+							@media (min-width: 768px) {
+							}
+							@media (max-width: 767.98px) {
+							}
+						</style>
+						<div class="videoBox-1">
+							<div class="video-content-1">
+								<video loop playsinline poster="images/fm2.jpg" id="myVideo-1" class="videoblock">
+									<source src="video/fm2.mp4">
+										Your browser does not support HTML5 video.
+									</video>
+									<div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
+									<script>
+										var video1 = document.getElementById("myVideo-1");
+										var btn1 = document.getElementById("myBtn-1");
+										
+										function myFunction1() {
+											if (video1.paused) {
+												video1.play();
+												btn1.innerHTML = "<span></span>";
+											} else {
+												video1.pause();
+												btn1.innerHTML = "<em></em>";
+											}
+										}
+									</script>
+							</div>
+							<!-- <script src="js/video.js"></script> -->
+							<!-- <script src="js/videojs-contrib.js"></script> -->
+							<script>
+								const player = videojs('myVideo-1');
+									player.play();
+							</script>
+						</div>
 					</div>
 					<div class="htmlVideo-col">
 						<video width="100%" height="auto" controls poster="images/fm1.jpg">
@@ -433,12 +433,6 @@
 	<div class="to-up">&uarr;</div>
 	
 	<script src="js/jquery.min.js"></script>
-  <script src="js/video.js"></script>
-  <script src="js/videojs-contrib.js"></script>
-  <script>
-    const player = videojs('myVideo-1');
-    //player.play();
-  </script>
 	<script src="js/main.js"></script>
 
 </body>
