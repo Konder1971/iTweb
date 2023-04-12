@@ -2089,7 +2089,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		padding-left: 38px;
 	}
 	.sliderSs .slick-slide {
-		width: 316px!important;
+		width: 300px!important;
 		margin-right: 12px;
 		border-radius: 30px;
 		overflow: hidden;
@@ -2104,7 +2104,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		left: 275px;
 	}
 	.sliderSs-block {
-		padding: 35px 35px 25px;
+		padding: 35px 20px 25px 35px;
 	}
 	.sliderSs-block .separator {
 		width: 76px;
