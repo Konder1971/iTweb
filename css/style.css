@@ -1989,7 +1989,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		padding: 60px 5px 6px;
 	}
 	.sliderSs .slick-slide {
-		width: 670px!important;
+		width: 600px!important;
 		margin-right: 27px;
 		border-radius: 48px;
 		overflow: hidden;
@@ -2017,7 +2017,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		left: 702px;
 	}
 	.sliderSs-block {
-		padding: 50px 50px 35px;
+		padding: 50px 30px 35px 50px;
 	}
 	.sliderSs-block .separator {
 		width: 76px;
@@ -2050,7 +2050,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		padding-left: 60px;
 	}
 	.sliderSs .slick-slide {
-		width: 670px!important;
+		width: 600px!important;
 		margin-right: 27px;
 		border-radius: 48px;
 		overflow: hidden;
