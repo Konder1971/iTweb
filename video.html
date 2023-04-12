@@ -45,7 +45,6 @@
 		@media (min-width: 768px) {
 			.videoBlock-1 {
 				margin-bottom: 60px;
-				margin-top: -20px;
 			}
 			.videoBlock-1 .myvideoContent {
 				padding: 20px 20px 22px;
@@ -70,11 +69,9 @@
 		}
 		@media (max-width: 767.98px) {
 			.videoBlock-1 {
-				margin-bottom: 10px;
-				margin-top: -15px;
 			}
 			.videoBlock-1 .myvideoContent {
-				padding: 22px 15px 22px;
+				padding: 24px 15px 27px;
 			}
 			.videoBlock-1 .sub {
 				font-weight: 800;
@@ -89,18 +86,28 @@
 			.videoBlock-1 .description {
 				font-size: 18px;
 				line-height: 28px;
+				margin-bottom: 0;
 			}
 		}
 		/* videoBlock-1 stop */
 
 		/* htmlVideo star */
 		.htmlVideo .bct-container {
-			border-top: 2px solid #009B85;
 			max-width: 1170px;
 		}
+		.htmlVideo h2 {
+			color: #00B465;
+			text-align: center;
+		}
 		@media (min-width: 768px) {
-			.htmlVideo .bct-container {
-				padding-top: 40px;
+			.htmlVideo .bct {
+				margin-bottom: 40px;
+				margin-top: -35px;
+			}
+			.htmlVideo h2 {
+				font-size: 26px;
+				line-height: 35px;
+				margin-bottom: 15px;
 			}
 			.htmlVideo-box {
 				display: flex;
@@ -113,11 +120,23 @@
 			}
 		}
 		@media (max-width: 767.98px) {
-			.htmlVideo {
-				display: flex;
-				flex-direction: row;
-				flex-wrap: nowrap;
-				justify-content: space-between;
+			.htmlVideo-box {
+			}
+			.htmlVideo .bct {
+				margin-bottom: 0;
+				margin-top: -35px;
+			}
+			.htmlVideo h2 {
+				font-size: 24px;
+				line-height: 26px;
+				font-weight: 600;
+				margin-bottom: 15px;
+			}
+			.htmlVideo-col {
+				margin-bottom: 30px;
+			}
+			.htmlVideo-col:nth-child(2) {
+				display: none;
 			}
 			.htmlVideo .bct-container {
 				padding-top: 20px;
@@ -128,12 +147,8 @@
 			.htmlVideo .bct-up {
 				margin-bottom: 17px;
 			}
-			.htmlVideo-col {
-				margin-bottom: 25px;
-			}
-			.htmlVideo-col:last-child {
-				margin-bottom: 0;
-			}
+		}
+		@media (max-width: 767.98px) {
 		}
 		/* htmlVideo stop */
 	</style>
@@ -265,6 +280,61 @@
 	<!-- block center text stop -->
 
 
+	<!-- htmlVideo start -->
+	<div class="htmlVideo">
+		<div class="bct">
+			<div class="bct-container">
+				<h2>HTML5 Video, adaptive</h2>
+				<div class="htmlVideo-box">
+					<div class="htmlVideo-col">
+						<video width="100%" height="auto" controls poster="images/bg_wn1.jpg">
+						<source src="video/wine_painting.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="video/wine_painting.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						<source src="video/wine_painting.webm" type='video/webm; codecs="vp8, vorbis"'>
+						</video>
+					</div>
+					<div class="htmlVideo-col">
+						<video width="100%" height="auto" controls poster="images/bg_video1.jpg">
+						<source src="video/chacha4.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="video/chacha4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						<source src="video/chacha4.webm" type='video/webm; codecs="vp8, vorbis"'>
+						</video>
+					</div>
+				</div>
+
+
+
+				<!-- <div class="videoBox-1">
+					<div class="video-content-1">
+						<video loop playsinline poster="images/poster.png" id="myVideo-1a" class="videoblock">
+							<source src="https://htv-streaming-otfp.hearst.io/9d4b3ba3-bef8-40d9-a8ba-b0f9f4494455/video_rover_16x9_480p_sd_1648826773_81847/master.m3u8?subtitles=en" type="application/x-mpegURL">
+							Your browser does not support HTML5 video.
+						</video>
+						<div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
+						<script>
+							var video1 = document.getElementById("myVideo-1a");
+							var btn1 = document.getElementById("myBtn-1");
+							
+							function myFunction1() {
+								if (video1.paused) {
+									video1.play();
+									btn1.innerHTML = "<span></span>";
+								} else {
+									video1.pause();
+									btn1.innerHTML = "<em></em>";
+								}
+							}
+							</script>
+					</div>
+					<div class="video-text">Video: WMOR Custom Native Video</div>
+				</div> -->
+
+			</div>
+		</div>
+	</div>
+	<!-- htmlVideo stop -->
+
+
 	<!-- videoBlock-1 start -->
 	<div class="vaContainer">
 		<div class="vaContent">
@@ -286,67 +356,11 @@
 	<!-- videoBlock-1 stop -->
 
 
-		<!-- htmlVideo start -->
-		<div class="htmlVideo">
-			<!-- <div class="separator"><span></span></div> -->
-			<div class="bct">
-				<div class="bct-container">
-					<div class="bct-up">HTML5 Video, adaptive</div>
-					<div class="htmlVideo-box">
-						<div class="htmlVideo-col">
-							<video width="100%" height="auto" controls poster="images/bg_wn1.jpg">
-							<source src="video/wine_painting.ogv" type='video/ogg; codecs="theora, vorbis"'>
-							<source src="video/wine_painting.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-							<source src="video/wine_painting.webm" type='video/webm; codecs="vp8, vorbis"'>
-							</video>
-						</div>
-						<div class="htmlVideo-col">
-							<video width="100%" height="auto" controls poster="images/bg_video1.jpg">
-							<source src="video/chacha4.ogv" type='video/ogg; codecs="theora, vorbis"'>
-							<source src="video/chacha4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-							<source src="video/chacha4.webm" type='video/webm; codecs="vp8, vorbis"'>
-							</video>
-						</div>
-					</div>
-
-
-
-					<div class="videoBox-1">
-						<div class="video-content-1">
-							<video loop playsinline poster="images/poster.png" id="myVideo-1a" class="videoblock">
-								<source src="https://htv-streaming-otfp.hearst.io/9d4b3ba3-bef8-40d9-a8ba-b0f9f4494455/video_rover_16x9_480p_sd_1648826773_81847/master.m3u8?subtitles=en" type="application/x-mpegURL">
-								Your browser does not support HTML5 video.
-							</video>
-							<div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
-							<script>
-								var video1 = document.getElementById("myVideo-1a");
-								var btn1 = document.getElementById("myBtn-1");
-								
-								function myFunction1() {
-									if (video1.paused) {
-										video1.play();
-										btn1.innerHTML = "<span></span>";
-									} else {
-										video1.pause();
-										btn1.innerHTML = "<em></em>";
-									}
-								}
-								</script>
-						</div>
-						<div class="video-text">Video: WMOR Custom Native Video</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- htmlVideo stop -->
-
-
 	<div class="to-up">&uarr;</div>
 	
 	<script src="js/jquery.min.js"></script>
   <script src="js/video.js"></script>
-  <script src="js/videojs-contrib-hls.js"></script>
+  <!-- <script src="js/videojs-contrib-hls.js"></script>
   <script>
     const player = videojs('myVideo-1a');
     //player.play();
@@ -360,7 +374,7 @@
 				});	
 			});
     })(jQuery);
-  </script>
+  </script> -->
 	<script src="js/main.js"></script>
 
 </body>
