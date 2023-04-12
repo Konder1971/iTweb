@@ -475,7 +475,7 @@ body {
 		margin: 25px 0 0 15px;
 	}
 }
-@media (min-width: 1025px) and (max-width: 1199.99px) {
+@media (min-width: 1025px) and (max-width: 1199.98px) {
 	.navigations nav > ul > li {
 		margin-left: 22px;
 	}
