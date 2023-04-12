@@ -12,21 +12,21 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<style type="text/css">
-		.block {
+		.blockacc {
       padding: 0;
     }
-    .item {
+    .itemacc {
       margin: 0 0 20px 0;
     }
-    .title {
+    .titleacc {
       font-weight: 600;
       text-transform: uppercase;
       position: relative;
       padding: 0 0 0 30px;
       cursor: pointer;
     }
-    .title:after,
-    .title:before {
+    .titleacc:after,
+    .titleacc:before {
       content: '';
       width: 10px;
       height: 1px;
@@ -34,26 +34,26 @@
       position: absolute;
       top: 10px;
     }
-    .title:after {
+    .titleacc:after {
       transform: rotate(-40deg);
       left: 8px;
     }
-    .title:before {
+    .titleacc:before {
       transform: rotate(40deg);
       left: 0;
     }
-    .title.active:after,
-    .title.active:before {
+    .titleacc.activeacc:after,
+    .titleacc.activeacc:before {
       background-color: #b00;
       transition: all .5s ease 0s
     }
-    .title.active:after {
+    .titleacc.activeacc:after {
       transform: rotate(40deg);
     }
-    .title.active:before {
+    .titleacc.activeacc:before {
       transform: rotate(-40deg);
     }
-    .text {
+    .textacc {
       display: none;
       padding: 10px 0 0 0;
     }
@@ -192,12 +192,11 @@
 
 	<div class="vaContainer">
 		<div class="vaContent">
-
-			<div class="block accodion">
+			<div class="blockacc accodion">
 		
-				<div class="item">
-					<div class="title">Заголовок №1</div>
-					<div class="text">
+				<div class="itemacc">
+					<div class="titleacc">Заголовок №1</div>
+					<div class="textacc">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam molestias sint ipsum dolores reprehenderit
 						illum.
 						Illo in consequuntur hic deserunt dolores. Est saepe explicabo et non sunt. Magni alias unde iste sapiente error
@@ -206,9 +205,9 @@
 					</div>
 				</div>
 		
-				<div class="item">
-					<div class="title">Заголовок №2</div>
-					<div class="text">
+				<div class="itemacc">
+					<div class="titleacc">Заголовок №2</div>
+					<div class="textacc">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam molestias sint ipsum dolores reprehenderit
 						illum.
 						Illo in consequuntur hic deserunt dolores. Est saepe explicabo et non sunt. Magni alias unde iste sapiente
@@ -218,9 +217,9 @@
 					</div>
 				</div>
 		
-				<div class="item">
-					<div class="title">Заголовок №3</div>
-					<div class="text">
+				<div class="itemacc">
+					<div class="titleacc">Заголовок №3</div>
+					<div class="textacc">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam molestias sint ipsum dolores reprehenderit
 						illum.
 						Illo in consequuntur hic deserunt dolores. Est saepe explicabo et non sunt. Magni alias unde iste sapiente
@@ -241,12 +240,12 @@
 	<script src="js/main.js"></script>
 	<script>
 		$(document).ready(function () {
-			$('.title').click(function (event) {
-				if($('.block').hasClass('accodion')) {
-					$('.title').not($(this)).removeClass('active');
-					$('.text').not($(this).next()).slideUp(500);
+			$('.titleacc').click(function (event) {
+				if($('.blockacc').hasClass('accodion')) {
+					$('.titleacc').not($(this)).removeClass('activeacc');
+					$('.textacc').not($(this).next()).slideUp(500);
 				};
-				$(this).toggleClass('active').next().slideToggle(500);
+				$(this).toggleClass('activeacc').next().slideToggle(500);
 			});
 		});
 	</script>
