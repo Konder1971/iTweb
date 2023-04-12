@@ -169,7 +169,7 @@ select {
 }
 body {
 	background-color: #f6f8fa;
-	font-family: 'Public Sans', sans-serif;
+	/* font-family: 'Public Sans', sans-serif; */
 	font-family: 'Roboto', sans-serif;
 	color: #000;
 	font-weight: 400;
