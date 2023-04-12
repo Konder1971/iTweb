@@ -1825,7 +1825,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 
 
 
-/* Карусель новостей start
+/* News carousel start
 --------------------------------------------------- */
 .csBox {
 	position: relative;
@@ -1835,10 +1835,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .cs-up {
   color: #00B465;
+	text-transform: uppercase;
 }
 @media (min-width: 1025px) {
 	.csBox {
-		margin: 0px 0 80px;
+		margin: 0 0 80px;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -1865,19 +1866,31 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		width: 370px;
 		min-height: 373px;
 	}
+	.cs-up {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	.csBox {
-		margin: 98px 0 -80px;
+		margin: 0 0 80px;
 	}
 	.cs-container {
 		padding: 0 60px;
 	}
 	.cs-content {
-		padding-top: 45px;
+		padding-top: 30px;
 	}
 	.cs-col-1 {
-		margin-bottom: 95px;
+		margin-bottom: 30px;
+	}
+	.cs-up {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 700;
+		margin-bottom: 20px;
 	}
 }
 @media (max-width: 767.98px) {
@@ -1888,13 +1901,16 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		padding: 0 38px;
 	}
 	.cs-content {
-		padding-top: 27px;
+		padding-top: 24px;
 	}
 	.cs-col-1 {
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 	}
 	.cs-up {
-		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 25px;
+		font-weight: 700;
+		margin-bottom: 10px;
 	}
 }
 
@@ -2001,7 +2017,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		left: 702px;
 	}
 	.sliderSs-block {
-		padding: 56px 100px;
+		padding: 50px 50px 35px;
 	}
 	.sliderSs-block .separator {
 		width: 76px;
@@ -2025,6 +2041,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	.sliderSs-block p {
 		font-size: 20px;
 		line-height: 34px;
+		margin-bottom: 0;
 	}
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2048,7 +2065,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		left: 600px;
 	}
 	.sliderSs-block {
-		padding: 56px 100px;
+		padding: 50px 50px 35px;
 	}
 	.sliderSs-block .separator {
 		width: 76px;
@@ -2063,6 +2080,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	.sliderSs-block p {
 		font-size: 20px;
 		line-height: 34px;
+		margin-bottom: 0;
 	}
 }
 @media (max-width: 767.98px) {
@@ -2086,7 +2104,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		left: 275px;
 	}
 	.sliderSs-block {
-		padding: 56px 58px 36px;
+		padding: 35px 35px 25px;
 	}
 	.sliderSs-block .separator {
 		width: 76px;
@@ -2101,7 +2119,8 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	.sliderSs-block p {
 		font-size: 17px;
 		line-height: 25px;
+		margin-bottom: 0;
 	}
 }
-/* Карусель новостей stop
+/* News carousel stop
 --------------------------------------------------- */
