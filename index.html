@@ -143,7 +143,7 @@
 			<div class="dawop-content">
 				<div class="dawop-header">
 					<div class="dawop-up">Frontend technologies</div>
-					<h2 class="animate__animated animate__backInLeft" style="animation-duration: 2s;">
+					<h2 class="animate__animated animate__backInLeft" style="animation-duration: 1.5s;">
 						Владею следующими технологиями
 					</h2>
 				</div>
@@ -387,6 +387,48 @@
 	<script>
 		new WOW().init();
 	</script>
+
+<!-- data-wow-duration: Продолжительность анимации
+data-wow-delay: Задержка перед запуском анимации
+data-wow-offset: Расстояние от нижнего края браузера для запуска анимации
+data-wow-iteration: Количество повторов анимации
+Пример:
+<section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+	Контент
+</section>
+<section class="wow slideInRight" data-wow-offset="10"  data-wow-iteration="10">
+	Контент
+</section>
+<section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+    Контент
+</section>
+<section class="wow slideInRight" data-wow-offset="10"  data-wow-iteration="10">
+    Контент
+</section>
+
+boxClass: Имя класса, которое показывает скрытое поле при прокрутке.
+animateClass: Имя класса, который запускает CSS анимацию
+offset: Определяет расстояние между нижней частью окна браузера и верхней частью скрытого окна. Когда страница прокручивается и достигает этого расстояния, открывается скрытое поле и запускается анимация.
+mobile: Включает и выключает WOW.js на мобильных устройствах.
+live: Действие с асинхронно загруженным содержимым.
+
+По умолчанию:
+wow = new WOW({
+	boxClass: 'wow',
+	animateClass: 'animated',
+	offset: 0,
+	mobile: true,
+	live: true
+})
+wow.init();
+wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+})
+wow.init(); -->
 
 </body>
 </html>
