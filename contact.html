@@ -11,8 +11,43 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-</head>
+	<style type="text/css">
+		.contact__page p {
+			text-align: center;
+		}
+		.contact__page span {
+			color: #00B465;
+		}
+		.contact__page a {
+			color: #009B85;
+			text-decoration: none;
+		}
+		.contact__page a:hover {
+			color: #00B465;
+		}
+		.contact__page p span {
+			font-weight: 500;
+		}
+		.contact__page p strong {
+			font-weight: 600;
+		}
+		@media (min-width: 768px) {
+			.contact__page {
+				margin-top: -35px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+				margin-bottom: 80px;
+			}
+			.contact__page {
+				margin-top: -15px;
+			}
+		}
+	</style>
 
+</head>
 <body>
 
 	<!-- top start -->
@@ -123,25 +158,28 @@
 	<div class="bct">
 		<div class="bct-container">
 			<div class="bct-contasnt">
-				<div class="bct-col">
-					<div class="bct-up">Contact</div>
-					<h2>
-						Contact
-					</h2>
-					<p>
-						<strong>Tel:</strong> +38 068 610 40 33
-					</p>
-					<p>
-						<strong>Viber:</strong> 38 068 610 40 33
-					</p>
-					<p>
-						<strong>Email:</strong> <a href="mailto:itweb1971@gmail.com">itweb1971@gmail.com</a>
-					</p>
-				</div>
+				<div class="bct-up">Contact</div>
+				<h2>Контакты</h2>
 			</div>
 		</div>
 	</div>
 	<!-- block center text stop -->
+
+	<div class="vaContainer">
+		<div class="vaContent">
+			<div class="contact__page">
+				<p>
+					<span>Tel:</span> <strong>+38 068 610 40 33</strong> 
+				</p>
+				<p>
+					<span>Viber:</span> <strong>38 068 610 40 33</strong> 
+				</p>
+				<p>
+					<span>Email:</span> <strong><a href="mailto:itweb1971@gmail.com">itweb1971@gmail.com</a></strong> 
+				</p>
+			</div>
+		</div>
+	</div>
 
 	<div class="to-up">&uarr;</div>
 	
