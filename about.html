@@ -16,53 +16,94 @@
       padding: 0;
     }
     .itemacc {
-      padding: 0 0 20px 0;
     }
     .titleacc {
+			border: 1px solid #000;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
       font-weight: 600;
-      text-transform: uppercase;
       position: relative;
-      padding: 0 0 0 30px;
       cursor: pointer;
     }
-    .titleacc:after,
+    /* .titleacc:after,
     .titleacc:before {
       content: '';
       width: 10px;
-      height: 1px;
+      height: 3px;
       background-color: #000;
       position: absolute;
       top: 10px;
     }
     .titleacc:after {
+			-ms-transform: rotate(-40deg);
+			-webkit-transform: rotate(-40deg);
+			-o-transform: rotate(-40deg);
+			-moz-transform: rotate(-40deg);
       transform: rotate(-40deg);
-      left: 8px;
+      left: 7px;
     }
     .titleacc:before {
+			-ms-transform: rotate(40deg);
+			-webkit-transform: rotate(40deg);
+			-o-transform: rotate(40deg);
+			-moz-transform: rotate(40deg);
       transform: rotate(40deg);
       left: 0;
     }
     .titleacc.activeacc:after,
     .titleacc.activeacc:before {
-      background-color: #b00;
-      transition: all .5s ease 0s
+      background-color: #b00;	
+			-webkit-transition: all .5s ease 0s;
+			-moz-transition: all .5s ease 0s;
+			-ms-transition: all .5s ease 0s;
+			-o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s;
     }
     .titleacc.activeacc:after {
       transform: rotate(40deg);
     }
     .titleacc.activeacc:before {
+			-ms-transform: rotate(-40deg);
+			-webkit-transform: rotate(-40deg);
+			-o-transform: rotate(-40deg);
+			-moz-transform: rotate(-40deg);
       transform: rotate(-40deg);
-    }
+    } */
     .textacc {
       display: none;
-      padding: 10px 0 0 0;
     }
-	@media (max-width: 767.98px) {
-		.vaContainer {
-			padding: 0 28px;
-			margin-bottom: 40px;
+		.textacc ul,
+		.textacc li {
+			color: #000;
+			list-style: none;
+			margin: 0;
+			padding: 0;
 		}
-	}
+
+		@media (min-width: 768px) {
+			.blockacc {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.itemacc {
+				width: calc(33.33333% - 15px);
+			}
+			.itemacc h3 {
+				font-size: 26px;
+				line-height: 39px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+				margin-bottom: 40px;
+			}
+		}
 	</style>
 
 </head>
@@ -179,12 +220,12 @@
 			<div class="bct-contasnt">
 				<div class="bct-col">
 					<div class="bct-up">About</div>
-					<h2>
-						Владею следующими технологиями
-					</h2>
 					<p>
 						Опыт работы в IT сфере  C 2006 года
 					</p>
+					<h2>
+						Владею следующими технологиями
+					</h2>
 				</div>
 			</div>
 		</div>
@@ -195,8 +236,14 @@
 		<div class="vaContent">
 			<div class="blockacc accodion">
 		
-				<div class="itemacc">
-					<div class="titleacc">Верстка макетов</div>
+				<div class="itemacc dawop-col">
+					<div class="dawop-separator"></div>
+					<div class="titleacc">
+						<h3>Верстка макетов</h3>
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11L21 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
 					<div class="textacc">
 						<ul>
 							<li>Figma to html</li>
@@ -210,8 +257,14 @@
 					</div>
 				</div>
 		
-				<div class="itemacc">
-					<div class="titleacc">Языки верстки</div>
+				<div class="itemacc dawop-col">
+					<div class="dawop-separator"></div>
+					<div class="titleacc">
+						<h3>Языки верстки</h3>
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11L21 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
 					<div class="textacc">
 						<ul>
 							<li>HTML5</li>
@@ -227,8 +280,14 @@
 					</div>
 				</div>
 		
-				<div class="itemacc">
-					<div class="titleacc">Рабочий профиль</div>
+				<div class="itemacc dawop-col">
+					<div class="dawop-separator"></div>
+					<div class="titleacc">
+						<h3>Языки верстки</h3>
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11L21 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
 					<div class="textacc">
 						<ul>
 							<li>Респонисивная и адаптивная верстка макета</li>

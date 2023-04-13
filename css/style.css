@@ -485,7 +485,7 @@ body {
 		height: 93px;
 	}
 	.top-content {
-		padding: 0 50px 0 60px;
+		padding: 0 60px 0 60px;
 	}
 	.nav-toggle {
 		width: 33px;
@@ -790,7 +790,7 @@ body {
 /* dawop start
 --------------------------------------------------- */
 .dawop {
-	background-color: #000;
+	background-color: #222;
 	color: #fff;
 }
 .dawop-header {
@@ -837,7 +837,7 @@ body {
 	}
 	.dawop-header {
 		margin: 0 auto 60px;
-		max-width: 1049px;
+		padding: 0 60px;
 	}
 	.dawop-up {
 		font-size: 20px;
@@ -849,23 +849,20 @@ body {
 		font-size: 42px;
 		line-height: 54px;
 		margin: 0 auto;
-		padding: 0 20px;
 	}
 	.dawop-cols {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1290px;
 		padding-left: 60px;
 		padding-right: 60px;
 	}
 	.dawop-col {
 		margin: 0 0 80px;
-		width: calc(33.33333% - 50px);
-		max-width: 343px;
-	}
-	.dawop-col:nth-child(2) {
-		margin: 0 60px 60px;
+		width: calc(33.33333% - 30px);
 	}
 	.dawop-separator {
 		width: 76px;
@@ -903,6 +900,11 @@ body {
 	}
 	.dawop-col li:last-child {
 		margin-bottom: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.dawop-col {
+		width: 50%;
 	}
 }
 @media (max-width: 767.98px) {
