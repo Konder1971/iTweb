@@ -148,7 +148,7 @@
 .slider3c .slick-next {
   background-image: url(../images/arrowS-right.svg);
 }
-@media (min-width: 768px) {
+
 	.slider3c {
 		margin-bottom: 60px;
 	}
@@ -218,9 +218,57 @@
 	.slider3c .slick-next {
 		right: 25px;
 	}
-}
+
 
 @media (max-width: 767.98px) {
+	.slider3c {
+		margin-bottom: 25px;
+	}
+	.slide3c-content {
+		padding: 10px 10px 8px;
+	}
+	.slide3c-content .sub {
+		font-size: 12px;
+		line-height: 1;
+		margin-bottom: 4px;
+	}
+	.slide3c-content p {
+		font-size: 16px;
+		line-height: 17px;
+		margin-bottom: 0;
+	}
+	.slider3c .slick-dots {
+		margin-top: 20px;
+	}
+	.slider3c .slick-dots li {
+		margin: 0 7px;
+	}
+	.slick-dots button {
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+	}
+	.slider3c .slick-prev, 
+	.slider3c .slick-next {
+		width: 35px;
+		height: 35px;
+		-webkit-background-size: 10px auto;
+		-moz-background-size: 10px auto;
+		-o-background-size: 10px auto;
+		background-size: 10px auto;
+		top: auto;
+		bottom: 50%;
+	}
+	.slider3c .slick-prev {
+		left: 20px;
+	}
+	.slider3c .slick-next {
+		right: 20px;
+	}
+}
+
+/* @media (max-width: 767.98px) {
 	.slider3c-box {
 		overflow: hidden;
 		margin-bottom: 30px;
@@ -278,6 +326,6 @@
 	.slider3c .slick-next {
 		right: 20px;
 	}
-}
+} */
 /* Home Slider start
 ------------------------------------------------------- */
