@@ -773,7 +773,6 @@ body {
 		margin: 0 auto 15px;
 		font-weight: 500;
 	}
-	}
 	.bct p {
 		font-size: 18px;
 		line-height: 28px;
@@ -929,6 +928,7 @@ body {
 		font-size: 29px;
 		line-height: 40px;
 		margin: 0 auto;
+		font-weight: 500;
 	}
 	.dawop-cols {
 		margin: 0 auto;
@@ -965,12 +965,13 @@ body {
 		line-height: 26px;
 		font-weight: 600;
 		margin-bottom: 15px;
+		font-weight: 500;
 	}
 	.dawop-col li {
 		font-size: 20px;
 		line-height: 28px;
 		margin-bottom: 15px;
-		font-weight: 700;
+		font-weight: 500;
 	}
 	.dawop-col li:last-child {
 		margin-bottom: 0;
@@ -1335,7 +1336,7 @@ body {
 	.swh h2 {
 		font-size: 29px;
 		line-height: 33px;
-		font-weight: 600;
+		font-weight: 500;
 		margin: 0 auto 25px;
 	}
 	.swh-link a {
