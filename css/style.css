@@ -741,6 +741,7 @@ body {
 		font-size: 36px;
 		line-height: 44px;
 		margin-bottom: 25px;
+		font-weight: 500;
 	}
 	.bct p {
 		font-size: 20px;
@@ -849,6 +850,7 @@ body {
 		font-size: 36px;
 		line-height: 44px;
 		margin: 0 auto;
+		font-weight: 500;
 	}
 	.dawop-cols {
 		display: flex;
@@ -992,6 +994,7 @@ body {
 	font-size: 36px;
 	line-height: 44px;
   margin-bottom: 30px;
+	font-weight: 500;
 }
 .swh-link a {
 	display: flex;
@@ -1573,6 +1576,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .socialBox a:hover svg path {
 	fill: #00B465;
 }
+@media (min-width: 768px) {
+	.contacBox .col-1 h2 {
+		font-weight: 500;
+	}
+}
 @media (min-width: 1025px) {
 	.contacBox {
 		margin: 60px 0 80px;
@@ -1793,6 +1801,13 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   color: #00B465;
 	text-transform: uppercase;
 }
+@media (min-width: 768px) {
+	.newsCarousel .cs-col-1 h2 {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
 @media (min-width: 1025px) {
 	.csBox {
 		margin: 0 0 80px;
@@ -1937,6 +1952,11 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .sliderSs-block h3 {
 	font-weight: 600;
+}
+@media (min-width: 768px) {
+	.sliderSs-block h3 {
+		font-weight: 500;
+	}
 }
 @media (min-width: 1025px) {
 	.sliderSs-box {

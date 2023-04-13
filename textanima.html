@@ -19,6 +19,7 @@
 		.wave {
 			color: #999999;
 			animation: 0.5s color infinite;
+			font-weight: 500;
 		}
 		@keyframes color {
 			50% {
@@ -69,10 +70,11 @@
 				font-size: 30px;
 				line-height: 40px;
 				margin-bottom: 5px;
+				font-weight: 500;
 			}
 			.imp p {
-				font-size: 30px;
-				line-height: 46px;
+				font-size: 24px;
+				line-height: 36px;
 			}
 		}
 		@media (max-width: 767.98px) {
@@ -123,6 +125,7 @@
 				font-size: 30px;
 				line-height: 40px;
 				margin-bottom: 5px;
+				font-weight: 500;
 			}
 			.button-anima input[type="button"] {
 				height: 53px;
@@ -149,50 +152,50 @@
 			}
 		}
 
+		.btn-button {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			text-decoration: none;
+			border: none;
+			color: #000;
+			line-height: 1;
+			background-color: #00B465;
+			border: none;
+			cursor: pointer;
+			margin: 0 auto;
+			padding: 0 30px;
+		}
+		.button-anima input[type="button"]:hover {
+			background-color: #65C9FD;
+		}
+		@media (min-width: 768px) {
 			.btn-button {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: nowrap;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				text-decoration: none;
-				border: none;
-				color: #000;
+				height: 53px;
+				border-radius: 27px;
+				font-size: 20px;
+				font-weight: 600;
+				margin-top: 20px;
+			}
+			.imp .btn-button {
+				margin-top: 10px;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.btn-button {
+				height: 42px;
+				border-radius: 21px;
+				font-size: 20px;
+				margin: 20px auto 0;
+				font-size: 14px;
 				line-height: 1;
-				background-color: #00B465;
-				border: none;
-				cursor: pointer;
-				margin: 0 auto;
-				padding: 0 30px;
+				font-weight: 800;
+				margin-top: 20px;
 			}
-			.button-anima input[type="button"]:hover {
-				background-color: #65C9FD;
-			}
-			@media (min-width: 768px) {
-				.btn-button {
-					height: 53px;
-					border-radius: 27px;
-					font-size: 20px;
-					font-weight: 600;
-					margin-top: 20px;
-				}
-				.imp .btn-button {
-					margin-top: 10px;
-				}
-			}
-			@media (max-width: 767.98px) {
-				.btn-button {
-					height: 42px;
-					border-radius: 21px;
-					font-size: 20px;
-					margin: 20px auto 0;
-					font-size: 14px;
-					line-height: 1;
-					font-weight: 800;
-					margin-top: 20px;
-				}
-			}
+		}
 
 	</style>
 
