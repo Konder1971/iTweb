@@ -320,6 +320,15 @@ body {
 		flex-wrap: nowrap;
 		justify-content: center;
 		height: 114px;
+		-webkit-transition: 300ms ease-out;
+		-moz-transition: 300ms ease-out;
+		transition: 300ms ease-out;
+	}
+	.top_fixed {
+		height: 90px;
+		-webkit-transition: 300ms ease-out;
+		-moz-transition: 300ms ease-out;
+		transition: 300ms ease-out;
 	}
 	.top-content {
 		display: flex;

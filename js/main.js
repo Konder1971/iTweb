@@ -17,41 +17,14 @@
 		}
 	});
 
-
-	let top = document.querySelector('.top');
-	window.addEventListener('scroll', checkScroll);
-	document.addEventListener('DOMContentloaded', checkScroll); // чтобы не было скачка цвета при перезагрузки страницы на скролле
-	function checkScroll() {
-		let scrollPos = window.scrollY;
-		if($(window).width() > 1024) {
-			if (scrollPos > 0) {
-				top.style.cssText = `
-					height: 90px;
-				`
-			}
-			else {
-				top.style.cssText = ''
-			}
+	let top = $('.top');
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 10) {
+			top.addClass('top_fixed');
 		} else {
-			top.style.cssText = ''
+			top.removeClass('top_fixed');
 		}
-	}
-	$(window).resize(function() {
-			if($(window).width() > 1024) {
-				if (scrollPos > 0) {
-					top.style.cssText = `
-						height: 90px;
-					`
-				}
-				else {
-					top.style.cssText = ''
-				}
-			} else {
-				top.style.cssText = ''
-			}
 	});
-
-
 
 	let parent = document.querySelectorAll('.navlink')
 	//let linkdown = document.querySelectorAll('.dropdown')
