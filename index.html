@@ -22,7 +22,7 @@
 			<div class="top-content">
 				<!-- logo start -->
 				<div class="logo">
-					<span>iTweb</span> <em>Frontend developer</em>
+					<span>iTweb</span> <em class="animate__animated animate__fadeIn" style="animation-duration: 1s; animation-delay: 300ms">Frontend developer</em>
 				</div>
 				<!-- logo stop -->
 				<!-- navigations start -->
@@ -120,7 +120,7 @@
 	<!-- block center text start -->
 	<div class="bct">
 		<div class="bct-container">
-			<div class="bct-contasnt animate__animated animate__zoomIn">
+			<div class="bct-contasnt wow animate__animated animate__zoomIn">
 				<div class="bct-col">
 					<div class="bct-up">Фронт-энд разработчик</div>
 					<h2 class="animate__animated animate__backInUp">
@@ -207,7 +207,7 @@
 		<div class="swh-container">
 			<div class="swh-content">
 				<div class="swh-col swh-col-1">
-					<div class="swh-text animate__animated animate__backInLeft">
+					<div class="swh-text wow animate__animated animate__fadeInUp">
 						<div class="swh-up up">technology slider</div>
 						<h2>Карусель технологий</h2>
 						<div class="swh-link">
@@ -379,6 +379,11 @@
 			slidesToScroll: 1,
       variableWidth: true,
 		});
+	</script>
+	
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
 	</script>
 
 </body>
