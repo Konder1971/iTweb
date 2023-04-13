@@ -224,6 +224,9 @@
 	.slider3c {
 		margin-bottom: 25px;
 	}
+	.slick-slide:not(.slick-active) .slide3c-block {
+		height: calc(100% - 30px)!important;
+	} 
 	.slide3c-content {
 		padding: 10px 10px 8px;
 	}
