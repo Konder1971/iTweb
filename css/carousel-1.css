@@ -360,10 +360,11 @@
 }
 .details-a a span {
 	font-size: 17px;
+	 padding-left: 3px;
 }
 
 #carouselParent{
-	margin:0 auto;	
+	margin:0 auto;
 }
 
 .allinone_carousel {
