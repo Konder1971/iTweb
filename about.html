@@ -497,11 +497,11 @@
 				};
 				$(this).toggleClass('activeacc').next().slideToggle(500);
 				let intblock = setInterval(function(){   
-					$('html,body').animate({scrollTop: $('html,body').get(0).scrollHeight}, 1100);
+					$('html,body').animate({scrollTop: $('html,body').get(0).scrollHeight}, 1000);
 					setInterval(
 						function(){ clearInterval(intblock)
 					});
-				}, 400);
+				}, 300);
 			});
 		});
 	</script>
