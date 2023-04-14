@@ -1,7 +1,3 @@
-
-
-
-
 .carousel {
   position: relative;
 }
@@ -226,9 +222,7 @@
   }
 }
 
-
-
-.position-relative{
+.position-relative {
 	position:relative;
 }
 
@@ -247,37 +241,40 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-top:150px;
-	padding-bottom:80px;
 }
 .carousel-pagination{
-	position:absolute;
-	left:0;
-	top:50%;
-	width:100%;
-	overflow:hidden;
-	margin-top:-100px;
+	position: absolute;
+	z-index: 4;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	overflow: hidden;
+	margin-top: -40px;
 }
 .left-pag,
-.right-pag{
+.right-pag {
 	display:block!important;
 	overflow:visible!important;	
-	-webkit-border-radius: 35px;
-	-moz-border-radius: 35px;
-	border-radius: 35px;
-	background-color:#f05b21;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-color:#004f77;
 	display:block;
-	width:70px;
-	height:70px;
+	width:80px;
+	height:80px;
+}
+.left-pag:hover,
+.right-pag:hover {
+	background-color: #00B465;
 }
 .left-pag{
-	margin-left:-35px;
+	margin-left:-40px;
 	float:left;
 	cursor:pointer;
 	text-align:center;
 }
 .right-pag{
-	margin-right:-35px;
+	margin-right:-40px;
 	float:right;
 	cursor:pointer;
 	text-align:center;
@@ -288,31 +285,18 @@
 	font-size:44px;
 	position:relative;
 }
-.carousel-pagination .fa-angle-left{
-	position:relative;
-	top:12px;
-	left:12px;
+.carousel-pagination .fa-angle-left {
+	position: relative;
+	top: 15px;
+	left: 13px;
 }
-.carousel-pagination .fa-angle-right{
+.carousel-pagination .fa-angle-right {
 	position:relative;
-	top:12px;
-	right:12px;
+	top: 16px;
+	right: 15px;
 }
 /* end carousel-1
 ------------------------------------------ */
-
-.see-all-drugs{
-	text-align:center;
-	margin-bottom:270px;
-	position:absolute;
-	bottom:0;
-	width:100%;
-}
-@media (min-width: 950px) {
-	.see-all-drugs{
-		bottom:-215px;
-	}
-}
 
 /* carousel-1-mobile
 ------------------------------------------ */
@@ -339,19 +323,19 @@
 		position:absolute;
 		top:50%;
 		margin:0;
-		width:35px;
-		height:70px;
+		width:40px;
+		height:80px;
 		display:block;
-		
+		margin-top: -43px;
 	}
 	.left-pag {
 		left:0;
-		-moz-border-radius-topright: 35px;
-		-webkit-border-top-right-radius: 35px;
-		border-top-right-radius: 35px;
-		-moz-border-radius-bottomright: 35px;
-		-webkit-border-bottom-right-radius: 35px;
-		border-bottom-right-radius: 35px;
+		-moz-border-radius-topright: 40px;
+		-webkit-border-top-right-radius: 40px;
+		border-top-right-radius: 40px;
+		-moz-border-radius-bottomright: 40px;
+		-webkit-border-bottom-right-radius: 40px;
+		border-bottom-right-radius: 40px;
 		-moz-border-radius-topleft: 0;
 		-webkit-border-top-left-radius: 0;
 		 border-top-left-radius: 0;
@@ -361,12 +345,12 @@
 	}
 	.right-pag {
 		right:0;
-		-moz-border-radius-topleft: 35px;
-		-webkit-border-top-left-radius: 35px;
-		 border-top-left-radius: 35px;
-		-moz-border-radius-bottomleft: 35px;
-		-webkit-border-bottom-left-radius: 35px;
-		border-bottom-left-radius: 35px;
+		-moz-border-radius-topleft: 40px;
+		-webkit-border-top-left-radius: 40px;
+		 border-top-left-radius: 40px;
+		-moz-border-radius-bottomleft: 40px;
+		-webkit-border-bottom-left-radius: 40px;
+		border-bottom-left-radius: 40px;
 		-moz-border-radius-topright: 0;
 		-webkit-border-top-right-radius: 0;
 		border-top-right-radius: 0;
@@ -377,109 +361,85 @@
 	.carousel-1-mobile .left-pag .fa-angle-left {
 		position:relative;
 		left: -5px;
-	    top:12px;
+	  top: 12px;
 	}
 	.carousel-1-mobile .right-pag .fa-angle-right{
 		position:relative;
 		right: -5px;	
-	    top:12px;
-	}
-	
-	.carousel-1-mobile .drug-block-1{
-		text-align:center;
-		width:320px;
-		margin:0 auto;
-	}
-	.carousel-1-mobile .drug-block-1c h3 {
-		margin: 0 0 15px 0;
-	}
-	.carousel-1-mobile .drug-block-1c {
-		padding: 73% 0 0;
-	}
-	.carousel-1-mobile .drug-block-1c .details-a {
-		margin-top: 25px;
-	}
-	.carousel-1-mobile .drug-block-1c .details-a a{
-		padding: 8px 24px 10px 24px;
-	}
-	.see-all-drugs{
-		margin-bottom:-16px;
+	  top: 12px;
 	}
 }
 /* end carousel-1-mobile
 ------------------------------------------ */
 
-.drug-block-1{
+.drug-block-1 {
 	position:relative;
+	-webkit-transition: 300ms ease-out;
+	-moz-transition: 300ms ease-out;
+	transition: 300ms ease-out;
 }
-.drug-pic img{
+.drug-pic img {
 	width:100%;
 }
-.drug-block-1c{
-	padding:73% 0 0 0;
-	text-align:center;
-	position:absolute;
-	top:0;
-	left:0;
-	text-align:center;
-	width:100%;
+.drug-block-1c {
+	background-color: rgba(255,255,255,.8);
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%); 
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px 24px;
+	width: 70%;
+	-webkit-transition: 300ms ease-out;
+	-moz-transition: 300ms ease-out;
+	transition: 300ms ease-out;
 }
-.drug-block-1c h3{
-	margin:0 0 14px 0;
-	font-size:36px;
+.drug-block-1c h3 {
+	font-size: 28px;
+	font-weight: 500;
+	margin: 0;
 }
-.drug-block-1c p{
-	font-size:14px;
-	font-weight:400;
-	max-width:200px;
-	margin:0 auto;
+.drug-block-1c p {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	margin: 10px 0 0;
 }
-.drug-block-1c p span{
-	color:#777;
+.drug-block-1c p span {
+	color: #000;
+	font-weight: 400;
 }
-.drug-block-1c p a{
-	color:#004f77;
-	text-decoration:underline;
+.drug-block-1c .details-a {
+	margin-top: 15px;
 }
-.drug-block-1c p a:hover{
-	text-decoration:none;
+.details-a a {
+	background-color: #004f77;
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 11px 15px 11px 18px;
 }
-.drug-block-1c .details-a{
-	margin-top:30px;
+.details-a a:hover {
+	background-color:#00B465;
+	color: #fff;
 }
-.details-a a{
-	background-color:#004f77;
-	display:inline-block;
-	color:#fff;
-	font-size:14px;
-	color:#fff;
-	font-family: 'Oswald', sans-serif;
-	font-weight:400;
-	text-decoration:none;
-	padding:8px 24px 10px 24px;
-	text-transform:uppercase;
+.details-a a span {
+	font-size: 20px;
 }
-.details-a a:hover{
-	background-color:#3889b5;
-	color:#fff;
-}
-.drug-block-1c .details-a a{
-	padding:4px 12px 5px 12px;
-}
-
-@media (max-width: 735px) {
-	.drug-block-1c {
-		padding: 70% 0 0 0;
-	}
-	.drug-block-1c h3 {
-		margin: 0 0 4px;
-	}
-	.drug-block-1c .details-a {
-		margin-top: 10px;
-	}
-}
-
-
 
 
 #carouselParent{
@@ -509,6 +469,7 @@
 .mycanvas {
 	display:none!important;
 	position:absolute;
+	z-index: 2;
 	top:8px;
 	right:10px;
 	z-index:1000;
@@ -536,7 +497,7 @@
 	top:40px;
 	width:100%;
 	text-align:center;
-	font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	font: bold 22px/30px;
 	color:#FFFFFF;
 	text-transform:capitalize;
 }
