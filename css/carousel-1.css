@@ -567,17 +567,17 @@
 	}
 	.carousel-1-mobile .drug-block-1 {
 		margin: 0;
-		height: 550px;
+		height: 500px;
 	}
 	.drug-block-1c {
-		width: 240px;
+		width: 200px;
 	}
 	.carousel-inner > .item {
 		text-align: center;
 	}
 	.drug-pic,
 	.drug-pic img {
-		height: 550px;
+		height: 500px;
 		width: auto;
 	}
 
