@@ -498,6 +498,7 @@
 				$(this).toggleClass('activeacc').next().slideToggle(500);
 				setInterval(function(){   
 					$('html,body').animate({scrollTop: $('html,body').get(0).scrollHeight}, 2500);
+					return
 				}, 400);
 			});
 		});
