@@ -623,12 +623,12 @@
 	.carousel-1-mobile .left-pag .fa-angle-left {
 		position:relative;
 		left: -5px;
-	  top: 14px;
+	  top: 15px;
 	}
 	.carousel-1-mobile .right-pag .fa-angle-right{
 		position:relative;
 		right: -5px;	
-	  top: 14px;
+	  top: 15px;
 	}
 }
 /* end carousel-1-mobile
