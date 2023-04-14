@@ -900,6 +900,7 @@ body {
 		font-size: 26px;
 		line-height: 39px;
 		margin-bottom: 7px;
+		font-weight: 500;
 	}
 	.dawop-col ul {
 		margin-top: 0;
@@ -1799,9 +1800,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 /* Contact page stop
 --------------------------------------------------- */
 
-
-
-
 /* News carousel start
 --------------------------------------------------- */
 .csBox {
@@ -1997,10 +1995,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		padding-top: 42px;
 	}
 	.sliderSs .slick-prev {
-		left: 659px;
+		left: 0px;
 	}
 	.sliderSs .slick-next {
-		left: 702px;
+		left: 50px;
 	}
 	.sliderSs-block {
 		padding: 50px 30px 35px 50px;
@@ -2030,7 +2028,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		margin-bottom: 0;
 	}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024.98px) {
 	.sliderSs-box {
 		width: 100%;
 		padding-left: 60px;
@@ -2045,10 +2043,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		padding-top: 42px;
 	}
 	.sliderSs .slick-prev {
-		left: 560px;
+		left: 0px;
 	}
 	.sliderSs .slick-next {
-		left: 600px;
+		left: 50px;
 	}
 	.sliderSs-block {
 		padding: 50px 50px 35px;
@@ -2114,4 +2112,183 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	}
 }
 /* News carousel stop
+--------------------------------------------------- */
+
+/* Resume start
+--------------------------------------------------- */
+.resume .bct-container {
+	max-width: 1200px;
+}
+.resume-top {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.resume-container {
+	text-align: left;
+}
+.resume-col {
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 20px;
+}
+.resume-col ul,
+.resume-col li {
+	margin: 0;
+	padding: 0;
+}
+
+.technologies h2 {
+	text-align: center;
+}
+.technologies h2,
+.resume-col h3 {
+	font-weight: 500;
+}
+.resume-col:nth-child(1) h3 {
+	color: #00B465;
+}
+.resume-col:nth-child(2) h3 {
+	color: #004f77;
+}
+.resume-col:nth-child(3) h3 {
+	color:darkmagenta;
+}
+.resume-col:nth-child(4) h3 {
+	color: brown;
+}
+.resume-col li:last-child {
+  margin-bottom: 0;
+}
+.resume-col li {
+	position: relative;
+	padding-left: 25px;
+}
+.resume-col li:before {
+	content: "\2022";
+	display: block;
+	font-size: 37px;
+	position: absolute;
+	left: 0;
+}
+@media (min-width: 1025px) {
+	.resume {
+		margin-bottom: 40px;
+	}
+	.resume-top p {
+		margin-bottom: 30px;
+	}
+	.resume-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+	}
+	.resume-col {
+		padding: 20px 35px 28px;
+	}
+	.technologies h2,
+	.resume-col h3 {
+		font-size: 26px;
+		line-height: 39px;
+	}	
+	.resume-col h3 {
+		margin-bottom: 10px;
+	}
+	.resume-col p {
+		font-size: 16px;
+		line-height: 27px;
+		margin-bottom: 15px;
+		color:#004f77;
+		color:darkgreen;
+	}
+	.resume-col li {
+		font-size: 20px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.resume-col li:before {
+		top: 2px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024.98px) {
+	.resume {
+		margin-bottom: 40px;
+	}
+	.resume-top p {
+		margin-bottom: 40px;
+	}
+	.resume-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+	.resume-col {
+		padding: 22px 30px 23px;
+	}
+	.resume-col h3 {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.resume-col p {
+		font-size: 16px;
+		line-height: 27px;
+		margin-bottom: 15px;
+	}
+	.resume-col li {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.technologies h2 {
+		font-size: 24px;
+		line-height: 31px;
+		font-weight: 500;
+	}
+	.itemacc h3 {
+		font-size: 22px!important;
+	}
+	.resume-col li:before {
+		top: 1px;
+	}
+}
+@media (max-width: 767.98px) {
+	.resume {
+		margin-bottom: 30px;
+	}
+	.resume-top p {
+		margin-bottom: 30px;
+	}
+	.resume-col {
+		margin-bottom: 30px;
+		padding: 20px 25px 20px;
+	}
+	.resume-col h3 {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.resume-col p {
+		font-size: 16px;
+		line-height: 27px;
+		margin-bottom: 15px;
+	}
+	.resume-col li {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 12px;
+	}
+	.technologies h2 {
+		font-size: 24px;
+		line-height: 31px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+	.itemacc h3 {
+		font-size: 22px!important;
+	}
+	.resume-col li:before {
+		top: 1px;
+	}
+}
+/* Resume stop
 --------------------------------------------------- */
