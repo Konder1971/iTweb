@@ -1807,9 +1807,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .csBox {
 	position: relative;
 }
-.cs-content {
-	border-top: 1px solid #000;
-}
 .cs-up {
   color: #00B465;
 	text-transform: uppercase;
