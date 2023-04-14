@@ -347,12 +347,12 @@
 	background-color: #004f77;
 	display: inline-block;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 8px 15px 11px 18px;
+	padding: 6px 15px 9px 16px;
 }
 .details-a a:hover {
 	background-color:#00B465;
