@@ -2208,6 +2208,12 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	.resume-col li:before {
 		top: 2px;
 	}
+	.technologies {
+		margin-bottom: 80px;
+	}
+	.technologies .itemacc {
+		margin-bottom: 0;
+	} 
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
 	.resume {
@@ -2249,6 +2255,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	}
 	.resume-col li:before {
 		top: 1px;
+	}
+	.technologies {
+		margin-bottom: 20px;
 	}
 }
 @media (max-width: 767.98px) {
