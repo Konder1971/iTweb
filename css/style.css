@@ -2183,7 +2183,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		margin-bottom: 40px;
 	}
 	.resume-top p {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 	.resume__content {
 		margin-bottom: 50px;
@@ -2236,7 +2236,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		margin-bottom: 35px;
 	}
 	.resume-top p {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 	.resume__content {
 		margin-bottom: 40px;
