@@ -13,19 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sliders.css">
 
-
 	<link rel="stylesheet" href="adslider/adslider.css">
-	<script defer src="adslider/adslider.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-      // инициализация слайдера
-      var slider = new SimpleAdaptiveSlider('.slider', {
-        loop: true,
-        autoplay: false,
-        swipe: true
-      });
-    });
-	</script>
 
 	<style>
 		.slider {
@@ -343,6 +331,7 @@
 	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script defer src="adslider/adslider.js"></script>
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
@@ -414,7 +403,16 @@
 			};
 		});
 
-		
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        loop: true,
+        autoplay: false,
+        swipe: true
+      });
+    });
 		$('.slider__item-content').css('height', '');
 		if ($(window).width() > 599) {
 			$('.slider__item-content').css({
