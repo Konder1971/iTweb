@@ -405,6 +405,7 @@
 
 
 
+		$(document).ready(function(){
     document.addEventListener('DOMContentLoaded', function () {
       // инициализация слайдера
       var slider = new SimpleAdaptiveSlider('.slider', {
@@ -413,6 +414,9 @@
         swipe: true
       });
     });
+
+	});
+	
 		$('.slider__item-content').css('height', '');
 		if ($(window).width() > 599) {
 			$('.slider__item-content').css({
