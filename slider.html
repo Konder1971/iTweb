@@ -404,14 +404,11 @@
 		});
 
 
-		let slider;
-		document.addEventListener('DOMContentLoaded', function () {
-			slider = new SimpleAdaptiveSlider('.slider', {
-				loop: true,
-				autoplay: true,
-				interval: 3000,
-				swipe: true,
-			});
+		// инициализация слайдера
+		var slider = new SimpleAdaptiveSlider('.slider', {
+			loop: true,
+			autoplay: false,
+			swipe: true
 		});
 		$('.slider__item-content').css('height', '');
 		if ($(window).width() > 599) {
