@@ -632,6 +632,18 @@
 	  top: 15px;
 	}
 }
+
+@media (max-width: 480.98px) {
+	.drug-block-1c {
+		padding: 20px 5px 24px;
+		width: 160px;
+	}
+	.carousel-1-mobile .drug-block-1,
+	.drug-pic,
+	.drug-pic img {
+		height: 400px;
+	}
+}
 /* end carousel-1-mobile
 ------------------------------------------ */
 
