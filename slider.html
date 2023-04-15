@@ -285,8 +285,6 @@
 
 
 	<!-- adSlider-2 start -->
-
-	<script src="adslider/adslider.js"></script>
 	<div class="adSlider-2">
 		<div class="separator"><span></span></div>
 		<div class="bct">
@@ -333,6 +331,7 @@
 	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
+	<script src="adslider/adslider.js"></script>
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
@@ -405,9 +404,9 @@
 		});
 
 
-
+		let slider;
 		document.addEventListener('DOMContentLoaded', function () {
-			const slider = new SimpleAdaptiveSlider('.slider', {
+			slider = new SimpleAdaptiveSlider('.slider', {
 				loop: true,
 				autoplay: true,
 				interval: 3000,
