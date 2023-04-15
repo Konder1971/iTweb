@@ -9,9 +9,9 @@
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
 
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/sliders.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/sliders.css"> -->
 
 	<link rel="stylesheet" href="adslider/adslider.css">
 
@@ -192,96 +192,7 @@
 
 	<div class="clearfix"></div>
 
-	<div class="vaContainer adslick">
-		<h2>Customized adaptive Slick slider</h2>
-		<div class="slider3c-box">
-			<div class="slider3c">
 
-				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
-							<div class="slide3c-content">
-								<div class="sub">slide</div>
-								<p>Title text</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- <div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
-							<div class="myvideo">
-								<iframe src="https://www.youtube.com/embed/kPYBn8VcdXk" title="YouTube video player"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
-							</div>
-							<div class="slide3c-content">
-								<div class="sub">VIDEO</div>
-								<p>Title text</p>
-							</div>
-						</div>
-					</div>
-				</div> -->
-
-				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p33.jpg')">
-							<div class="slide3c-content">
-								<div class="sub">slide</div>
-								<p> Title text </p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p22.jpg')">
-							<div class="slide3c-content">
-								<div class="sub">slide</div>
-								<p>Title text</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p21.jpg')">
-							<div class="slide3c-content">
-								<div class="sub">slide</div>
-								<p>Title text</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p15.jpg')">
-							<div class="slide3c-content">
-								<div class="sub">slide</div>
-								<p>Title text</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p5.jpg')">
-							<div class="slide3c-content">
-								<div class="sub">slide</div>
-								<p>Title text</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
 
 
 	<!-- adSlider-2 start -->
@@ -330,78 +241,11 @@
 	
 	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/slick.js"></script>
+	<!-- <script src="js/slick.js"></script> -->
 	<script src="adslider/adslider.js"></script>
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
-		$(".slider3c").slick({
-		centerMode: true,
-		centerPadding: '12%',
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		infinite: true,
-		arrows: true,
-		dots: true,
-		// autoplay: true,
-		autoplaySpeed: 2000,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 768,
-		// 		settings: {
-		// 			centerMode: false,
-		// 			slidesToShow: 1
-		// 		}
-		// 	}
-		// ]
-		});
-		jQuery(".slider3c").on('beforeChange', function(event, slick, currentSlide, nextSlide){
-				jQuery('iframe').each(function(){ 
-				var src = jQuery(this).attr('src');
-				jQuery(this).attr('src', src);
-			});
-		});
-		$('.slide3c').css('height', '');
-		$('.slider3c-box').css('height', '');
-		$('.slick-list').css('height', '');
-		if ($(window).width() > 1) {
-			$('.slick-list').css({
-				height: $('.slide3c').width()/1.777 + 'px'
-			});
-			$('.slide3c').css({
-				height: $('.slide3c').width()/1.777 + 'px'
-			});
-			$('.slide3c').css({
-				height: $('.slide3c').width()/1.777 + 'px'
-			});
-    } else {
-			$('.slider3c-box').css({
-				height: $('.slider3c-box').width() + 'px',
-			});
-			$('.slide3c').css({
-				height: $('.slide3c').width() + 'px'
-			});
-		};
-    $(window).resize(function () {
-			$('.slide3c').css('height', '');
-		  $('.slider3c-box').css('height', '');
-		  $('.slider3c-box').css('height', '');
-			if ($(window).width() > 1) {
-				$('.slick-list').css({
-					height: $('.slide3c').width()/1.777 + 'px'
-				});
-				$('.slide3c').css({
-					height: $('.slide3c').width()/1.777 + 'px'
-				});
-			} else {
-				$('.slider3c-box').css({
-					height: $('.slider3c-box').width() + 'px',
-				});
-				$('.slide3c').css({
-					height: $('.slide3c').width() + 'px'
-				});
-			};
-		});
 
 
 		// инициализация слайдера
