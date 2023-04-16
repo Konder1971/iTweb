@@ -13,47 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sliders.css">
 
-	<link rel="stylesheet" href="adslider/adslider.css">
-
-	<style>
-		.slider {
-			margin-bottom: 80px;
-		}
-		.slider__items {
-			counter-reset: slide;
-		}
-		.slider__item {
-			counter-increment: slide;
-		}
-		.slider__item>div::before {
-			content: counter(slide);
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			color: #fff;
-			font-style: italic;
-			font-size: 32px;
-			font-weight: bold;
-		}
-		.slider__item-content {
-			background-position: center center; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			max-height: 700px;
-		}
-		@media (max-width: 767.98px) {
-			.slider {
-				margin-bottom: 80px;
-			}
-			.adSlider-2 h2 {
-				font-size: 24px;
-				font-weight: 500;
-			}
-		}
-	</style>
-
 </head>
 
 <body>
@@ -293,34 +252,15 @@
 					<div class="bct-col">
 						<div class="bct-up">Adaptive Slider</div>
 						<h2>
-							JavaScript Adaptive Slider - Слайдер для сайта на чистом JavaScript
+							Adaptive Slider
 						</h2>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- block center text stop -->
-		<!-- Разметка слайдера -->
-		<div class="slider">
-			<div class="slider__wrapper">
-				<div class="slider__items">
-					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #3f51b5; background-image: url(images/p15.jpg);"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #607d8b; background-image: url(images/p22.jpg);"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #f44336; background-image: url(images/p33.jpg);"></div>
-					</div>
-					<div class="slider__item">
-						<div class="slider__item-content" style="background-color: #4caf50; background-image: url(images/p.jpg);"></div>
-					</div>
-				</div>
-			</div>
-			<a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-			<a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
-		</div>
+
+
 	</div>
 	<!-- adSlider-2 stop -->
 
@@ -331,7 +271,6 @@
 	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
-	<script defer src="adslider/adslider.js"></script>
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
@@ -436,6 +375,7 @@
 			};;
 		});
 	</script>
+
 
 </body>
 </html>
