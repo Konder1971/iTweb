@@ -251,28 +251,35 @@
 
 			<div class="slider2col">
 				
-				<div class="slide2c-block" style="background-image: url('images/p.jpg'); height: 300px;">
+				<div class="slide2c-block" style="background-image: url('images/p.jpg');">
 					<div class="slide2c-content">
 						<div class="sub">slide</div>
 						<p>Title text</p>
 					</div>
 				</div>
 				
-				<div class="slide2c-block" style="background-image: url('images/p15.jpg'); height: 300px;">
+				<div class="slide2c-block" style="background-image: url('images/p15.jpg');">
 					<div class="slide2c-content">
 						<div class="sub">slide</div>
 						<p>Title text</p>
 					</div>
 				</div>
 				
-				<div class="slide2c-block" style="background-image: url('images/p22.jpg'); height: 300px;">
+				<div class="slide2c-block" style="background-image: url('images/p22.jpg');">
 					<div class="slide2c-content">
 						<div class="sub">slide</div>
 						<p>Title text</p>
 					</div>
 				</div>
 				
-				<div class="slide2c-block" style="background-image: url('images/p21.jpg'); height: 300px;">
+				<div class="slide2c-block" style="background-image: url('images/p21.jpg');">
+					<div class="slide2c-content">
+						<div class="sub">slide</div>
+						<p>Title text</p>
+					</div>
+				</div>
+				
+				<div class="slide2c-block" style="background-image: url('images/p33.jpg');">
 					<div class="slide2c-content">
 						<div class="sub">slide</div>
 						<p>Title text</p>
@@ -323,7 +330,7 @@
 		});
 		$('.slide3c').css('height', '');
 		$('.slider3c-box').css('height', '');
-		$('.slick-list').css('height', '');
+		$('.slide3c .slick-list').css('height', '');
 		if ($(window).width() > 1) {
 			$('.slick-list').css({
 				height: $('.slide3c').width()/1.777 + 'px'
@@ -345,10 +352,10 @@
     $(window).resize(function () {
 			$('.slide3c').css('height', '');
 		  $('.slider3c-box').css('height', '');
-		  $('.slider3c-box').css('height', '');
+			$('.slide3c .slick-list').css('height', '');
 			if ($(window).width() > 1) {
 				$('.slick-list').css({
-					height: $('.slide3c').width()/1.777 + 'px'
+					height: $('.slider3c-box').width()/1.777 + 'px'
 				});
 				$('.slide3c').css({
 					height: $('.slide3c').width()/1.777 + 'px'
@@ -375,13 +382,55 @@
 		autoplaySpeed: 2000,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 599,
 				settings: {
 					slidesToShow: 1
 				}
 			}
 		]
 		});
+		// $('.slide2c-block').css('height', '');
+		// $('.slider2c-box').css('height', '');
+		// $('.slider2c-box .slick-list').css('height', '');
+		// if ($(window).width() > 1) {
+		// 	$('.slick-list').css({
+		// 		height: $('.slide2c-block').width()/1.777 + 'px'
+		// 	});
+		// 	$('.slide2c-block').css({
+		// 		height: $('.slide2c-block').width()/1.777 + 'px'
+		// 	});
+		// 	$('.slide2c-block').css({
+		// 		height: $('.slide2c-block').width()/1.777 + 'px'
+		// 	});
+		// } else {
+		// 	$('.slider2c-box').css({
+		// 		height: $('.slider2c-box').width() + 'px',
+		// 	});
+		// 	$('.slide2c-block').css({
+		// 		height: $('.slide2c-block').width() + 'px'
+		// 	});
+		// };
+		// $(window).resize(function () {
+		// 	$('.slide2c-block').css('height', '');
+		// 	$('.slider2c-box').css('height', '');
+		// 	$('.slider2c-box .slick-list').css('height', '');
+		// 	if ($(window).width() > 1) {
+		// 		$('.slick-list').css({
+		// 			height: $('.slide2c-block').width()/1.777 + 'px'
+		// 		});
+		// 		$('.slide2c-block').css({
+		// 			height: $('.slide2c-block').width()/1.777 + 'px'
+		// 		});
+		// 	} else {
+		// 		$('.slider2c-box').css({
+		// 			height: $('.slider2c-box').width() + 'px',
+		// 		});
+		// 		$('.slide2c-block').css({
+		// 			height: $('.slide2c-block').width() + 'px'
+		// 		});
+		// 	};
+		// });
+
 	</script>
 
 
