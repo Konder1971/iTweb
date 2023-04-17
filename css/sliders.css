@@ -470,10 +470,10 @@
 		margin-top: -20px;
 	}
 	.slider2col-box .slick-prev {
-		left: 30px;
+		left: 40px;
 	}
 	.slider2col-box .slick-next {
-		right: 20px;
+		right: 25px;
 	}
 	.slider2col {
 		margin-left: -20px;
@@ -516,7 +516,7 @@
 		left: 20px;
 	}
 	.slider2col-box .slick-next {
-		right: 25px;
+		right: 20px;
 	}
  .slide2c-content {
 		padding: 15px 20px 12px;
