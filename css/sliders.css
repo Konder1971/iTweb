@@ -1,5 +1,5 @@
 
-/* Home Slider start
+/* slider 3 col start
 ------------------------------------------------------- */
 .myvideo {
 	position: relative;
@@ -176,15 +176,17 @@
 	}
 
 	.slide3c-content {
-		padding: 20px 30px 20px;
+		padding: 21px 30px 20px;
 	}
 	.slide3c-content .sub {
 		font-size: 15px;
 		line-height: 18px;
+		margin-bottom: 4px;
 	}
 	.slide3c-content p {
 		font-size: 28px;
 		line-height: 29px;
+		margin-bottom: 0;
 	}
 
 	.slider3c .slick-dots {
@@ -229,12 +231,12 @@
 		height: calc(100% - 30px)!important;
 	} 
 	.slide3c-content {
-		padding: 10px 10px 8px;
+		padding: 12px 10px 11px;
 	}
 	.slide3c-content .sub {
 		font-size: 12px;
 		line-height: 1;
-		margin-bottom: 4px;
+		margin-bottom: 5px;
 	}
 	.slide3c-content p {
 		font-size: 16px;
@@ -331,5 +333,114 @@
 		right: 20px;
 	}
 } */
-/* Home Slider start
+/* slider 3 col stop
+------------------------------------------------------- */
+
+
+/* slider 2 col start
+------------------------------------------------------- */
+.slider2col-box > h2 {
+	color: #009B85;
+	font-size: 24px;
+	line-height: 35px;
+	text-align: center;
+	margin: 0 28px 15px;
+	font-weight: 500;
+}
+.slider2col-box .slider2col {
+	position: relative;
+}
+
+.slider2col-box .slick-prev, 
+.slider2col-box .slick-next {
+	position: absolute;
+	z-index: 2;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	top: 50%;
+	background-color: #fff;
+	border: 3px solid #009B85;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;	
+	cursor: pointer;
+	text-indent: -9999px;
+}
+.slider2col-box .slick-prev:hover, 
+.slider2col-box .slick-next:hover {
+	opacity: .7;
+}
+.slider2col-box .slick-prev:before, 
+.slider2col-box .slick-next:before {
+	display: none;
+}
+.slider2col-box .slick-prev {
+  background-image: url(../images/arrowS-left.svg);
+}
+.slider2col-box .slick-next {
+  background-image: url(../images/arrowS-right.svg);
+}
+
+.slider2col-box button {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+}
+.slider2col-box .slick-prev, 
+.slider2col-box .slick-next {
+	width: 50px;
+	height: 50px;
+	-webkit-background-size: 19px auto;
+	-moz-background-size: 19px auto;
+	-o-background-size: 19px auto;
+	background-size: 19px auto;
+}
+.slider2col-box .slick-prev {
+	left: 40px;
+}
+.slider2col-box .slick-next {
+	right: 40px;
+}
+
+
+.slider2col-box .slick-dots {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.slider2col-box .slick-dots button {
+	background: #fff;
+	border: 1px solid #004f77;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.slider2col-box .slick-dots li {
+  list-style: none;
+}
+.slider2col-box .slick-dots button:hover,
+.slider2col-box .slick-dots li.slick-active button {
+	background: #004f77;
+}
+.slider2col-box .slick-dots li.slick-active button {
+	cursor: default;
+}
+.slider2col-box .slick-dots {
+	margin-top: 20px;
+}
+.slider2col-box .slick-dots li {
+	margin: 0 7px;
+}
+
+
+@media (max-width: 767.98px) {
+}
+@media (max-width: 767.98px) {
+}
+/* slider 2 col stop
 ------------------------------------------------------- */

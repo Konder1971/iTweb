@@ -31,7 +31,7 @@ function ChiefSlider($elem, config) {
   this._config = {
     loop: true,
     autoplay: false,
-    interval: 5000,
+    interval: 4000,
     pauseOnHover: true,
     refresh: true,
     swipe: true,

@@ -14,7 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/sliders.css">
 
 </head>
-
 <body>
 
 	<!-- top start -->
@@ -147,10 +146,10 @@
 			</div>
 		</div>
 	</div>
+	<div class="clearfix"></div>
 	<!-- block center text stop -->
 
-	<div class="clearfix"></div>
-
+	<!-- slider 3 col start -->
 	<div class="vaContainer adslick">
 		<h2>Customized adaptive Slick slider</h2>
 		<div class="slider3c-box">
@@ -167,12 +166,12 @@
 					</div>
 				</div>
 
-				<!-- <div class="slide3c">
+				<div class="slide3c">
 					<div class="slide3c-container">
 						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
 							<div class="myvideo">
-								<iframe src="https://www.youtube.com/embed/kPYBn8VcdXk" title="YouTube video player"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								<iframe src="video/mn1.mp4" title="YouTube video player"
+									allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
 							</div>
 							<div class="slide3c-content">
@@ -181,7 +180,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<div class="slide3c">
 					<div class="slide3c-container">
@@ -241,28 +240,50 @@
 			</div>
 		</div>
 	</div>
+	<div class="clearfix"></div>
+	<!-- slider 3 col stop -->
 
 
-	<!-- adSlider-2 start -->
-	<div class="adSlider-2">
-		<div class="separator"><span></span></div>
-		<div class="bct">
-			<div class="bct-container">
-				<div class="bct-contasnt">
-					<div class="bct-col">
-						<div class="bct-up">Adaptive Slider</div>
-						<h2>
-							Adaptive Slider
-						</h2>
+	<!-- slider 2 col start -->
+	<div class="vaContainer slider2col-box">
+
+			<h2>Adaptive Slider</h2>
+
+			<div class="slider2col">
+				
+				<div class="slide2c-block" style="background-image: url('images/p.jpg'); height: 300px;">
+					<div class="slide2c-content">
+						<div class="sub">slide</div>
+						<p>Title text</p>
 					</div>
 				</div>
-			</div>
-		</div>
-		<!-- block center text stop -->
+				
+				<div class="slide2c-block" style="background-image: url('images/p15.jpg'); height: 300px;">
+					<div class="slide2c-content">
+						<div class="sub">slide</div>
+						<p>Title text</p>
+					</div>
+				</div>
+				
+				<div class="slide2c-block" style="background-image: url('images/p22.jpg'); height: 300px;">
+					<div class="slide2c-content">
+						<div class="sub">slide</div>
+						<p>Title text</p>
+					</div>
+				</div>
+				
+				<div class="slide2c-block" style="background-image: url('images/p21.jpg'); height: 300px;">
+					<div class="slide2c-content">
+						<div class="sub">slide</div>
+						<p>Title text</p>
+					</div>
+				</div>
 
+			</div>
 
 	</div>
-	<!-- adSlider-2 stop -->
+	<div class="clearfix"></div>
+	<!-- slider 2 col stop -->
 
 
 	<div class="to-up">&uarr;</div>
@@ -283,7 +304,7 @@
 		arrows: true,
 		dots: true,
 		// autoplay: true,
-		autoplaySpeed: 2000,
+		// autoplaySpeed: 2000,
 		// responsive: [
 		// 	{
 		// 		breakpoint: 768,
@@ -344,35 +365,22 @@
 
 
 
-    document.addEventListener('DOMContentLoaded', function () {
-      // инициализация слайдера
-      var slider = new SimpleAdaptiveSlider('.slider', {
-        loop: true,
-        autoplay: false,
-        swipe: true
-      });
-    });
-		$('.slider__item-content').css('height', '');
-		if ($(window).width() > 599) {
-			$('.slider__item-content').css({
-				height: $('.slider__item-content').width() / 2 + 'px'
-			});
-		} else {
-			$('.slider__item-content').css({
-				height: $('.slider__item-content').width() + 'px'
-			});
-		};
-		$(window).resize(function () {
-			$('.slider__item-content').css('height', '');
-			if ($(window).width() > 599) {
-				$('.slider__item-content').css({
-					height: $('.slider__item-content').width() / 2 + 'px'
-				});
-			} else {
-				$('.slider__item-content').css({
-					height: $('.slider__item-content').width() + 'px'
-				});
-			};;
+		$(".slider2col").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		infinite: true,
+		arrows: true,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 		});
 	</script>
 
