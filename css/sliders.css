@@ -351,6 +351,18 @@
 	position: relative;
 }
 
+.slide2c-block {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
 .slider2col-box .slick-prev, 
 .slider2col-box .slick-next {
 	position: absolute;
