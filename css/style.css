@@ -350,7 +350,7 @@ body {
 		align-items: center;
 	}
 	.navigations nav ul > li {
-		margin-left: 50px;
+		margin-left: 40px;
 		position: relative;
 		z-index: 1;
 		height: 114px;
@@ -380,7 +380,7 @@ body {
 		top: -5px;
 		left: 0;
 		display: none;
-		margin-left: -160px;	
+		margin-left: -90px;	
 	}
 	.navigations nav > ul > li:hover > .dropdown {
 		display: block;
@@ -453,6 +453,7 @@ body {
 		z-index: 20;
 		top: -9px;
 		left: 50%;
+		margin-left: -10px;
 		-ms-transform:rotate(45deg);
 		-webkit-transform:rotate(45deg);
 		transform:rotate(45deg);
@@ -487,7 +488,7 @@ body {
 }
 @media (min-width: 1025px) and (max-width: 1199.98px) {
 	.navigations nav > ul > li {
-		/* margin-left: 22px; */
+		margin-left: 22px;
 	}
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
