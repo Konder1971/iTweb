@@ -2130,7 +2130,8 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	text-align: left;
 }
 .resume__content p {
-	color: darkgreen;
+	color: #004f77;
+	font-weight: 500;
 }
 .resume-container {
 	text-align: left;
