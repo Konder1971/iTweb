@@ -151,7 +151,7 @@
 }
 
 	.slider3c {
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 	}
 	.slide3c {
 		border-left: 7px solid #fff;
@@ -200,8 +200,8 @@
 	.slick-dots button {
 		-webkit-border-radius: 8px;
 		border-radius: 8px;
-		width: 15px;
-		height: 15px;
+		width: 16px;
+		height: 16px;
 	}
 
 	.slider3c .slick-prev, 
@@ -225,7 +225,7 @@
 
 @media (max-width: 767.98px) {
 	.slider3c {
-		margin-bottom: 25px;
+		margin-bottom: 23px;
 	}
 	.slick-slide:not(.slick-active) .slide3c-block {
 		height: calc(100% - 30px)!important;
@@ -340,7 +340,7 @@
 /* slider 2 col start
 ------------------------------------------------------- */
 .slider2col-box > h2 {
-	color: #009B85;
+	color: #004f77;
 	font-size: 24px;
 	line-height: 35px;
 	text-align: center;
@@ -350,17 +350,33 @@
 .slider2col-box .slider2col {
 	position: relative;
 }
-
 .slide2c-block {
   position: relative;
+	z-index: 1;
+  height: 100%;
+	display: flex!important;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.slide2c-block:hover {
+	opacity: .7;
+}
+.bgImg2 {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: relative;
-  height: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .slider2col-box .slick-prev, 
@@ -372,7 +388,7 @@
 	right: auto;
 	top: 50%;
 	background-color: #fff;
-	border: 3px solid #009B85;
+	border: 3px solid #004f77;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	background-repeat: no-repeat;
@@ -382,42 +398,24 @@
 }
 .slider2col-box .slick-prev:hover, 
 .slider2col-box .slick-next:hover {
-	opacity: .7;
+	opacity: .6;
 }
 .slider2col-box .slick-prev:before, 
 .slider2col-box .slick-next:before {
 	display: none;
 }
 .slider2col-box .slick-prev {
-  background-image: url(../images/arrowS-left.svg);
+  background-image: url(../images/arrowS-left2.svg);
 }
 .slider2col-box .slick-next {
-  background-image: url(../images/arrowS-right.svg);
+  background-image: url(../images/arrowS-right2.svg);
 }
 
-.slider2col-box button {
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
+.slider2col-box .slick-dots button {
 	width: 16px;
 	height: 16px;
+	border-radius: 0;
 }
-.slider2col-box .slick-prev, 
-.slider2col-box .slick-next {
-	width: 50px;
-	height: 50px;
-	-webkit-background-size: 19px auto;
-	-moz-background-size: 19px auto;
-	-o-background-size: 19px auto;
-	background-size: 19px auto;
-}
-.slider2col-box .slick-prev {
-	left: 40px;
-}
-.slider2col-box .slick-next {
-	right: 40px;
-}
-
-
 .slider2col-box .slick-dots {
 	display: flex;
 	flex-direction: row;
@@ -444,15 +442,97 @@
 }
 .slider2col-box .slick-dots {
 	margin-top: 20px;
+	padding-left: 0;
 }
 .slider2col-box .slick-dots li {
 	margin: 0 7px;
 }
 
-
-@media (max-width: 767.98px) {
+.slide2c-content {
+	background-color: rgba(255, 255, 255, .7);
+	color: #004f77;
+	text-align: center;
 }
-@media (max-width: 767.98px) {
+
+
+@media (min-width: 600px) {
+	.slider2col-box {
+		margin-bottom: 80px;
+	}
+	.slider2col-box .slick-prev, 
+	.slider2col-box .slick-next {
+		width: 40px;
+		height: 40px;
+		-webkit-background-size: 19px auto;
+		-moz-background-size: 19px auto;
+		-o-background-size: 19px auto;
+		background-size: 19px auto;
+		margin-top: -20px;
+	}
+	.slider2col-box .slick-prev {
+		left: 30px;
+	}
+	.slider2col-box .slick-next {
+		right: 20px;
+	}
+	.slider2col {
+		margin-left: -20px;
+	}
+	.slide2c-block {
+		border-left: 20px solid #fff;;
+	}
+ 	.slide2c-content {
+		padding: 15px 20px 12px;
+	}
+ .slide2c-content .sub {
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+	.slide2c-content p {
+		font-size: 28px;
+		line-height: 29px;
+		margin-bottom: 0;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 599.98px) {
+	.slider2col-box {
+		margin-bottom: 80px;
+	}
+	.slider2col-box .slick-prev, 
+	.slider2col-box .slick-next {
+		width: 35px;
+		height: 35px;
+		-webkit-background-size: 12px auto;
+		-moz-background-size: 12px auto;
+		-o-background-size: 12px auto;
+		background-size: 12px auto;
+		margin-top: -18px;
+	}
+	.slider2col-box .slick-prev {
+		left: 20px;
+	}
+	.slider2col-box .slick-next {
+		right: 25px;
+	}
+ .slide2c-content {
+		padding: 15px 20px 12px;
+	}
+ .slide2c-content .sub {
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+	.slide2c-content p {
+		font-size: 28px;
+		line-height: 29px;
+		margin-bottom: 0;
+		font-weight: 500;
+	}
 }
 /* slider 2 col stop
 ------------------------------------------------------- */

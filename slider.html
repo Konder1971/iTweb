@@ -9,6 +9,7 @@
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
 
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sliders.css">
@@ -251,40 +252,45 @@
 
 			<div class="slider2col">
 				
-				<div class="slide2c-block" style="background-image: url('images/p.jpg');">
+				<a href="images/p.jpg" class="slide2c-block example-image-link" data-lightbox="example">
+					<div class="bgImg2" style="background-image: url('images/p.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">slide</div>
+						<div class="sub">sub title</div>
 						<p>Title text</p>
 					</div>
-				</div>
+				</a>
 				
-				<div class="slide2c-block" style="background-image: url('images/p15.jpg');">
+				<a href="images/p15.jpg" class="slide2c-block example-image-link" data-lightbox="example">
+					<div class="bgImg2" style="background-image: url('images/p15.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">slide</div>
+						<div class="sub">sub title</div>
 						<p>Title text</p>
 					</div>
-				</div>
+				</a>
 				
-				<div class="slide2c-block" style="background-image: url('images/p22.jpg');">
+				<a href="images/p22.jpg" class="slide2c-block example-image-link" data-lightbox="example">
+					<div class="bgImg2" style="background-image: url('images/p22.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">slide</div>
+						<div class="sub">sub title</div>
 						<p>Title text</p>
 					</div>
-				</div>
+				</a>
 				
-				<div class="slide2c-block" style="background-image: url('images/p21.jpg');">
+				<a href="images/p21.jpg" class="slide2c-block example-image-link" data-lightbox="example">
+					<div class="bgImg2" style="background-image: url('images/p21.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">slide</div>
+						<div class="sub">sub title</div>
 						<p>Title text</p>
 					</div>
-				</div>
+				</a>
 				
-				<div class="slide2c-block" style="background-image: url('images/p33.jpg');">
+				<a href="images/p33.jpg" class="slide2c-block example-image-link" data-lightbox="example">
+					<div class="bgImg2" style="background-image: url('images/p33.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">slide</div>
+						<div class="sub">sub title</div>
 						<p>Title text</p>
 					</div>
-				</div>
+				</a>
 
 			</div>
 
@@ -297,6 +303,7 @@
 
 	
 	<!-- <script src='js/ajax-scripts.js'></script> -->
+	<!-- <script src="js/lightbox-plus-jquery.min.js"></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
@@ -379,51 +386,46 @@
 		arrows: true,
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		responsive: [
 			{
-				breakpoint: 599,
+				breakpoint: 600,
 				settings: {
 					slidesToShow: 1
 				}
 			}
 		]
 		});
+		$('.slider2col').css('height', '');
 		$('.slide2c-block').css('height', '');
-		$('.slider2c-box').css('height', '');
-		$('.slider2c-box .slick-list').css('height', '');
-		if ($(window).width() > 1) {
-			$('.slider2col-box .slick-list').css({
-				height: $('.slide2c-block').width()/1.777 + 'px'
-			});
-			$('.slide2c-block').css({
+		if ($(window).width() > 599) {
+			$('.slider2col').css({
 				height: $('.slide2c-block').width()/1.777 + 'px'
 			});
 			$('.slide2c-block').css({
 				height: $('.slide2c-block').width()/1.777 + 'px'
 			});
 		} else {
-			$('.slider2c-box').css({
-				height: $('.slider2c-box').width() + 'px',
+			$('.slider2col').css({
+				height: $('.slide2c-block').width() + 'px'
 			});
 			$('.slide2c-block').css({
 				height: $('.slide2c-block').width() + 'px'
 			});
 		};
 		$(window).resize(function () {
+			$('.slider2col').css('height', '');
 			$('.slide2c-block').css('height', '');
-			$('.slider2c-box').css('height', '');
-			$('.slider2c-box .slick-list').css('height', '');
-			if ($(window).width() > 1) {
-				$('slider2col-box .slick-list').css({
-					height: $('.slide2c-block').width()/1.777 + 'px'
-				});
-				$('.slide2c-block').css({
-					height: $('.slide2c-block').width()/1.777 + 'px'
-				});
+			if ($(window).width() > 599) {
+			$('.slider2col').css({
+				height: $('.slide2c-block').width()/1.777 + 'px'
+			});
+			$('.slide2c-block').css({
+				height: $('.slide2c-block').width()/1.777 + 'px'
+			});
 			} else {
-				$('.slider2c-box').css({
-					height: $('.slider2c-box').width() + 'px',
+				$('.slider2col').css({
+					height: $('.slide2c-block').width() + 'px'
 				});
 				$('.slide2c-block').css({
 					height: $('.slide2c-block').width() + 'px'
