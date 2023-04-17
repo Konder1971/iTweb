@@ -457,7 +457,7 @@
 
 @media (min-width: 600px) {
 	.slider2col-box {
-		margin-bottom: 80px;
+		margin-bottom: 100px;
 	}
 	.slider2col-box .slick-prev, 
 	.slider2col-box .slick-next {
@@ -500,7 +500,7 @@
 
 @media (max-width: 599.98px) {
 	.slider2col-box {
-		margin-bottom: 80px;
+		margin-bottom: 100px;
 	}
 	.slider2col-box .slick-prev, 
 	.slider2col-box .slick-next {
