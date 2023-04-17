@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>iTvweb JS Game 1</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta name="format-detection" content="telephone=no" />
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <style>
+    body {
+      background: linear-gradient(#c00, orange);
+      width: 100%;
+      min-height: 100vh;
+    }
+    #gameBox,
+    #game {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .app__header {
+      padding: 20px 0 0;
+      text-align: center;
+    }
+
+    .app__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+		h1 {
+			font-weight: 400;
+			font-size: 26px;
+			line-height: 30px;
+			margin-bottom: 5px;
+			padding: 0 20px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		#time-header,
+		#result-header {
+			font-size: 24px;
+		}
+		#time-header,
+		#result-header {
+			padding: 8px 20px 10px;
+			margin: 0 auto 3px;
+			width: auto;
+		}
+		#result-header {
+			background-color: rgba(255, 255, 255, 1);
+		}
+		#result-header:not(.hide) {
+			display: table;
+		}
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    .input label {
+      display: inline-block;
+      max-width: 100%;
+			font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .input input {
+      display: block;
+      width: 100%;
+      max-height: 2.8rem;
+      padding: .8rem 1rem;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: 1.4;
+      color: #000;
+      background: #fff none;
+      border: 1px solid #999;
+      border-radius: 5px;
+    }
+
+    #gameBox {
+      position: relative;
+			margin: 0 20px;
+    }
+    #game {
+      position: relative;
+			width: 100%;
+      max-width: 600px;
+      height: 500px;
+      border: 2px solid #f1f1f1;
+      border-radius: 8px;
+      background-color: #999;
+      overflow: hidden;
+      box-shadow: 0 1px 20px 0 rgba(0,0,0,0.25), 0 0px 0px 0 rgba(0,0,0,.12), 0 0px 0px 0px rgba(0,0,0,.3);
+    }
+
+    #start {
+      position: absolute;
+    }
+
+    button {
+      border: none;
+      background-color: #c00;
+      box-shadow: 0 1px 20px 0 rgba(0,0,0,0.25), 0 0px 0px 0 rgba(0,0,0,.12), 0 0px 0px 0px rgba(0,0,0,.3);
+      margin: 20px;
+      border-radius: 8px;
+      padding: 20px 50px;
+      cursor: pointer;
+      color: #000;
+      font-size: 24px;
+      transition: transform .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-transform .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+      will-change: transform;
+    }
+    button:hover {
+      background-color: darkcyan;
+      color: #fff;
+      transform: translateY(-4px);
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .rotate {
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      transition: all .5s ease 0s;
+    }
+
+		@media (max-width: 599.98px) {
+			#game {
+				height: 400px;
+			}
+		}
+
+  </style>
+
+</head>
+<body>
+
+	<!-- top start -->
+	<div class="top">
+		<div class="top-container">
+			<div class="top-content">
+				<!-- logo start -->
+				<div class="logo">
+					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
+				</div>
+				<!-- logo stop -->
+				<!-- navigations start -->
+				<a class="nav-toggle"><span></span></a>
+				<div class="navigations">
+					<nav>
+						<ul>
+							<li>
+								<a class="navlink" href="index.html" title="">Home</a>
+							</li>
+							<li>
+								<a class="navlink" href="about.html" title="">About</a>
+							</li>
+							<li>
+								<a class="navlink">Dev</a>
+								<div class="dropdown">
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="grid.html" title="">
+													<span class="text">CSS Grid Layout</span>
+												</a>
+											</li>
+											<li>
+												<a href="slider.html" title="">
+													<span class="text">Слайдеры</span>
+												</a>
+											</li>
+											<li>
+												<a href="carousels.html" title="">
+													<span class="text">Карусели</span>
+												</a>
+											</li>
+											<li>
+												<a href="video.html" title="">
+													<span class="text">Видео</span>
+												</a>
+											</li>
+											<li>
+												<a href="parallax.html" title="">
+													<span class="text">Параллакс эффект</span>
+												</a>
+												<ul class="subNuv">
+													<li><a href="p1.html" title="">Параллакс обычный</a></li>
+													<li><a href="p2.html" title="">Параллах Шторка</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="contactform.html" title="">
+													<span class="text">Контактная форма</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navlink">JS</a>
+								<div class="dropdown">
+									<div class="dropdown-col-2">
+										<ul>
+											<li>
+												<a href="menu.html" title="">
+													<span class="text">Навигация</span>
+												</a>
+											</li>
+											<li>
+												<a href="popup.html" title="">
+													<span class="text">Модальное окно popup</span>
+												</a>
+											</li>
+											<li>
+												<a href="filter.html" title="">
+													<span class="text">Фильтры</span>
+												</a>
+											</li>
+											<li>
+												<a href="textanima.html" title="">
+													<span class="text">Текстовые анимации</span>
+												</a>
+											</li>
+											<li>
+												<a class="active" href="jsgame1.html" title="">
+													<span class="text">JS Game 1</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="navlink" href="contact.html" title="">Contact</a>	
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- navigations stop -->
+			</div>
+		</div>
+	</div>
+	<!-- top stop -->
+
+  <div id="app">
+
+    <div class="app__header">
+      <h1>Подсчёт количества кликов по квадратам</h1>
+      <p id="time-header">Время игры: <span id="time">5.0</span></p>
+      <p id="result-header" class="hide">Ваш результат: <span id="result"></span></p>
+    </div>
+
+    <div class="app__footer">
+      <div class="input">
+        <label for="game-time">Измените Время игры, (сек)</label>
+        <input type="number" id="game-time" min="5" step="1" value="5">
+      </div>
+    </div>
+
+    <div id="gameBox">
+      <div id="game"></div>
+      <button id="start" class="btn">Start</button>
+    </div>
+
+  </div>
+
+  <script>
+    const $start = document.querySelector('#start')
+    const $game = document.querySelector('#game')
+    const $time = document.querySelector('#time')
+    const $result = document.querySelector('#result')
+    const $timeHeader = document.querySelector('#time-header')
+    const $resultHeader = document.querySelector('#result-header')
+    const $gameTime = document.querySelector('#game-time')
+
+    $start.addEventListener('click', startGame)
+    $game.addEventListener('click', squareClick)
+    $gameTime.addEventListener('input', setGameTime)
+
+    function show($el) {
+      $el.classList.remove('hide')
+    }
+
+    function hide($el) {
+      $el.classList.add('hide')
+    }
+
+    let score = 0
+    let isGameStarted = false
+
+    const bgColor = ['red', 'green', 'blue', 'silver', 'black', 'grey', 'yellow', 'orange', 'brown', 'turquoise', 'purple', 'darkgreen', '#333']
+    const bgColorNumber = bgColor.length - 1
+
+    function startGame() {
+      score = 0
+      setGameTime()
+      $gameTime.setAttribute('disabled', 'true')
+      isGameStarted = true
+      $game.style.backgroundColor = '#f1f1f1'
+      hide($start)
+
+      const interval = setInterval(function() {
+        const time = parseFloat($time.textContent)
+        if(time <= 0 ) {
+          clearInterval(interval)
+          endGame()
+        } else {
+          $time.textContent = (time - 0.1).toFixed(1)
+        }
+      }, 100)
+
+      square()
+    }
+
+    function setGameScore() {
+      $result.textContent = score.toString()
+    }
+
+    function setGameTime() {
+      let time = +$gameTime.value // + переводит в число, как и parseInt()
+      $time.textContent = time.toFixed(1)
+      show($timeHeader)
+      hide($resultHeader)
+    }
+
+    function endGame() {
+      isGameStarted = false
+      setGameScore()
+      $gameTime.removeAttribute('disabled')
+      show($start)
+      $game.innerHTML = ''
+      $game.style.backgroundColor = '#999'
+      hide($timeHeader)
+      show($resultHeader)
+      clearTimeout(rotateTimeout)
+    }
+
+    function squareClick(event) {
+      if(!isGameStarted) {
+        return
+      }
+      if(event.target.dataset.box) {
+        score++
+        square()
+        boxBgColor(0, bgColorNumber)
+      }
+    }
+
+    function squareRandom(min, max) {
+      return Math.floor(Math.random() * (max - min) + min)
+    }
+    function boxBgColor(min, bgColorNumber) {
+      return Math.floor(Math.random() * (bgColorNumber - min + 1)) + min
+    }
+    function random(bgColor) {
+      return bgColor[boxBgColor(0, bgColorNumber)]
+    }
+
+    function square() {
+
+      $game.innerHTML = ''
+      const box = document.createElement('div')
+      let boxSize = squareRandom(20, 100)
+
+      box.style.width = box.style.height = boxSize + 'px'
+      box.style.position = 'absolute'
+      box.style.backgroundColor = random(bgColor)
+      box.style.cursor = 'pointer'
+      box.style.borderRadius = '4px'
+      box.setAttribute('data-box', true)
+
+      let gameSize = $game.getBoundingClientRect()
+
+      let maxTop = gameSize.height - boxSize
+      let maxLeft = gameSize.width - boxSize
+
+      box.style.top = squareRandom(0, maxTop) + 'px'
+      box.style.left = squareRandom(0, maxLeft) + 'px'
+
+      $game.insertAdjacentElement('afterbegin', box)
+
+      rotateTimeout = setTimeout(() => {
+        box.classList.add('rotate')
+      }, 10)
+
+    }
+  </script>
+
+	<div class="to-up">&uarr;</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
