@@ -486,9 +486,17 @@ body {
 		margin: 25px 0 0 15px;
 	}
 }
-@media (min-width: 1025px) and (max-width: 1199.98px) {
+@media (min-width: 1150px) and (max-width: 1220px) {
 	.navigations nav > ul > li {
-		margin-left: 22px;
+		margin-left: 25px;
+	}
+}
+@media (min-width: 1025px) and (max-width: 1149.98px) {
+	.logo em {
+		display: none;
+	}
+	.navigations nav > ul > li {
+		margin-left: 35px;
 	}
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
