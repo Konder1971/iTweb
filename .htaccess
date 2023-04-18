@@ -1,6 +1,6 @@
 RewriteEngine on
 RewriteBase /
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTPS
 RewriteRule ^([^.]+)\.html$ itweb.vercel.app/$1 [R=301,L]
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 RewriteCond %{REQUEST_fileNAME} !-d
