@@ -167,11 +167,6 @@
 				<div class="slide3c">
 					<div class="slide3c-container">
 						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
-							<!-- video start -->
-							<div class="myvideo">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/IkGmijQ-tfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-							</div>
-							<!-- video stop -->
 							<div class="slide3c-content">
 								<div class="sub">sub title</div>
 								<p>Title text</p>
@@ -181,10 +176,78 @@
 				</div>
 
 				<div class="slide3c">
-					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p33.jpg')">
+					<div class="slide3c-container videoBox-1">
+						<style type="text/css">
+							.btn-video {
+								position: absolute;
+								z-index: 2;
+								top: 50%;
+								left: 50%;
+								-moz-transform:translate(-50%, -50%);
+								-ms-transform:translate(-50%, -50%);
+								-webkit-transform:translate(-50%, -50%);
+								-o-transform:translate(-50%, -50%);
+								transform:translate(-50%, -50%);
+							}
+							.btn-video {
+								width: 100%;
+								height: 100%;
+								cursor: pointer;
+							}
+							.btn-video span,
+							.btn-video em {
+								display: block;
+								width: 60px;
+								height: 60px;
+								position: relative;
+								top: 50%;
+								left: 50%;
+								margin: -30px 0 0 -30px;
+							}
+							.btn-video em { 
+								background: url(images/play-circle.svg) no-repeat 50% 50%;
+								background-size: 60px 60px;
+							}
+							.btn-video span {
+								background: url(images/awesome-pause.svg) no-repeat 50% 50%;
+								background-size: 60px 60px;
+								opacity: 0;
+							}
+							.videoblock:hover + .btn-video span,
+							.videoblock + .btn-video:hover span {
+								opacity: 1;
+							}
+						</style>
+						<div class="slide3c-block" style="background-image: url('mages/mn1.jpg')">
+							<video width="100%" height="auto" loop playsinline poster="images/mn1.jpg" id="myVideo-1" class="videoblock">
+								<source src="video/mn1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							</video>
+							<div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
+							<script>
+								var video1 = document.getElementById("myVideo-1");
+								var btn1 = document.getElementById("myBtn-1");
+								function myFunction1() {
+									if (video1.paused) {
+										video1.play();
+										btn1.innerHTML = "<span></span>";
+									} else {
+										video1.pause();
+										btn1.innerHTML = "<em></em>";
+									}
+								}
+
+								$(document).on('click', '.slick-arrow', function() {
+									video1.pause();
+									btn1.innerHTML = "<em></em>";
+								});
+								$('.example-image-link').on('click', function() {
+									video1.pause();
+									btn1.innerHTML = "<em></em>";
+								});
+
+							</script>
 							<div class="slide3c-content">
-								<div class="sub">sub title</div>
+								<div class="sub">video</div>
 								<p>Title text</p>
 							</div>
 						</div>
@@ -193,9 +256,12 @@
 
 				<div class="slide3c">
 					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p22.jpg')">
+						<div class="slide3c-block" style="background-image: url('images/ya.jpg')">
+							<div class="myvideo" style="background-image: url(images/ya.jpg);">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/kPYBn8VcdXk/enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+							</div>
 							<div class="slide3c-content">
-								<div class="sub">sub title</div>
+								<div class="sub">video</div>
 								<p>Title text</p>
 							</div>
 						</div>
@@ -226,7 +292,7 @@
 
 				<div class="slide3c">
 					<div class="slide3c-container">
-						<div class="slide3c-block" style="background-image: url('images/p5.jpg')">
+						<div class="slide3c-block" style="background-image: url('images/p22.jpg')">
 							<div class="slide3c-content">
 								<div class="sub">sub title</div>
 								<p>Title text</p>
@@ -325,12 +391,6 @@
 		// 		}
 		// 	}
 		// ]
-		});
-		jQuery(".homeSlider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
-				jQuery('iframe').each(function(){ 
-				var src = jQuery(this).attr('src');
-				jQuery(this).attr('src', src);
-			});
 		});
 		$('.slide3c').css('height', '');
 		$('.slider3c-box').css('height', '');
@@ -431,6 +491,26 @@
 		});
 
 	</script>
+
+
+
+<script>
+	$(document).on('click', 'body', function() {
+			var $video = $('.myvideo iframe'),
+					src = $video.attr('src');
+			$video.attr('src', src + '&autoplay=1');
+	});
+	$('.example-image-link').on('click', function() {
+			var $video = $('.myvideo iframe'),
+					src = $video.attr('src');
+			$video.attr('src', src + '&autoplay=1');
+	});
+
+	// $(document).on('click', '.myvideo iframe', function(){
+	// 	jQuery("iframe").each(function() {
+	// 			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
+	// });
+</script>
 
 </body>
 </html>
