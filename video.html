@@ -350,14 +350,14 @@
 										}
 									</script>
 							</div>
-							<script>
-								const player = videojs('myVideo-1');
+							<!-- <script>
+								const player = videojs('#myVideo-1');
 									player.play();
-							</script>
+							</script> -->
 						</div>
 					</div>
-					<div class="htmlVideo-col" style="background-image: url(images/fm1.jpg);">
-						<video width="100%" height="auto" controls poster="images/fm1.jpg">
+					<div class="htmlVideo-col video-content-2" style="background-image: url(images/fm1.jpg);">
+						<video width="100%" height="auto" controls poster="images/fm1.jpg" id="myVideo-2">
 							<source src="video/fm1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 						</video>
 					</div>
@@ -441,7 +441,7 @@
 			<div class="videoBlock videoBlock-1">
 				<h2 class="headerh2">YouTube адаптивное видео</h2>
 				<div class="myvideo" style="background-image: url(images/ya.jpg);">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/kPYBn8VcdXk" frameborder="0" allowfullscreen></iframe>
+					<iframe id="myVideo-3" class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/kPYBn8VcdXk/enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="myvideoContent">
 					<p class="sub">Sub title video</p>
@@ -460,6 +460,33 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+
+
+	<script>
+		// https://victorz.ru/202007051233
+		$(document).ready(function(e) {
+			$('audio,video').bind('play', function() {
+				activated = this;
+				$('audio,video').each(function() {
+					if(this != activated) this.pause();
+				});
+				// var $video = $('.myvideo iframe'),
+				// src = $video.attr('src');
+				// $video.attr('src', src + '&autoplay=1');
+			});
+			// $(".video-js").click(function(){
+			// 	activated = this;
+			// 	$('.video-js').each(function() {
+			// 			if(this != activated) _V_($(this).attr("id")).pause();
+			// 	});
+			// });
+			$(document).on('click', 'body', function() {
+				var $video = $('.myvideo iframe'),
+				src = $video.attr('src');
+				$video.attr('src', src + '&autoplay=1');
+			});
+		});
+		</script>
 
 </body>
 </html>
