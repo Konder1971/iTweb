@@ -167,6 +167,11 @@
 				<div class="slide3c">
 					<div class="slide3c-container">
 						<div class="slide3c-block" style="background-image: url('images/p.jpg')">
+							<!-- video start -->
+							<div class="myvideo">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/IkGmijQ-tfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+							<!-- video stop -->
 							<div class="slide3c-content">
 								<div class="sub">sub title</div>
 								<p>Title text</p>
@@ -180,7 +185,7 @@
 						<div class="slide3c-block" style="background-image: url('images/p33.jpg')">
 							<div class="slide3c-content">
 								<div class="sub">sub title</div>
-								<p> Title text </p>
+								<p>Title text</p>
 							</div>
 						</div>
 					</div>
@@ -299,7 +304,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
-
+	
 	<script type="text/javascript">
 		$(".slider3c").slick({
 		centerMode: true,
@@ -320,6 +325,12 @@
 		// 		}
 		// 	}
 		// ]
+		});
+		jQuery(".homeSlider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+				jQuery('iframe').each(function(){ 
+				var src = jQuery(this).attr('src');
+				jQuery(this).attr('src', src);
+			});
 		});
 		$('.slide3c').css('height', '');
 		$('.slider3c-box').css('height', '');
@@ -363,7 +374,7 @@
 			};
 		});
 
-
+		
 
 		$(".slider2col").slick({
 		slidesToShow: 2,
@@ -420,7 +431,6 @@
 		});
 
 	</script>
-
 
 </body>
 </html>
