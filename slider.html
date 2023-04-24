@@ -224,8 +224,8 @@
 							</video>
 							<div id="myBtn-1" class="btn-video" onclick="myFunction1()"><em></em></div>
 							<script>
-								var video1 = document.getElementById("myVideo-1");
-								var btn1 = document.getElementById("myBtn-1");
+								let video1 = document.getElementById("myVideo-1");
+								let btn1 = document.getElementById("myBtn-1");
 								function myFunction1() {
 									if (video1.paused) {
 										video1.play();
@@ -234,8 +234,7 @@
 										video1.pause();
 										btn1.innerHTML = "<em></em>";
 									}
-								}
-
+								};
 								$(document).on('click', '.slick-arrow', function() {
 									video1.pause();
 									btn1.innerHTML = "<em></em>";
@@ -244,7 +243,10 @@
 									video1.pause();
 									btn1.innerHTML = "<em></em>";
 								});
-
+								$(document).on('click', '.slider3c .slick-dots button', function() {
+									video1.pause();
+									btn1.innerHTML = "<em></em>";
+								});
 							</script>
 							<div class="slide3c-content">
 								<div class="sub">video</div>
@@ -501,6 +503,11 @@
 			$video.attr('src', src + '&autoplay=1');
 	});
 	$('.example-image-link').on('click', function() {
+			var $video = $('.myvideo iframe'),
+			src = $video.attr('src');
+			$video.attr('src', src + '&autoplay=1');
+	});
+	$('.slider3c .slick-dots button').on('click', function() {
 			var $video = $('.myvideo iframe'),
 			src = $video.attr('src');
 			$video.attr('src', src + '&autoplay=1');
