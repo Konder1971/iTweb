@@ -120,11 +120,11 @@
 			.htmlVideo-box {
 				display: flex;
 				flex-direction: row;
-				flex-wrap: nowrap;
+				flex-wrap: wrap;
 				justify-content: space-between;
 			}
 			.htmlVideo-col {
-				width: calc(50% - 15px);
+				width: calc(50% - 30px);
 			}
 		}
 		@media (max-width: 767.98px) {
@@ -188,6 +188,9 @@
 		.videoblock:hover + .btn-video span,
 		.videoblock + .btn-video:hover span {
 			opacity: 1;
+		}
+		video {
+			background-size: cover;
 		}
 	</style>
 </head>
@@ -382,6 +385,29 @@
 							</script>
 						</div>
 					</div>
+
+					<!-- <div class="htmlVideo-col video-content-2">
+						<div class="videoBox-1">
+							<video width="100%" height="auto" loop playsinline poster="images/fm2.jpg" id="myVideo-3" class="videoblock">
+								<source src="video/fm2.mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div id="myBtn-3" class="btn-video" onclick="myFunction3()"><em></em></div>
+							<script>
+								var video3 = document.getElementById("myVideo-3");
+								var btn3 = document.getElementById("myBtn-3");
+								function myFunction3() {
+									if (video3.paused) {
+										video3.play();
+										btn3.innerHTML = "<span></span>";
+									} else {
+										video3.pause();
+										btn3.innerHTML = "<em></em>";
+									}
+								}
+							</script>
+						</div>
+					</div> -->
 
 				</div>
 			</div>
