@@ -275,12 +275,14 @@
 			<div class="bct-container">
 				<h2>HTML5 Video, adaptive</h2>
 				<div class="htmlVideo-box">
+					
 					<div class="htmlVideo-col">
 						<style type="text/css">
 							.videoBox-1 {
 								position: relative;
 							}
-							.video-content-1 {
+							.video-content-1,
+							.video-content-2 {
 								margin: 0 auto;
 								display: flex;
 								justify-content: center;
@@ -356,11 +358,30 @@
 							</script> -->
 						</div>
 					</div>
+
 					<div class="htmlVideo-col video-content-2" style="background-image: url(images/fm1.jpg);">
-						<video width="100%" height="auto" controls poster="images/fm1.jpg" id="myVideo-2">
-							<source src="video/fm1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
+						<div class="videoBox-1">
+							<video width="100%" height="auto" controls loop playsinline poster="images/fm1.jpg" id="myVideo-2" class="videoblock">
+								<source src="video/fm1.mp4">
+								Your browser does not support HTML5 video.
+							</video>
+							<div id="myBtn-2" class="btn-video" onclick="myFunction2()"><em></em></div>
+							<script>
+								var video2 = document.getElementById("myVideo-2");
+								var btn2 = document.getElementById("myBtn-2");
+								function myFunction2() {
+									if (video2.paused) {
+										video2.play();
+										btn2.innerHTML = "<span></span>";
+									} else {
+										video2.pause();
+										btn2.innerHTML = "<em></em>";
+									}
+								}
+							</script>
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
