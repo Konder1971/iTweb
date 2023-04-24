@@ -129,15 +129,67 @@
 		}
 		@media (max-width: 767.98px) {
 			.htmlVideo .bct {
-				margin-bottom: 15px;
+				margin-bottom: 5px;
 			}
 			.videoBox-1 {
 				margin-bottom: 25px;
 			}
 		}
 		/* htmlVideo stop */
-	</style>
 
+		.videoBox-1 {
+			position: relative;
+		}
+		.video-content-1,
+		.video-content-2 {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			max-width: 100%;
+		}
+		.video-content {
+			position: relative;
+		}
+		.btn-video {
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			left: 50%;
+			-moz-transform:translate(-50%, -50%);
+			-ms-transform:translate(-50%, -50%);
+			-webkit-transform:translate(-50%, -50%);
+			-o-transform:translate(-50%, -50%);
+			transform:translate(-50%, -50%);
+		}
+		.btn-video {
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+		.btn-video span,
+		.btn-video em {
+			display: block;
+			width: 60px;
+			height: 60px;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			margin: -30px 0 0 -30px;
+		}
+		.btn-video em { 
+			background: url(images/play-circle.svg) no-repeat 50% 50%;
+			background-size: 60px 60px;
+		}
+		.btn-video span {
+			background: url(images/awesome-pause.svg) no-repeat 50% 50%;
+			background-size: 60px 60px;
+			opacity: 0;
+		}
+		.videoblock:hover + .btn-video span,
+		.videoblock + .btn-video:hover span {
+			opacity: 1;
+		}
+	</style>
 </head>
 <body>
 
@@ -280,60 +332,6 @@
 				<div class="htmlVideo-box">
 					
 					<div class="htmlVideo-col">
-						<style type="text/css">
-							.videoBox-1 {
-								position: relative;
-							}
-							.video-content-1,
-							.video-content-2 {
-								margin: 0 auto;
-								display: flex;
-								justify-content: center;
-								max-width: 100%;
-							}
-							.video-content {
-								position: relative;
-							}
-							.btn-video {
-								position: absolute;
-								z-index: 2;
-								top: 50%;
-								left: 50%;
-								-moz-transform:translate(-50%, -50%);
-								-ms-transform:translate(-50%, -50%);
-								-webkit-transform:translate(-50%, -50%);
-								-o-transform:translate(-50%, -50%);
-								transform:translate(-50%, -50%);
-							}
-							.btn-video {
-								width: 100%;
-								height: 100%;
-								cursor: pointer;
-							}
-							.btn-video span,
-							.btn-video em {
-								display: block;
-								width: 60px;
-								height: 60px;
-								position: relative;
-								top: 50%;
-								left: 50%;
-								margin: -30px 0 0 -30px;
-							}
-							.btn-video em { 
-								background: url(images/play-circle.svg) no-repeat 50% 50%;
-								background-size: 60px 60px;
-							}
-							.btn-video span {
-								background: url(images/awesome-pause.svg) no-repeat 50% 50%;
-								background-size: 60px 60px;
-								opacity: 0;
-							}
-							.videoblock:hover + .btn-video span,
-							.videoblock + .btn-video:hover span {
-								opacity: 1;
-							}
-						</style>
 						<div class="videoBox-1">
 							<div class="video-content-1">
 								<video loop playsinline poster="images/v3.jpg" id="myVideo-1" class="videoblock">
@@ -355,10 +353,10 @@
 										}
 									</script>
 							</div>
-							<!-- <script>
+							<script>
 								const player = videojs('#myVideo-1');
 									player.play();
-							</script> -->
+							</script>
 						</div>
 					</div>
 
@@ -484,7 +482,6 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-
 
 	<script>
 		// https://victorz.ru/202007051233
