@@ -471,6 +471,11 @@
 				$('audio,video').each(function() {
 					if(this != activated) this.pause();
 				});
+				$(document).on('click', 'body', function() {
+					var $video = $('.myvideo iframe'),
+					src = $video.attr('src');
+					$video.attr('src', src + '&autoplay=1');
+				});
 			});
 
 			$(document).on('click', 'body', function() {
