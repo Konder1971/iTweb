@@ -465,28 +465,22 @@
 	<script>
 		// https://victorz.ru/202007051233
 		$(document).ready(function(e) {
+			
 			$('audio,video').bind('play', function() {
 				activated = this;
 				$('audio,video').each(function() {
 					if(this != activated) this.pause();
 				});
-				// var $video = $('.myvideo iframe'),
-				// src = $video.attr('src');
-				// $video.attr('src', src + '&autoplay=1');
 			});
-			// $(".video-js").click(function(){
-			// 	activated = this;
-			// 	$('.video-js').each(function() {
-			// 			if(this != activated) _V_($(this).attr("id")).pause();
-			// 	});
-			// });
+
 			$(document).on('click', 'body', function() {
 				var $video = $('.myvideo iframe'),
 				src = $video.attr('src');
 				$video.attr('src', src + '&autoplay=1');
 			});
+
 		});
-		</script>
+	</script>
 
 </body>
 </html>
