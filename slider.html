@@ -395,8 +395,6 @@
 				});
 		});
 
-		
-
 		$(".slider2col").slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
@@ -450,33 +448,30 @@
 				});
 			};
 		});
-
 	</script>
 
+	<script>
+		$(document).on('click', 'body', function() {
+				var $video = $('.myvideo iframe'),
+				src = $video.attr('src');
+				$video.attr('src', src + '&autoplay=1');
+		});
+		$('.example-image-link').on('click', function() {
+				var $video = $('.myvideo iframe'),
+				src = $video.attr('src');
+				$video.attr('src', src + '&autoplay=1');
+		});
+		$('.slider3c .slick-dots button').on('click', function() {
+				var $video = $('.myvideo iframe'),
+				src = $video.attr('src');
+				$video.attr('src', src + '&autoplay=1');
+		});
 
-
-<script>
-	$(document).on('click', 'body', function() {
-			var $video = $('.myvideo iframe'),
-			src = $video.attr('src');
-			$video.attr('src', src + '&autoplay=1');
-	});
-	$('.example-image-link').on('click', function() {
-			var $video = $('.myvideo iframe'),
-			src = $video.attr('src');
-			$video.attr('src', src + '&autoplay=1');
-	});
-	$('.slider3c .slick-dots button').on('click', function() {
-			var $video = $('.myvideo iframe'),
-			src = $video.attr('src');
-			$video.attr('src', src + '&autoplay=1');
-	});
-
-	// $(document).on('click', '.myvideo iframe', function(){
-	// 	jQuery("iframe").each(function() {
-	// 			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
-	// });
-</script>
+		// $(document).on('click', '.myvideo iframe', function(){
+		// 	jQuery("iframe").each(function() {
+		// 			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')});
+		// });
+	</script>
 
 </body>
 </html>
