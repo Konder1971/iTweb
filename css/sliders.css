@@ -259,20 +259,20 @@
 	}
 	.slider3c .slick-prev, 
 	.slider3c .slick-next {
-		width: 35px;
-		height: 35px;
-		-webkit-background-size: 10px auto;
-		-moz-background-size: 10px auto;
-		-o-background-size: 10px auto;
-		background-size: 10px auto;
+		width: 45px;
+		height: 45px;
+		-webkit-background-size: 15px auto;
+		-moz-background-size: 15px auto;
+		-o-background-size: 15px auto;
+		background-size: 15px auto;
 		top: auto;
-		bottom: 50%;
+		bottom: 49%;
 	}
 	.slider3c .slick-prev {
-		left: 27px;
+		left: 22px;
 	}
 	.slider3c .slick-next {
-		right: 27px;
+		right: 22px;
 	}
 }
 
