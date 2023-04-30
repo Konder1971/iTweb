@@ -336,7 +336,8 @@
 				<div class="nav">
 					<ul>
 						<li data-f="all" class="active">ALL</li>
-						<li data-f="wordpress" class="text-wordpress">Wordpress</li>
+						<li data-f="wordpress">Wordpress</li>
+						<li data-f="wordpress">Vue</li>
 						<!-- <li data-f="html5css3" class="text-html5css3">Html5/CSS3</li>
 						<li data-f="parallax" class="text-android">Parallax</li>
 						<li data-f="javascript" class="text-javascript">Javascript</li> -->
@@ -344,7 +345,7 @@
 				</div>
 				<div class="projectsblocks">
 
-					<a href="https://chupahivka.vercel.app/" target="_blank" class="box wordpress section-col projectblock" to="">
+					<a href="https://chupahivka.vercel.app/" target="_blank" class="box wordpress section-col projectblock">
 						<em class="pepic" style="background-image: url(images/chupahivka.jpg)"><i>project view</i></em>
 						<h3>Чупахівка</h3>
 						<ul>
@@ -353,7 +354,7 @@
 						</ul>
 					</a>
 
-					<a href="https://natashaplavan.vercel.app/" target="_blank" class="box wordpress section-col projectblock" to="">
+					<a href="https://natashaplavan.vercel.app/" target="_blank" class="box wordpress section-col projectblock">
 						<em class="pepic" style="background-image: url(images/np.jpg)"><i>project view</i></em>
 						<h3>Наталья Плаван</h3>
 						<ul>
@@ -362,64 +363,13 @@
 						</ul>
 					</a>
 
-
-					<!-- <a href="images/p22.jpg" data-lightbox="example-2" class="box javascript section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p22.jpg)"><i>viewing</i></em>
-						<h3>javascript</h3>
+					<a href="https://videonews.vercel.app/" target="_blank" class="box vue section-col projectblock">
+						<em class="pepic" style="background-image: url(images/np.jpg)"><i>project view</i></em>
+						<h3>Videonews</h3>
 						<ul>
-							<li>javascript</li>
-							<li>Websites</li>
+							<li>Vue 3</li>
 						</ul>
 					</a>
-					<a href="images/p33.jpg" data-lightbox="example-3" class="box html5css3 section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p33.jpg)"><i>viewing</i></em>
-						<h3>html5css3</h3>
-						<ul>
-							<li>html5css3</li>
-							<li>Websites</li>
-						</ul>
-					</a>
-					<a href="images/p21.jpg" data-lightbox="example-4" class="box parallax section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p21.jpg)"><i>viewing</i></em>
-						<h3>parallax</h3>
-						<ul>
-							<li>parallax</li>
-							<li>Websites</li>
-						</ul>
-					</a>
-	
-					<a href="images/p15.jpg" data-lightbox="example-5" class="box wordpress section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p15.jpg)"><i>viewing</i></em>
-						<h3>Wordpress</h3>
-						<ul>
-							<li>Wordpress</li>
-							<li>Websites</li>
-						</ul>
-					</a>
-					<a href="images/p36.jpg" data-lightbox="example-2" class="box javascript section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p36.jpg)"><i>viewing</i></em>
-						<h3>javascript</h3>
-						<ul>
-							<li>javascript</li>
-							<li>Websites</li>
-						</ul>
-					</a>
-					<a href="images/p5.jpg" data-lightbox="example-3" class="box html5css3 section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p5.jpg)"><i>viewing</i></em>
-						<h3>html5css3</h3>
-						<ul>
-							<li>html5css3</li>
-							<li>Websites</li>
-						</ul>
-					</a>
-					<a href="images/p3.jpg" data-lightbox="example-4" class="box parallax section-col projectblock example-image-link" to="">
-						<em class="pepic" style="background-image: url(images/p3.jpg)"><i>viewing</i></em>
-						<h3>parallax</h3>
-						<ul>
-							<li>parallax</li>
-							<li>Websites</li>
-						</ul>
-					</a> -->
 
 				</div>
 
@@ -433,22 +383,7 @@
 	<script src="js/main.js"></script>
 
 	<script>
-
-		// window.onload = function() {
-		// 	let hhpe = document.querySelector(".pepic").offsetWidth;
-		// 	let hpeheight;
-		// 	hpeheight = document.querySelectorAll(".pepic");
-		// 	for (i = 0; i < hpeheight.length; i++) {
-		// 		hpeheight[i].style.height = hhpe + "px";
-		// 	};
-		// 	window.onresize = function(event) {
-		// 		let hhpe = document.querySelector(".pepic").offsetWidth;
-		// 		hpeheight = document.querySelectorAll(".pepic");
-		// 		for (i = 0; i < hpeheight.length; i++) {
-		// 			hpeheight[i].style.height = hhpe + "px";
-		// 		}
-		// 	}
-		// }
+		
 		let filterBox;
 		filterBox = document.querySelectorAll(".box");
 		document.querySelector(".nav").addEventListener("click", (event) => {
@@ -476,19 +411,7 @@
 			}
 		}
 
-		// $('.pepic').css('height', '');
-		// $('.pepic').css({
-		// 	height: $('.pepic').width() + 'px'
-		// });
-		// $(window).resize(function () {
-		// 	$('.pepic').css('height', '');
-		// 	$('.pepic').css({
-		// 		height: $('.pepic').width() + 'px'
-		// 	});
-		// });
-
-		// активный линк для фильтра
-		let nl = document.querySelectorAll(".nav li");
+		let nl = document.querySelectorAll(".nav li"); // активный линк для фильтра
 		for (var i = 0; i < nl.length; i++) {
 			nl[i].addEventListener("click", function(){
 				let current = document.getElementsByClassName("active");
