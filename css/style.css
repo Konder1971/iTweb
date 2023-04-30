@@ -1792,7 +1792,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	}
 }
 @media (max-width: 599.98px) {
-	.form-field {}
 	.form-field:nth-child(1) span:nth-child(1),
 	.form-field:nth-child(1) span:nth-child(2) {
 		width: 100%;
