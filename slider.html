@@ -59,11 +59,42 @@
 		}
 
 		section {
-			margin: 0 auto 80px;
+			margin: 0 auto;
 		}
 
 		.left {
 			text-align: left;
+		}
+
+		.thumbnails {
+			display: flex;
+			margin: 1rem auto 80px;
+			padding: 0;
+			justify-content: center;
+		}
+
+		.thumbnail {
+			width: 100%;
+			max-width: 160px;
+			height: 80px;
+			overflow: hidden;
+			list-style: none;
+			margin: 0 10px;
+			cursor: pointer;
+		}
+
+		.thumbnail img {
+			width: 100%;
+			height: auto;
+			opacity: .6;
+			cursor: pointer;
+		}
+		.thumbnail:hover img,
+		.thumbnail.is-active img {
+			opacity: 1;
+		}
+		.thumbnail.is-active img {
+			cursor: default;
 		}
 	</style>
 
@@ -392,7 +423,7 @@
 	<div class="clearfix"></div>
 	<!-- slider 2 col stop -->
 
-	<section id="splide" class="splide">
+	<section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
 		<!-- https://codepen.io/brandonleetran/pen/bGEKrEE -->
 		<!-- https://dev.to/ridhikgovind/how-to-create-a-simple-testimonial-carousel-with-splide-js-5cac -->
 		<!-- https://codepen.io/tag/splide -->
@@ -416,10 +447,30 @@
 					</div>
 					Lorem Ipsum Dolor Sit Amet
 				</li>
+				<li class="splide__slide">
+					<div class="splide__slide__container">
+						<img src="images/f4.jpg">
+					</div>
+					Lorem Ipsum Dolor Sit Amet
+				</li>
 			</ul>
 		</div>
 	<div class="clearfix"></div>
 	</section>
+	<ul id="thumbnails" class="thumbnails">
+		<li class="thumbnail">
+			<img src="images/f1.jpg" alt="">
+		</li>
+		<li class="thumbnail">
+			<img src="images/f2.jpg" alt="">
+		</li>
+		<li class="thumbnail">
+			<img src="images/f3.jpg" alt="">
+		</li>
+		<li class="thumbnail">
+			<img src="images/f4.jpg" alt="">
+		</li>
+	</ul>
 
 
 	<div class="to-up">&uarr;</div>
@@ -557,7 +608,8 @@
 	<script src="js/splide.min.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			new Splide("#splide", {
+			
+			var splide = new Splide("#main-carousel", {
 				type: "loop",
 				perPage: 2,
 				focus: "center",
@@ -574,8 +626,35 @@
 						padding: "20%"
 					}
 				}
-			}).mount();
-		});
+			})
+			
+			var thumbnails = document.getElementsByClassName( 'thumbnail' );
+			var current;
+			for ( var i = 0; i < thumbnails.length; i++ ) {
+				initThumbnail( thumbnails[ i ], i );
+			}
+
+			function initThumbnail( thumbnail, index ) {
+				thumbnail.addEventListener( 'click', function () {
+					splide.go( index );
+				} );
+			}
+
+			splide.on( 'mounted move', function () {
+				var thumbnail = thumbnails[ splide.index ];
+
+				if ( thumbnail ) {
+					if ( current ) {
+						current.classList.remove( 'is-active' );
+					}
+
+					thumbnail.classList.add( 'is-active' );
+					current = thumbnail;
+				}
+			});
+			
+			splide.mount();
+		})
 	</script>
 
 </body>
