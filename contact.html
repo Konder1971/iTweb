@@ -56,9 +56,11 @@
 			font-size: 1rem;
 			color: #000;
 			border: 1px solid #000;
+			margin-bottom: 25pz;
 		}
 		textarea.form-control {
-				min-height: 180px;
+			min-height: 180px;
+			margin-bottom: 35px;
 		}
 		@media (min-width: 768px) {
 			.vaContainer {
@@ -224,6 +226,7 @@
 				<!-- https://app.herotofu.com/ -->
 				<form action="https://public.herotofu.com/v1/d4e40a90-ea63-11ed-b2e2-c10354b56774" method="post" accept-charset="UTF-8">
 					<div class="container">
+						<h3 style="text-align: center; margin-bottom: 10px;">Send a message</h3>
 						<div class="row mx-0 justify-content-center">
 							<div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
 								<form
@@ -237,7 +240,6 @@
 											name="name"
 											type="text"
 											class="form-control"
-											placeholder="Joe Bloggs"
 										/>
 									</label>
 					
@@ -247,7 +249,6 @@
 											name="email"
 											type="email"
 											class="form-control"
-											placeholder="joe.bloggs@example.com"
 											required
 										/>
 									</label>
@@ -258,7 +259,6 @@
 											name="message"
 											class="form-control"
 											rows="3"
-											placeholder="Tell us what you're thinking about..."
 											required
 										></textarea>
 									</label>
