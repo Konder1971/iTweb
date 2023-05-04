@@ -32,7 +32,38 @@
 		.contact__page p strong {
 			font-weight: 500;
 		}
+
+		form .container {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		form .px-xxl-3 {
+			margin: 0;
+			padding: 0;
+		}
+		.contact__page span.form-label {
+			color: #000;
+		}
+		.contact__page span.form-label em {
+			color: #f00;
+			font-style: normal;
+		}
+		.form-control {
+			display: block;
+			width: 100%;
+			padding: 0.375rem 0.75rem;
+			font-size: 1rem;
+			color: #000;
+			border: 1px solid #000;
+		}
+		textarea.form-control {
+				min-height: 180px;
+		}
 		@media (min-width: 768px) {
+			.vaContainer {
+				margin-bottom: 60px;
+			}
 			.contact__page {
 				margin-top: -35px;
 			}
@@ -201,7 +232,7 @@
 									action="https://herotofu.com/start"
 								>
 									<label class="d-block mb-4">
-										<span class="form-label d-block">Your name</span>
+										<span class="form-label d-block">Your name<em>*</em></span>
 										<input
 											name="name"
 											type="text"
@@ -211,7 +242,7 @@
 									</label>
 					
 									<label class="d-block mb-4">
-										<span class="form-label d-block">Email address</span>
+										<span class="form-label d-block">Email address<em>*</em></span>
 										<input
 											name="email"
 											type="email"
@@ -222,7 +253,7 @@
 									</label>
 					
 									<label class="d-block mb-4">
-										<span class="form-label d-block">Message</span>
+										<span class="form-label d-block">Message<em>*</em></span>
 										<textarea
 											name="message"
 											class="form-control"
