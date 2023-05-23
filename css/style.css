@@ -260,7 +260,7 @@ body {
 .logo em {
 	font-weight: 400;
 	font-style: normal;
-	font-size: 22px;
+	font-size: 19px;
 	padding-left: 4px;
 	color: #65C9FD;
 	cursor: default;
@@ -350,7 +350,7 @@ body {
 		align-items: center;
 	}
 	.navigations nav ul > li {
-		margin-left: 40px;
+		margin-left: 37px;
 		position: relative;
 		z-index: 1;
 		height: 114px;
