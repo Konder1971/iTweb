@@ -4,5 +4,5 @@
       "destination": "/" }]
 }
 {
-  "cleanUrls": true
+  "cleanUrls": false
 }
