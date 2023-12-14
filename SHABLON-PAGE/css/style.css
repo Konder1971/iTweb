@@ -155,7 +155,8 @@ body {
 }
 
 
-
+/* burger start
+------------------------------------------------- */
 @media (min-width: 768px) {
 	.nav-toggle {
 		display: none;
@@ -215,8 +216,9 @@ body {
 	.nav-toggle span:after {
 		bottom: -8px; 
 	}
-
 }
+/* burger stop
+------------------------------------------------- */
 
 
 
