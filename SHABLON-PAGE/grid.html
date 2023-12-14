@@ -1,0 +1,119 @@
+  <!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow"/>
+  <meta name="robots" content="none"/>
+  <title>Grid</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: #fff;
+    }
+    .container {
+
+      min-height: calc(100vh - 100px);
+
+      display: grid;
+      grid-template-areas:
+        "top top top"
+        "header header header"
+        "nav main aside"
+        "nav main aside"
+        "footer footer aside"
+        "subfooter subfooter aside"
+      ;
+      grid-template-rows: auto 140px 1fr auto 80px 60px;
+      grid-template-columns: 25% 1fr 25%;
+      grid-auto-rows: 60px;
+      grid-gap: 10px;
+
+      /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+
+      margin: 30px auto;
+      max-width: 920px;
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    .container > * {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top {
+      background-color: cornflowerblue;
+      grid-area: top;
+    }
+    nav {
+      background-color: darkgray;grid-area: nav;
+      
+    }
+    header {
+      background-color: cadetblue;
+      grid-area: header;
+    }
+    aside {
+      background-color: blueviolet;
+      grid-area: aside;
+    }
+    main {
+      background-color: burlywood;
+      grid-area: main;
+    }
+    footer {
+      background-color: chocolate;
+      grid-area: footer;
+    }
+    .subfooter {
+      background-color: brown;
+      grid-area: subfooter;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        grid-template-areas:
+          "aside subfooter subfooter"
+          "aside header header"
+          "aside nav footer"
+          "main main footer"
+          "top top top"
+        ;
+        grid-template-rows: auto 80px auto 1fr auto;
+        grid-template-columns: 25% 1fr 25%;
+
+        /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+
+        min-height: calc(100vh - 42px);
+        margin: 10px;
+
+      }
+    }
+    
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="top">Top</div>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+    <div class="subfooter">Subfooter</div>
+  </div>
+
+</body>
+</html>
