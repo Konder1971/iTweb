@@ -1,0 +1,9 @@
+
+НАЗВАНИЕ РЕСУРСА GA4
+rightapplications - GA4
+
+ИДЕНТИФИКАТОР РЕСУРСА
+312938822
+
+
+https://analytics.google.com/analytics/web/#/a100633597p312938822/admin/setup-assistant/
