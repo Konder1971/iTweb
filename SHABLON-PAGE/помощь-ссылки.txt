@@ -39,6 +39,10 @@ WordPress:
 https://blog.hubspot.com/website/wordpress-github-integration (Интеграция WordPress с GitHub: руководство для начинающих)
 https://vipadmin.club/33847-export-wp-page-to-static-html-css-pro-v104-nulled.html (Export WP Page to Static HTML/CSS Pro v1.0.4)
 https://localwp.com (Локальный инструмент разработки WordPress)
+https://wordpress.org/plugins/genesis-blocks/ (Genesis Blocks)
+https://wordpress.org/plugins/simple-custom-post-order/ (Simple Custom Post Order)
+https://wpinsideblog.com/plugins/minmax-order/ (максимальный и минимальный заказ в WooCommerce)
+https://inwebpress.ru/podklyuchaem-sposob-dostavki-novaya-pochta-ukraina-dlya-woocommerce/ (новая почта)
 
 
 Хостинг статических сайтов
