@@ -1,0 +1,13 @@
+
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="robots" content="none"/>
+<meta name="googlebot" content="noindex" />
+
+
+robots.txt
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: *
+Disallow: /
