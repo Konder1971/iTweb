@@ -1,0 +1,62 @@
+/* Slick */ 
+(Slick carousel - заставляет слайды иметь одинаковую высоту)
+https://overcoder.net/q/237875/slick-carousel-заставляет-слайды-иметь-одинаковую-высоту
+
+(Slick Slider - установка, настройка примеры и документация)
+https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#single
+
+(Slick Вертикальный слайдер)
+https://realadmin.ru/saytostroy/vertical-slider.html
+https://codepen.io/Zen_dev/pen/GrmgjX
+
+************************************************************************************
+
+https://caniuse.com (проверка поддержки браузерами)
+
+https://snipp.ru/html-css/ol-style (Стили для нумерованных списков ol)
+https://hcdev.ru/learn/grid/ (Что такое Grid Layout. Grid Containe)
+https://habr.com/ru/companies/ruvds/articles/490626/ (Полное руководство по HTML-атрибутам data-*)
+https://ihatetomatoes.net/how-to-create-a-parallax-scrolling-website/ (Parallax)
+https://themewagon.com/theme-tag/parallax-effect/ (Parallax Effect)
+http://scrollme.nckprsn.com (scroll Прокрутить Меня)
+https://atuin.ru/blog/animacionnye-effekty-pri-prokrutke-stranicy/ (АНИМАЦИОННЫЕ ЭФФЕКТЫ ПРИ ПРОКРУТКЕ СТРАНИЦЫ)
+
+
+видео с youtube:
+https://www.pandoge.com/stati-i-sovety/ostanavlivaem-zapuskaem-video-s-youtube-na-vashem-sayte-na-jqueryjavascript (Останавливаем/запускаем видео с YouTube на вашем сайте на jQuery+JavaScript)
+https://qna.habr.com/q/268587 (Как остановить воспроизведение одного видео с youtube, если началось воспроизведение другого?)
+https://victorz.ru/202007051233 (Как остановить проигрывание одного видео при запуске другого (HTML5-видео))
+https://ruseller.com/lessons.php?rub=37&id=2425 (https://ruseller.com/lessons.php?rub=37&id=2425)
+https://denis-creative.com/vklyuchit-video-s-youtube-posle-nazhatiya-na-knopku-ili-element/ (Включить видео с youtube после нажатия на кнопку или элемент)
+https://professorweb.ru/my/html/html5/level3/3_3.php (Управление HTML5-плеером с помощью JavaScript)
+
+
+блог по javascript:
+http://webdiz.com.ua/uroki/javascript/
+
+
+WordPress:
+https://blog.hubspot.com/website/wordpress-github-integration (Интеграция WordPress с GitHub: руководство для начинающих)
+https://vipadmin.club/33847-export-wp-page-to-static-html-css-pro-v104-nulled.html (Export WP Page to Static HTML/CSS Pro v1.0.4)
+https://localwp.com (Локальный инструмент разработки WordPress)
+https://wordpress.org/plugins/genesis-blocks/ (Genesis Blocks)
+https://wordpress.org/plugins/simple-custom-post-order/ (Simple Custom Post Order)
+https://wpinsideblog.com/plugins/minmax-order/ (максимальный и минимальный заказ в WooCommerce)
+https://inwebpress.ru/podklyuchaem-sposob-dostavki-novaya-pochta-ukraina-dlya-woocommerce/ (новая почта)
+
+
+Хостинг статических сайтов
+https://kinsta.com
+
+
+Vue:
+https://v3.ru.vuejs.org/ru/guide/installation.html#история-изменении (Установка и т.д.)
+https://v3.ru.vuejs.org/ru/guide/introduction.html (Введение и т.д)
+https://proglib.io/p/kak-zanyat-pervoe-mesto-v-poiskovoy-vydache-dobavlyaem-ssr-v-vue-3-vite-prilozhenie-2022-11-24 (Как занять первое место в поисковой выдаче: добавляем SSR в Vue 3 + Vite приложение)
+https://vuejsexamples.com/a-powerful-and-flexible-slider-and-carousel-for-vue-js/ (гибкий слайдер и карусель для vue.js https://splidejs.com)
+
+
+платформы:
+https://www.netlify.com
+https://www.sanity.io
+
