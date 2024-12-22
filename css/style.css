@@ -165,7 +165,7 @@ select {
 	}
 }
 body {
-/* 	background-color: #f6f8fa; */
+	background-color: #fff; 
 	font-family: 'Roboto', sans-serif;
 	color: #000;
 	font-weight: 400;
