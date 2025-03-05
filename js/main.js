@@ -1,9 +1,10 @@
 (function ($) {
-	if (isMac()) {
-		$('body').addClass('mac');
-	} else if (isiOS()) {
-		$('body').addClass('ios');
-	}
+  $(document).ready(function () {
+    // Определяем платформу и добавляем соответствующий класс к body
+    const platformClass = isMac() ? 'mac' : (isiOS() ? 'ios' : (isWindows() ? 'windows' : ''));
+    if (platformClass) {
+      $('body').addClass(platformClass);
+    }
 
 	$('.nav-toggle').click(function () {
 		if ($('.nav-toggle').hasClass('active')) {
@@ -99,18 +100,18 @@
 	}
 
 
-	function isMac() {
-		return navigator.platform.indexOf('Mac') > -1
-	}
-	function isWindows() {
-		return navigator.platform.indexOf('Win') > -1
-	}
-	function isiOS() {
-		return /(iPhone|iPod|iPad)/i.test(navigator.platform) && !window.MSStream;
-	}
+});
+
+function isMac() {
+  return navigator.platform.includes('Mac');
+}
+
+function isWindows() {
+  return navigator.platform.includes('Win');
+}
+
+function isiOS() {
+  return /(iPhone|iPod|iPad)/i.test(navigator.platform) && !window.MSStream;
+}
 
 })(jQuery);
-
-
-
-
