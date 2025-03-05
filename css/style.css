@@ -258,7 +258,7 @@ h1 {
   top: -3px;
 }
 .logo span {
-  color: #00B465;
+  color:#65C9FD;
   font-size: 37px;
   font-weight: 900;
 }
@@ -267,7 +267,7 @@ h1 {
 }
 .logo a:hover span,
 .logo a:focus span {
-	color:#65C9FD;
+  color: #00B465;
 }
 .logo em {
 	font-weight: 400;
@@ -321,6 +321,7 @@ h1 {
 }
 .navlink.activeNav {
 	color: #00B465;
+  color:#65C9FD;
 	cursor: default;
 }
 @media (min-width: 1025px) {
@@ -382,6 +383,7 @@ h1 {
 	}
 	.navlink:hover {
 		color: #00B465;
+    color:#65C9FD;
 	}
 
 	.dropdown {
@@ -475,7 +477,7 @@ h1 {
 	}
 	.navigations .dropdown ul li {
 		margin-left: 0;
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		height: auto;
 		display: block;
 	}
@@ -483,8 +485,9 @@ h1 {
 		margin-bottom: 0;
 	}
 	.navigations .dropdown ul li a {
-		font-size: 20px;
-		font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.35px;
+    font-weight: 400;
 	}
 	.navigations .dropdown ul li a:hover,
 	.navigations .dropdown ul li a.active {
