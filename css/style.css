@@ -1,9 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* font-family: 'Roboto', sans-serif */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/*font-family: "Montserrat", sans-serif;*/
-
 *, *:before, *:after, *:before {
   -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -169,9 +163,10 @@ select {
 }
 body {
 	background-color: #fff; 
-	font-family: 'Roboto', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 	color: #000;
 	font-weight: 400;
+  min-height: 100vh;
 	overflow-x: hidden;
 }
 @media (min-width: 1025px) {
@@ -186,7 +181,7 @@ body {
 }
 @media (max-width: 767.98px) {
 	body {
-		padding-top: 81px;		
+		padding-top: 70px;		
 	}
 }
 
@@ -259,12 +254,13 @@ h1 {
 }
 .logo {
 	color: #fff;
-	font-size: 45px;
-	font-weight: 600;
+  position: relative; 
+  top: -3px;
 }
 .logo span {
-	color: #00B465;
-	font-weight: 800;
+  color: #00B465;
+  font-size: 37px;
+  font-weight: 900;
 }
 .logo a {
 	text-decoration: none;
@@ -276,12 +272,11 @@ h1 {
 .logo em {
 	font-weight: 400;
 	font-style: normal;
-	font-size: 19px;
-	padding-left: 4px;
+	font-size: 16px;
+  letter-spacing: 1.2px;
+	padding-left: 3px;
 	color: #65C9FD;
 	cursor: default;
-  position: relative;
-  top: -1px;
 }
 .logo a {
 	text-decoration: none;
@@ -359,11 +354,6 @@ h1 {
 		padding: 0 60px;
 	}
 
-  .logo {
-    position: relative; 
-    top: -2px;
-  }
-
 	.navigations,
 	.navigations nav > ul {
 		display: flex;
@@ -376,7 +366,7 @@ h1 {
 		margin-left: 37px;
 		position: relative;
 		z-index: 1;
-		height: 114px;
+		height: 76px;
 		display: flex;
 		align-items: center;
 	}
@@ -387,8 +377,8 @@ h1 {
 		color: #fff;
 		font-size: 18px;
 		line-height: 1;
-		text-transform: uppercase;
 		display: block;
+    letter-spacing: 1.35px;
 	}
 	.navlink:hover {
 		color: #00B465;
@@ -399,7 +389,7 @@ h1 {
 		z-index: 20;
 		-webkit-border-radius: 12px;
 		border-radius: 12px;
-		top: -5px;
+		top: -35px;
 		left: 0;
 		display: none;
 		margin-left: -90px;	
@@ -513,8 +503,8 @@ h1 {
 		margin-left: 25px;
 	}
 }
-@media (min-width: 1025px) and (max-width: 1149.98px) {
-	.logo em {
+@media (min-width: 1025px) and (max-width: 1259.98px) {
+  .logo em {
 		display: none;
 	}
 	.navigations nav > ul > li {
@@ -694,7 +684,7 @@ h1 {
 }
 @media (max-width: 767.98px) {
 	.top {
-		height: 81px;
+		height: 70px;
 	}
 	.top-content {
 		padding: 0 28px 0;
@@ -719,6 +709,10 @@ h1 {
 		bottom: -8px; 
 	}
 
+  .logo em {
+		display: none;
+	}
+
 	.navigations nav {
 		margin-bottom: 60px;
 	}	
@@ -727,11 +721,11 @@ h1 {
 		padding: 30px 28px;
 	}
 	.navigations.active {
-		top: 81px;
+		top: 70px;
 	}
 	.navlink {
-		font-size: 29px;
-		line-height: 33px;
+		font-size: 26px;
+		line-height: 32px;
 		margin-bottom: 20px;
 		margin-right: -2px;
 	}
@@ -1067,7 +1061,7 @@ h1 {
 .sliderhn .slick-slide:hover .hn-link svg path, 
 .sliderhn-block:hover .hn-link svg path {
 	stroke: #fff;
-    fill: #fff;	
+  fill: #fff;	
 }
 
 .sliderhn .slick-arrow {
@@ -1179,7 +1173,9 @@ h1 {
 	z-index: 2;
 	width: auto;
   background-color: #fff;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
+  overflow: hidden;
 }
 .hn-link svg {
 	stroke: #000;
