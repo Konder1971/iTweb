@@ -1074,6 +1074,9 @@ h1 {
   z-index: 2;
   top: 0;
 }
+.sliderhn .slick-arrow:hover {
+  opacity: .6;
+}
 .sliderhn .slick-prev {
 	background-image: url(../images/arrow-prev.svg);
 }
