@@ -181,7 +181,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
 	body {
-		padding-top: 93px;		
+		padding-top: 60px;		
 	}
 }
 @media (max-width: 767.98px) {
@@ -199,14 +199,14 @@ body {
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	background-color: #33a06f;
+	background-color: #00B465;
 	color: #fff;
 	cursor: pointer;
 	border-radius: 4px;
 	display: none;
 }
 .to-up:hover {
-	opacity: .8;
+  background-color: #850000;
 }
 
 .bct a {
@@ -523,7 +523,7 @@ h1 {
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
 	.top {
-		height: 93px;
+		height: 76px;
 	}
 	.top-content {
 		padding: 0 60px 0 60px;
