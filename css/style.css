@@ -214,6 +214,7 @@ body {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
+  margin-bottom: 14px;
 }
 
 @media (min-width: 768px) {
