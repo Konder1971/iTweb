@@ -17,14 +17,14 @@
 		}
 	});
 
-	let top = $('.top');
-	$(window).scroll(function() {
-		if($(this).scrollTop() > 10) {
-			top.addClass('top_fixed');
-		} else {
-			top.removeClass('top_fixed');
-		}
-	});
+	//let top = $('.top');
+	//$(window).scroll(function() {
+	//	if($(this).scrollTop() > 10) {
+	//		top.addClass('top_fixed');
+	//	} else {
+	//		top.removeClass('top_fixed');
+	//	}
+	//});
 
 	let parent = document.querySelectorAll('.navlink')
 	//let linkdown = document.querySelectorAll('.dropdown')
