@@ -745,6 +745,53 @@ h1 {
 /* top stop
 --------------------------------------------------- */
 
+/* footer start
+--------------------------------------------------- */
+footer {
+  background-color: #036;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+footer .logo {
+  display: block;
+  text-decoration: none;
+  top: 0;
+}
+footer .logo:hover span,
+footer .logo:hover em {
+  color: #fff;
+  cursor: pointer;
+}
+.copy {
+  color: #fff;
+  font-size: 16px;
+}
+.copy a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.copy a:hover {
+  color: #65C9FD;
+}
+@media (max-width: 767.98px) {
+  .footer-content {
+    display: block;
+    padding: 40px 28px 80px;
+  }
+  footer .logo {
+    margin-bottom: 20px;
+  }
+}
+/* footer stop
+--------------------------------------------------- */
+
 /* block center text start
 --------------------------------------------------- */
 .bct-up {
