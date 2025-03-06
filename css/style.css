@@ -248,13 +248,12 @@ h1 {
 	left: 0;
 	top: 0;
 	width: 100%;
-	background-color: #036;
+	background-color: rgba(0, 51, 102, 1);
 	-webkit-transition: 300ms ease-out;
 	-moz-transition: 300ms ease-out;
 	transition: 300ms ease-out;
 }
 .logo {
-	color: #fff;
   position: relative; 
   top: -3px;
 }
@@ -268,7 +267,7 @@ h1 {
 }
 .logo a:hover span,
 .logo a:focus span {
-  color: #00B465;
+  color: #fff;
 }
 .logo em {
 	font-weight: 400;
@@ -281,9 +280,6 @@ h1 {
 }
 .logo a {
 	text-decoration: none;
-}
-.logo a:hover {
-	opacity: .7;
 }
 
 .navigations nav ul,
@@ -344,7 +340,7 @@ h1 {
 		-webkit-transition: 300ms ease-out;
 		-moz-transition: 300ms ease-out;
 		transition: 300ms ease-out;
-    opacity: .9;
+    background-color: rgba(0, 51, 102, .9);
     border-bottom: 1px solid #000;
 	}
 	.top-content {
