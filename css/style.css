@@ -340,10 +340,12 @@ h1 {
 		transition: 300ms ease-out;
 	}
 	.top_fixed {
-		height: 90px;
+		height: 60px;
 		-webkit-transition: 300ms ease-out;
 		-moz-transition: 300ms ease-out;
 		transition: 300ms ease-out;
+    opacity: .9;
+    border-bottom: 1px solid #000;
 	}
 	.top-content {
 		display: flex;
