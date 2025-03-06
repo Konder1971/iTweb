@@ -1103,10 +1103,14 @@ footer .copy a {
 	background-color: #fff;
 }
 
+.sliderhn .slick-slide:hover .hn-link a, 
+.sliderhn-block:hover .hn-link a {
+  border: 2px solid #036;
+}
 .sliderhn .slick-slide:hover .hn-link svg circle, 
 .sliderhn-block:hover .hn-link svg circle {
-	fill: #000;
-	stroke: #000;
+	fill: #036;
+	stroke: #036;
 }
 .sliderhn .slick-slide:hover .hn-link svg path, 
 .sliderhn-block:hover .hn-link svg path {
