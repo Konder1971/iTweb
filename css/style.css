@@ -1004,7 +1004,7 @@ footer .copy a {
 }
 @media (max-width: 767.98px) {
 	.dawop {
-		margin: 22px 0 40px;
+		margin: 22px 0 0;
 		padding: 45px 28px 45px;
 	}
 	.dawop-header {
@@ -1253,7 +1253,7 @@ footer .copy a {
 
 @media (min-width: 1025px) {
 	.swh {
-		margin: 100px 0 90px;
+		margin: 70px 0 90px;
 	}
 	.swh-container {
 		position: absolute;
@@ -2201,7 +2201,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 /* Resume start
 --------------------------------------------------- */
 .resume .bct-container {
-	max-width: 1167px;
+	max-width: 1205px;
 }
 .resume-top,
 .resume__content {
@@ -2417,6 +2417,238 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	}
 }
 /* Resume stop
+--------------------------------------------------- */
+
+
+
+
+/* Project start
+--------------------------------------------------- */
+.nav ul {
+  padding-left: 0;
+  margin: 0 0 20px;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 7px 30px 7px 0;
+  cursor: pointer;
+  font-size: 18px;
+  color:#2196F3;
+}
+.nav ul li:first-child {
+  padding-right: 20px;
+}
+.nav ul li:last-child {
+  padding-right: 0;
+}
+.nav li:hover,
+.nav li.active {
+  color:#000;
+}
+.nav li.active {
+  cursor: default;
+}
+.hide {
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 0;
+    width: 0;
+  }
+}
+.projectblock {
+  text-decoration: none;
+  cursor: pointer;
+}
+.projectblock em {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 13px;
+}
+.projectblock em i {
+  display: none;
+  opacity: 0;
+  font-style: normal;
+  display: -webkit-flex;
+  -webkit-fflex-direction: column;
+  -webkit-fflex-wrap: nowrap;
+  -webkit-fjustify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 300ms ease-out;
+  -moz-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+.projectblock:hover em i {
+  opacity: 1;
+  -webkit-transition: 300ms ease-out;
+  -moz-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+.projectblock h3 {
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.projectblock ul,
+.projectblock ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.projectblock ul li {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 16px;
+  color:#2196F3;
+  font-weight: 400;
+}
+.projectblock ul li:after {
+  content: '.';
+  display: inline-block;
+  font-size: 35px;
+  line-height: inherit;
+  font-weight: 500;
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+.projectblock ul li:last-child:after {
+  display: none;
+}
+.projectblock:hover h3,
+.projectblock:hover li {
+  color: #b00;
+}
+.section-col {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .projectsblocks {
+    margin-bottom: 40px;
+  }
+  .nav ul {
+    margin-top: -35px;
+  }
+  .projectsblocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -30px;
+  }
+  .section-col {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    margin-bottom: 35px;
+  }
+  .vaContent h2 {
+    font-weight: 500;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200.99px) {
+  .section-col {
+    width: calc(33.33333% - 30px);
+  }
+}
+@media (max-width: 767.98px) {
+  .vaContainer {
+    padding: 0 28px;
+  }
+  .projectsblocks {
+    margin-bottom: 60px;
+  }
+  .nav ul {
+    margin-top: -21px;
+  }
+  .nav ul li {
+    padding-right: 20px;
+  }
+  .nav ul li:first-child {
+    padding-right: 15px;
+  }
+  .section-col {
+    display: block;
+    margin-bottom: 35px;
+  }
+  
+  .box .pepic {
+    height: 250px!important;
+  } 
+  
+  .hide {
+    display: none;
+  }
+}
+
+.projects-home {
+  background-color: #edf0f7;
+}
+.projects-home h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+}
+.projects-home .projectsblocks {
+  margin-bottom: 0;
+}
+.projects-home .section-col {
+  background-color: #fff;
+}
+.projects-home .swh-link a {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .projects-home {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .projects-home h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .projects-home {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .projects-home h2 {
+    font-size: 29px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+/* Project stop
 --------------------------------------------------- */
 
 
