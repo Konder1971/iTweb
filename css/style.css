@@ -714,7 +714,9 @@ h1 {
 	.nav-toggle span:after {
 		bottom: -8px; 
 	}
-
+  .logo {
+    top: -2px;
+  }
   .logo em {
 		display: none;
 	}
