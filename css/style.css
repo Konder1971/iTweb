@@ -2140,7 +2140,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 /* Resume start
 --------------------------------------------------- */
 .resume .bct-container {
-	max-width: 1200px;
+	max-width: 1167px;
 }
 .resume-top,
 .resume__content {
