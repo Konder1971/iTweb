@@ -768,17 +768,23 @@ footer .logo:hover em {
   color: #fff;
   cursor: pointer;
 }
-.copy {
+footer .copy {
   color: #fff;
   font-size: 16px;
 }
-.copy a {
+footer .copy a {
   color: #fff;
   font-size: 16px;
   text-decoration: none;
 }
 .copy a:hover {
   color: #65C9FD;
+}
+@media (min-width: 768px) {
+  footer .copy {
+    position: relative;
+    top: 4px;
+  }
 }
 @media (max-width: 767.98px) {
   .footer-content {
