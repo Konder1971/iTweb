@@ -717,9 +717,6 @@ h1 {
   .logo {
     top: -2px;
   }
-  .logo em {
-		display: none;
-	}
 
 	.navigations nav {
 		margin-bottom: 60px;
@@ -735,6 +732,14 @@ h1 {
 		line-height: 32px;
 		margin-bottom: 20px;
 		margin-right: -2px;
+	}
+}
+@media (max-width: 410px) {
+  .logo span {
+    font-size: 32px;
+  }
+  .logo em {
+		font-size: 14px;
 	}
 }
 /* top stop
