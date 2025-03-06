@@ -76,6 +76,12 @@
 		};
 	});
 
+  // Получить текущий год
+  const currentYear = new Date().getFullYear();
+  $('span').filter(function() {
+      return $(this).text().includes('©');
+  }).text(`© ${currentYear}`);
+
 
 	if($(".select").length > 0){
 		$(".select").selectmenu();
