@@ -804,8 +804,10 @@ footer .copy a {
 	text-transform: uppercase;
 }
 .bct {
-  background-color: #edf0f7;
 	text-align: center;
+}
+.home .bct {
+  background-color: #edf0f7;
 }
 .bct p a svg {
 	fill: #009B85;
