@@ -355,7 +355,7 @@ h1 {
 		align-items: center;
 		max-width: 1290px;
 		margin: 0 auto;
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 
 	.navigations,
@@ -815,7 +815,7 @@ footer .copy a {
 }
 @media (min-width: 768px) {
 	.bct {
-		padding: 0 60px;
+		padding: 0 40px;
 		margin: 60px 0;
 	}
 	.bct-container {
@@ -931,7 +931,7 @@ footer .copy a {
 	}
 	.dawop-header {
 		margin: 0 auto 60px;
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 	.dawop-up {
 		font-size: 20px;
@@ -952,8 +952,8 @@ footer .copy a {
 		justify-content: space-between;
 		margin: 0 auto;
 		max-width: 1290px;
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	.dawop-col {
 		margin: 0 0 80px;
@@ -1267,7 +1267,7 @@ footer .copy a {
 		transform:translate(-50%, 0);
 		width: 100%; 
 		max-width: 1290px;
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 	.swh-col-1 {
 		width: 340px;
@@ -1510,7 +1510,7 @@ footer .copy a {
 	.vaContainer {
 		max-width: 1290px;
 		margin: 0 auto;
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 	.headerh2 {
 		font-size: 26px;
@@ -1921,7 +1921,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		transform:translate(-50%, 0);
 		width: 100%; 
 		max-width: 1290px;
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 	.cs-content {
 		padding-top: 45px;
@@ -1942,7 +1942,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		margin: 0 0 80px;
 	}
 	.cs-container {
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 	.cs-content {
 		padding-top: 30px;
