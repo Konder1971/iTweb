@@ -505,7 +505,7 @@ h1 {
 		margin-left: 25px;
 	}
 }
-@media (min-width: 1025px) and (max-width: 1259.98px) {
+@media (min-width: 1025px) and (max-width: 1150px) {
   .logo em {
 		display: none;
 	}
