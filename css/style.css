@@ -318,7 +318,6 @@ h1 {
 	fill: #00B465;
 }
 .navlink.activeNav {
-	color: #00B465;
   color:#65C9FD;
 	cursor: default;
 }
@@ -684,6 +683,9 @@ h1 {
 	.navlink {
 		cursor: pointer;
 	}
+  .navlink.activeNav {
+    color: #00B465;
+  }
 }
 @media (max-width: 767.98px) {
 	.top {
