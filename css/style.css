@@ -804,6 +804,7 @@ footer .copy a {
 	text-transform: uppercase;
 }
 .bct {
+  background-color: #edf0f7;
 	text-align: center;
 }
 .bct p a svg {
@@ -814,8 +815,7 @@ footer .copy a {
 }
 @media (min-width: 768px) {
 	.bct {
-		padding: 0 40px;
-		margin: 60px 0;
+		padding: 60px 40px;
 	}
 	.bct-container {
 		margin: 0 auto;
@@ -848,8 +848,7 @@ footer .copy a {
 }
 @media (max-width: 767.98px) {	
 	.bct {
-		padding: 0 28px;
-		margin: 22px 0 35px;
+		padding: 25px 28px 20px;
 	}
 	.bct-up {
 		font-size: 14px;
@@ -1004,7 +1003,6 @@ footer .copy a {
 }
 @media (max-width: 767.98px) {
 	.dawop {
-		margin: 22px 0 0;
 		padding: 45px 28px 45px;
 	}
 	.dawop-header {
@@ -2609,10 +2607,13 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   }
 }
 
+
 .projects-home {
   background-color: #edf0f7;
+  background-color: #006052;
 }
 .projects-home h2 {
+  color: #fff;
   margin: 0 auto;
   text-align: center;
   font-weight: 500;
