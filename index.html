@@ -491,6 +491,23 @@ https://trud.ua/jobs/336615.html -->
 		new WOW().init();
 	</script>
 
+  <script>
+    //  Project home
+    let hhpe = document.querySelector(".pepic").offsetWidth;
+    let hpeheight;
+    hpeheight = document.querySelectorAll(".pepic");
+    for (i = 0; i < hpeheight.length; i++) {
+      hpeheight[i].style.height = hhpe/1.77 + "px";
+    };
+    window.onresize = function(event) {
+      let hhpe = document.querySelector(".pepic").offsetWidth;
+      hpeheight = document.querySelectorAll(".pepic");
+      for (i = 0; i < hpeheight.length; i++) {
+        hpeheight[i].style.height = hhpe/1.77 + "px";
+      }
+    }
+  </script>
+
 <!-- data-wow-duration: Продолжительность анимации
 data-wow-delay: Задержка перед запуском анимации
 data-wow-offset: Расстояние от нижнего края браузера для запуска анимации
