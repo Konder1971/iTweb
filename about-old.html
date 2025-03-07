@@ -28,6 +28,228 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<style type="text/css">
+		.dawop-col:nth-child(1) h3 {
+			color: #00B465;
+		}
+
+		.dawop-col:nth-child(2) h3 {
+			color: brown;
+		}
+
+		.dawop-col:nth-child(3) h3 {
+			color: darkslategray;
+		}
+
+		.dawop-col:nth-child(1) .dawop-separator {
+			background-color: #00B465;
+		}
+
+		.dawop-col:nth-child(2) .dawop-separator {
+			background-color: brown;
+		}
+
+		.dawop-col:nth-child(3) .dawop-separator {
+			background-color: darkslategray;
+		}
+
+		.dawop-separator {
+			margin-bottom: 0;
+			height: 2px;
+		}
+
+		.dawop-col:nth-child(1) .titleacc {
+			border-bottom: 2px solid #00B465;
+		}
+
+		.dawop-col:nth-child(2) .titleacc {
+			border-bottom: 2px solid brown;
+		}
+
+		.dawop-col:nth-child(3) .titleacc {
+			border-bottom: 2px solid darkslategray;
+		}
+
+		.titleacc {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			cursor: pointer;
+			font-weight: 600;
+			padding: 10px 0 12px;
+		}
+
+		/* .titleacc:after,
+    .titleacc:before {
+      content: '';
+      width: 10px;
+      height: 3px;
+      background-color: #000;
+      position: absolute;
+      top: 10px;
+    }
+    .titleacc:after {
+			-ms-transform: rotate(-40deg);
+			-webkit-transform: rotate(-40deg);
+			-o-transform: rotate(-40deg);
+			-moz-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+      left: 7px;
+    }
+    .titleacc:before {
+			-ms-transform: rotate(40deg);
+			-webkit-transform: rotate(40deg);
+			-o-transform: rotate(40deg);
+			-moz-transform: rotate(40deg);
+      transform: rotate(40deg);
+      left: 0;
+    }
+    .titleacc.activeacc:after,
+    .titleacc.activeacc:before {
+      background-color: #b00;	
+			-webkit-transition: all .5s ease 0s;
+			-moz-transition: all .5s ease 0s;
+			-ms-transition: all .5s ease 0s;
+			-o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s;
+    }
+    .titleacc.activeacc:after {
+      transform: rotate(40deg);
+    }
+    .titleacc.activeacc:before {
+			-ms-transform: rotate(-40deg);
+			-webkit-transform: rotate(-40deg);
+			-o-transform: rotate(-40deg);
+			-moz-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+    } */
+		.textacc {
+			display: none;
+		}
+
+		.textacc ul,
+		.textacc li {
+			color: #000;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			font-weight: 400
+		}
+
+		.titleacc.activeacc svg {
+			-ms-transform: rotate(180deg);
+			-webkit-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		.dawop-col:nth-child(1) .titleacc svg {
+			stroke: #00B465;
+		}
+
+		.dawop-col:nth-child(2) .titleacc svg {
+			stroke: brown;
+		}
+
+		.dawop-col:nth-child(3) .titleacc svg {
+			stroke: darkslategray;
+		}
+
+		@media (min-width: 768px) {
+			.blockacc {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				margin-top: 30px;
+			}
+
+			.titleacc {
+				padding: 10px 0 12px;
+			}
+
+			.dawop-col {
+				width: calc(33.33333% - 30px);
+			}
+
+			.itemacc h3 {
+				font-size: 24px;
+				line-height: 31px;
+				margin-bottom: 0;
+				font-weight: 500;
+			}
+
+			.titleacc svg {
+				position: relative;
+				top: 1px;
+			}
+
+			.textacc {
+				padding: 20px 0 0;
+			}
+
+			.dawop-col li {
+				margin-bottom: 15px;
+				line-height: 29px;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 1024.98px) {
+			.blockacc {
+				flex-wrap: wrap;
+			}
+
+			.dawop-col {
+				margin: 0 0 60px;
+				width: calc(50% - 20px);
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			.vaContainer {
+				padding: 0 28px;
+				margin-bottom: 80px;
+			}
+
+			.dawop-col {
+				margin-bottom: 30px;
+			}
+
+			.titleacc {
+				padding: 8px 0 12px;
+			}
+
+			.dawop-separator {
+				width: 100%;
+			}
+
+			.itemacc h3 {
+				font-size: 24px;
+				line-height: 26px;
+				margin-bottom: 0;
+			}
+
+			.titleacc svg {
+				position: relative;
+				top: 1px;
+			}
+
+			.textacc {
+				padding: 18px 0 0;
+			}
+
+			.dawop-col li {
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+
 </head>
 
 <body>
@@ -184,7 +406,6 @@
 						-->
 				</div>
 			</div>
-      <h2>Услуги</h2>
 			<div class="resume-container">
 
 				<div class="resume-col">
@@ -254,18 +475,23 @@
 	<div class="clearfix"></div>
 	<!-- block center text stop -->
 
-	<!-- dawop start -->
-	<div class="dawop">
-		<div class="dawop-container">
-			<div class="dawop-content">
-				<div class="dawop-header">
-					<h2>Владею следующими технологиями</h2>
-				</div>
-				<div class="dawop-cols">
-					<!-- dawop-col repeat start -->
-					<div class="dawop-col">
-						<div class="dawop-separator"></div>
+	<div class="vaContainer technologies">
+		<div class="vaContent">
+			<h2>
+				Владею следующими технологиями
+			</h2>
+
+			<div class="blockacc accodion">
+
+				<div class="itemacc dawop-col">
+					<div class="dawop-separator"></div>
+					<div class="titleacc">
 						<h3>Верстка макетов</h3>
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11L21 1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="textacc">
 						<ul>
 							<li>Figma to html</li>
 							<li>Zeplin to html</li>
@@ -276,11 +502,17 @@
 							<li>xd.adobe to html</li>
 						</ul>
 					</div>
-					<!-- dawop-col repeat stop -->
-					<!-- dawop-col repeat start -->
-					<div class="dawop-col">
-						<div class="dawop-separator"></div>
+				</div>
+
+				<div class="itemacc dawop-col">
+					<div class="dawop-separator"></div>
+					<div class="titleacc">
 						<h3>"Языки" верстки</h3>
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11L21 1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="textacc">
 						<ul>
 							<li>HTML5</li>
 							<li>СSS3</li>
@@ -289,17 +521,22 @@
 							<li>Animate.css</li>
 							<li>AOS Animate</li>
 							<li>JavaScript / jQuery</li>
-							<li>Vue</li>
 							<li>Подключение шрифтов</li>
 							<li>BEM / (БЭМ)</li>
 							<li>SASS / SCSS</li>
 						</ul>
 					</div>
-					<!-- dawop-col repeat stop -->
-					<!-- dawop-col repeat start -->
-					<div class="dawop-col">
-						<div class="dawop-separator"></div>
+				</div>
+
+				<div class="itemacc dawop-col">
+					<div class="dawop-separator"></div>
+					<div class="titleacc">
 						<h3>Рабочий профиль</h3>
+						<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L11 11L21 1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+					<div class="textacc">
 						<ul>
 							<li>Респонисивная и адаптивная верстка макета</li>
 							<li>Кроссбраузерность и кроссплатформенность, верстка с учетом под различные системы и браузеры</li>
@@ -312,12 +549,13 @@
 							<li>Верстка под телевизор</li>
 						</ul>
 					</div>
-					<!-- dawop-col repeat stop -->
 				</div>
+
 			</div>
+
 		</div>
 	</div>
-	<!-- dawop stop -->
+	<div class="clearfix"></div>
 
   <!-- footer start -->
   <footer class="footer">
@@ -342,6 +580,24 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<script>
+		$(document).ready(function () {
+			$('.titleacc').click(function (event) {
+				if ($('.blockacc').hasClass('accodion')) {
+					$('.titleacc').not($(this)).removeClass('activeacc');
+					$('.textacc').not($(this).next()).slideUp(500);
+				};
+				$(this).toggleClass('activeacc').next().slideToggle(500);
+				let intblock = setInterval(function () {
+					$('html,body').animate({ scrollTop: $('html,body').get(0).scrollHeight }, 1000);
+					setInterval(
+						function () {
+							clearInterval(intblock)
+						});
+				}, 300);
+			});
+		});
+	</script>
 </body>
+
 </html>
