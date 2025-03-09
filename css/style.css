@@ -2210,10 +2210,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .resume .bct-container {
 	max-width: 1205px;
 }
-.resume-top,
-.resume__content {
-	max-width: 1000px;
-	margin: 0 auto;
+.resume-box {
+	max-width: 976px;
+	margin: 0 auto 30px;
 }
 .resume-box p,
 .resume-container {
@@ -2262,21 +2261,14 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	font-size: 37px;
 	position: absolute;
 	left: 0;
+}	
+.resume-col p {
+  /*color:#004f77;*/
+  color:darkgreen;
 }
 @media (min-width: 1025px) {
 	.resume {
-		margin-bottom: 40px;
-	}
-	.resume-top p {
-		margin-bottom: 10px;
-	}
-	.resume__content {
-		margin-bottom: 50px;
-	}
-	.resume__content p {
-		font-size: 18px;
-		line-height: 28px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 	.resume-container {
 		display: grid;
@@ -2298,8 +2290,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		font-size: 16px;
 		line-height: 27px;
 		margin-bottom: 15px;
-		color:#004f77;
-		color:darkgreen;
 	}
 	.resume-col li {
 		font-size: 20px;
@@ -2318,7 +2308,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 @media (min-width: 768px) and (max-width: 1024.98px) {
 	.resume {
-		margin-bottom: 35px;
+		margin-bottom: 10px;
 	}
 	.resume-top p {
 		margin-bottom: 10px;
@@ -2371,7 +2361,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 @media (max-width: 767.98px) {
 	.resume {
-		margin-bottom: 30px;
+		margin-bottom: 5px;
 	}
 	.resume-top p {
 		margin-bottom: 10px;
