@@ -2266,6 +2266,20 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   /*color:#004f77;*/
   color:darkgreen;
 }
+
+@media (min-width: 600px) {
+  .myPhoto {
+    float: left;
+    margin: 9px 30px 0 0;
+  }
+}
+@media (max-width: 599.98px) {
+  .myPhoto {
+    float: left;
+    margin: 0 00 0;
+  }
+}
+
 @media (min-width: 1025px) {
 	.resume {
 		margin-bottom: 20px;
