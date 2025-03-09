@@ -2215,14 +2215,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	max-width: 1000px;
 	margin: 0 auto;
 }
-.resume-top p,
-.resume__content p {
-	text-align: left;
-}
-.resume__content p {
-	color: #004f77;
-	font-weight: 500;
-}
+.resume-box p,
 .resume-container {
 	text-align: left;
 }

@@ -122,19 +122,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-//  Project home
-//let hhpe = document.querySelector(".pepic").offsetWidth;
-//let hpeheight;
-//hpeheight = document.querySelectorAll(".pepic");
-//for (i = 0; i < hpeheight.length; i++) {
-//  hpeheight[i].style.height = hhpe/1.77 + "px";
-//};
-//window.onresize = function(event) {
-//  let hhpe = document.querySelector(".pepic").offsetWidth;
-//  hpeheight = document.querySelectorAll(".pepic");
-//  for (i = 0; i < hpeheight.length; i++) {
-//    hpeheight[i].style.height = hhpe/1.77 + "px";
-//  }
-//}
