@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
 	<meta charset="utf-8">
-	<title>iTweb CSS Grid Layout</title>
+	<title>iTweb</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
 
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="canonical" href="" />
+
   <link rel="icon" href="images/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
@@ -26,112 +29,12 @@
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
+  
   <link href="css/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<style type="text/css">
-		.containerBlock > * {
-			padding: 15px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.containerBlock {
-				display: grid;
-				grid-template-columns: 25% 1fr 25%;
-				grid-gap: 10px;
-				border: 1px solid #000;
-				padding: 10px;
-			}
-		.topBlock {
-			background-color: cornflowerblue;
-			grid-area: topBlock;
-		}
-		.navBlock {
-			background-color: darkgray;
-			grid-area: navBlock;
-		}
-		.headerBlock {
-			background-color: cadetblue;
-			grid-area: headerBlock;
-		}
-		.asideBlock {
-			background-color: blueviolet;
-			grid-area: asideBlock;
-		}
-		.mainBlock {
-			background-color: burlywood;
-			grid-area: mainBlock;
-		}
-		.footerBlock {
-			background-color: chocolate;
-			grid-area: footerBlock;
-		}
-		.subfooterBlock {
-			background-color: brown;
-			grid-area: subfooterBlock;
-		}
-
-		@media (min-width: 1201px) {
-			.containerBlock {
-				grid-template-areas:
-					"topBlock topBlock topBlock"
-					"headerBlock headerBlock headerBlock"
-					"navBlock mainBlock asideBlock"
-					"navBlock mainBlock asideBlock"
-					"footerBlock footerBlock asideBlock"
-					"subfooterBlock subfooterBlock asideBlock"
-				;
-				grid-template-rows: auto 100px 1fr auto 80px 60px;
-				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-				font-size: 20px;
-				line-height: 30px;
-				margin-bottom: 80px;
-			}
-		}
-		@media (min-width: 768px) and (max-width: 1200.98px) {
-			.containerBlock {
-				grid-template-areas:
-					"headerBlock headerBlock headerBlock"
-					"topBlock topBlock topBlock"
-					"asideBlock navBlock mainBlock"
-					"asideBlock navBlock mainBlock"
-					"asideBlock footerBlock footerBlock"
-					"subfooterBlock subfooterBlock subfooterBlock"
-				;
-				grid-template-rows: auto 100px 1fr auto 60px 60px;
-				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-				font-size: 20px;
-				line-height: 30px;
-				margin-bottom: 80px;
-			}
-		}
-		@media (max-width: 767.98px) {
-			.vaContainer {
-				padding: 0 28px;
-				margin-bottom: 40px;
-			}
-			.containerBlock {
-				grid-template-areas:
-					"asideBlock subfooterBlock subfooterBlock"
-					"asideBlock headerBlock headerBlock"
-					"asideBlock navBlock footerBlock"
-					"mainBlock mainBlock footerBlock"
-					"topBlock topBlock topBlock"
-				;
-				grid-template-rows: auto 80px auto 1fr auto;
-				grid-template-columns: 25% 1fr 25%;
-				/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-				font-size: 18px;
-				line-height: 23px;
-				margin-bottom: 80px;
-			}
-		}
-	</style>
-
 </head>
-
-<body>
+<body class="lang-ukr services-page">
   <div class="lang lang-2"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 
 	<!-- top start -->
@@ -152,7 +55,7 @@
 					<nav>
 						<ul data-aos="zoom-in">
 							<li>
-								<a class="navlink" href="index.html" title=""><!-- activeNav -->
+								<a class="navlink" href="index.html" title="">
                   <span class="ukr">Головна</span>
                   <span class="eng">Home</span>
                 </a>
@@ -170,7 +73,7 @@
                 </a>
 							</li>
 							<li>
-								<a class="navlink" href="services.html" title="">
+								<a class="navlink activeNav" href="services.html" title="">
                   <span class="ukr">Послуги</span>
                   <span class="eng">Services</span>
                 </a>
@@ -190,7 +93,7 @@
 									<div class="dropdown-col-2">
 										<ul>
 											<li>
-												<a class="active" href="grid.html" title="">
+												<a href="grid.html" title="">
 													<span class="text">CSS Grid Layout</span>
 												</a>
 											</li>
@@ -275,38 +178,119 @@
 	<!-- top stop -->
 
 	<!-- block center text start -->
-	<div class="bct">
+	<div class="bct resume">
 		<div class="bct-container">
-			<div class="bct-contasnt">
-				<div class="bct-col">
-					<h1>CSS Grid Layout</h1>
-					<p>
-            <span class="ukr">Блоки змінюються місцями на наступних роздільних здатнах екрана:</span>
-            <span class="eng">Blocks are swapped at the following screen resolutions:</span>
-            <br />
-						@media (min-width: 1201px)<br />
-						@media (min-width: 768px) and (max-width: 1200.98px)<br />
-						@media (max-width: 767.98px)
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- block center text stop -->
 
-	<div class="vaContainer">
-		<div class="vaContent">
-			<div class="containerBlock">
-				<div class="topBlock">Top Block</div>
-				<div class="headerBlock">Header Block</div>
-				<div class="navBlock">Nav Block</div>
-				<div class="mainBlock">Main Block</div>
-				<div class="asideBlock">Aside Block</div>
-				<div class="footerBlock">Footer Block</div>
-				<div class="subfooterBlock">Subfooter Block</div>
-			</div>
-		</div>
+      <div class="bct-content">
+
+        <h1><span class="ukr">Послуги</span><span class="eng">Services</span></h1>
+
+        <div class="resume-container">
+
+          <div class="resume-col">
+            <h3><span class="ukr">Створення та розміщення:</span><span class="eng">Creation and placement:</span></h3>
+            <ul class="ukr">
+              <li>Сайт візитка</li>
+              <li>Лендінг</li>
+              <li>Каталог</li>
+              <li>Портфоліо</li>
+              <li>Галереї</li>
+              <li>Інтернет магазин</li>
+              <li>Корпоративний портал</li>
+              <li>Новинні ресурси</li>
+              <li>Поштові розсилки</li>
+              <li>Адаптація тем і шаблонів CMS</li>
+            </ul>
+            <ul class="eng">
+              <li>Business card site</li>
+              <li>Landing</li>
+              <li>Catalog</li>
+              <li>Portfolio</li>
+              <li>Galleries</li>
+              <li>Online store</li>
+              <li>Corporate portal</li>
+              <li>News resources</li>
+              <li>Mailing lists</li>
+              <li>Adaptation of CMS themes and templates</li>
+            </ul>
+          </div>
+
+          <div class="resume-col">
+            <h3><span class="ukr">Правки та доопрацювання:</span><span class="eng">Fixes and improvements:</span></h3>
+            <p class="ukr">
+              Існуючий сайт може бути модернізований додаванням нових функцій, розділів, сторінок та ін.
+            </p>
+            <p class="eng">
+              An existing website can be upgraded by adding new features, sections, pages, etc.
+            </p>
+            <ul class="ukr">
+              <li>Доопрацювання існуючого проекту</li>
+              <li>Доопрацювання існуючого проекту на CMS</li>
+              <li>Перенесення проекту на CMS</li>
+              <li>Правка багів</li>
+            </ul>
+            <ul class="eng">
+              <li>Revision of existing project</li>
+              <li>Revision of existing project on CMS</li>
+              <li>Transfer of project to CMS</li>
+              <li>Bug fixing</li>
+            </ul>
+          </div>
+
+          <div class="resume-col">
+            <h3><span class="ukr">Обслуговування:</span><span class="eng">Service:</span></h3>
+            <p class="ukr">
+              Для забезпечення надійної та безпечної роботи сайту потрібна його підтримка. Це охоплює виконання різних операцій і завдань, які забезпечують повноцінне функціонування сайту. Підтримка веб-сайту може охоплювати цілу низку різних операцій і завдань, які необхідно здійснювати для забезпечення повноцінної працездатності сайту.
+            </p>
+            <p class="eng">
+              To ensure reliable and secure operation of a website, it requires maintenance. This involves performing a variety of different operations and tasks that ensure that the site is fully functional.Website maintenance can include a number of different operations and tasks that need to be performed to ensure that the site is fully functional.
+            </p>
+            <ul class="ukr">
+              <li>Технічна підтримка проекту</li>
+              <li>Технічна оптимізація сайтів</li>
+            </ul>
+            <ul class="eng">
+              <li>Technical support of the project</li>
+              <li>Technical optimization of sites</li>
+            </ul>
+          </div>
+
+          <div class="resume-col">
+            <h3><span class="ukr">SEO та оптимізація:</span><span class="eng">SEO and optimization:</span></h3>
+            <p class="ukr">
+              У сучасних проектах семантичний код, оптимізований під SEO та мікророзмітку Schema.org, є надзвичайно важливим для будь-якого проекту.
+            </p>
+            <p class="eng">
+              In modern projects, semantic code optimized for SEO and Schema.org micro-markup is extremely important for any project.
+            </p>
+            <ul class="ukr">
+              <li>Семантичний код під SEO</li>
+              <li>Оптимізація сайтів під SEO</li>
+              <li>SЕО просування сайту</li>
+              <li>Розробка мета-тегів під SEO</li>
+              <li>Розробка мікророзмітки під SEO</li>
+              <li>Google аналітика: підключення, налаштування, ведення</li>
+              <li>Search Console: підключення, налаштування, ведення</li>
+            </ul>
+            <ul class="eng">
+              <li>Semantic code for SEO</li>
+              <li>Optimization of sites for SEO</li>
+              <li>SEO site promotion</li>
+              <li>Meta tags development for SEO</li>
+              <li>Development of micro markup for SEO</li>
+              <li>Google analytics: connection, setup, maintenance</li>
+              <li>Search Console: connection, configuration, maintenance</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+	  </div>
 	</div>
+	<div class="clearfix"></div>
+	<!-- block center text stop -->
 
 
   <!-- footer start -->
@@ -328,10 +312,12 @@
   </footer>
   <!-- footer stop -->
 
+
 	<div class="to-up">&uarr;</div>
 
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
+
 </body>
 </html>

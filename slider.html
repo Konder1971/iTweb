@@ -26,11 +26,12 @@
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
+  <link href="css/aos.css" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/splide.min.css">
 	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/sliders.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/sliders.css"> 
 
 	<style>
 		.splide {
@@ -105,10 +106,12 @@
 		}
 		.splide .splide__arrow {
 			width: 80px;
+      background: none;
 		}
 		.splide .splide__arrow svg {
 			width: 35px;
 			height: 35px;
+      margin-top: -35px;
 		}
 		.splide span {
 			display: block;
@@ -121,6 +124,7 @@
 
 </head>
 <body>
+  <div class="lang lang-2"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 
 	<!-- top start -->
 	<div class="top">
@@ -128,89 +132,113 @@
 			<div class="top-content">
 				<!-- logo start -->
 				<div class="logo">
-					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
+					<a href="index.html" title="">
+            <span>iTweb</span>
+            <em class="animate__animated animate__fadeIn" style="animation-duration: 1s; animation-delay: 300ms">Front-end developer</em>
+          </a>
 				</div>
 				<!-- logo stop -->
 				<!-- navigations start -->
 				<a class="nav-toggle"><span></span></a>
 				<div class="navigations">
 					<nav>
-						<ul>
+						<ul data-aos="zoom-in">
 							<li>
-								<a class="navlink" href="index.html" title="">Home</a>
+								<a class="navlink" href="index.html" title=""><!-- activeNav -->
+                  <span class="ukr">Головна</span>
+                  <span class="eng">Home</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink" href="about.html" title="">About</a>
+								<a class="navlink" href="about.html" title="">
+                  <span class="ukr">Про себе</span>
+                  <span class="eng">About</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink" href="sites.html" title="">Projects</a>
+								<a class="navlink" href="projects.html" title="">
+                  <span class="ukr">Проекти</span>
+                  <span class="eng">Projects</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink">HTML5/CSS3/JS</a>
+								<a class="navlink" href="services.html" title="">
+                  <span class="ukr">Послуги</span>
+                  <span class="eng">Services</span>
+                </a>
+							</li>
+							<li>
+								<a class="navlink" href="technologies.html">
+                  <span class="ukr">Технології</span>
+                  <span class="eng">Technologies</span>
+                </a>
+							</li>
+							<li>
+								<a class="navlink navlink-dropdown">
+                  <span class="ukr">Компоненти</span>
+                  <span class="eng">Components</span>
+                </a>
 								<div class="dropdown">
 									<div class="dropdown-col-2">
 										<ul>
 											<li>
-												<a href="grid.html" title="">
+												<a href="grid.html" title=""><!-- class="active" -->
 													<span class="text">CSS Grid Layout</span>
 												</a>
 											</li>
 											<li>
 												<a class="active" href="slider.html" title="">
-													<span class="text">Слайдеры</span>
+                          <span class="text ukr">Слайдери</span>
+                          <span class="text eng">Sliders</span>
 												</a>
 											</li>
 											<li>
 												<a href="carousels.html" title="">
-													<span class="text">Карусели</span>
+                          <span class="text ukr">Каруселі</span>
+                          <span class="text eng">Carousels</span>
 												</a>
 											</li>
 											<li>
 												<a href="video.html" title="">
-													<span class="text">Видео</span>
+                          <span class="text ukr">Відео</span>
+                          <span class="eng">Video</span>
 												</a>
 											</li>
-											<li>
-												<a href="parallax.html" title="">
-													<span class="text">Параллакс эффект</span>
-												</a>
-												<ul class="subNuv">
-													<li><a href="p1.html" title="">Параллакс обычный</a></li>
-													<li><a href="p2.html" title="">Параллах Шторка</a></li>
-												</ul>
-											</li>
+                        <li><a href="p1.html" title="">
+                          <span class="text ukr">Паралакс звичайний</span>
+                          <span class="text eng">Normal paralax</span>
+                        </a>
+                      </li>
+                      <li><a href="p2.html" title="">
+                        <span class="text">Параллах Шторка</span></a></li>
 											<li>
 												<a href="contactform.html" title="">
-													<span class="text">Контактная форма</span>
+                          <span class="text ukr">Контактна форма</span>
+                          <span class="text eng"></span>
 												</a>
 											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a class="navlink">JS development</a>
-								<div class="dropdown">
-									<div class="dropdown-col-2">
-										<ul>
 											<li>
 												<a href="menu.html" title="">
-													<span class="text">Навигация</span>
+                          <span class="text ukr">Навігація</span>
+                          <span class="text eng">Navigation</span>
 												</a>
 											</li>
 											<li>
 												<a href="popup.html" title="">
-													<span class="text">Модальное окно popup</span>
+                          <span class="text ukr">Модальне вікно popup</span>
+                          <span class="text eng">Modal popup</span>
 												</a>
 											</li>
 											<li>
 												<a href="filter.html" title="">
-													<span class="text">Фильтры</span>
+                          <span class="text ukr">Фільтри</span>
+                          <span class="text eng">Filters</span>
 												</a>
 											</li>
 											<li>
 												<a href="textanima.html" title="">
-													<span class="text">Текстовые анимации</span>
+                          <span class="text ukr">Текстові анімації</span>
+                          <span class="text eng">Text animation</span>
 												</a>
 											</li>
 											<li>
@@ -223,10 +251,14 @@
 								</div>
 							</li>
 							<li>
-								<a class="navlink" href="contact.html" title="">Contact</a>
+								<a class="navlink" href="contact.html" title="">
+                  <span class="text ukr">Контакти</span>
+                  <span class="text eng">Contacts</span>
+                </a>	
 							</li>
 						</ul>
 					</nav>
+          <div class="lang"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 				</div>
 				<!-- navigations stop -->
 			</div>
@@ -239,15 +271,10 @@
 		<div class="bct-container">
 			<div class="bct-contasnt">
 				<div class="bct-col">
-					<div class="bct-up">Sliders</div>
-					<h2>
-						Слайдеры для сайта
-					</h2>
+					<h1><span class="ukr">Слайдери для сайту</span><span class="eng">Sliders for the website</span></h1>
+					<p><span class="ukr">Адаптивні слайдери та каруселі різного виду та конфігурації.</span><span class="eng">Adaptive sliders and carousels of various types and configurations.</span></p>
 					<p>
-						Адаптивные слайдеры и карусели различного вида и конфигурации.
-					</p>
-					<p>
-						Посмотреть карусели: 
+						<span class="ukr">Подивитися каруселі:</span><span class="eng">View carousels:</span> 
 						<a href="carousels.html" title="">
 							carousels
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -264,7 +291,7 @@
 
 	<!-- slider 3 col start -->
 	<div class="vaContainer adslick">
-		<h2>Customized adaptive Slick slider</h2>
+		<h2><span class="ukr">Індивідуальний адаптивний слайдер Slick</span><span class="eng">Customized adaptive Slick slider</span></h2>
 		<div class="slider3c-box">
 			<div class="slider3c">
 
@@ -394,14 +421,14 @@
 	<!-- slider 2 col start -->
 	<div class="vaContainer slider2col-box">
 
-			<h2>Adaptive Slider</h2>
+			<h2><span class="ukr">Адаптивний слайдер</span><span class="eng">Adaptive Slider</span></h2>
 
 			<div class="slider2col">
 				
 				<a href="images/f1.jpg" class="slide2c-block example-image-link" data-lightbox="example">
 					<div class="bgImg2" style="background-image: url('images/f1.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">кликни для<br>просмотра картинки</div>
+						<div class="sub"><span class="ukr">натисніть для<br>перегляду картинки</span><span class="eng">click to<br>view the picture</span></div>
 						<p>Title text</p>
 					</div>
 				</a>
@@ -409,7 +436,7 @@
 				<a href="images/f2.jpg" class="slide2c-block example-image-link" data-lightbox="example">
 					<div class="bgImg2" style="background-image: url('images/f2.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">кликни для<br>просмотра картинки</div>
+						<div class="sub"><span class="ukr">натисніть для<br>перегляду картинки</span><span class="eng">click to<br>view the picture</span></div>
 						<p>Title text</p>
 					</div>
 				</a>
@@ -417,7 +444,7 @@
 				<a href="images/f3.jpg" class="slide2c-block example-image-link" data-lightbox="example">
 					<div class="bgImg2" style="background-image: url('images/f3.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">кликни для<br>просмотра картинки</div>
+						<div class="sub"><span class="ukr">натисніть для<br>перегляду картинки</span><span class="eng">click to<br>view the picture</span></div>
 						<p>Title text</p>
 					</div>
 				</a>
@@ -425,7 +452,7 @@
 				<a href="images/f4.jpg" class="slide2c-block example-image-link" data-lightbox="example">
 					<div class="bgImg2" style="background-image: url('images/f4.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">кликни для<br>просмотра картинки</div>
+						<div class="sub"><span class="ukr">натисніть для<br>перегляду картинки</span><span class="eng">click to<br>view the picture</span></div>
 						<p>Title text</p>
 					</div>
 				</a>
@@ -433,7 +460,7 @@
 				<a href="images/p13.jpg" class="slide2c-block example-image-link" data-lightbox="example">
 					<div class="bgImg2" style="background-image: url('images/p13.jpg');"></div>
 					<div class="slide2c-content">
-						<div class="sub">кликни для<br>просмотра картинки</div>
+						<div class="sub"><span class="ukr">натисніть для<br>перегляду картинки</span><span class="eng">click to<br>view the picture</span></div>
 						<p>Title text</p>
 					</div>
 				</a>
@@ -494,12 +521,30 @@
 	</ul>
 
 
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="vaContainer">
+      <div class="vaContent">
+        <div class="footer-content">
+          <a class="logo" href="index.html">
+            <span>iTweb</span>
+            <em class="">Front-end developer</em>
+          </a>
+          <div class="copy">
+            <span>© </span>
+            <a href="mailto:itweb1971@gmail.com">itweb1971@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer stop -->
+
+
 	<div class="to-up">&uarr;</div>
 
-	
-	<!-- <script src='js/ajax-scripts.js'></script> -->
 	<script src="js/lightbox-plus-jquery.min.js"></script>
-	<script src="js/jquery.min.js"></script>
+  <script src="js/aos.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
 	

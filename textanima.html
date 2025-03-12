@@ -220,6 +220,7 @@
 
 </head>
 <body onload="startShow()">
+  <div class="lang lang-2"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 
 	<!-- top start -->
 	<div class="top">
@@ -227,89 +228,113 @@
 			<div class="top-content">
 				<!-- logo start -->
 				<div class="logo">
-					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
+					<a href="index.html" title="">
+            <span>iTweb</span>
+            <em class="animate__animated animate__fadeIn" style="animation-duration: 1s; animation-delay: 300ms">Front-end developer</em>
+          </a>
 				</div>
 				<!-- logo stop -->
 				<!-- navigations start -->
 				<a class="nav-toggle"><span></span></a>
 				<div class="navigations">
 					<nav>
-						<ul>
+						<ul data-aos="zoom-in">
 							<li>
-								<a class="navlink" href="index.html" title="">Home</a>
+								<a class="navlink" href="index.html" title=""><!-- activeNav -->
+                  <span class="ukr">Головна</span>
+                  <span class="eng">Home</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink" href="about.html" title="">About</a>
+								<a class="navlink" href="about.html" title="">
+                  <span class="ukr">Про себе</span>
+                  <span class="eng">About</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink" href="sites.html" title="">Projects</a>
+								<a class="navlink" href="projects.html" title="">
+                  <span class="ukr">Проекти</span>
+                  <span class="eng">Projects</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink">HTML5/CSS3/JS</a>
+								<a class="navlink" href="services.html" title="">
+                  <span class="ukr">Послуги</span>
+                  <span class="eng">Services</span>
+                </a>
+							</li>
+							<li>
+								<a class="navlink" href="technologies.html">
+                  <span class="ukr">Технології</span>
+                  <span class="eng">Technologies</span>
+                </a>
+							</li>
+							<li>
+								<a class="navlink navlink-dropdown">
+                  <span class="ukr">Компоненти</span>
+                  <span class="eng">Components</span>
+                </a>
 								<div class="dropdown">
 									<div class="dropdown-col-2">
 										<ul>
 											<li>
-												<a href="grid.html" title="">
+												<a href="grid.html" title=""><!-- class="active" -->
 													<span class="text">CSS Grid Layout</span>
 												</a>
 											</li>
 											<li>
 												<a href="slider.html" title="">
-													<span class="text">Слайдеры</span>
+                          <span class="text ukr">Слайдери</span>
+                          <span class="text eng">Sliders</span>
 												</a>
 											</li>
 											<li>
 												<a href="carousels.html" title="">
-													<span class="text">Карусели</span>
+                          <span class="text ukr">Каруселі</span>
+                          <span class="text eng">Carousels</span>
 												</a>
 											</li>
 											<li>
 												<a href="video.html" title="">
-													<span class="text">Видео</span>
+                          <span class="text ukr">Відео</span>
+                          <span class="eng">Video</span>
 												</a>
 											</li>
-											<li>
-												<a href="parallax.html" title="">
-													<span class="text">Параллакс эффект</span>
-												</a>
-												<ul class="subNuv">
-													<li><a href="p1.html" title="">Параллакс обычный</a></li>
-													<li><a href="p2.html" title="">Параллах Шторка</a></li>
-												</ul>
-											</li>
+                        <li><a href="p1.html" title="">
+                          <span class="text ukr">Паралакс звичайний</span>
+                          <span class="text eng">Normal paralax</span>
+                        </a>
+                      </li>
+                      <li><a href="p2.html" title="">
+                        <span class="text">Параллах Шторка</span></a></li>
 											<li>
 												<a href="contactform.html" title="">
-													<span class="text">Контактная форма</span>
+                          <span class="text ukr">Контактна форма</span>
+                          <span class="text eng"></span>
 												</a>
 											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a class="navlink">JS development</a>
-								<div class="dropdown">
-									<div class="dropdown-col-2">
-										<ul>
 											<li>
 												<a href="menu.html" title="">
-													<span class="text">Навигация</span>
+                          <span class="text ukr">Навігація</span>
+                          <span class="text eng">Navigation</span>
 												</a>
 											</li>
 											<li>
 												<a href="popup.html" title="">
-													<span class="text">Модальное окно popup</span>
+                          <span class="text ukr">Модальне вікно popup</span>
+                          <span class="text eng">Modal popup</span>
 												</a>
 											</li>
 											<li>
 												<a href="filter.html" title="">
-													<span class="text">Фильтры</span>
+                          <span class="text ukr">Фільтри</span>
+                          <span class="text eng">Filters</span>
 												</a>
 											</li>
 											<li>
 												<a class="active" href="textanima.html" title="">
-													<span class="text">Текстовые анимации</span>
+                          <span class="text ukr">Текстові анімації</span>
+                          <span class="text eng">Text animation</span>
 												</a>
 											</li>
 											<li>
@@ -322,10 +347,14 @@
 								</div>
 							</li>
 							<li>
-								<a class="navlink" href="contact.html" title="">Contact</a>
+								<a class="navlink" href="contact.html" title="">
+                  <span class="text ukr">Контакти</span>
+                  <span class="text eng">Contacts</span>
+                </a>	
 							</li>
 						</ul>
 					</nav>
+          <div class="lang"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 				</div>
 				<!-- navigations stop -->
 			</div>
@@ -338,10 +367,9 @@
 		<div class="bct-container">
 			<div class="bct-contasnt">
 				<div class="bct-col">
-					<div class="bct-up">Text anima</div>
-					<h2>
-						Текстовые анимации
-					</h2>
+					<h1>
+						<span class="ukr">Текстові анімації</span><span class="eng">Text animations</span>
+					</h1>
 				</div>
 			</div>
 		</div>
@@ -360,19 +388,37 @@
 
 
 	<div class="vaContainer imp">
-		<h2>Техт имитация печатной машинки</h2>
+		<h2>Text imitation of a typewriter</h2>
 		<p class="out"></p>
 		<!-- <button class="btn-button restarta">Перезапустить</button> -->
 	</div>
 
 	<div class="vaContainer button-anima">
-		<h2>Кнопка с анимированным текстом</h2>
+		<h2>Button with animated text</h2>
 		<form name="animationbutton">
 			<input type="button" name="but" onClick="gotoURL()">
 		</form>
 	</div>
 
 
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="vaContainer">
+      <div class="vaContent">
+        <div class="footer-content">
+          <a class="logo" href="index.html">
+            <span>iTweb</span>
+            <em class="">Front-end developer</em>
+          </a>
+          <div class="copy">
+            <span>© </span>
+            <a href="mailto:itweb1971@gmail.com">itweb1971@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer stop -->
 
 	<div class="to-up">&uarr;</div>
 

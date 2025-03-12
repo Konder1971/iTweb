@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
 	<meta charset="utf-8">
-	<title>iTweb parallax</title>
+	<title>iTweb</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
 
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="canonical" href="" />
+
   <link rel="icon" href="images/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
@@ -26,89 +29,12 @@
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
+  
+  <link href="css/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<style type="text/css">
-		html,
-		body {
-			height: 100%;
-		}
-		h2 {
-			font-size: 40px;
-		}
-		section p {
-			color: #fff;
-		}
-		section {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: nowrap;
-			justify-content: center;
-			background-repeat: no-repeat;
-			background-position: center center;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			height: 100%;
-			position: relative;
-			text-align: center;
-		}
-		section#one {
-			background-color: #0089cd;
-			background-image: url(images/p.jpg);
-		}
-		section#two {
-			background-color: #ccc;
-			background-image: url(images/p22.jpg);
-		}
-		section#three {
-			background-color: #c00;
-			background-image: url(images/p36.jpg);
-		}
-		section#four {
-			background-color: #222;
-			background-image: url(images/p12.jpg);
-		}
-		.inner {
-			background-color: rgba(0,0,0,.6);
-			color: #fff;
-			text-align: center;
-		}
-		.inner p {
-			margin-bottom: 0;
-		}
-		@media (min-width: 768px) {
-			section {
-				min-height: calc(100vh - 40px);
-			}
-			section#four {
-				background-position: center top;
-			}
-			.inner {
-				margin: 0 auto;
-				padding: 30px 20px;
-				max-width: 700px;
-			}
-		}
-		@media (min-width: 768px) and (max-width: 1024px) {
-		}
-		@media (max-width: 767.98px) {
-			section {
-				background-position: center center;
-				min-height: calc(100vh - 40px);
-			}
-			.inner {
-				margin: 0 auto;
-				padding: 30px 25px 35px;
-				margin: -40px 28px 0;
-			}
-		}
-	</style>
-
 </head>
-
-<body>
+<body class="lang-ukr technologies-page">
   <div class="lang lang-2"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 
 	<!-- top start -->
@@ -129,7 +55,7 @@
 					<nav>
 						<ul data-aos="zoom-in">
 							<li>
-								<a class="navlink" href="index.html" title=""><!-- activeNav -->
+								<a class="navlink" href="index.html" title="">
                   <span class="ukr">Головна</span>
                   <span class="eng">Home</span>
                 </a>
@@ -153,7 +79,7 @@
                 </a>
 							</li>
 							<li>
-								<a class="navlink" href="technologies.html">
+								<a class="navlink activeNav" href="technologies.html">
                   <span class="ukr">Технології</span>
                   <span class="eng">Technologies</span>
                 </a>
@@ -167,7 +93,7 @@
 									<div class="dropdown-col-2">
 										<ul>
 											<li>
-												<a href="grid.html" title=""><!-- class="active" -->
+												<a href="grid.html" title="">
 													<span class="text">CSS Grid Layout</span>
 												</a>
 											</li>
@@ -194,7 +120,7 @@
                           <span class="text eng">Normal paralax</span>
                         </a>
                       </li>
-                      <li><a class="active" href="p2.html" title="">
+                      <li><a href="p2.html" title="">
                         <span class="text">Параллах Шторка</span></a></li>
 											<li>
 												<a href="contactform.html" title="">
@@ -254,76 +180,108 @@
 	<!-- block center text start -->
 	<div class="bct">
 		<div class="bct-container">
-			<div class="bct-contasnt">
-				<div class="bct-col">
-					<h1>
-						Parallax vertical blind
-					</h1>
-					<p>
-						Variant 1: 
-						<a href="p1.html" title="">
-							Parallax effect
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-								<path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
-							</svg>
-						</a>
-					</p>
+      <div class="bct-content">
+        <h1><span class="ukr">Технології</span><span class="eng">technologies</span></h1>
+      </div>
+	  </div>
+	</div>
+	<div class="clearfix"></div>
+	<!-- block center text stop -->
+
+	<!-- dawop start -->
+	<div class="dawop">
+		<div class="dawop-container">
+			<div class="dawop-content">
+				<div class="dawop-header">
+					<h2 class="wow animate__animated animate__zoomIn" style="animation-duration: 2s;">
+            <span class="ukr">Я володію такими Фронт-енд технологіями</span>
+            <span class="eng">I am proficient in the following front-end technologies</span>
+					</h2>
+				</div>
+				<div class="dawop-cols">
+					<!-- dawop-col repeat start -->
+					<div class="dawop-col">
+						<div class="dawop-separator"></div>
+						<h3><span class="ukr">Верстка макетів</span><span class="eng">Layout to html</span></h3>
+						<ul>
+							<li>Figma to html</li>
+							<li>Zeplin to html</li>
+							<li>Sketch to html</li>
+							<li>Psd to html</li>
+							<li>Webdesign to html</li>
+							<li>Illustrator to html</li>
+							<li>xd.adobe to html</li>
+						</ul>
+					</div>
+					<!-- dawop-col repeat stop -->
+					<!-- dawop-col repeat start -->
+					<div class="dawop-col">
+						<div class="dawop-separator"></div>
+						<h3><span class="ukr">«Мови» верстки</span><span class="eng">“Languages” of layout</span></h3>
+						<ul>
+							<li>HTML5</li>
+							<li>СSS3</li>
+							<li>CSS framework bootstrap</li>
+							<li>CSS Grid Layout</li>
+							<li>Animate.css</li>
+							<li>AOS Animate</li>
+							<li>JavaScript / jQuery</li>
+							<li>Vue</li>
+							<li>Connecting fonts</li>
+							<li>BEM / (БЭМ)</li>
+							<li>SASS / SCSS</li>
+						</ul>
+					</div>
+					<!-- dawop-col repeat stop -->
+					<!-- dawop-col repeat start -->
+					<div class="dawop-col">
+						<div class="dawop-separator"></div>
+						<h3><span class="ukr">Робочий профіль</span><span class="eng">Work profile</span></h3>
+						<ul>
+							<li><span class="ukr">Респонісивна та адаптивна верстка макета</span><span class="eng">Responsive and adaptive layout design</span></li>
+							<li><span class="ukr">Кросбраузерність і кросплатформеність, верстка з урахуванням під різні системи і браузери</span><span class="eng">Cross-browser and cross-platform, layout with consideration for different systems and browsers</span></li>
+							<li><span class="ukr">Семантичний код під SEO</span><span class="eng">Semantic code for SEO</span></li>
+							<li><span class="ukr">Schema.org мікророзмітка</span><span class="eng">Schema.org micro-markup</span></li>
+							<li><span class="ukr">Верстка та розробка під Vue</span><span class="eng">Layout and development for Vue</span></li>
+							<li><span class="ukr">Верстка та розробка під WordPress</span><span class="eng">Layout and development for WordPress</span></li>
+							<li>WooCommerce</li>
+							<li>OpenCart</li>
+							<li><span class="ukr">Верстка під телевізор</span><span class="eng">Layout for TV</span></li>
+						</ul>
+					</div>
+					<!-- dawop-col repeat stop -->
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- block center text stop -->
+	<!-- dawop stop -->
 
 
-	<section id="one">
-		<div class="inner">
-			<h2>Section 1</h2>
-			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
-		</div>
-	</section>
-	<section id="two">
-		<div class="inner">
-			<h2>Section 2</h2>
-			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
-		</div>
-	</section>
-	<section id="three">
-		<div class="inner">
-			<h2>Section 3</h2>
-			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
-		</div>
-	</section>
-	<section id="four">
-		<div class="inner">
-			<h2>Section 4</h2>
-			<p>Lorem ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>. Ratione distinctio dolorum numquam explicabo laborum alias laboriosam eveniet ipsa ex consequuntur.</p>
-		</div>
-	</section>
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="vaContainer">
+      <div class="vaContent">
+        <div class="footer-content">
+          <a class="logo" href="index.html">
+            <span>iTweb</span>
+            <em class="">Front-end developer</em>
+          </a>
+          <div class="copy">
+            <span>© </span>
+            <a href="mailto:itweb1971@gmail.com">itweb1971@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer stop -->
 
 
 	<div class="to-up">&uarr;</div>
 
-
-	<script src="js/jquery-3.6.1.js"></script>
-  <script src="js/ScrollMagic.js"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
-  <!-- <script src="js/p2.js"></script> -->
-	<script>
-		(function($) {
-			const ctrl = new ScrollMagic.Controller({
-				globalSceneOptions: {
-					triggerHook: 'onLeave'
-				}
-			})
-			$('section').each(function() {
-				new ScrollMagic.Scene({
-					triggerElement: this
-				})
-					.setPin(this)
-					.addTo(ctrl)
-			})
-		})(jQuery)
-	</script>
 
 </body>
 </html>

@@ -9,8 +9,12 @@
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="format-detection" content="telephone=no" />
 
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="canonical" href="" />
+
   <link rel="icon" href="images/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
@@ -26,37 +30,67 @@
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
+  <link href="css/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
-<body class="about">
+<body class="lang-ukr about-page">
+  <div class="lang lang-2"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 
 	<!-- top start -->
 	<div class="top">
+    <div class="lang lang-2"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 		<div class="top-container">
 			<div class="top-content">
 				<!-- logo start -->
 				<div class="logo">
-					<a href="index.html" title=""><span>iTweb</span></a> <em>Frontend developer</em>
+					<a href="index.html" title="">
+            <span>iTweb</span>
+            <em class="animate__animated animate__fadeIn" style="animation-duration: 1s; animation-delay: 300ms">Front-end developer</em>
+          </a>
 				</div>
 				<!-- logo stop -->
 				<!-- navigations start -->
 				<a class="nav-toggle"><span></span></a>
 				<div class="navigations">
 					<nav>
-						<ul>
+						<ul data-aos="zoom-in">
 							<li>
-								<a class="navlink" href="index.html" title="">Home</a>
+								<a class="navlink" href="index.html" title="">
+                  <span class="ukr">Головна</span>
+                  <span class="eng">Home</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink activeNav" href="about.html" title="">About</a>
+								<a class="navlink activeNav" href="about.html" title="">
+                  <span class="ukr">Про себе</span>
+                  <span class="eng">About</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink" href="sites.html" title="">Projects</a>
+								<a class="navlink" href="projects.html" title="">
+                  <span class="ukr">Проекти</span>
+                  <span class="eng">Projects</span>
+                </a>
 							</li>
 							<li>
-								<a class="navlink">HTML5/CSS3/JS</a>
+								<a class="navlink" href="services.html" title="">
+                  <span class="ukr">Послуги</span>
+                  <span class="eng">Services</span>
+                </a>
+							</li>
+							<li>
+								<a class="navlink" href="technologies.html">
+                  <span class="ukr">Технології</span>
+                  <span class="eng">Technologies</span>
+                </a>
+							</li>
+							<li>
+								<a class="navlink navlink-dropdown">
+                  <span class="ukr">Компоненти</span>
+                  <span class="eng">Components</span>
+                </a>
 								<div class="dropdown">
 									<div class="dropdown-col-2">
 										<ul>
@@ -67,60 +101,57 @@
 											</li>
 											<li>
 												<a href="slider.html" title="">
-													<span class="text">Слайдеры</span>
+                          <span class="text ukr">Слайдери</span>
+                          <span class="text eng">Sliders</span>
 												</a>
 											</li>
 											<li>
 												<a href="carousels.html" title="">
-													<span class="text">Карусели</span>
+                          <span class="text ukr">Каруселі</span>
+                          <span class="text eng">Carousels</span>
 												</a>
 											</li>
 											<li>
 												<a href="video.html" title="">
-													<span class="text">Видео</span>
+                          <span class="text ukr">Відео</span>
+                          <span class="eng">Video</span>
 												</a>
 											</li>
-											<li>
-												<a href="parallax.html" title="">
-													<span class="text">Параллакс эффект</span>
-												</a>
-												<ul class="subNuv">
-													<li><a href="p1.html" title="">Параллакс обычный</a></li>
-													<li><a href="p2.html" title="">Параллах Шторка</a></li>
-												</ul>
-											</li>
+                        <li><a href="p1.html" title="">
+                          <span class="text ukr">Паралакс звичайний</span>
+                          <span class="text eng">Normal paralax</span>
+                        </a>
+                      </li>
+                      <li><a href="p2.html" title="">
+                        <span class="text">Параллах Шторка</span></a></li>
 											<li>
 												<a href="contactform.html" title="">
-													<span class="text">Контактная форма</span>
+                          <span class="text ukr">Контактна форма</span>
+                          <span class="text eng"></span>
 												</a>
 											</li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a class="navlink">JS development</a>
-								<div class="dropdown">
-									<div class="dropdown-col-2">
-										<ul>
 											<li>
 												<a href="menu.html" title="">
-													<span class="text">Навигация</span>
+                          <span class="text ukr">Навігація</span>
+                          <span class="text eng">Navigation</span>
 												</a>
 											</li>
 											<li>
 												<a href="popup.html" title="">
-													<span class="text">Модальное окно popup</span>
+                          <span class="text ukr">Модальне вікно popup</span>
+                          <span class="text eng">Modal popup</span>
 												</a>
 											</li>
 											<li>
 												<a href="filter.html" title="">
-													<span class="text">Фильтры</span>
+                          <span class="text ukr">Фільтри</span>
+                          <span class="text eng">Filters</span>
 												</a>
 											</li>
 											<li>
 												<a href="textanima.html" title="">
-													<span class="text">Текстовые анимации</span>
+                          <span class="text ukr">Текстові анімації</span>
+                          <span class="text eng">Text animation</span>
 												</a>
 											</li>
 											<li>
@@ -133,10 +164,14 @@
 								</div>
 							</li>
 							<li>
-								<a class="navlink" href="contact.html" title="">Contact</a>
+								<a class="navlink" href="contact.html" title="">
+                  <span class="text ukr">Контакти</span>
+                  <span class="text eng">Contacts</span>
+                </a>	
 							</li>
 						</ul>
 					</nav>
+          <div class="lang"><span class="lang_ukr">ukr</span> / <span class="lang_eng">eng</span></div>
 				</div>
 				<!-- navigations stop -->
 			</div>
@@ -150,99 +185,169 @@
 
       <div class="bct-content">
 
-        <h1>About</h1>
+        <h1><span class="ukr">Про себе</span><span class="eng">About</span></h1>
 
         <div class="resume-box">
           <!--<img class="myPhoto" src="images/fh1.png"  alt="" />-->
+
+          <div class="ukr">
+
             <p>
-              В сферу деятельности входит широкий спектр IT услуг. Активно занимаюсь созданием, размещением и доработкой сайтов и интернет-проектов любой сложности функционала и конфигурации макета. Имею большой опыт в реализации верстки макетов под эсклюзивный(не шаблонный) индивидуальный дизайн.
+              До сфери діяльності входить широкий спектр IT послуг. Активно займаюся створенням, розміщенням та доопрацюванням сайтів та інтернет-проектів будь-якої складності функціоналу та конфігурації макета. Маю великий досвід реалізації верстки макетів під ексклюзивний (не шаблонний) індивідуальний дизайн.
               <br />
-              Полностью владею адаптивной и респонсивной версткой под различные операционные системы(Windows, MAC OS, IOS) и разные экраны: Desktop, Tablet, Mobile, TV.
+              Повністю володію адаптивною та респонсивною версткою під різні операційні системи (Windows, MAC OS, IOS) та різні екрани: Desktop, Tablet, Mobile, TV.
             </p>
             <p>
-              Главной и отличительной чертой работы является ориентация на индивидуальный, комплексный и глобальный подход к разработке проектов, которые полностью отвечают потребностям заказчика и мировому стандарту "World Wide Web Consortium - Web Standards".
+              Головною та відмінною рисою роботи є орієнтація на індивідуальний, комплексний та глобальний підхід до розробки проектів, що повністю відповідають потребам замовника та світовому стандарту "World Wide Web Consortium - Web Standards".
             </p>
             <p>
-              В сферу реализации входит создание: сайт визитка, лендинги, каталоги, портфолио, галереи, интернет магазины, корпоративный портал, новостные ресурсы, почтовые рассылки, адаптация тем и шаблонов CMS. Разработка проектов под телевизор.
+              У сферу реалізації входить створення: сайт візитівка, лендинги, каталоги, портфоліо, галереї, інтернет магазини, корпоративний портал, ресурси новин, поштові розсилки, адаптація тем і шаблонів CMS. Розробка проектів під телевізор.
             </p>
             <p>
-              Использование CSS Фреймворков(типа Bootstrap) и JS анимационные эффекты(Animate.css, AOS Animate, GSAP) расширяет функциональные возможности интерфейса проектов.
+              Використання CSS Фреймворків (типу Bootstrap) та JS анімаційні ефекти (Animate.css, AOS Animate, GSAP) розширює функціональні можливості інтерфейсу проектів.
             </p>
             <p>
-              Реализую создание проектов на различных CMS(система управления сайтом) и CMF платформах. Разрабатываю на: Werdpress, Woocommerce, OpenCart(oсStore), Vue, Drupal, и пр.
+              Реалізую створення проектів на різних CMS (система керування сайтом) та CMF платформах. Розробляю на: Werdpress, Woocommerce, OpenCart (oStore), Vue, Drupal, та ін.
             </p>
             <p>
-              WordPress/WooComerce - установка, создание темы, верстка, работа с плагинами и виджетами, разворачивание на хостинге. WooComerce — плагин WordPress для интернет-магазинов.
+              WordPress/WooComerce - встановлення, створення теми, верстка, робота з плагінами та віджетами, розгортання на хостингу. WooComerce – плагін WordPress для інтернет-магазинів.
             </p>
             <p>
-              OpenCart - популярный движок интернет магазина, обладающий множеством возможностей. Установка, работа с темами и плагинами, изменение дизайна (css + изменение структуры кода), разворачивание на хостинге.
+              OpenCart - популярний двигун інтернет магазину, що володіє безліччю можливостей. Установка, робота з темами та плагінами, зміна дизайну (css + зміна структури коду), розгортання на хостингу.
             </p>
             <p>
-            <p>
-              Образование - Харківський національний університет міського господарства (ХНУМГ) імені О.М.Бекетова.
+              Освіта – Харківський національний університет міського господарства (ХНУМГ) імені О.М.Бекетова.
             </p>
+          </div>
+
+          <div class="eng">
+            <p>
+              The scope of my activities includes a wide range of IT services. I am actively involved in the creation, placement and refinement of websites and Internet projects of any complexity of functionality and layout configuration. I have extensive experience in implementing layout layouts for exclusive (non-template) individual design.
+              <br />
+              I am fully proficient in adaptive and responsive layout for various operating systems (Windows, MAC OS, IOS) and different screens: Desktop, Tablet, Mobile, TV.
+            </p>
+            <p>
+              The main and distinctive feature of the work is the focus on an individual, comprehensive and global approach to the development of projects that fully meet the needs of the customer and the global standard "World Wide Web Consortium - Web Standards".
+            </p>
+            <p>
+              The scope of implementation includes creation of: business card site, landing pages, catalogs, portfolios, galleries, online stores, corporate portal, news resources, mailings, adaptation of CMS themes and templates. Development of projects for TV.
+            </p>
+            <p>
+              Using CSS Frameworks (like Bootstrap) and JS animation effects (Animate.css, AOS Animate, GSAP) expands the functionality of the project interface.
+            </p>
+            <p>
+              I implement the creation of projects on various CMS (content management system) and CMF platforms. I develop on: Werdpress, Woocommerce, OpenCart (oсStore), Vue, Drupal, etc.
+            </p>
+            <p>
+              WordPress/WooComerce - встановлення, створення теми, верстка, робота з плагінами та віджетами, розгортання на хостингу. WooComerce – плагін WordPress для інтернет-магазинів.
+            </p>
+            <p>
+              OpenCart is a popular online store engine with many features. Installation, working with themes and plugins, changing the design (css + changing the code structure), deployment on hosting.
+            </p>
+            <p>
+              Education - Kharkiv National University of the Metropolitan Government (KNUMG) named after O.M. Beketov.
+            </p>
+          </div>
+            
         </div>
 
-        <h2>Услуги</h2>
+        <h2><span class="ukr">Послуги</span><span class="eng">Services</span></h2>
 
         <div class="resume-container">
 
           <div class="resume-col">
-            <h3>Создание и размещение:</h3>
-            <ul>
-              <li>Cайт визитка</li>
-              <li>Лендинг</li>
+            <h3><span class="ukr">Створення та розміщення:</span><span class="eng">Creation and placement:</span></h3>
+            <ul class="ukr">
+              <li>Сайт візитка</li>
+              <li>Лендінг</li>
               <li>Каталог</li>
-              <li>Портфолио</li>
-              <li>Галереи</li>
-              <li>Интернет магазин</li>
-              <li>Корпоративный портал</li>
-              <li>Новостные ресурсы</li>
-              <li>Почтовые рассылки</li>
-              <li>Адаптация тем и шаблонов CMS</li>
+              <li>Портфоліо</li>
+              <li>Галереї</li>
+              <li>Інтернет магазин</li>
+              <li>Корпоративний портал</li>
+              <li>Новинні ресурси</li>
+              <li>Поштові розсилки</li>
+              <li>Адаптація тем і шаблонів CMS</li>
+            </ul>
+            <ul class="eng">
+              <li>Business card site</li>
+              <li>Landing</li>
+              <li>Catalog</li>
+              <li>Portfolio</li>
+              <li>Galleries</li>
+              <li>Online store</li>
+              <li>Corporate portal</li>
+              <li>News resources</li>
+              <li>Mailing lists</li>
+              <li>Adaptation of CMS themes and templates</li>
             </ul>
           </div>
 
           <div class="resume-col">
-            <h3>Правки и доработки:</h3>
-            <p>
-              Существующий сайт может быть модернизирован добавлением новых функций, разделов, страниц и пр.
+            <h3><span class="ukr">Правки та доопрацювання:</span><span class="eng">Fixes and improvements:</span></h3>
+            <p class="ukr">
+              Існуючий сайт може бути модернізований додаванням нових функцій, розділів, сторінок та ін.
             </p>
-            <ul>
-              <li>Доработка существующего проекта</li>
-              <li>Доработка существующего пректа на CMS</li>
-              <li>Перенос проекта на CMS</li>
-              <li>Правка багов</li>
+            <p class="eng">
+              An existing website can be upgraded by adding new features, sections, pages, etc.
+            </p>
+            <ul class="ukr">
+              <li>Доопрацювання існуючого проекту</li>
+              <li>Доопрацювання існуючого проекту на CMS</li>
+              <li>Перенесення проекту на CMS</li>
+              <li>Правка багів</li>
+            </ul>
+            <ul class="eng">
+              <li>Revision of existing project</li>
+              <li>Revision of existing project on CMS</li>
+              <li>Transfer of project to CMS</li>
+              <li>Bug fixing</li>
             </ul>
           </div>
 
           <div class="resume-col">
-            <h3>Обслуживание:</h3>
-            <p>
-              Для обеспечения надежной и безопасной работы сайта требуется его поддержка. 
-              Это включает выполнение различных операций и задач, которые обеспечивают полноценное функционирование сайта.
-              Поддержка веб-сайта может включать целый ряд различных операций и задач, которые необходимо осуществлять для
-              обеспечения полноценной работоспособности сайта.
+            <h3><span class="ukr">Обслуговування:</span><span class="eng">Service:</span></h3>
+            <p class="ukr">
+              Для забезпечення надійної та безпечної роботи сайту потрібна його підтримка. Це охоплює виконання різних операцій і завдань, які забезпечують повноцінне функціонування сайту. Підтримка веб-сайту може охоплювати цілу низку різних операцій і завдань, які необхідно здійснювати для забезпечення повноцінної працездатності сайту.
             </p>
-            <ul>
-              <li>Техническая поддержка проекта</li>
-              <li>Техническая оптимизация сайтов</li>
+            <p class="eng">
+              To ensure reliable and secure operation of a website, it requires maintenance. This involves performing a variety of different operations and tasks that ensure that the site is fully functional.Website maintenance can include a number of different operations and tasks that need to be performed to ensure that the site is fully functional.
+            </p>
+            <ul class="ukr">
+              <li>Технічна підтримка проекту</li>
+              <li>Технічна оптимізація сайтів</li>
+            </ul>
+            <ul class="eng">
+              <li>Technical support of the project</li>
+              <li>Technical optimization of sites</li>
             </ul>
           </div>
 
           <div class="resume-col">
-            <h3>SEO и оптимизация:</h3>
-            <p>
-              В современных проектах семантический код, оптимизированный под SEO и микроразметку Schema.org, является чрезвычайно важным для любого проекта.
+            <h3><span class="ukr">SEO та оптимізація:</span><span class="eng">SEO and optimization:</span></h3>
+            <p class="ukr">
+              У сучасних проектах семантичний код, оптимізований під SEO та мікророзмітку Schema.org, є надзвичайно важливим для будь-якого проекту.
             </p>
-            <ul>
-              <li>Семантический код под SEO</li>
-              <li>Оптимизация сайтов под SEO</li>
-              <li>СЕО продвижение сайта</li>
-              <li>Разработка мета-тэгов под SEO</li>
-              <li>Разработка микроразметки под SEO</li>
-              <li>Google аналитика: подключение, настройка, ведение</li>
-              <li>Search Console: подключение, настройка, ведение</li>
+            <p class="eng">
+              In modern projects, semantic code optimized for SEO and Schema.org micro-markup is extremely important for any project.
+            </p>
+            <ul class="ukr">
+              <li>Семантичний код під SEO</li>
+              <li>Оптимізація сайтів під SEO</li>
+              <li>SЕО просування сайту</li>
+              <li>Розробка мета-тегів під SEO</li>
+              <li>Розробка мікророзмітки під SEO</li>
+              <li>Google аналітика: підключення, налаштування, ведення</li>
+              <li>Search Console: підключення, налаштування, ведення</li>
+            </ul>
+            <ul class="eng">
+              <li>Semantic code for SEO</li>
+              <li>Optimization of sites for SEO</li>
+              <li>SEO site promotion</li>
+              <li>Meta tags development for SEO</li>
+              <li>Development of micro markup for SEO</li>
+              <li>Google analytics: connection, setup, maintenance</li>
+              <li>Search Console: connection, configuration, maintenance</li>
             </ul>
           </div>
 
@@ -260,13 +365,16 @@
 		<div class="dawop-container">
 			<div class="dawop-content">
 				<div class="dawop-header">
-					<h2>Владею следующими технологиями</h2>
+					<h2 class="wow animate__animated animate__zoomIn" style="animation-duration: 2s;">
+            <span class="ukr">Я володію такими Фронт-енд технологіями</span>
+            <span class="eng">I am proficient in the following front-end technologies</span>
+					</h2>
 				</div>
 				<div class="dawop-cols">
 					<!-- dawop-col repeat start -->
 					<div class="dawop-col">
 						<div class="dawop-separator"></div>
-						<h3>Верстка макетов</h3>
+						<h3><span class="ukr">Верстка макетів</span><span class="eng">Layout to html</span></h3>
 						<ul>
 							<li>Figma to html</li>
 							<li>Zeplin to html</li>
@@ -281,7 +389,7 @@
 					<!-- dawop-col repeat start -->
 					<div class="dawop-col">
 						<div class="dawop-separator"></div>
-						<h3>"Языки" верстки</h3>
+						<h3><span class="ukr">«Мови» верстки</span><span class="eng">“Languages” of layout</span></h3>
 						<ul>
 							<li>HTML5</li>
 							<li>СSS3</li>
@@ -291,7 +399,7 @@
 							<li>AOS Animate</li>
 							<li>JavaScript / jQuery</li>
 							<li>Vue</li>
-							<li>Подключение шрифтов</li>
+							<li>Connecting fonts</li>
 							<li>BEM / (БЭМ)</li>
 							<li>SASS / SCSS</li>
 						</ul>
@@ -300,17 +408,17 @@
 					<!-- dawop-col repeat start -->
 					<div class="dawop-col">
 						<div class="dawop-separator"></div>
-						<h3>Рабочий профиль</h3>
+						<h3><span class="ukr">Робочий профіль</span><span class="eng">Work profile</span></h3>
 						<ul>
-							<li>Респонисивная и адаптивная верстка макета</li>
-							<li>Кроссбраузерность и кроссплатформенность, верстка с учетом под различные системы и браузеры</li>
-							<li>Семантический код под SEO</li>
-							<li>Schema.org микроразметка</li>
-							<li>Верстка и разработка под Vue</li>
-							<li>Верстка под WordPress</li>
+							<li><span class="ukr">Респонісивна та адаптивна верстка макета</span><span class="eng">Responsive and adaptive layout design</span></li>
+							<li><span class="ukr">Кросбраузерність і кросплатформеність, верстка з урахуванням під різні системи і браузери</span><span class="eng">Cross-browser and cross-platform, layout with consideration for different systems and browsers</span></li>
+							<li><span class="ukr">Семантичний код під SEO</span><span class="eng">Semantic code for SEO</span></li>
+							<li><span class="ukr">Schema.org мікророзмітка</span><span class="eng">Schema.org micro-markup</span></li>
+							<li><span class="ukr">Верстка та розробка під Vue</span><span class="eng">Layout and development for Vue</span></li>
+							<li><span class="ukr">Верстка та розробка під WordPress</span><span class="eng">Layout and development for WordPress</span></li>
 							<li>WooCommerce</li>
 							<li>OpenCart</li>
-							<li>Верстка под телевизор</li>
+							<li><span class="ukr">Верстка під телевізор</span><span class="eng">Layout for TV</span></li>
 						</ul>
 					</div>
 					<!-- dawop-col repeat stop -->
@@ -342,6 +450,7 @@
 	<div class="to-up">&uarr;</div>
 
 	<script src="js/jquery.min.js"></script>
+  <script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
