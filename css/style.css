@@ -2810,6 +2810,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   background: #fff;
   cursor: pointer;
 }
+.btn-contact:hover {
+  border: 2px solid #00B465;
+  background: #00B465;
+}
 @media (min-width: 768px) {
   .contact-page .vaContainer {
     margin-bottom: 60px;
