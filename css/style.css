@@ -874,6 +874,9 @@ footer .copy a {
 .bct {
 	text-align: center;
 }
+.video-page .bct {
+	padding-bottom: 0;
+}
 .home .bct {
   background-color: #edf0f7;
 }
@@ -920,6 +923,9 @@ footer .copy a {
 	.bct {
 		padding: 25px 28px 20px;
 	}
+  .htmlVideo .bct {
+    padding-top: 0;
+  }
 	.bct-up {
 		font-size: 14px;
 		line-height: 25px;
