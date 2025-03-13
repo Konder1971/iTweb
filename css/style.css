@@ -885,7 +885,8 @@ footer .copy a {
 	padding-bottom: 0;
 }
 .home .bct {
-  background-color: #edf0f7;
+  /*background-color: #edf0f7;*/
+  background-color: #f7efe8;
 }
 .bct p a svg {
 	fill: #009B85;
