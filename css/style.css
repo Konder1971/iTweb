@@ -172,6 +172,15 @@ body {
   min-height: 100vh;
 	overflow-x: hidden;
 }
+.about-page,
+.projects-page,
+.services-page,
+.technologies-page,
+.video-page,
+.textanimations-page,
+.contact-page {
+  background-color: #f7efe8;
+}
 @media (min-width: 1025px) {
 	body {
 		padding-top: 60px;		
