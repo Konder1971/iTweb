@@ -245,7 +245,7 @@ body {
   }
   .lang {
     padding-top: 7px;
-    top: -1px;
+    margin-top: -1px;
   }
 }
 
