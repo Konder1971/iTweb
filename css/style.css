@@ -1818,6 +1818,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 		margin: -20px 0 60px;
 		padding: 0 28px;
 	}
+  .cf-page .contacBox {
+    padding: 0;
+  }
 	.contacBox .col-1 h2 {
 		margin-bottom: 15px;
 		font-weight: 500;
