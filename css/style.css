@@ -2785,15 +2785,23 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   font-style: normal;
 }
 .contact-page .form-control {
+  font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+  font-size: 18px;
+	font-weight: 400;
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 15px;
   font-size: 1rem;
   color: #000;
   border: 1px solid #000;
   margin-bottom: 25px;
 }
 .contact-page textarea.form-control {
+  font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+  font-size: 18px;
+	font-weight: 400;
   min-height: 180px;
   margin-bottom: 35px;
 }
