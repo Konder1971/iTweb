@@ -2779,6 +2779,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .contact-page .contact__page span.form-label {
   color: #000;
   font-size: 18px;
+  margin-bottom: 6px;
 }
 .contact-page .contact__page span.form-label em {
   color: #f00;
