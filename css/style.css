@@ -2786,8 +2786,8 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 }
 .contact-page .form-control {
   font-family: Arial, Helvetica, sans-serif;
-	color: #000;
-  font-size: 18px;
+	color: #000!important;
+  font-size: 18px!important;
 	font-weight: 400;
   display: block;
   width: 100%;
@@ -2798,10 +2798,6 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   margin-bottom: 25px;
 }
 .contact-page textarea.form-control {
-  font-family: Arial, Helvetica, sans-serif;
-	color: #000;
-  font-size: 18px;
-	font-weight: 400;
   min-height: 180px;
   margin-bottom: 35px;
 }
