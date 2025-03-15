@@ -2780,6 +2780,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   color: #000;
   font-size: 18px;
   margin-bottom: 6px;
+  display: block;
 }
 .contact-page .contact__page span.form-label em {
   color: #f00;
