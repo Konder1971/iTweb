@@ -88,6 +88,29 @@
       duration: 1000,
       once: true,
     });
+
+    // video 9/16 start
+    speakersVideoSize();
+    $(window).on('resize', function(){
+      speakersVideoSize();
+    })
+    function speakersVideoSize(){
+      if($('.video-block').length > 0){
+        $('.video-block .video-container').css('height', $(window).height()-76);
+        var speakersVideo = $('.video-block video');
+        var videoHeight = $('.video-block .video-container').height();			
+        var videoWidth = Math.round(videoHeight*16/9);
+        if(videoWidth > $(window).width()){
+          videoWidth = $(window).width();
+          videoHeight = videoWidth*9/16;				
+        }
+        speakersVideo.css('height', videoHeight);
+        speakersVideo.css('width', videoWidth);
+        $('.video-block .video-container').height(videoHeight);
+        $('.video-block .video-container').css('width', videoWidth);
+      }
+    }
+    // video 9/16 stop
     
   });
 
