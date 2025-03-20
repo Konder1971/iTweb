@@ -1157,6 +1157,7 @@ footer .copy a {
 /* swh start
 --------------------------------------------------- */
 .swh {
+  background-color: #f5f7ff;
 	position: relative;
 }
 .swh-up {
@@ -1338,7 +1339,7 @@ footer .copy a {
 
 @media (min-width: 1025px) {
 	.swh {
-		margin: 70px 0 90px;
+		padding: 70px 0 90px;
 	}
 	.swh-container {
 		position: absolute;
@@ -1430,7 +1431,7 @@ footer .copy a {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 	.swh {
-		margin: 70px 0 100px;
+		padding: 70px 0 100px;
 	}
 	.swh-col-1 {
 		margin-bottom: 30px;
@@ -1501,7 +1502,7 @@ footer .copy a {
 }
 @media (max-width: 767.98px) {
 	.swh {
-		margin: 40px 0 50px;
+		padding: 40px 0 50px;
 	}
 	.swh-col-1 {
 		margin-bottom: 30px;
