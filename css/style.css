@@ -176,8 +176,9 @@ body {
 .technologies-page,
 .video-page,
 .textanimations-page,
-.contact-page {
-  background-color: #f7efe8;
+.contact-page,
+.cf-page {
+  background-color: #f5f7ff;
 }
 @media (min-width: 1025px) {
 	body {
@@ -885,8 +886,7 @@ footer .copy a {
 	padding-bottom: 0;
 }
 .home .bct {
-  /*background-color: #edf0f7;*/
-  background-color: #f7efe8;
+  background-color: #f5f7ff;
 }
 .bct p a svg {
 	fill: #009B85;
