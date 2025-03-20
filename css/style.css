@@ -2624,7 +2624,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
   color: #b00;
 }
 .section-col {
-  background-color: #f8f8f8;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
