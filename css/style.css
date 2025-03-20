@@ -2294,7 +2294,7 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 	text-align: left;
 }
 .resume-col {
-  background-color: #f8f8f8;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
