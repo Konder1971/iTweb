@@ -1257,6 +1257,10 @@ footer .copy a {
   text-decoration: none;
   background-color: #f8f8f8;
 }
+.sliderhn-block:hover,
+.sliderhn-block:focus {
+  background-color: #fff;
+}
 .hn-top {
   display: flex;
   flex-direction: column;
@@ -1390,8 +1394,7 @@ footer .copy a {
 		-webkit-transition: 300ms ease-out;
 		-moz-transition: 300ms ease-out;
 		transition: 300ms ease-out;
-		-webkit-transform: scale(1.02);
-		transform: scale(1.02);
+    margin-top: -10px;
 	}
 	.sliderhn {
 		padding-top: 42px;
